@@ -1,0 +1,110 @@
+%% get rid of autoindent   :setl noai nocin nosi inde=
+%%
+%% 1. pdflatex main
+%% 2. bibtex main
+%% 3. pdflatex main
+%% 3. pdflatex main
+%\documentclass[review]{elsarticle}
+\documentclass[]{article}
+%\documentclass[preprint]{elsarticle}
+
+\usepackage[fleqn]{amsmath} 
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tabularx} 
+\usepackage{footnote}
+\usepackage{titlesec}
+
+%\journal{Journal of Computational Physics}
+
+\newcommand{\mb}{\mathbf}
+\newcommand{\tn}{\textnormal}
+\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
+
+\newcommand{\bmz}{\mbox{\boldmath $z$\unboldmath}}
+\newcommand{\bmr}{\mbox{\boldmath $r$\unboldmath}}
+\newcommand{\bmb}{\mbox{\boldmath $b$\unboldmath}}
+\newcommand{\bms}{\mbox{\boldmath $s$\unboldmath}}
+\newcommand{\bmg}{\mbox{\boldmath $g$\unboldmath}}
+\newcommand{\bmq}{\mbox{\boldmath $q$\unboldmath}}
+\newcommand{\bmU}{\mbox{\boldmath $U$\unboldmath}}
+\newcommand{\bmu}{\mbox{\boldmath $u$\unboldmath}}
+\newcommand{\bmv}{\mbox{\boldmath $v$\unboldmath}}
+\newcommand{\bmw}{\mbox{\boldmath $w$\unboldmath}}
+\newcommand{\bmm}{\mbox{\boldmath $m$\unboldmath}}
+\newcommand{\bmi}{\mbox{\boldmath $i$\unboldmath}}
+\newcommand{\bmj}{\mbox{\boldmath $j$\unboldmath}}
+\newcommand{\bmk}{\mbox{\boldmath $k$\unboldmath}}
+\newcommand{\bmx}{\mbox{\boldmath $x$\unboldmath}}
+\newcommand{\bmX}{\mbox{\boldmath $X$\unboldmath}}
+\newcommand{\bmH}{\mbox{\boldmath $H$\unboldmath}}
+\newcommand{\bmy}{\mbox{\boldmath $y$\unboldmath}}
+\newcommand{\bmn}{\mbox{\boldmath $n$\unboldmath}}
+\newcommand{\bmf}{\mbox{\boldmath $f$\unboldmath}}
+\newcommand{\bmF}{\mbox{\boldmath $F$\unboldmath}}
+\newcommand{\bmS}{\mbox{\boldmath $S$\unboldmath}}
+\newcommand{\bmG}{\mbox{\boldmath $G$\unboldmath}}
+\newcommand{\bmV}{\mbox{\boldmath $V$\unboldmath}}
+\newcommand{\bmI}{\mbox{\boldmath $I$\unboldmath}}
+\newcommand{\bmD}{\mbox{\boldmath $D$\unboldmath}}
+\newcommand{\bmnu}{\mbox{\boldmath $\nu$\unboldmath}}
+
+\newcommand{\DefTen}{\mathbb{D}}
+\newcommand{\EyeTen}{\mathbb{I}}
+
+\DeclareMathOperator{\Ei}{Ei}
+
+%%\bibliographystyle{elsarticle-num}
+\bibliographystyle{acm}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{A review article on Computational Quantum Engineering
+  \thanks{this material is based upon work supported by }}
+
+%%!!format authors properly
+%\author{
+%	LastName1, FirstName1\\
+%	\texttt{first1.last1@xxxxx.com}
+%	\and
+%	LastName2, FirstName2\\
+%	\texttt{first2.last2@xxxxx.com}
+%}
+\author{
+  Guo, Wei \\
+  Mechanical Engineering, FAMU-FSU College of Engineering
+  \and
+  Muslimani, Ziad \\
+  Mathematics, Florida State University
+  \and
+  Shoele, Kourosh \\
+  Mechanical Engineering, FAMU-FSU College of Engineering
+  \and
+  Sussman, Mark \\
+  Mathematics, Florida State University
+}
+
+\begin{document}
+\maketitle
+
+ABSTRACT:
+The main techniques in physically storing information in a ``Quantum superposition state'' are (a) trapped ions, (b) superconducting circuits (e.g. Unimon Qubit), (c) Nitrogen-vacancy centers in diamond, and (d) Photonic Qubits.  Each of these vehicles for quantum information technology  have their advantages and disadvantages.  Important properties to consider are (i) resiliance to noise, (ii) ability to travel long distances, (iii) decoherence time, (iv) operating temperature, and (v) scalability of multi Qubit entanglement.  Scientists and Engineers answer questions regarding the aforementioned Qubit technology either experimentally or computationally.  In this review article, it is the computational methods which are reported on regarding Quantum information technology and engineering.  That being said, many numerical techniques synergistically use experimental data in order to discover quantum phenomena; i.e. many numerical methods have a data assimilation (i.e. data fusion) component.   
+
+\linenumbers
+\section{Introduction}
+
+
+\section{Conclusions}
+
+
+\section{Conflict of interest statement }
+
+On behalf of all authors, the corresponding author states that there is no conflict of interest.
+
+%%\biboptions{sort&compress}
+\bibliography{references}
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
