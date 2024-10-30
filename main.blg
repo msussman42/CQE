@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: acm.bst
+Database file #1: references.bib
+Warning--empty journal in moore2021cramming
+You've used 46 entries,
+            2253 wiz_defined-function locations,
+            807 strings with 13542 characters,
+and the built_in function-call counts, 18024 in all, are:
+= -- 1641
+> -- 1147
+< -- 0
++ -- 474
+- -- 422
+* -- 1625
+:= -- 3016
+add.period$ -- 134
+call.type$ -- 46
+change.case$ -- 344
+chr.to.int$ -- 0
+cite$ -- 47
+duplicate$ -- 499
+empty$ -- 1248
+format.name$ -- 422
+if$ -- 3599
+int.to.chr$ -- 0
+int.to.str$ -- 46
+missing$ -- 45
+newline$ -- 229
+num.names$ -- 92
+pop$ -- 323
+preamble$ -- 1
+purify$ -- 300
+quote$ -- 0
+skip$ -- 318
+stack$ -- 0
+substring$ -- 1039
+swap$ -- 131
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 180
+warning$ -- 1
+while$ -- 152
+width$ -- 48
+write$ -- 455
+(There was 1 warning)

@@ -1,0 +1,276 @@
+\begin{thebibliography}{10}
+
+\bibitem{Andrade_2022}
+{\sc Andrade, B., Davoudi, Z., Graß, T., Hafezi, M., Pagano, G., and Seif, A.}
+\newblock Engineering an effective three-spin hamiltonian in trapped-ion
+  systems for applications in quantum simulation.
+\newblock {\em Quantum Science and Technology 7}, 3 (apr 2022), 034001.
+
+\bibitem{anshu2021sample}
+{\sc Anshu, A., Arunachalam, S., Kuwahara, T., and Soleimanifar, M.}
+\newblock Sample-efficient learning of interacting quantum systems.
+\newblock {\em Nature Physics 17}, 8 (2021), 931--935.
+
+\bibitem{anthony2024stress}
+{\sc Anthony-Petersen, R., Biekert, A., Bunker, R., Chang, C.~L., Chang, Y.-Y.,
+  Chaplinsky, L., Fascione, E., Fink, C.~W., Garcia-Sciveres, M., Germond, R.,
+  et~al.}
+\newblock A stress-induced source of phonon bursts and quasiparticle poisoning.
+\newblock {\em Nature Communications 15}, 1 (2024), 6444.
+
+\bibitem{BAO2002487}
+{\sc Bao, W., Jin, S., and Markowich, P.~A.}
+\newblock On time-splitting spectral approximations for the schrödinger
+  equation in the semiclassical regime.
+\newblock {\em Journal of Computational Physics 175}, 2 (2002), 487--524.
+
+\bibitem{10313722}
+{\sc Bayraktar, H., Charara, A., Clark, D., Cohen, S., Costa, T., Fang,
+  Y.-L.~L., Gao, Y., Guan, J., Gunnels, J., Haidar, A., Hehn, A., Hohnerbach,
+  M., Jones, M., Lubowe, T., Lyakh, D., Morino, S., Springer, P., Stanwyck, S.,
+  Terentyev, I., Varadhan, S., Wong, J., and Yamaguchi, T.}
+\newblock cuquantum sdk: A high-performance library for accelerating quantum
+  science.
+\newblock In {\em 2023 IEEE International Conference on Quantum Computing and
+  Engineering (QCE)\/} (2023), vol.~01, pp.~1050--1061.
+
+\bibitem{Benedetti_2019}
+{\sc Benedetti, M., Lloyd, E., Sack, S., and Fiorentini, M.}
+\newblock Parameterized quantum circuits as machine learning models.
+\newblock {\em Quantum Science and Technology 4}, 4 (nov 2019), 043001.
+
+\bibitem{bernien2017probing}
+{\sc Bernien, H., Schwartz, S., Keesling, A., Levine, H., Omran, A., Pichler,
+  H., Choi, S., Zibrov, A.~S., Endres, M., Greiner, M., et~al.}
+\newblock Probing many-body dynamics on a 51-atom quantum simulator.
+\newblock {\em Nature 551}, 7682 (2017), 579--584.
+
+\bibitem{biamonte2017quantum}
+{\sc Biamonte, J., Wittek, P., Pancotti, N., Rebentrost, P., Wiebe, N., and
+  Lloyd, S.}
+\newblock Quantum machine learning.
+\newblock {\em Nature 549}, 7671 (2017), 195--202.
+
+\bibitem{cerezo2021variational}
+{\sc Cerezo, M., Arrasmith, A., Babbush, R., Benjamin, S.~C., Endo, S., Fujii,
+  K., McClean, J.~R., Mitarai, K., Yuan, X., Cincio, L., et~al.}
+\newblock Variational quantum algorithms.
+\newblock {\em Nature Reviews Physics 3}, 9 (2021), 625--644.
+
+\bibitem{10628380}
+{\sc Chen, K.-C., Li, X., Xu, X., Wang, Y.-Y., and Liu, C.-Y.}
+\newblock Quantum-classical-quantum workflow in quantum-hpc middleware with gpu
+  acceleration.
+\newblock In {\em 2024 International Conference on Quantum Communications,
+  Networking, and Computing (QCNC)\/} (2024), pp.~304--311.
+
+\bibitem{cong2019quantum}
+{\sc Cong, I., Choi, S., and Lukin, M.~D.}
+\newblock Quantum convolutional neural networks.
+\newblock {\em Nature Physics 15}, 12 (2019), 1273--1278.
+
+\bibitem{ding2024random}
+{\sc Ding, Z., Ko, T., Yao, J., Lin, L., and Li, X.}
+\newblock Random coordinate descent: A simple alternative for optimizing
+  parameterized quantum circuits.
+\newblock {\em Physical Review Research 6}, 3 (2024), 033029.
+
+\bibitem{ding2023simultaneous}
+{\sc Ding, Z., and Lin, L.}
+\newblock Simultaneous estimation of multiple eigenvalues with short-depth
+  quantum circuit on early fault-tolerant quantum computers.
+\newblock {\em Quantum 7\/} (2023), 1136.
+
+\bibitem{PhysRevB.67.121301}
+{\sc Friesen, M., Rugheimer, P., Savage, D.~E., Lagally, M.~G., van~der Weide,
+  D.~W., Joynt, R., and Eriksson, M.~A.}
+\newblock Practical design and simulation of silicon-based quantum-dot qubits.
+\newblock {\em Phys. Rev. B 67\/} (Mar 2003), 121301.
+
+\bibitem{gamble2019quantum}
+{\sc Gamble, S.}
+\newblock Quantum computing: What it is, why we want it, and how we’re trying
+  to get it.
+\newblock In {\em Frontiers of Engineering: Reports on Leading-Edge Engineering
+  from the 2018 Symposium\/} (2019), National Academies Press, pp.~5--8.
+
+\bibitem{HAN2019108929}
+{\sc Han, J., Zhang, L., and E, W.}
+\newblock Solving many-electron schrödinger equation using deep neural
+  networks.
+\newblock {\em Journal of Computational Physics 399\/} (2019), 108929.
+
+\bibitem{he2024efficientoptimalcontrolopen}
+{\sc He, W., Li, T., Li, X., Li, Z., Wang, C., and Wang, K.}
+\newblock Efficient optimal control of open quantum systems, 2024.
+
+\bibitem{hermann2020deep}
+{\sc Hermann, J., Sch{\"a}tzle, Z., and No{\'e}, F.}
+\newblock Deep-neural-network solution of the electronic schr{\"o}dinger
+  equation.
+\newblock {\em Nature Chemistry 12}, 10 (2020), 891--897.
+
+\bibitem{huang2020predicting}
+{\sc Huang, H.-Y., Kueng, R., and Preskill, J.}
+\newblock Predicting many properties of a quantum system from very few
+  measurements.
+\newblock {\em Nature Physics 16}, 10 (2020), 1050--1057.
+
+\bibitem{ilin2024dissipativevariationalquantumalgorithms}
+{\sc Ilin, Y., and Arad, I.}
+\newblock Dissipative variational quantum algorithms for gibbs state
+  preparation, 2024.
+
+\bibitem{jiang2024high}
+{\sc Jiang, K., Li, S., and Zhang, J.}
+\newblock High-accuracy numerical methods and convergence analysis for
+  schr{\"o}dinger equation with incommensurate potentials.
+\newblock {\em Journal of Scientific Computing 101}, 1 (2024), 18.
+
+\bibitem{PhysRevLett.132.250603}
+{\sc Kanai, T., Jin, D., and Guo, W.}
+\newblock Single-electron qubits based on quantum ring states on solid neon
+  surface.
+\newblock {\em Phys. Rev. Lett. 132\/} (Jun 2024), 250603.
+
+\bibitem{khait2023variational}
+{\sc Khait, I., Tham, E., Segal, D., and Brodutch, A.}
+\newblock Variational quantum eigensolvers in the era of distributed quantum
+  computers.
+\newblock {\em Physical Review A 108}, 5 (2023), L050401.
+
+\bibitem{lin2019mathematical}
+{\sc Lin, L., and Lu, J.}
+\newblock {\em A mathematical introduction to electronic structure theory}.
+\newblock SIAM, 2019.
+
+\bibitem{lin2016approximating}
+{\sc Lin, L., Saad, Y., and Yang, C.}
+\newblock Approximating spectral densities of large matrices.
+\newblock {\em SIAM review 58}, 1 (2016), 34--65.
+
+\bibitem{liu2024training}
+{\sc Liu, C.-Y., Kuo, E.-J., Lin, C.-H.~A., Chen, S., Young, J.~G., Chang,
+  Y.-J., and Hsieh, M.-H.}
+\newblock Training classical neural networks by quantum machine learning.
+\newblock {\em arXiv preprint arXiv:2402.16465\/} (2024).
+
+\bibitem{PhysRevResearch.1.023025}
+{\sc Liu, J.-G., Zhang, Y.-H., Wan, Y., and Wang, L.}
+\newblock Variational quantum eigensolver with fewer qubits.
+\newblock {\em Phys. Rev. Res. 1\/} (Sep 2019), 023025.
+
+\bibitem{LIU2024113213}
+{\sc Liu, J.-P., and Lin, L.}
+\newblock Dense outputs from quantum simulations.
+\newblock {\em Journal of Computational Physics 514\/} (2024), 113213.
+
+\bibitem{PhysRevA.107.062406}
+{\sc Lotshaw, P.~C., Battles, K.~D., Gard, B., Buchs, G., Humble, T.~S., and
+  Herold, C.~D.}
+\newblock Modeling noise in global m\o{}lmer-s\o{}rensen interactions applied
+  to quantum approximate optimization.
+\newblock {\em Phys. Rev. A 107\/} (Jun 2023), 062406.
+
+\bibitem{PhysRevA.110.L030803}
+{\sc Lotshaw, P.~C., Sawyer, B.~C., Herold, C.~D., and Buchs, G.}
+\newblock Exactly solvable model of light-scattering errors in quantum
+  simulations with metastable trapped-ion qubits.
+\newblock {\em Phys. Rev. A 110\/} (Sep 2024), L030803.
+
+\bibitem{doi:10.1098/rsta.2021.0414}
+{\sc Lotshaw, P.~C., Xu, H., Khalid, B., Buchs, G., Humble, T.~S., and
+  Banerjee, A.}
+\newblock Simulations of frustrated ising hamiltonians using quantum
+  approximate optimization.
+\newblock {\em Philosophical Transactions of the Royal Society A: Mathematical,
+  Physical and Engineering Sciences 381}, 2241 (2023), 20210414.
+
+\bibitem{mack2015multiple}
+{\sc Mack, C.}
+\newblock The multiple lives of moore's law.
+\newblock {\em IEEE Spectrum 52}, 4 (2015), 31--31.
+
+\bibitem{markov2014limits}
+{\sc Markov, I.~L.}
+\newblock Limits on fundamental limits to computation.
+\newblock {\em Nature 512}, 7513 (2014), 147--154.
+
+\bibitem{moore2021cramming}
+{\sc Moore, G.}
+\newblock Cramming more components onto integrated circuits (1965).
+
+\bibitem{muqeet2024machine}
+{\sc Muqeet, A., Ali, S., Yue, T., and Arcaini, P.}
+\newblock A machine learning-based error mitigation approach for reliable
+  software development on ibm’s quantum computers.
+\newblock In {\em Companion Proceedings of the 32nd ACM International
+  Conference on the Foundations of Software Engineering\/} (2024), pp.~80--91.
+
+\bibitem{nguyen2022tensor}
+{\sc Nguyen, T., Lyakh, D., Dumitrescu, E., Clark, D., Larkin, J., and
+  McCaskey, A.}
+\newblock Tensor network quantum virtual machine for simulating quantum
+  circuits at exascale.
+\newblock {\em ACM Transactions on Quantum Computing 4}, 1 (2022), 1--21.
+
+\bibitem{nielsen2010quantum}
+{\sc Nielsen, M.~A., and Chuang, I.~L.}
+\newblock {\em Quantum computation and quantum information}.
+\newblock Cambridge university press, 2010.
+
+\bibitem{PhysRevB.101.155134}
+{\sc N\"u\ss{}eler, A., Dhand, I., Huelga, S.~F., and Plenio, M.~B.}
+\newblock Efficient simulation of open quantum systems coupled to a fermionic
+  bath.
+\newblock {\em Phys. Rev. B 101\/} (Apr 2020), 155134.
+
+\bibitem{parekh2021quantum}
+{\sc Parekh, R., Ricciardi, A., Darwish, A., and DiAdamo, S.}
+\newblock Quantum algorithms and simulation for parallel and distributed
+  quantum computing.
+\newblock In {\em 2021 IEEE/ACM Second International Workshop on Quantum
+  Computing Software (QCS)\/} (2021), IEEE, pp.~9--19.
+
+\bibitem{saurabh2023conceptual}
+{\sc Saurabh, N., Jha, S., and Luckow, A.}
+\newblock A conceptual architecture for a quantum-hpc middleware.
+\newblock In {\em 2023 IEEE International Conference on Quantum Software
+  (QSW)\/} (2023), IEEE, pp.~116--127.
+
+\bibitem{Selstø_2010}
+{\sc Selstø, S., and Kvaal, S.}
+\newblock Absorbing boundary conditions for dynamical many-body quantum
+  systems.
+\newblock {\em Journal of Physics B: Atomic, Molecular and Optical Physics 43},
+  6 (mar 2010), 065004.
+
+\bibitem{shalf2020future}
+{\sc Shalf, J.}
+\newblock The future of computing beyond moore’s law.
+\newblock {\em Philosophical Transactions of the Royal Society A 378}, 2166
+  (2020), 20190061.
+
+\bibitem{somma2024shadowhamiltoniansimulation}
+{\sc Somma, R.~D., King, R., Kothari, R., O'Brien, T., and Babbush, R.}
+\newblock Shadow hamiltonian simulation, 2024.
+
+\bibitem{uvarov2020machine}
+{\sc Uvarov, A., Kardashin, A., and Biamonte, J.~D.}
+\newblock Machine learning phase transitions with a quantum processor.
+\newblock {\em Physical Review A 102}, 1 (2020), 012415.
+
+\bibitem{vallero2024state}
+{\sc Vallero, M., Vella, F., and Rech, P.}
+\newblock State of practice: evaluating gpu performance of state vector and
+  tensor network methods.
+\newblock {\em arXiv preprint arXiv:2401.06188\/} (2024).
+
+\bibitem{zhang2017observation}
+{\sc Zhang, J., Pagano, G., Hess, P.~W., Kyprianidis, A., Becker, P., Kaplan,
+  H., Gorshkov, A.~V., Gong, Z.-X., and Monroe, C.}
+\newblock Observation of a many-body dynamical phase transition with a 53-qubit
+  quantum simulator.
+\newblock {\em Nature 551}, 7682 (2017), 601--604.
+
+\end{thebibliography}
