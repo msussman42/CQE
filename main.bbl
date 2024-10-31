@@ -94,6 +94,11 @@
 \newblock In {\em Frontiers of Engineering: Reports on Leading-Edge Engineering
   from the 2018 Symposium\/} (2019), National Academies Press, pp.~5--8.
 
+\bibitem{grivopoulos2005optimal}
+{\sc Grivopoulos, S.}
+\newblock {\em Optimal control of quantum systems}.
+\newblock University of California, Santa Barbara, 2005.
+
 \bibitem{HAN2019108929}
 {\sc Han, J., Zhang, L., and E, W.}
 \newblock Solving many-electron schrödinger equation using deep neural
@@ -238,7 +243,17 @@
 \newblock In {\em 2023 IEEE International Conference on Quantum Software
   (QSW)\/} (2023), IEEE, pp.~116--127.
 
-\bibitem{Selstø_2010}
+\bibitem{10313872}
+{\sc Sawaya, N.~P., Marti-Dafcik, D., Ho, Y., Tabor, D.~P., Bernal~Neira,
+  D.~E., Magann, A.~B., Premaratne, S., Dubey, P., Matsuura, A., Bishop, N.,
+  De~Jong, W.~A., Benjamin, S., Parekh, O.~D., Tubman, N.~M., Klymko, K., and
+  Camps, D.}
+\newblock Hamlib: A library of hamiltonians for benchmarking quantum algorithms
+  and hardware.
+\newblock In {\em 2023 IEEE International Conference on Quantum Computing and
+  Engineering (QCE)\/} (2023), vol.~02, pp.~389--390.
+
+\bibitem{Selsto2010}
 {\sc Selstø, S., and Kvaal, S.}
 \newblock Absorbing boundary conditions for dynamical many-body quantum
   systems.
