@@ -270,6 +270,13 @@
 {\sc Somma, R.~D., King, R., Kothari, R., O'Brien, T., and Babbush, R.}
 \newblock Shadow hamiltonian simulation, 2024.
 
+\bibitem{doi:10.1137/23M161848X}
+{\sc Theisen, L., and Stamm, B.}
+\newblock A scalable two-level domain decomposition eigensolver for periodic
+  schrödinger eigenstates in anisotropically expanding domains.
+\newblock {\em SIAM Journal on Scientific Computing 46}, 5 (2024),
+  A3067--A3093.
+
 \bibitem{uvarov2020machine}
 {\sc Uvarov, A., Kardashin, A., and Biamonte, J.~D.}
 \newblock Machine learning phase transitions with a quantum processor.

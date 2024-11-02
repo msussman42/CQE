@@ -2553,4 +2553,31 @@ abstract = {In numerical studies of the dynamics of unbound quantum mechanical s
   publisher={University of California, Santa Barbara}
 }
 
+@article{doi:10.1137/23M161848X,
+author = {Theisen, Lambert and Stamm, Benjamin},
+title = {A Scalable Two-Level Domain Decomposition Eigensolver for Periodic Schrödinger Eigenstates in Anisotropically Expanding Domains},
+journal = {SIAM Journal on Scientific Computing},
+volume = {46},
+number = {5},
+pages = {A3067-A3093},
+year = {2024},
+doi = {10.1137/23M161848X},
+
+URL = { 
+    
+        https://doi.org/10.1137/23M161848X
+    
+    
+
+},
+eprint = { 
+    
+        https://doi.org/10.1137/23M161848X
+    
+    
+
+}
+,
+    abstract = { Abstract. Accelerating iterative eigenvalue algorithms is often achieved by employing a spectral shifting strategy. Unfortunately, improved shifting typically leads to a smaller eigenvalue for the resulting shifted operator, which in turn results in a high condition number of the underlying solution matrix, posing a major challenge for iterative linear solvers. This paper introduces a two-level domain decomposition preconditioner that addresses this issue for the linear Schrödinger eigenvalue problem, even in the presence of a vanishing eigenvalue gap in nonuniform, expanding domains. Since the quasi-optimal shift, which is already available as the solution to a spectral cell problem, is required for the eigenvalue solver, it is logical to also use its associated eigenfunction as a generator to construct a coarse space. We analyze the resulting two-level additive Schwarz preconditioner and obtain a condition number bound that is independent of the domain’s anisotropy, despite the need for only one basis function per subdomain for the coarse solver. Several numerical examples are presented to illustrate its flexibility and efficiency. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://doi.org/10.5281/zenodo.11072863. }
+}
 
