@@ -99,6 +99,12 @@
 \newblock {\em Optimal control of quantum systems}.
 \newblock University of California, Santa Barbara, 2005.
 
+\bibitem{gunther2023practical}
+{\sc G{\"u}nther, S., and Petersson, N.~A.}
+\newblock A practical approach to determine minimal quantum gate durations
+  using amplitude-bounded quantum controls.
+\newblock {\em AVS Quantum Science 5}, 4 (2023).
+
 \bibitem{HAN2019108929}
 {\sc Han, J., Zhang, L., and E, W.}
 \newblock Solving many-electron schrödinger equation using deep neural
