@@ -105,6 +105,13 @@
   using amplitude-bounded quantum controls.
 \newblock {\em AVS Quantum Science 5}, 4 (2023).
 
+\bibitem{9651392}
+{\sc Günther, S., Petersson, N.~A., and DuBois, J.~L.}
+\newblock Quandary: An open-source c++ package for high-performance optimal
+  control of open quantum systems.
+\newblock In {\em 2021 IEEE/ACM Second International Workshop on Quantum
+  Computing Software (QCS)\/} (2021), pp.~88--98.
+
 \bibitem{HAN2019108929}
 {\sc Han, J., Zhang, L., and E, W.}
 \newblock Solving many-electron schrödinger equation using deep neural
