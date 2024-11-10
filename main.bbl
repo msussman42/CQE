@@ -118,6 +118,12 @@
   networks.
 \newblock {\em Journal of Computational Physics 399\/} (2019), 108929.
 
+\bibitem{hangleiter2024robustly}
+{\sc Hangleiter, D., Roth, I., Fuksa, J., Eisert, J., and Roushan, P.}
+\newblock Robustly learning the hamiltonian dynamics of a superconducting
+  quantum processor.
+\newblock {\em Nature Communications 15}, 1 (2024), 9595.
+
 \bibitem{he2024efficientoptimalcontrolopen}
 {\sc He, W., Li, T., Li, X., Li, Z., Wang, C., and Wang, K.}
 \newblock Efficient optimal control of open quantum systems, 2024.
@@ -144,6 +150,12 @@
 \newblock High-accuracy numerical methods and convergence analysis for
   schr{\"o}dinger equation with incommensurate potentials.
 \newblock {\em Journal of Scientific Computing 101}, 1 (2024), 18.
+
+\bibitem{doi:10.1137/23M1563451}
+{\sc Jin, S., Li, X., Liu, N., and Yu, Y.}
+\newblock Quantum simulation for quantum dynamics with artificial boundary
+  conditions.
+\newblock {\em SIAM Journal on Scientific Computing 46}, 4 (2024), B403--B421.
 
 \bibitem{PhysRevLett.132.250603}
 {\sc Kanai, T., Jin, D., and Guo, W.}
