@@ -2641,3 +2641,21 @@ eprint = {
     abstract = { Abstract. Quantum dynamics, typically expressed in the form of a time-dependent Schrödinger equation with a Hermitian Hamiltonian, is a natural application for quantum computing. However, when simulating quantum dynamics that involves the emission of electrons, it is necessary to use artificial boundary conditions (ABCs) to confine the computation within a fixed domain. The introduction of ABCs alters the Hamiltonian structure of the dynamics, and existing quantum algorithms cannot be directly applied since the evolution is no longer unitary. The current paper utilizes a recently introduced Schrödingerization method that converts non-Hermitian dynamics into a Schrödinger form for the artificial boundary problems [S. Jin, N. Liu, and Y. Yu, Quantum Simulation of Partial Differential Equations via Schrödingerisation, preprint, arXiv:2212.13969, 2022], [S. Jin, N. Liu, and Y. Yu, Phys. Rev. A, 108 (2023), 032603]. We implement this method for three types of ABCs, including the complex absorbing potential technique, perfectly matched layer methods, and Dirichlet-to-Neumann approach. We analyze the query complexity of these algorithms and perform numerical experiments to demonstrate the validity of this approach. This helps to bridge the gap between available quantum algorithms and computational models for quantum dynamics in unbounded domains. }
 }
 
+@article{jin2024quantum,
+  title={Quantum Circuits for the heat equation with physical boundary conditions via Schrodingerisation},
+  author={Jin, Shi and Liu, Nana and Yu, Yue},
+  journal={arXiv preprint arXiv:2407.15895},
+  year={2024}
+}
+
+@article{jin2005computing,
+  title={Computing multivalued physical observables for the semiclassical limit of the Schr{\"o}dinger equation},
+  author={Jin, Shi and Liu, Hailiang and Osher, Stanley and Tsai, Yen-Hsi Richard},
+  journal={Journal of Computational Physics},
+  volume={205},
+  number={1},
+  pages={222--241},
+  year={2005},
+  publisher={Elsevier}
+}
+

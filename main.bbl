@@ -157,6 +157,18 @@
   conditions.
 \newblock {\em SIAM Journal on Scientific Computing 46}, 4 (2024), B403--B421.
 
+\bibitem{jin2005computing}
+{\sc Jin, S., Liu, H., Osher, S., and Tsai, Y.-H.~R.}
+\newblock Computing multivalued physical observables for the semiclassical
+  limit of the schr{\"o}dinger equation.
+\newblock {\em Journal of Computational Physics 205}, 1 (2005), 222--241.
+
+\bibitem{jin2024quantum}
+{\sc Jin, S., Liu, N., and Yu, Y.}
+\newblock Quantum circuits for the heat equation with physical boundary
+  conditions via schrodingerisation.
+\newblock {\em arXiv preprint arXiv:2407.15895\/} (2024).
+
 \bibitem{PhysRevLett.132.250603}
 {\sc Kanai, T., Jin, D., and Guo, W.}
 \newblock Single-electron qubits based on quantum ring states on solid neon
