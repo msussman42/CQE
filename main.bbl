@@ -18,6 +18,12 @@
 \newblock A stress-induced source of phonon bursts and quasiparticle poisoning.
 \newblock {\em Nature Communications 15}, 1 (2024), 6444.
 
+\bibitem{BAO2025113486}
+{\sc Bao, W., Chang, Z., and Zhao, X.}
+\newblock Computing ground states of bose-einstein condensation by normalized
+  deep neural network.
+\newblock {\em Journal of Computational Physics 520\/} (2025), 113486.
+
 \bibitem{BAO2002487}
 {\sc Bao, W., Jin, S., and Markowich, P.~A.}
 \newblock On time-splitting spectral approximations for the schrödinger
@@ -313,6 +319,13 @@
   schrödinger eigenstates in anisotropically expanding domains.
 \newblock {\em SIAM Journal on Scientific Computing 46}, 5 (2024),
   A3067--A3093.
+
+\bibitem{tuysuz2024learning}
+{\sc T{\"u}ys{\"u}z, C., Demidik, M., Coopmans, L., Rinaldi, E., Croft, V.,
+  Haddad, Y., Rosenkranz, M., and Jansen, K.}
+\newblock Learning to generate high-dimensional distributions with
+  low-dimensional quantum boltzmann machines.
+\newblock {\em arXiv preprint arXiv:2410.16363\/} (2024).
 
 \bibitem{uvarov2020machine}
 {\sc Uvarov, A., Kardashin, A., and Biamonte, J.~D.}
