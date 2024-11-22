@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  21 NOV 2024 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.1)  22 NOV 2024 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -164,20 +164,20 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -201,78 +201,67 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 87.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 90.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 87.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 90.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Overfull \hbox (38.15248pt too wide) in paragraph at lines 102--105
-[]\OT1/cmr/m/n/10 Stefanie Guen-ther, Lawrence Liv-er-more Na-tional Lab-o-ra-t
-ory [][]\OT1/cmtt/m/n/10 guenther5@llnl.gov 
- []
-
-
-Overfull \hbox (40.33295pt too wide) in paragraph at lines 105--108
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (40.33295pt too wide) in paragraph at lines 108--111
 []\OT1/cmr/m/n/10 Anders Pe-ters-son, Lawrence Liv-er-more Na-tional Lab-o-ra-t
 ory [][]\OT1/cmtt/m/n/10 petersson1@llnl.gov 
  []
 
-Excluding 'comment' comment. Excluding 'comment' comment. [2]
+Excluding 'comment' comment. Excluding 'comment' comment. [2{/usr/local/texlive
+/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 Excluding 'comment' comment. Excluding 'comment' comment. [3]
-Overfull \hbox (15.08394pt too wide) in paragraph at lines 265--268
+Overfull \hbox (15.08394pt too wide) in paragraph at lines 268--271
 []\OT1/cmr/m/n/10 Hermann et al[[]] ``Deep-neural-network so-lu-tion of the ele
 c-tronic Schr^^?odinger
  []
 
 
-Overfull \hbox (0.61172pt too wide) in paragraph at lines 282--284
+Overfull \hbox (0.61172pt too wide) in paragraph at lines 285--287
 []\OT1/cmr/m/n/10 Friesen et al[[]] ``Prac-ti-cal de-sign and sim-u-la-tion of 
 silicon-based quantum-
  []
 
-[4]
-Overfull \hbox (10.30621pt too wide) in paragraph at lines 326--329
+[4] [5]
+Overfull \hbox (10.30621pt too wide) in paragraph at lines 329--332
 []\OT1/cmr/m/n/10 Andrade et al[[]] ``En-gi-neer-ing an ef-fec-tive three-spin 
 Hamil-to-nian in trapped-
  []
 
-[5] Excluding 'comment' comment.
-Underfull \hbox (badness 10000) in paragraph at lines 365--366
+Excluding 'comment' comment.
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--368
+Underfull \hbox (badness 10000) in paragraph at lines 369--371
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--371
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--374
-
- []
-
-[6]
 Underfull \hbox (badness 10000) in paragraph at lines 375--377
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 378--380
 
  []
 
@@ -282,7 +271,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 382--383
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--389
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
 
  []
 
@@ -299,7 +293,7 @@ L3 programming layer <2024-02-20>
  ) 
 Here is how much of TeX's memory you used:
  2869 strings out of 474116
- 41771 string characters out of 5743681
+ 41771 string characters out of 5743683
  1935187 words of memory out of 5000000
  25211 multiletter control sequences out of 15000+600000
  564768 words of font info for 61 fonts, out of 8000000 for 9000
@@ -313,7 +307,7 @@ sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 /local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
 local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/l
 ocal/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (12 pages, 156928 bytes).
+Output written on main.pdf (12 pages, 156569 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream
