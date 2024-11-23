@@ -57,6 +57,12 @@
 \newblock Quantum machine learning.
 \newblock {\em Nature 549}, 7671 (2017), 195--202.
 
+\bibitem{callison2022hybrid}
+{\sc Callison, A., and Chancellor, N.}
+\newblock Hybrid quantum-classical algorithms in the noisy intermediate-scale
+  quantum era and beyond.
+\newblock {\em Physical Review A 106}, 1 (2022), 010101.
+
 \bibitem{cerezo2021variational}
 {\sc Cerezo, M., Arrasmith, A., Babbush, R., Benjamin, S.~C., Endo, S., Fujii,
   K., McClean, J.~R., Mitarai, K., Yuan, X., Cincio, L., et~al.}
