@@ -40,6 +40,12 @@
 \newblock In {\em 2023 IEEE International Conference on Quantum Computing and
   Engineering (QCE)\/} (2023), vol.~01, pp.~1050--1061.
 
+\bibitem{beer2020training}
+{\sc Beer, K., Bondarenko, D., Farrelly, T., Osborne, T.~J., Salzmann, R.,
+  Scheiermann, D., and Wolf, R.}
+\newblock Training deep quantum neural networks.
+\newblock {\em Nature communications 11}, 1 (2020), 808.
+
 \bibitem{Benedetti_2019}
 {\sc Benedetti, M., Lloyd, E., Sack, S., and Fiorentini, M.}
 \newblock Parameterized quantum circuits as machine learning models.
