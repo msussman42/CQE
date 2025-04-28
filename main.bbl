@@ -30,6 +30,13 @@
   equation in the semiclassical regime.
 \newblock {\em Journal of Computational Physics 175}, 2 (2002), 487--524.
 
+\bibitem{bartolucci2023fusion}
+{\sc Bartolucci, S., Birchall, P., Bombin, H., Cable, H., Dawson, C.,
+  Gimeno-Segovia, M., Johnston, E., Kieling, K., Nickerson, N., Pant, M.,
+  et~al.}
+\newblock Fusion-based quantum computation.
+\newblock {\em Nature Communications 14}, 1 (2023), 912.
+
 \bibitem{10313722}
 {\sc Bayraktar, H., Charara, A., Clark, D., Cohen, S., Costa, T., Fang,
   Y.-L.~L., Gao, Y., Guan, J., Gunnels, J., Haidar, A., Hehn, A., Hohnerbach,
@@ -111,6 +118,18 @@
   to get it.
 \newblock In {\em Frontiers of Engineering: Reports on Leading-Edge Engineering
   from the 2018 Symposium\/} (2019), National Academies Press, pp.~5--8.
+
+\bibitem{goodman2025qglab}
+{\sc Goodman, R.~H., Conte, G., and Marzuola, J.~L.}
+\newblock Qglab: A matlab package for computations on quantum graphs.
+\newblock {\em SIAM Journal on Scientific Computing 47}, 2 (2025), B428--B453.
+
+\bibitem{gopalakrishnan2024solving}
+{\sc Gopalakrishnan~Meena, M., Gottiparthi, K.~C., Lietz, J.~G., Georgiadou,
+  A., and Coello~P{\'e}rez, E.~A.}
+\newblock Solving the hele--shaw flow using the harrow--hassidim--lloyd
+  algorithm on superconducting devices: A study of efficiency and challenges.
+\newblock {\em Physics of Fluids 36}, 10 (2024).
 
 \bibitem{grivopoulos2005optimal}
 {\sc Grivopoulos, S.}
@@ -306,6 +325,12 @@
   quantum computing.
 \newblock In {\em 2021 IEEE/ACM Second International Workshop on Quantum
   Computing Software (QCS)\/} (2021), IEEE, pp.~9--19.
+
+\bibitem{riedel2023wavetrain}
+{\sc Riedel, J., Gel{\ss}, P., Klein, R., and Schmidt, B.}
+\newblock Wavetrain: A python package for numerical quantum mechanics of
+  chain-like systems based on tensor trains.
+\newblock {\em The Journal of Chemical Physics 158}, 16 (2023).
 
 \bibitem{saurabh2023conceptual}
 {\sc Saurabh, N., Jha, S., and Luckow, A.}
