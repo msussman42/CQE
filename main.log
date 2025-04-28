@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  23 MAR 2025 13:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.1)  28 APR 2025 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -226,73 +226,79 @@ Overfull \hbox (40.33295pt too wide) in paragraph at lines 111--114
 ory [][]\OT1/cmtt/m/n/10 petersson1@llnl.gov 
  []
 
+
+Overfull \hbox (3.94525pt too wide) in paragraph at lines 128--129
+\OT1/cmr/m/n/10 Quan-tum/Classical al-go-rithms, Bench-mark-ing Quan-tum cir-cu
+its, Com-pu-ta-tional
+ []
+
 Excluding 'comment' comment. Excluding 'comment' comment. [2{/usr/local/texlive
 /2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 Excluding 'comment' comment. Excluding 'comment' comment. [3]
-Overfull \hbox (15.08394pt too wide) in paragraph at lines 273--276
+Overfull \hbox (15.08394pt too wide) in paragraph at lines 274--277
 []\OT1/cmr/m/n/10 Hermann et al[[]] ``Deep-neural-network so-lu-tion of the ele
 c-tronic Schr^^?odinger
  []
 
 [4]
-Overfull \hbox (0.61172pt too wide) in paragraph at lines 290--292
+Overfull \hbox (0.61172pt too wide) in paragraph at lines 291--293
 []\OT1/cmr/m/n/10 Friesen et al[[]] ``Prac-ti-cal de-sign and sim-u-la-tion of 
 silicon-based quantum-
  []
 
 
-Overfull \hbox (0.38953pt too wide) in paragraph at lines 306--308
+Overfull \hbox (0.38953pt too wide) in paragraph at lines 307--309
 []\OT1/cmr/m/n/10 Kubischta and Teixeira[[]] ``Fam-ily of quan-tum codes with e
 x-otic transver-
  []
 
 [5]
-Overfull \hbox (10.30621pt too wide) in paragraph at lines 336--339
+Overfull \hbox (10.30621pt too wide) in paragraph at lines 337--340
 []\OT1/cmr/m/n/10 Andrade et al[[]] ``En-gi-neer-ing an ef-fec-tive three-spin 
 Hamil-to-nian in trapped-
  []
 
 [6] Excluding 'comment' comment.
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--384
+Underfull \hbox (badness 10000) in paragraph at lines 393--395
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--387
+Underfull \hbox (badness 10000) in paragraph at lines 397--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--390
+Underfull \hbox (badness 10000) in paragraph at lines 399--401
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 402--404
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 391--393
+Underfull \hbox (badness 10000) in paragraph at lines 406--407
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--396
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
-
- []
-
-[7] (./main.bbl [8] [9] [10] [11]
+(./main.bbl [8] [9] [10] [11]
 Underfull \hbox (badness 1629) in paragraph at lines 317--325
 []\OT1/cmr/m/sc/10 Sawaya, N. P., Marti-Dafcik, D., Ho, Y., Ta-bor, D. P.,
  []
@@ -304,10 +310,10 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2874 strings out of 474116
- 41861 string characters out of 5743681
+ 2875 strings out of 474116
+ 41884 string characters out of 5743683
  1935187 words of memory out of 5000000
- 25216 multiletter control sequences out of 15000+600000
+ 25217 multiletter control sequences out of 15000+600000
  564768 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,6n,65p,1705b,224s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -319,7 +325,7 @@ sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 /local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
 local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/l
 ocal/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (13 pages, 160022 bytes).
+Output written on main.pdf (13 pages, 161098 bytes).
 PDF statistics:
  88 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream
