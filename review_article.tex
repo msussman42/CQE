@@ -1,0 +1,580 @@
+%% get rid of autoindent   :setl noai nocin nosi inde=
+%%
+%% 1. pdflatex main
+%% 2. bibtex main
+%% 3. pdflatex main
+%% 3. pdflatex main
+%\documentclass[review]{elsarticle}
+\documentclass[]{article}
+%\documentclass[preprint]{elsarticle}
+
+\usepackage[fleqn]{amsmath} 
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{tabularx} 
+\usepackage{footnote}
+\usepackage{slashed}
+%%\usepackage{titlesec}
+\usepackage{comment}
+
+%\journal{Journal of Computational Physics}
+
+\newcommand{\mb}{\mathbf}
+\newcommand{\tn}{\textnormal}
+\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
+
+\newcommand{\bmz}{\mbox{\boldmath $z$\unboldmath}}
+\newcommand{\bmr}{\mbox{\boldmath $r$\unboldmath}}
+\newcommand{\bmb}{\mbox{\boldmath $b$\unboldmath}}
+\newcommand{\bms}{\mbox{\boldmath $s$\unboldmath}}
+\newcommand{\bmg}{\mbox{\boldmath $g$\unboldmath}}
+\newcommand{\bmq}{\mbox{\boldmath $q$\unboldmath}}
+\newcommand{\bmU}{\mbox{\boldmath $U$\unboldmath}}
+\newcommand{\bmu}{\mbox{\boldmath $u$\unboldmath}}
+\newcommand{\bmv}{\mbox{\boldmath $v$\unboldmath}}
+\newcommand{\bmw}{\mbox{\boldmath $w$\unboldmath}}
+\newcommand{\bmm}{\mbox{\boldmath $m$\unboldmath}}
+\newcommand{\bmi}{\mbox{\boldmath $i$\unboldmath}}
+\newcommand{\bmj}{\mbox{\boldmath $j$\unboldmath}}
+\newcommand{\bmk}{\mbox{\boldmath $k$\unboldmath}}
+\newcommand{\bmx}{\mbox{\boldmath $x$\unboldmath}}
+\newcommand{\bmX}{\mbox{\boldmath $X$\unboldmath}}
+\newcommand{\bmH}{\mbox{\boldmath $H$\unboldmath}}
+\newcommand{\bmy}{\mbox{\boldmath $y$\unboldmath}}
+\newcommand{\bmn}{\mbox{\boldmath $n$\unboldmath}}
+\newcommand{\bmf}{\mbox{\boldmath $f$\unboldmath}}
+\newcommand{\bmF}{\mbox{\boldmath $F$\unboldmath}}
+\newcommand{\bmS}{\mbox{\boldmath $S$\unboldmath}}
+\newcommand{\bmG}{\mbox{\boldmath $G$\unboldmath}}
+\newcommand{\bmV}{\mbox{\boldmath $V$\unboldmath}}
+\newcommand{\bmI}{\mbox{\boldmath $I$\unboldmath}}
+\newcommand{\bmD}{\mbox{\boldmath $D$\unboldmath}}
+\newcommand{\bmnu}{\mbox{\boldmath $\nu$\unboldmath}}
+
+\newcommand{\DefTen}{\mathbb{D}}
+\newcommand{\EyeTen}{\mathbb{I}}
+
+\DeclareMathOperator{\Ei}{Ei}
+
+%%\bibliographystyle{elsarticle-num}
+\bibliographystyle{acm}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Review article: Numerical Methods for Engineering Quantum Computers}
+
+%%!!format authors properly
+%\author{
+%	LastName1, FirstName1\\
+%	\texttt{first1.last1@xxxxx.com}
+%	\and
+%	LastName2, FirstName2\\
+%	\texttt{first2.last2@xxxxx.com}
+%}
+\author{
+  Liu, Shu \\
+  Mathematics, Florida State University
+  \and
+  Georgiadou, Antigoni \\
+  Oak Ridge National Laboratory
+  \and
+  Kubischta, Eric \\
+  Mathematics, Florida State University
+  \and
+  Melton, Daniel \\
+  Mathematics, Florida State University
+  \and
+  Guenther, Stefanie \\
+  Lawrence Livermore National Laboratory
+  \and
+  Jin, Shi \\
+  Mathematics, Shanghai Jiao Tong University
+  \and
+  Lin, Lin \\
+  Mathematics, U.C. Berkeley
+  \and
+  Lotshaw, Philip \\
+  Oak Ridge National Laboratory
+  \and
+  Petersson, Anders \\
+  Lawrence Livermore National Laboratory
+  \and
+  Sussman, Mark \\
+  Mathematics, Florida State University
+}
+
+\begin{document}
+\maketitle
+
+ABSTRACT:
+The main techniques in physically storing information in a ``Quantum superposition state'' and inducing ``entanglement'' amongst pairs of ``Qubits'' are (a) trapped ions, (b) superconducting circuits (e.g. Unimon Qubit), (c) Nitrogen-vacancy centers in diamond, and (d) Photonic Qubits.  Each of these vehicles for quantum information technology have their advantages and disadvantages.  Important properties to consider are (i) resiliance to noise, (ii) ability to communicate ``quantum'' information over long distances, (iii) decoherence time, (iv) operating temperature, (v) scalability of multi Qubit entanglement, and (vi) being amenable to strategic control.  Right now, Quantum computers are in the ``Noisy Intermediate-Scale Quantum'' (NISQ) era.  In an effort to constantly improve the design of quantum computers, scientists and engineers answer questions regarding the aforementioned Qubit technology either experimentally or computationally.  In this special issue, it is the computational methods which are reported on.  It is the objective of this Special Issue to serve as a complete reference on the subject matter of ``Numerical Methods for Engineering Quantum Computers'' for use by students and established researchers.  As a side benefit, it is expected that understanding the mathematical models and computational algorithms used to engineer Quantum Computers will also lead to improved algorithms for utilizing Quantum Computers.
+
+\begin{comment}
+
+\section{Guest Editors}
+
+\begin{itemize}
+\item
+Mark Sussman, Florida State University \verb=sussman@math.fsu.edu=
+\item
+Lin Lin, University of California, Berkeley \verb=linlin@math.berkeley.edu=
+\item
+Shi Jin, Shanghai Jiao Tong University \verb=shijin-m@sjtu.edu.cn=
+\item
+Stefanie Guenther, Lawrence Livermore National Laboratory
+\verb=guenther5@llnl.gov=
+\item
+Anders Petersson, Lawrence Livermore National Laboratory
+\verb=petersson1@llnl.gov=
+\item
+Philip Lotshaw, Oak Ridge National Laboratory
+\verb=lotshawpc@ornl.gov=
+\end{itemize}
+
+ 
+\section{Full scope of the special issue }
+
+%Compuational Quantum Physics
+%``error mitigation techniques''
+Numerical Algorithms for the optimal control of Qubit(s), computing ground states and sensitivity thereof due to perturbations in the Hamiltonian, Quantum or hybrid classical/quantum algorithms for benchmarking quantum computers, Quantum or hybrid Quantum/classical numerical methods for the unsteady/steady many body Schrodinger equation, Computational Quantum Electrodynamics,
+Error Correction Algorithms.
+
+\section{Special Issue Keywords }
+
+Computational Quantum Physics, Quantum Computer, control of Quantum Systems, Schrodinger equation, inverse problems in Quantum Mechanics, Quantum error correction, Designing Fault Tolerant Quantum Computers, Hybrid Quantum/Classical algorithms, Benchmarking Quantum circuits, Computational Quantum Electrodynamics.
+
+\section{Rationale for special issue and recommended contibuters}
+\end{comment}
+
+\begin{comment}
+
+\cite{BLATT1967382}
+``Practical points concerning the solution of the Schrödinger equation''
+\cite{FEIT1982412}
+``Solution of the Schrödinger equation by a spectral method''
+\cite{https://doi.org/10.1002/andp.19273892002}
+``Zur Quantentheorie der Molekeln''
+\cite{wang2020localization}
+``Localization and delocalization of light in photonic moir{\'e} lattices''
+``Approximating spectral densities of large matrices''
+\cite{ramkarthik2021numerical}
+``Numerical recipes in quantum information theory and quantum computing: an adventure in FORTRAN 90''
+\cite{yeomans1988theory}
+``The theory and application of axial Ising models''
+\cite{milburn2000ion}
+``Ion trap quantum computing with warm ions''
+
+\cite{shastri2021photonics}
+``Photonics for artificial intelligence and neuromorphic computing''
+
+\cite{wanjura2024fully}
+``Fully nonlinear neuromorphic computing with linear wave scattering''
+\cite{de2024spin}
+``A spin-optical quantum computing architecture''
+\cite{heurtel2023perceval}
+``Perceval: A software platform for discrete variable photonic quantum computing''
+\cite{wiebe2014quantum}
+``Quantum deep learning''
+
+\end{comment}
+
+\begin{comment}
+
+Pre-submission
+Unless you have been approached directly by the Editor-in-Chief of a journal or another member of its editorial or publishing team, you will need to submit a proposal to guest edit a special issue to the relevant editorial office. If you are contemplating a special issue proposal, you might find the following recommendations helpful.
+
+Preparing a proposal for a special issue
+Working together with any other guest editors, you should prepare a proposal that, in addition to observing any special guidelines which are imposed by the journal's guide for authors or special issue guide (if any):
+
+Sets out the importance of the area on which the special issue will focus;
+
+\end{comment}
+
+As quoted from Shalf\cite{shalf2020future},
+``Moore’s Law [1] is a techno-economic model that has enabled the IT industry to double the performance and functionality of digital electronics roughly every 2 years within a fixed cost, power and area. This expectation has led to a relatively stable ecosystem (e.g. electronic design automation tools, compilers, simulators and emulators) built around general-purpose processor technologies, such as the ×86, ARM and Power instruction set architectures. However, within a decade, the technological underpinnings for the process that Gordon Moore described will come to an end, as lithography gets down to atomic scale. At that point, it will be feasible to create lithographically produced devices with dimensions nearing atomic scale, where a dozen or fewer silicon atoms are present across critical device features, and will therefore represent a practical limit for implementing logic gates for digital computing [2]. Indeed, the ITRS (International Technology Roadmap for Semiconductors), which has tracked the historical improvements over the past 30 years, has projected no improvements beyond 2021, as shown in figure 1, and subsequently disbanded, having no further purpose. The classical technological driver that has underpinned Moore’s Law for the past 50 years is failing [3] and is anticipated to flatten by 2025, as shown in figure 2. Evolving technology in the absence of Moore’s Law will require an investment now in computer architecture and the basic sciences (including materials science), to study candidate replacement materials and alternative device physics to foster continued technology scaling.'' References one through three in the above quote 
+correspond to the following references respectively: 
+\cite{moore2021cramming}\cite{mack2015multiple}\cite{markov2014limits}.
+
+In Figure 3 of the article by Shalf\cite{shalf2020future}, a roadmap is provided for possible paths forward when the density of circuits on classical computers exceeds a critical value.  There are three categories: (a) roadmap for the next ten years, (b) 20 years, and (c) ``Decades beyond exascale,'' ``New Models of Computation.'' For category (c), some of the prospective technology listed is:
+(i) approximate computing, (ii) adiabatic reversible, (iii) Analog, (iv) Neuromorhic, and (v) quantum.
+
+Of the ``new models of computation'' listed in 
+Shalf's article\cite{shalf2020future}, this special issue will address
+the ``Numerical Methods for Engineering Quantum Computers'' aspects associated with the
+emerging ``quantum computing'' paradigm.  As outlined by
+Gamble\cite{gamble2019quantum}, the development of reliable quantum
+computers will have a tranformative effect on computer technology.  That being said, right now we are in the ``Noisy Intermediate-Scale Quantum''\cite{callison2022hybrid} (NISQ) era.  The purpose of this special issue is to bring to the forefront the current research being done, from the computational perspective, in order to move beyond the NISQ era.
+
+
+\section{preiliminaries}
+In order to appreciate the complexities associated with designing a quantum computer, it is suggested that one first gain some intuition on electricity and magnetism.
+
+The phenomena of electromagnetism and light is a very complex field, in of itself.  One could choose as a starting point Maxwell's equations which are,
+\begin{align}
+    \label{eq:gauss_law_e}
+    \nabla \cdot \mathbf{E} &= \frac{\rho}{\epsilon_0} \quad \text{(Gauss's Law for Electricity)} \\
+    \label{eq:gauss_law_m}
+    \nabla \cdot \mathbf{B} &= 0 \quad \text{(Gauss's Law for Magnetism)} \\
+    \label{eq:faraday_law}
+    \nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t} \quad \text{(Faraday's Law of Induction)} \\
+    \label{eq:ampere_maxwell_law}
+    \nabla \times \mathbf{B} &= \mu_0 \left( \mathbf{J} + \epsilon_0 \frac{\partial \mathbf{E}}{\partial t} \right) \quad \text{(Ampere-Maxwell's Law)}
+\end{align}
+Also, there is the Lorentz force law:
+\begin{eqnarray*}
+\textbf{F} = q(\textbf{E} + \textbf{v} \times \textbf{B})
+\end{eqnarray*}
+
+A good textbook that describes these fundamentals is by Purcell and Morin third edition\cite{purcell2013electricity}.
+
+Maxwell's equations, and relativity though are not sufficient to describe the
+quantum nature of matter and light.  Matter and Light, when considering
+small enough scales, have a dual particle and wave property to them.  Also
+Matter and light posess discrete ``quantum,'' energy levels.
+For a good reference, see the following quantum mechanics 
+textbook\cite{sakurai2020modern}.  
+
+The mathematical model that describes the dynamics of matter and light, including ``quantum'' properties and the dual particle wave property is Schrodinger's equation:
+\begin{eqnarray*}
+i\hbar \frac{\partial}{\partial t} \Psi(\mathbf{r}, t) = \hat{H} \Psi(\mathbf{r}, t)
+\end{eqnarray*}
+where:
+i is the imaginary unit
+$\hbar$ is the reduced Planck constant
+$\frac{\partial}{\partial t}$ is the partial derivative with respect to time
+$\Psi(\mathbf{r}, t)$ is the wave function
+$\hat{H}$ is the Hamiltonian operator
+$\mathbf{r}$ is the position vector
+$t$ is time
+The time-independent Schrödinger equation can be written as:
+\begin{eqnarray*}
+\hat{H} \psi(\mathbf{r}) = E \psi(\mathbf{r})
+\end{eqnarray*}
+where:
+\begin{eqnarray*}
+\hat{H} 
+\end{eqnarray*}
+is the Hamiltonian operator
+\begin{eqnarray*}
+\psi(\mathbf{r}) 
+\end{eqnarray*}
+is the time-independent wave function
+\begin{eqnarray*}
+E 
+\end{eqnarray*}
+is the energy of the system.
+
+If relativistic effects must be considered then the following relativistic wave equation models have been developed:
+\begin{itemize}
+\item Klein Gordon equation (spin zero particles) (flat space time)
+\begin{equation}
+\left(\frac{1}{c^2}\frac{\partial^2}{\partial t^2} - \nabla^2 + \frac{m^2 c^2}{\hbar^2}\right) \phi(x,t) = 0
+\end{equation}
+\item Klein Gordon equation (spin zero particles) (in terms of the four-dimensional derivative operator (d'Alembertian))
+\begin{equation}
+\Box \phi(x) + \frac{m^2 c^2}{\hbar^2} \phi(x) = 0
+\end{equation}
+\begin{equation}
+\Box=\frac{1}{c^{2}}\frac{\partial^{2}}{\partial t^{2}}-\nabla^{2}
+\end{equation}
+\item Dirac equation (spin one half particles)
+\begin{align}
+& \left(\beta m c^2 + c \left(\sum_{n=1}^3\alpha_n p_n\right)\right) \psi(x,t) = i\hbar \frac{\partial \psi(x,t)}{\partial t}\\
+& i\hbar\gamma^\mu \partial_\mu \psi - mc\psi = 0 \\
+& (i\slashed{\partial} - m)\psi = 0
+\end{align}
+\end{itemize}
+
+Finally, in some scenarios, the most appropriate mathematical models 
+correspond to the nonlinear Schrodinger equation:
+\begin{eqnarray*}
+i\frac{\partial \psi}{\partial t} = -\frac{1}{2} \nabla^2 \psi + V(\psi) \psi
+\end{eqnarray*}
+
+
+\begin{comment}
+	1. PDE constrained optimization and control. QUANDARY
+	  (PDE constraint is Schrodinger equation)
+	  Anders Petersson and Stefanie Guenther
+	2. Quantum algorithms for benchmarking quantum computers
+	   Shi Jin, Antigoni Georgiadou
+	3. Quantum error correction algorithms
+	   Eric Kubischta
+	4. Density functional theory
+	   Lin Lin
+\end{comment}
+
+
+
+
+
+\begin{comment}
+
+Explains how the anticipated contribution of the special issue will advance understanding in this area;
+
+\end{comment}
+\begin{comment}
+
+At the present, the research activity associated with ``Numerical Methods for Engineering Quantum Computers''
+is spread out over many journals: IEEE Journals, 
+``Quantum Information Processing,'' 
+``Quantum Science and Technology,'' 
+``Quantum,'' 
+``ACM Transactions on Quantum Computing,''
+``SIAM review,''
+``Journal of Computational Physics,''
+``Journal of Scientific Computing,''
+``Physical Review A,'' 
+``Journal of Chemical Physics,'' 
+``Journal of Physics: Condensed Matter,''
+``Physical Review A,''
+``Physical Review Letters,''
+``Physical Review Research,''
+``Nature,''
+``Nature Communications,''
+``Nature Physics,''
+``Nature Photonics,''
+``Nature Chemistry,''
+``PRX Quantum,''
+``AVS Quantum Science,''
+``Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences.''
+
+It is the intention of this special issue to have information pertaining
+to ``Numerical Methods for Engineering Quantum Computers'' in one accessble issue.
+\end{comment}
+
+\begin{comment}
+
+Identifies papers and authors for possible inclusion in the special issue, with a brief description of each paper. (These papers do not need to have been written at this time, although it might be the case that work is already in progress.);
+
+\end{comment}
+
+%Oak Ridge: Travis Humble, Stephen Jesse, Benjamin Lawrie, 
+%Gilles Buchs, Rob Moore, Zac Ward
+%FSU: Wei Guo, Lukasz Dusanowski
+\begin{comment}
+
+The following is a list of authors and the articles they
+have previously published which motivate inviting them to 
+contribute to the proposed special issue on ``Numerical Methods for Engineering Quantum Computers.''
+
+\begin{itemize}
+\item Callison and Chancellor\cite{callison2022hybrid} 
+ ``Hybrid quantum-classical algorithms in the noisy intermediate-scale quantum era and beyond''
+\item Muqeet et al\cite{muqeet2024machine}
+``A Machine Learning-Based Error Mitigation Approach for Reliable Software Development on IBM’s Quantum Computers''
+\item Anthony-Petersen et al\cite{anthony2024stress}
+``A stress-induced source of phonon bursts and quasiparticle poisoning''
+\item Tuysuz et al\cite{tuysuz2024learning}
+  ``Learning to generate high-dimensional distributions with low-dimensional quantum Boltzmann machines''
+\item W. Bao, Z. Chang, X. Zhao\cite{BAO2025113486}, ``Computing ground states of Bose-Einstein condensation by normalized deep neural network''
+\item W. Bao, S. Jin, and P. Markowich\cite{BAO2002487}
+``On Time-Splitting Spectral Approximations for the Schrödinger Equation in the Semiclassical Regime''
+\item S. Jin, X. Li, N. Liu, and Y. Yu\cite{doi:10.1137/23M1563451},
+ ``Quantum Simulation for Quantum Dynamics with Artificial Boundary 
+Conditions''
+\item S. Jin, N. Liu, and Y. Yu\cite{jin2024quantum}, ``Quantum Circuits for the heat equation with physical boundary conditions via Schrodingerisation''
+\item S. Jin, H. Liu, S. Osher, R. Tsai\cite{jin2005computing}, ``Computing multivalued physical observables for the semiclassical limit of the Schr{\"o}dinger equation''
+\item
+Jiequn Han and Linfeng Zhang and Weinan E\cite{HAN2019108929}
+``Solving many-electron Schrödinger equation using deep neural networks''
+\item
+Bernien et al\cite{bernien2017probing}
+``Probing many-body dynamics on a 51-atom quantum simulator''
+\item
+Zhang et al\cite{zhang2017observation}
+``Observation of a many-body dynamical phase transition with a 53-qubit quantum simulator''
+\item 
+Cerezo et al\cite{cerezo2021variational}
+``Variational quantum algorithms''
+\item
+Anshu et al\cite{anshu2021sample}
+``Sample-efficient learning of interacting quantum systems''
+\item
+Toshiaki Kanai, Dafei Jin, and Wei Guo\cite{PhysRevLett.132.250603}
+``Single-Electron Qubits Based on Quantum Ring States on Solid Neon Surface''
+\item
+Hermann et al\cite{hermann2020deep}
+``Deep-neural-network solution of the electronic Schr{\"o}dinger equation''
+\item
+Ilin and Arad\cite{ilin2024dissipativevariationalquantumalgorithms}
+``Dissipative variational quantum algorithms for Gibbs state preparation''
+\item
+Somma et al\cite{somma2024shadowhamiltoniansimulation}
+``Shadow Hamiltonian Simulation''
+\item 
+Lotshaw et al\cite{PhysRevA.110.L030803}
+``Exactly solvable model of light-scattering errors in quantum simulations with metastable trapped-ion qubits''
+\item
+Lotshaw et al\cite{PhysRevA.107.062406}
+``Modeling noise in global M\o{}lmer-S\o{}rensen interactions applied to quantum approximate optimization''
+\item
+Lotshaw et al\cite{doi:10.1098/rsta.2021.0414}
+``Simulations of frustrated Ising Hamiltonians using quantum approximate optimization''
+\item Friesen et al\cite{PhysRevB.67.121301}
+  ``Practical design and simulation of silicon-based quantum-dot qubits''
+\item Kai Jiang et al\cite{jiang2024high}
+``High-accuracy numerical methods and convergence analysis for Schr{\"o}dinger equation with incommensurate potentials''
+\item Lin and Lu\cite{lin2019mathematical}
+``A mathematical introduction to electronic structure theory''
+\item Nielsen and Chuang\cite{nielsen2010quantum}
+``Quantum computation and quantum information''
+\item Ding and Lin\cite{ding2023simultaneous}
+``Simultaneous estimation of multiple eigenvalues with short-depth quantum circuit on early fault-tolerant quantum computers''
+\item Ding et al\cite{ding2024random}
+  ``Random coordinate descent: A simple alternative for optimizing parameterized quantum circuits''
+\item Liu and Lin\cite{LIU2024113213}
+``Dense outputs from quantum simulations''
+\item Lin, Saad, and Yang\cite{lin2016approximating}
+``Approximating spectral densities of large matrices''
+\item Kubischta and Teixeira\cite{kubischta2023family}
+``Family of quantum codes with exotic transversal gates''
+\item Chen et al\cite{10628380}
+``Quantum-Classical-Quantum Workflow in Quantum-HPC Middleware with GPU Acceleration''
+\item Biamonte et al\cite{biamonte2017quantum}
+``Quantum machine learning''
+\item Benedetti et al\cite{Benedetti_2019}
+``Parameterized quantum circuits as machine learning models''
+\item Jin-Guo Liu et al\cite{PhysRevResearch.1.023025}
+''Variational quantum eigensolver with fewer qubits''
+\item Saurabh et al\cite{saurabh2023conceptual}
+``A conceptual architecture for a quantum-hpc middleware''
+\item Uvarov et al\cite{uvarov2020machine}
+``Machine learning phase transitions with a quantum processor''
+\item Khait et al\cite{khait2023variational}
+''Variational quantum eigensolvers in the era of distributed quantum computers''
+\item Huang et al\cite{huang2020predicting}
+``Predicting many properties of a quantum system from very few measurements''
+\item Cong et al\cite{cong2019quantum}
+``Quantum convolutional neural networks''
+\item Parekh et al\cite{parekh2021quantum}
+``Quantum algorithms and simulation for parallel and distributed quantum computing''
+\item Vallero et al\cite{vallero2024state}
+``State of practice: evaluating GPU performance of state vector and tensor network methods''
+\item Nguyen et al\cite{nguyen2022tensor}
+``Tensor network quantum virtual machine for simulating quantum circuits at exascale''
+\item Liu et al\cite{liu2024training}
+``Training classical neural networks by quantum machine learning''
+\item Bayraktar et al\cite{10313722}
+``cuQuantum SDK: A High-Performance Library for Accelerating Quantum Science''
+\item Andrade et al\cite{Andrade_2022}
+``Engineering an effective three-spin Hamiltonian in trapped-ion systems for applications in quantum simulation''
+%%\item https://github.com/lin-lin/Quantum290
+\item Wenhao He et al
+ \cite{he2024efficientoptimalcontrolopen},
+ ``Efficient Optimal Control of Open Quantum Systems''
+\item Alexander Nusseler et al
+\cite{PhysRevB.101.155134},
+``Efficient simulation of open quantum systems coupled to a fermionic bath''
+\item Selsto and Kvaal
+\cite{Selsto2010},
+``Absorbing boundary conditions for dynamical many-body quantum systems''
+\item Sawaya et al\cite{10313872},
+  ``HamLib: A Library of Hamiltonians for Benchmarking Quantum Algorithms and Hardware''
+\item Symeon Grivopoulos\cite{grivopoulos2005optimal},
+ ``Optimal control of quantum systems''
+\item Theisen and Stamm\cite{doi:10.1137/23M161848X},
+  ''A Scalable Two-Level Domain Decomposition Eigensolver for Periodic Schrödinger Eigenstates in Anisotropically Expanding Domains''
+\item Guenther, Petersson, and DuBois\cite{9651392},
+  ``Quandary: An open-source C++ package for high-performance optimal control of open quantum systems''
+\item Guenther and Petersson\cite{gunther2023practical},
+``A practical approach to determine minimal quantum gate durations using amplitude-bounded quantum controls''
+\item Lidar\cite{lidar2019lecture},
+``Lecture notes on the theory of open quantum systems''
+\item Hangleiter et al\cite{hangleiter2024robustly},
+``Robustly learning the Hamiltonian dynamics of a superconducting quantum processor''
+\item Beer et al\cite{beer2020training},
+``Training deep quantum neural networks''
+\item Lalanne et al\cite{LalanneETAL},
+``Light Interaction with Photonic and Plasmonic Resonances''
+\item Shukrinov et al\cite{shukrinov2016modeling},
+``Modeling of LC-shunted intrinsic Josephson junctions in high-Tc superconductors''
+\item Georgadou et al\cite{gopalakrishnan2024solving}
+	Hele-Shaw simulation on quantum computer.
+\item Rupert Klein\cite{riedel2023wavetrain} WaveTrain: A Python package for numerical quantum mechanics of chain-like systems based on tensor trains
+\item {\verb=psiquantum.com=} \cite{bartolucci2023fusion}  ``Fusion based quantum computation,'' Bartolucci et al
+\item Roy Goodman et al\cite{goodman2025qglab}, ``QGLAB: A MATLAB PACKAGE FOR COMPUTATIONS ON QUANTUM GRAPHS''
+\item Campolattaro, Alfonso A ``Generalized Maxwell equations and quantum mechanics. I. Dirac equation for the free electron''
+\item Brannick et al, ``Least-Squares Finite Element Methods for Quantum Electrodynamics''
+\item Roth and Chew, ``Macroscopic Circuit Quantum Electrodynamics: A New Look Toward Developing Full-Wave Numerical Models''
+\item Devoret et al, ``Quantum fluctuations in electrical circuits''
+\end{itemize}
+\end{comment}
+
+\begin{comment}
+
+Indicates the timeframe in which the special issue could be produced (to include paper writing, reviewing and submission of final copy to the journal) assuming the proposal is accepted;
+Includes a short biography of all authors and guest editors;
+Indicates any special timing, associated events, funding support, partnerships or other links or relationships which could influence the development of the issue;
+Provides any further information which you feel is relevant.
+A special issue normally contains between five and 20 full-length articles, in addition to an editorial written by the special issue organizers. Because it is highly unlikely that all articles submitted for potential inclusion in a special issue will successfully pass the peer review process, it is wise to consider more papers than you anticipate as the upper limit. If fewer than three articles are accepted for publication, the articles will be published as stand-alone articles in the journal.
+Once you're ready, use the link below to find your chosen journal and submit your proposal.
+
+https://www.elsevier.com/editor/role/guest/guide
+
+\end{comment}
+
+\begin{comment}
+The following is a template for inviting researchers to contribute to the special issue: \\
+\par\noindent
+Dear first and last name, \\
+\par\noindent
+
+In response to the growing interest in Quantum Computing, and the constant effort to design ever more resilient systems, we plan to publish a Special Issue on ``Numerical Methods for Engineering Quantum Computers'' in the Journal of Computational Physics (JCP). This Special Issue will span a broad range of related topics from numerical methods for determining ground states, numerical methods for solving the unsteady or nonlinear Schrodinger Equation, Density Functional Theory, Computer Aided Design of Quantum Algorithms in order to optimize the ``decoherence time,'' Hybrid classical quantum algorithms, and optimal design and control of qubits. Our special issue will serve as a complete reference on the subject matter for use by students and established researchers. \\
+
+\par\noindent
+Given your expertise in the related field, we extend a personal invitation to you to contribute a paper to this Special Issue on a topic of your choice. If agreeable, please send us a reply by Email with a tentative title by 22 November, 2024. Please copy Ms Yuan Li (yuan.li@elsevier.com) who is copied on this Email and happy to answer any questions you may have. Please see below details about the submission portal and other relevant information. \\
+
+\par\noindent
+We look forward to hearing from you. \\
+\par\noindent
+
+Our kindest regards, \\
+\par\noindent
+
+Mark Sussman, guest editor 2, guest editor 3, \ldots \\
+\par\noindent
+
+Journal:
+\par\noindent
+
+Journal of Computational Physics (ISSN: , CiteScore: , Impact Factor: ) \\
+\par\noindent
+
+Special Issue: ``Numerical Methods for Engineering Quantum Computers''
+\par\noindent
+
+Website: 
+\par\noindent
+
+Guest Editors: (e.g. 3 or more)
+\par\noindent
+
+All submissions will be peer-reviewed.
+\par\noindent
+
+Important dates:
+\par\noindent
+
+Submission Website: 
+\par\noindent
+select the article type of `` VSI: Numerical Methods for Engineering Quantum Computers '' 
+\par\noindent
+
+Submission portal closes: 30 November 2025.
+\par\noindent
+
+%Publication date (estimate): 30 October 2025.
+Editorial acceptance deadline: 30 May 2026
+\par\noindent
+
+\end{comment}
+
+%%\biboptions{sort&compress}
+\bibliography{references}
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

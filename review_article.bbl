@@ -1,0 +1,45 @@
+\begin{thebibliography}{1}
+
+\bibitem{callison2022hybrid}
+{\sc Callison, A., and Chancellor, N.}
+\newblock Hybrid quantum-classical algorithms in the noisy intermediate-scale
+  quantum era and beyond.
+\newblock {\em Physical Review A 106}, 1 (2022), 010101.
+
+\bibitem{gamble2019quantum}
+{\sc Gamble, S.}
+\newblock Quantum computing: What it is, why we want it, and how we’re trying
+  to get it.
+\newblock In {\em Frontiers of Engineering: Reports on Leading-Edge Engineering
+  from the 2018 Symposium\/} (2019), National Academies Press, pp.~5--8.
+
+\bibitem{mack2015multiple}
+{\sc Mack, C.}
+\newblock The multiple lives of moore's law.
+\newblock {\em IEEE Spectrum 52}, 4 (2015), 31--31.
+
+\bibitem{markov2014limits}
+{\sc Markov, I.~L.}
+\newblock Limits on fundamental limits to computation.
+\newblock {\em Nature 512}, 7513 (2014), 147--154.
+
+\bibitem{moore2021cramming}
+{\sc Moore, G.}
+\newblock Cramming more components onto integrated circuits (1965).
+
+\bibitem{purcell2013electricity}
+{\sc Purcell, E., and Morin, D.}
+\newblock Electricity and magnetism third edition, 2013.
+
+\bibitem{sakurai2020modern}
+{\sc Sakurai, J.~J., and Napolitano, J.}
+\newblock {\em Modern quantum mechanics}.
+\newblock Cambridge University Press, 2020.
+
+\bibitem{shalf2020future}
+{\sc Shalf, J.}
+\newblock The future of computing beyond moore’s law.
+\newblock {\em Philosophical Transactions of the Royal Society A 378}, 2166
+  (2020), 20190061.
+
+\end{thebibliography}
