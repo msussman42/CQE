@@ -1,4 +1,23 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{bach2013controlled}
+{\sc Bach, R., Pope, D., Liou, S.-H., and Batelaan, H.}
+\newblock Controlled double-slit electron diffraction.
+\newblock {\em New Journal of Physics 15}, 3 (2013), 033018.
+
+\bibitem{beck2024integrating}
+{\sc Beck, T., Baroni, A., Bennink, R., Buchs, G., P{\'e}rez, E. A.~C.,
+  Eisenbach, M., da~Silva, R.~F., Meena, M.~G., Gottiparthi, K., Groszkowski,
+  P., et~al.}
+\newblock Integrating quantum computing resources into scientific hpc
+  ecosystems.
+\newblock {\em Future Generation Computer Systems 161\/} (2024), 11--25.
+
+\bibitem{bravo2023variational}
+{\sc Bravo-Prieto, C., LaRose, R., Cerezo, M., Subasi, Y., Cincio, L., and
+  Coles, P.~J.}
+\newblock Variational quantum linear solver.
+\newblock {\em Quantum 7\/} (2023), 1188.
 
 \bibitem{callison2022hybrid}
 {\sc Callison, A., and Chancellor, N.}
@@ -6,12 +25,60 @@
   quantum era and beyond.
 \newblock {\em Physical Review A 106}, 1 (2022), 010101.
 
+\bibitem{daribayev2023implementation}
+{\sc Daribayev, B., Mukhanbet, A., and Imankulov, T.}
+\newblock Implementation of the hhl algorithm for solving the poisson equation
+  on quantum simulators.
+\newblock {\em Applied Sciences 13}, 20 (2023), 11491.
+
 \bibitem{gamble2019quantum}
 {\sc Gamble, S.}
 \newblock Quantum computing: What it is, why we want it, and how we’re trying
   to get it.
 \newblock In {\em Frontiers of Engineering: Reports on Leading-Edge Engineering
   from the 2018 Symposium\/} (2019), National Academies Press, pp.~5--8.
+
+\bibitem{gerlach1989experimentelle}
+{\sc Gerlach, W., and Stern, O.}
+\newblock Der experimentelle nachweis der richtungsquantelung im magnetfeld.
+\newblock {\em Walther Gerlach (1889--1979) Eine Auswahl aus seinen Schriften
+  und Briefen\/} (1989), 26--29.
+
+\bibitem{gopalakrishnan2024solving}
+{\sc Gopalakrishnan~Meena, M., Gottiparthi, K.~C., Lietz, J.~G., Georgiadou,
+  A., and Coello~P{\'e}rez, E.~A.}
+\newblock Solving the hele--shaw flow using the harrow--hassidim--lloyd
+  algorithm on superconducting devices: A study of efficiency and challenges.
+\newblock {\em Physics of Fluids 36}, 10 (2024).
+
+\bibitem{9651392}
+{\sc Günther, S., Petersson, N.~A., and DuBois, J.~L.}
+\newblock Quandary: An open-source c++ package for high-performance optimal
+  control of open quantum systems.
+\newblock In {\em 2021 IEEE/ACM Second International Workshop on Quantum
+  Computing Software (QCS)\/} (2021), pp.~88--98.
+
+\bibitem{harrow2009quantum}
+{\sc Harrow, A.~W., Hassidim, A., and Lloyd, S.}
+\newblock Quantum algorithm for linear systems of equations.
+\newblock {\em Physical review letters 103}, 15 (2009), 150502.
+
+\bibitem{doi:10.1137/23M1563451}
+{\sc Jin, S., Li, X., Liu, N., and Yu, Y.}
+\newblock Quantum simulation for quantum dynamics with artificial boundary
+  conditions.
+\newblock {\em SIAM Journal on Scientific Computing 46}, 4 (2024), B403--B421.
+
+\bibitem{jin2024quantum}
+{\sc Jin, S., Liu, N., and Yu, Y.}
+\newblock Quantum circuits for the heat equation with physical boundary
+  conditions via schrodingerisation.
+\newblock {\em arXiv preprint arXiv:2407.15895\/} (2024).
+
+\bibitem{kubischta2023family}
+{\sc Kubischta, E., and Teixeira, I.}
+\newblock Family of quantum codes with exotic transversal gates.
+\newblock {\em Physical Review Letters 131}, 24 (2023), 240601.
 
 \bibitem{mack2015multiple}
 {\sc Mack, C.}
@@ -41,5 +108,11 @@
 \newblock The future of computing beyond moore’s law.
 \newblock {\em Philosophical Transactions of the Royal Society A 378}, 2166
   (2020), 20190061.
+
+\bibitem{wheaton1978philipp}
+{\sc Wheaton, B.~R.}
+\newblock Philipp lenard and the photoelectric effect, 1889-1911.
+\newblock {\em Historical Studies in the Physical Sciences 9\/} (1978),
+  299--322.
 
 \end{thebibliography}

@@ -78,6 +78,9 @@
   Georgiadou, Antigoni \\
   Oak Ridge National Laboratory
   \and
+  Dong, Spancer \\
+  Oak Ridge National Laboratory
+  \and
   Kubischta, Eric \\
   Mathematics, Florida State University
   \and
@@ -107,7 +110,7 @@
 \maketitle
 
 ABSTRACT:
-The main techniques in physically storing information in a ``Quantum superposition state'' and inducing ``entanglement'' amongst pairs of ``Qubits'' are (a) trapped ions, (b) superconducting circuits (e.g. Unimon Qubit), (c) Nitrogen-vacancy centers in diamond, and (d) Photonic Qubits.  Each of these vehicles for quantum information technology have their advantages and disadvantages.  Important properties to consider are (i) resiliance to noise, (ii) ability to communicate ``quantum'' information over long distances, (iii) decoherence time, (iv) operating temperature, (v) scalability of multi Qubit entanglement, and (vi) being amenable to strategic control.  Right now, Quantum computers are in the ``Noisy Intermediate-Scale Quantum'' (NISQ) era.  In an effort to constantly improve the design of quantum computers, scientists and engineers answer questions regarding the aforementioned Qubit technology either experimentally or computationally.  In this special issue, it is the computational methods which are reported on.  It is the objective of this Special Issue to serve as a complete reference on the subject matter of ``Numerical Methods for Engineering Quantum Computers'' for use by students and established researchers.  As a side benefit, it is expected that understanding the mathematical models and computational algorithms used to engineer Quantum Computers will also lead to improved algorithms for utilizing Quantum Computers.
+The main techniques in physically storing information in a ``Quantum superposition state'' and inducing ``entanglement'' amongst pairs of ``Qubits'' are (a) trapped ions, (b) superconducting circuits (e.g. Unimon Qubit), (c) Nitrogen-vacancy centers in diamond, and (d) Photonic Qubits.  Each of these vehicles for quantum information technology have their advantages and disadvantages.  Important properties to consider are (i) resiliance to noise, (ii) ability to communicate ``quantum'' information over long distances, (iii) decoherence time, (iv) operating temperature, (v) scalability of multi Qubit entanglement, and (vi) being amenable to strategic control.  Right now, Quantum computers are in the ``Noisy Intermediate-Scale Quantum'' (NISQ) era.  In an effort to constantly improve the design of quantum computers, scientists and engineers answer questions regarding the aforementioned Qubit technology either experimentally or computationally.  In this review article, it is the computational methods which are reported on.  It is the objective of this review article to serve as a reference on the subject matter of ``Numerical Methods for Engineering Quantum Computers'' for use by students and established researchers.  As a side benefit, it is expected that understanding the mathematical models and computational algorithms used to engineer Quantum Computers will also lead to improved algorithms for utilizing Quantum Computers.
 
 \begin{comment}
 
@@ -131,6 +134,9 @@ Philip Lotshaw, Oak Ridge National Laboratory
 \verb=lotshawpc@ornl.gov=
 \end{itemize}
 
+\end{comment}
+
+\begin{comment}
  
 \section{Full scope of the special issue }
 
@@ -138,6 +144,9 @@ Philip Lotshaw, Oak Ridge National Laboratory
 %``error mitigation techniques''
 Numerical Algorithms for the optimal control of Qubit(s), computing ground states and sensitivity thereof due to perturbations in the Hamiltonian, Quantum or hybrid classical/quantum algorithms for benchmarking quantum computers, Quantum or hybrid Quantum/classical numerical methods for the unsteady/steady many body Schrodinger equation, Computational Quantum Electrodynamics,
 Error Correction Algorithms.
+\end{comment}
+
+\begin{comment}
 
 \section{Special Issue Keywords }
 
@@ -191,25 +200,25 @@ Sets out the importance of the area on which the special issue will focus;
 \end{comment}
 
 As quoted from Shalf\cite{shalf2020future},
-``Moore’s Law [1] is a techno-economic model that has enabled the IT industry to double the performance and functionality of digital electronics roughly every 2 years within a fixed cost, power and area. This expectation has led to a relatively stable ecosystem (e.g. electronic design automation tools, compilers, simulators and emulators) built around general-purpose processor technologies, such as the ×86, ARM and Power instruction set architectures. However, within a decade, the technological underpinnings for the process that Gordon Moore described will come to an end, as lithography gets down to atomic scale. At that point, it will be feasible to create lithographically produced devices with dimensions nearing atomic scale, where a dozen or fewer silicon atoms are present across critical device features, and will therefore represent a practical limit for implementing logic gates for digital computing [2]. Indeed, the ITRS (International Technology Roadmap for Semiconductors), which has tracked the historical improvements over the past 30 years, has projected no improvements beyond 2021, as shown in figure 1, and subsequently disbanded, having no further purpose. The classical technological driver that has underpinned Moore’s Law for the past 50 years is failing [3] and is anticipated to flatten by 2025, as shown in figure 2. Evolving technology in the absence of Moore’s Law will require an investment now in computer architecture and the basic sciences (including materials science), to study candidate replacement materials and alternative device physics to foster continued technology scaling.'' References one through three in the above quote 
+``Moore’s Law [1] is a techno-economic model that has enabled the IT industry to double the performance and functionality of digital electronics roughly every 2 years within a fixed cost, power and area. This expectation has led to a relatively stable ecosystem (e.g. electronic design automation tools, compilers, simulators and emulators) built around general-purpose processor technologies, such as the ×86, ARM and Power instruction set architectures. However, within a decade, the technological underpinnings for the process that Gordon Moore described will come to an end, as lithography gets down to atomic scale. At that point, it will be feasible to create lithographically produced devices with dimensions nearing atomic scale, where a dozen or fewer silicon atoms are present across critical device features, and will therefore represent a practical limit for implementing logic gates for digital computing [2]. Indeed, the ITRS (International Technology Roadmap for Semiconductors), which has tracked the historical improvements over the past 30 years, has projected no improvements beyond 2021, as shown in figure 1, and subsequently disbanded, having no further purpose. The classical technological driver that has underpinned Moore’s Law for the past 50 years is failing [3] and is anticipated to flatten by 2025, as shown in figure 2. Evolving technology in the absence of Moore’s Law will require an investment now in computer architecture and the basic sciences (including materials science), to study candidate replacement materials and alternative device physics to foster continued technology scaling.'' 
+\par\noindent
+References one through three in the above quote 
 correspond to the following references respectively: 
 \cite{moore2021cramming}\cite{mack2015multiple}\cite{markov2014limits}.
-
+\par\noindent
 In Figure 3 of the article by Shalf\cite{shalf2020future}, a roadmap is provided for possible paths forward when the density of circuits on classical computers exceeds a critical value.  There are three categories: (a) roadmap for the next ten years, (b) 20 years, and (c) ``Decades beyond exascale,'' ``New Models of Computation.'' For category (c), some of the prospective technology listed is:
 (i) approximate computing, (ii) adiabatic reversible, (iii) Analog, (iv) Neuromorhic, and (v) quantum.
-
+\par\noindent
 Of the ``new models of computation'' listed in 
-Shalf's article\cite{shalf2020future}, this special issue will address
-the ``Numerical Methods for Engineering Quantum Computers'' aspects associated with the
-emerging ``quantum computing'' paradigm.  As outlined by
+Shalf's article\cite{shalf2020future}, this review article will address
+the ``Numerical Methods for Engineering Quantum Computers'' aspects associated with the emerging ``quantum computing'' paradigm.  As outlined by
 Gamble\cite{gamble2019quantum}, the development of reliable quantum
-computers will have a tranformative effect on computer technology.  That being said, right now we are in the ``Noisy Intermediate-Scale Quantum''\cite{callison2022hybrid} (NISQ) era.  The purpose of this special issue is to bring to the forefront the current research being done, from the computational perspective, in order to move beyond the NISQ era.
-
+computers will have a tranformative effect on computer technology.  That being said, right now we are in the ``Noisy Intermediate-Scale Quantum''\cite{callison2022hybrid} (NISQ) era.  The purpose of this review article is to bring to the forefront the current research being done, from the computational perspective, in order to move beyond the NISQ era.
 
 \section{preiliminaries}
 In order to appreciate the complexities associated with designing a quantum computer, it is suggested that one first gain some intuition on electricity and magnetism.
-
-The phenomena of electromagnetism and light is a very complex field, in of itself.  One could choose as a starting point Maxwell's equations which are,
+\par\noindent
+Classical electromagnetism is a very complex topic, in of itself.  One could choose as a starting point Maxwell's equations which are,
 \begin{align}
     \label{eq:gauss_law_e}
     \nabla \cdot \mathbf{E} &= \frac{\rho}{\epsilon_0} \quad \text{(Gauss's Law for Electricity)} \\
@@ -224,16 +233,28 @@ Also, there is the Lorentz force law:
 \begin{eqnarray*}
 \textbf{F} = q(\textbf{E} + \textbf{v} \times \textbf{B})
 \end{eqnarray*}
-
+Maxwell's equations and the Lorentz force can be formulated in such a way as to satisfy the invarience condition under the rectilinear Lorentz transformation:
+\begin{eqnarray*}
+t'=\gamma(t-\frac{vx}{c^{2}}) \\
+x'=\gamma(x-vt) \\
+y'=y \\
+z'=z \\
+\gamma=\frac{1}{\sqrt{1-v^{2}/c^{2}}}
+\end{eqnarray*}
+\par\noindent
 A good textbook that describes these fundamentals is by Purcell and Morin third edition\cite{purcell2013electricity}.
-
+\par\noindent
 Maxwell's equations, and relativity though are not sufficient to describe the
 quantum nature of matter and light.  Matter and Light, when considering
 small enough scales, have a dual particle and wave property to them.  Also
 Matter and light posess discrete ``quantum,'' energy levels.
 For a good reference, see the following quantum mechanics 
-textbook\cite{sakurai2020modern}.  
-
+textbook\cite{sakurai2020modern}.  Experiments which cannot be
+explained by classical electromagnetism are the
+Stern-Gerlach experiment\cite{gerlach1989experimentelle}, 
+the photo-electric effect\cite{wheaton1978philipp}, and
+the electron double slit experiment\cite{bach2013controlled}.
+\par\noindent
 The mathematical model that describes the dynamics of matter and light, including ``quantum'' properties and the dual particle wave property is Schrodinger's equation:
 \begin{eqnarray*}
 i\hbar \frac{\partial}{\partial t} \Psi(\mathbf{r}, t) = \hat{H} \Psi(\mathbf{r}, t)
@@ -304,9 +325,31 @@ i\frac{\partial \psi}{\partial t} = -\frac{1}{2} \nabla^2 \psi + V(\psi) \psi
 	   Lin Lin
 \end{comment}
 
+\section{Quantum Algorithms for benchmarking Quantum Computers}
 
+\verb=https://www.ibm.com/quantum/qiskit=
+\begin{itemize}
+\item Gopalakrishnan Meena et al\cite{gopalakrishnan2024solving}
+\item Jin et al\cite{doi:10.1137/23M1563451}
+\item Jin et al (heat equation)\cite{jin2024quantum}
+\item Beck et al\cite{beck2024integrating}
+\item Harrow et al\cite{harrow2009quantum}
+\item Daribayev et al\cite{daribayev2023implementation}
+\item Bravo-Prieto et al\cite{bravo2023variational}
+\end{itemize}
 
+\section{Quantum Algorithms with error correction logic}
 
+\begin{itemize}
+\item Kubischta, Eric and Teixeira, Ian\cite{kubischta2023family}
+\end{itemize}
+
+\section{Control and optimization of numerical models for open
+  quantum systems}
+
+\begin{itemize}
+\item Günther et al\cite{9651392}
+\end{itemize}
 
 \begin{comment}
 
