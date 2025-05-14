@@ -1,3 +1,10 @@
+# pip3 install qiskit?
+# python3 -m venv venv_sussman
+# source venv_sussman/bin/activate  (this step must be done upon reboot)
+# python3 -m pip install qiskit
+# pip3 install qiskit-aer
+# pip3 install matplotlib
+# python3 hadamard_gate.py
 # Import necessary libraries
 #from qiskit import QuantumCircuit, Aer, execute
 #from qiskit import QuantumCircuit, execute, transpile

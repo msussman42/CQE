@@ -1,3 +1,13 @@
+# pip3 install qiskit?
+# python3 -m venv venv_sussman
+# source venv_sussman/bin/activate  (this step must be done upon reboot)
+# python3 -m pip install qiskit
+# pip3 install qiskit-aer
+# pip3 install matplotlib
+# python3 hadamard_gate.py
+#Transpilation is the process of rewriting a given input circuit to 
+#match the topology of a specific quantum device, and optimize the 
+#circuit instructions for execution on noisy quantum computers.
 from qiskit import transpile
 from qiskit.circuit.library import RealAmplitudes
 from qiskit.quantum_info import SparsePauliOp
@@ -12,13 +22,25 @@ from qiskit_aer.primitives import EstimatorV2
 psi1 = transpile(RealAmplitudes(num_qubits=2, reps=2), sim, optimization_level=0)
 psi2 = transpile(RealAmplitudes(num_qubits=2, reps=3), sim, optimization_level=0)
 
+#Pauli matrices:
+# X=(0 1 & 1 0)  X|0>=X( 1 0) =(0 1) =|1>
+# Y=(0 -i & i 0) Y|0>=Y( 1 0) =(0 i) = 0+i(i)=-1 + 0 i=-|0>
+# Z=(1 0 & 0 -1) Z|0>=Z( 1 0) = ??? 
+# 5 qubit Hamiltonian H=Z1 X4 + 2 Y0 Y3
+# op = SparsePauliOp.from_list([("XIIZI", 1), ("IYIIY", 2)])
+# H1=I0 I1 + 2 Z0 I1 + 3 I0 X1
 H1 = SparsePauliOp.from_list([("II", 1), ("IZ", 2), ("XI", 3)])
+# H2=Z0 I1
 H2 = SparsePauliOp.from_list([("IZ", 1)])
+# H3=I0 Z1 + Z0 Z1
 H3 = SparsePauliOp.from_list([("ZI", 1), ("ZZ", 1)])
 
-theta1 = [0, 1, 1, 2, 3, 5]
-theta2 = [0, 1, 1, 2, 3, 5, 8, 13]
-theta3 = [1, 2, 3, 4, 5, 6]
+# Fibonocci sequence x_n = x_n-1 + x_n-2
+theta1 = [0, 1, 1, 2, 3, 5] # list of numbers
+# Fibonocci sequence x_n = x_n-1 + x_n-2
+theta2 = [0, 1, 1, 2, 3, 5, 8, 13] # list of numbers
+# "counting numbers"
+theta3 = [1, 2, 3, 4, 5, 6] # list of numbers
 
 estimator = EstimatorV2()
 
@@ -42,6 +64,8 @@ from qiskit_aer.primitives import SamplerV2
 from qiskit import QuantumCircuit
 
 # create a Bell circuit
+# |0> --- H --- CNOT   =  (|00>+|11>)/sqrt(2)
+# |0> --------- CNOT
 bell = QuantumCircuit(2)
 bell.h(0)
 bell.cx(0, 1)
