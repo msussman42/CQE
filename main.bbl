@@ -228,6 +228,12 @@
 \newblock Light interaction with photonic and plasmonic resonances.
 \newblock {\em Laser \& Photonics Reviews 12}, 5 (2018), 1700113.
 
+\bibitem{lee2024gpu}
+{\sc Lee, C.-M., and Ye, S.-J.}
+\newblock A gpu-accelerated monte carlo code, rt2 for coupled transport of
+  photon, electron/positron, and neutron.
+\newblock {\em Physics in Medicine \& Biology 69}, 17 (2024), 175005.
+
 \bibitem{lidar2019lecture}
 {\sc Lidar, D.~A.}
 \newblock Lecture notes on the theory of open quantum systems.

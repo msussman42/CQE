@@ -1,48 +1,48 @@
-This is BibTeX, Version 0.99d (TeX Live 2024)
+This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: acm.bst
 Database file #1: references.bib
 Warning--empty journal in moore2021cramming
-You've used 67 entries,
+You've used 68 entries,
             2253 wiz_defined-function locations,
-            918 strings with 18007 characters,
-and the built_in function-call counts, 25978 in all, are:
-= -- 2350
-> -- 1679
+            924 strings with 18190 characters,
+and the built_in function-call counts, 26282 in all, are:
+= -- 2379
+> -- 1691
 < -- 0
-+ -- 693
-- -- 618
-* -- 2351
-:= -- 4369
-add.period$ -- 197
-call.type$ -- 67
-change.case$ -- 503
++ -- 699
+- -- 622
+* -- 2378
+:= -- 4419
+add.period$ -- 200
+call.type$ -- 68
+change.case$ -- 508
 chr.to.int$ -- 0
-cite$ -- 68
-duplicate$ -- 719
-empty$ -- 1783
-format.name$ -- 618
-if$ -- 5179
+cite$ -- 69
+duplicate$ -- 728
+empty$ -- 1809
+format.name$ -- 622
+if$ -- 5241
 int.to.chr$ -- 0
-int.to.str$ -- 67
-missing$ -- 67
-newline$ -- 334
-num.names$ -- 134
-pop$ -- 464
+int.to.str$ -- 68
+missing$ -- 68
+newline$ -- 339
+num.names$ -- 136
+pop$ -- 467
 preamble$ -- 1
-purify$ -- 439
+purify$ -- 443
 quote$ -- 0
-skip$ -- 454
+skip$ -- 459
 stack$ -- 0
-substring$ -- 1433
-swap$ -- 187
+substring$ -- 1457
+swap$ -- 189
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 262
+type$ -- 266
 warning$ -- 1
-while$ -- 212
-width$ -- 69
-write$ -- 660
+while$ -- 215
+width$ -- 70
+write$ -- 670
 (There was 1 warning)
