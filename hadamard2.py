@@ -24,8 +24,8 @@ psi2 = transpile(RealAmplitudes(num_qubits=2, reps=3), sim, optimization_level=0
 
 #Pauli matrices:
 # X=(0 1 & 1 0)  X|0>=X( 1 0) =(0 1) =|1>
-# Y=(0 -i & i 0) Y|0>=Y( 1 0) =(0 i) = 0+i(i)=-1 + 0 i=-|0>
-# Z=(1 0 & 0 -1) Z|0>=Z( 1 0) = ??? 
+# Y=(0 -i & i 0) Y|0>=Y( 1 0) =(0 i) = i|1>
+# Z=(1 0 & 0 -1) Z|0>=Z( 1 0) =(1 0) =|0> 
 # 5 qubit Hamiltonian H=Z1 X4 + 2 Y0 Y3
 # op = SparsePauliOp.from_list([("XIIZI", 1), ("IYIIY", 2)])
 # H1=I0 I1 + 2 Z0 I1 + 3 I0 X1
