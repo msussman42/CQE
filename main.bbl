@@ -89,6 +89,11 @@
 \newblock In {\em 2024 International Conference on Quantum Communications,
   Networking, and Computing (QCNC)\/} (2024), pp.~304--311.
 
+\bibitem{cheng2025modeling}
+{\sc Cheng, G., and Guo, J.}
+\newblock Modeling correlated-noise in silicon spin qubit device.
+\newblock {\em APL Quantum 2}, 1 (2025).
+
 \bibitem{cong2019quantum}
 {\sc Cong, I., Choi, S., and Lukin, M.~D.}
 \newblock Quantum convolutional neural networks.
@@ -377,6 +382,12 @@
 \bibitem{somma2024shadowhamiltoniansimulation}
 {\sc Somma, R.~D., King, R., Kothari, R., O'Brien, T., and Babbush, R.}
 \newblock Shadow hamiltonian simulation, 2024.
+
+\bibitem{sun2025control}
+{\sc Sun, H., and Galperin, M.}
+\newblock Control of open quantum systems: The nonequilibrium green’s
+  function perspective.
+\newblock {\em APL Quantum 2}, 1 (2025).
 
 \bibitem{doi:10.1137/23M161848X}
 {\sc Theisen, L., and Stamm, B.}
