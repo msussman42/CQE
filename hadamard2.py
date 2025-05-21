@@ -9,6 +9,7 @@
 #match the topology of a specific quantum device, and optimize the 
 #circuit instructions for execution on noisy quantum computers.
 from qiskit import transpile
+from qiskit import QuantumCircuit
 from qiskit.circuit.library import RealAmplitudes
 from qiskit.quantum_info import SparsePauliOp
 from qiskit_aer import AerSimulator
@@ -21,6 +22,11 @@ from qiskit_aer.primitives import EstimatorV2
 
 psi1 = transpile(RealAmplitudes(num_qubits=2, reps=2), sim, optimization_level=0)
 psi2 = transpile(RealAmplitudes(num_qubits=2, reps=3), sim, optimization_level=0)
+
+ansatz=RealAmplitudes(num_qubits=2,reps=2,insert_barriers=True,flatten=True)
+qc=QuantumCircuit(2)
+qc.compose(ansatz,inplace=True)
+print(qc.draw())
 
 #Pauli matrices:
 # X=(0 1 & 1 0)  X|0>=X( 1 0) =(0 1) =|1>
@@ -44,6 +50,12 @@ theta3 = [1, 2, 3, 4, 5, 6] # list of numbers
 
 estimator = EstimatorV2()
 
+# H=X Lambda X^*      HX=X Lambda
+# psi= a x1 + b x2
+# psi^* H psi = (a x1^* + b x2^*)X Lambda X^* (a x1 + b x2)=
+# H psi=X Lambda X^* (a x1 + b x2)=X Lambda ( a & b)=
+# X ( lambda1 a & lambda2 b ) =lambda1 a x1 + lambda2 b x2
+# 
 # calculate [ [<psi1(theta1)|H1|psi1(theta1)>,
 #              <psi1(theta3)|H3|psi1(theta3)>],
 #             [<psi2(theta2)|H2|psi2(theta2)>] ]
