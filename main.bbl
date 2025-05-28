@@ -223,6 +223,12 @@
   computers.
 \newblock {\em Physical Review A 108}, 5 (2023), L050401.
 
+\bibitem{kim2023evidence}
+{\sc Kim, Y., Eddins, A., Anand, S., Wei, K.~X., Van Den~Berg, E., Rosenblatt,
+  S., Nayfeh, H., Wu, Y., Zaletel, M., Temme, K., et~al.}
+\newblock Evidence for the utility of quantum computing before fault tolerance.
+\newblock {\em Nature 618}, 7965 (2023), 500--505.
+
 \bibitem{kubischta2023family}
 {\sc Kubischta, E., and Teixeira, I.}
 \newblock Family of quantum codes with exotic transversal gates.
