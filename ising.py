@@ -21,8 +21,13 @@ import numpy as np
 SYGate=UnitaryGate(YGate().power(1/2),label=r"$\sqrt{Y}$")
 SYdgGate=UnitaryGate(SYGate.inverse(),label=r"$\sqrt{Y}^\dag$")
 
-def generate_1d_tfim_circuit(num_qubits, num_trotter_steps, rx_angle,trotter_barriers=False,layer_barriers=False):
-    qc=QuantumCircuit(num_qubits);
+def generate_1d_tfim_circuit(num_qubits, num_trotter_steps, rx_angle,num_cl_bits=0,trotter_barriers=False,layer_barriers=False):
+
+    if num_cl_bits==0:
+        qc=QuantumCircuit(num_qubits)
+    else:
+        qc=QuantumCircuit(num_qubits,num_cl_bits)
+
     for trotter_step in range(num_trotter_steps):
         add_1d_tfim_trotter_layer(qc,rx_angle,layer_barriers)
         if trotter_barriers:
@@ -52,11 +57,61 @@ def add_1d_tfim_trotter_layer(qc,rx_angle,layer_barriers=False):
     if layer_barriers:
         qc.barrier()
 
-num_qubits=6
+def append_mirrored_1d_tfim_circuit(qc,num_qubits, num_trotter_steps, rx_angle,trotter_barriers=False,layer_barriers=False):
+    for trotter_step in range(num_trotter_steps):
+        add_mirrored_1d_tfim_trotter_layer(qc,rx_angle,layer_barriers)
+        if trotter_barriers:
+            qc.barrier()
+    return qc
+
+def add_mirrored_1d_tfim_trotter_layer(qc,rx_angle,layer_barriers=False):
+    qc.rx(-rx_angle,list(range(qc.num_qubits)))
+
+    #adding Rzz in the odd layers
+    for i in range(1,qc.num_qubits-1,2):
+        qc.append(SYGate,[i+1])
+        qc.cx(i,i+1)
+        qc.append(SYdgGate,[i+1])
+        qc.s([i,i+1])
+
+    if layer_barriers:
+        qc.barrier()
+
+    #adding Rzz in the even layers
+    for i in range(0,qc.num_qubits-1,2):
+        qc.append(SYGate,[i+1])
+        qc.cx(i,i+1)
+        qc.append(SYdgGate,[i+1])
+        qc.s([i,i+1])
+
+    if layer_barriers:
+        qc.barrier()
+
+
+
+#num_qubits=6
 num_trotter_steps=1
 rx_angle=0.5*np.pi
 
-qc=generate_1d_tfim_circuit(num_qubits,num_trotter_steps,rx_angle,trotter_barriers=True,layer_barriers=True)
+max_trotter_steps=10
+num_qubits=100
+measured_qubits=[49,50]
+
+qc_list=[]
+for trotter_step in range(max_trotter_steps):
+    qc=generate_1d_tfim_circuit(num_qubits,num_trotter_steps,rx_angle,num_cl_bits=len(measured_qubits),trotter_barriers=True,layer_barriers=True)
+    append_mirrored_1d_tfim_circuit(qc,num_qubits,num_trotter_steps,rx_angle,trotter_barriers=True,layer_barriers=True)
+    qc.measure(measured_qubits,list(range(len(measured_qubits))))
+    qc_list.append(qc)
+
 #qc.draw(output='mpl',fold=-1)
-print(qc)
+
+print(qc_list[1])
+simulator=AerSimulator()
+result=simulator.run(qc_list[1],shots=10).result()
+counts=result.get_counts(qc_list[1])
+print(result)
+print(counts)
+plot_histogram(counts).savefig('Qiskit_plot.png')
+plt.show()
 input("press enter to continue...")
