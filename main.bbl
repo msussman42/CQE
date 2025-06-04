@@ -276,6 +276,12 @@
 \newblock Dense outputs from quantum simulations.
 \newblock {\em Journal of Computational Physics 514\/} (2024), 113213.
 
+\bibitem{liu2024natural}
+{\sc Liu, S., Osher, S., and Li, W.}
+\newblock A natural primal-dual hybrid gradient method for adversarial neural
+  network training on solving partial differential equations.
+\newblock {\em arXiv preprint arXiv:2411.06278\/} (2024).
+
 \bibitem{PhysRevA.107.062406}
 {\sc Lotshaw, P.~C., Battles, K.~D., Gard, B., Buchs, G., Humble, T.~S., and
   Herold, C.~D.}
