@@ -89,6 +89,12 @@
 \newblock In {\em 2024 International Conference on Quantum Communications,
   Networking, and Computing (QCNC)\/} (2024), pp.~304--311.
 
+\bibitem{chen2025non}
+{\sc Chen, Z.-Y., Goetting, I., Toh, G., Yu, Y., Shalaev, M., Saha, S.,
+  Kalakuntla, A., Shi, H.~B., Monroe, C., Kozhanov, A., et~al.}
+\newblock Non-invasive mid-circuit measurement and reset on atomic qubits.
+\newblock {\em arXiv preprint arXiv:2504.12538\/} (2025).
+
 \bibitem{cheng2025modeling}
 {\sc Cheng, G., and Guo, J.}
 \newblock Modeling correlated-noise in silicon spin qubit device.
@@ -303,6 +309,12 @@
 \newblock {\em Philosophical Transactions of the Royal Society A: Mathematical,
   Physical and Engineering Sciences 381}, 2241 (2023), 20210414.
 
+\bibitem{luo2025quantumsimulationbubblenucleation}
+{\sc Luo, D., Surace, F.~M., De, A., Lerose, A., Bennewitz, E.~R., Ware, B.,
+  Schuckert, A., Davoudi, Z., Gorshkov, A.~V., Katz, O., and Monroe, C.}
+\newblock Quantum simulation of bubble nucleation across a quantum phase
+  transition, 2025.
+
 \bibitem{mack2015multiple}
 {\sc Mack, C.}
 \newblock The multiple lives of moore's law.
@@ -354,6 +366,13 @@
 \newblock Wavetrain: A python package for numerical quantum mechanics of
   chain-like systems based on tensor trains.
 \newblock {\em The Journal of Chemical Physics 158}, 16 (2023).
+
+\bibitem{saha2025high}
+{\sc Saha, S., Shalaev, M., O’Reilly, J., Goetting, I., Toh, G., Kalakuntla,
+  A., Yu, Y., and Monroe, C.}
+\newblock High-fidelity remote entanglement of trapped atoms mediated by
+  time-bin photons.
+\newblock {\em Nature Communications 16}, 1 (2025), 2533.
 
 \bibitem{saurabh2023conceptual}
 {\sc Saurabh, N., Jha, S., and Luckow, A.}
@@ -425,6 +444,13 @@
 \newblock State of practice: evaluating gpu performance of state vector and
   tensor network methods.
 \newblock {\em arXiv preprint arXiv:2401.06188\/} (2024).
+
+\bibitem{yu2025situ}
+{\sc Yu, Y., Yan, K., Biswas, D., Zhang, V.~N., Harraz, B., Noel, C., Monroe,
+  C., and Kozhanov, A.}
+\newblock In-situ mid-circuit qubit measurement and reset in a single-species
+  trapped-ion quantum computing system.
+\newblock {\em arXiv preprint arXiv:2504.12544\/} (2025).
 
 \bibitem{zhang2017observation}
 {\sc Zhang, J., Pagano, G., Hess, P.~W., Kyprianidis, A., Becker, P., Kaplan,
