@@ -420,6 +420,13 @@
   function perspective.
 \newblock {\em APL Quantum 2}, 1 (2025).
 
+\bibitem{PRXQuantum.3.030307}
+{\sc Tennant, D.~M., Martinez, L.~A., Beck, K.~M., O'Kelley, S.~R., Wilen,
+  C.~D., McDermott, R., DuBois, J.~L., and Rosen, Y.~J.}
+\newblock Low-frequency correlated charge-noise measurements across multiple
+  energy transitions in a tantalum transmon.
+\newblock {\em PRX Quantum 3\/} (Jul 2022), 030307.
+
 \bibitem{doi:10.1137/23M161848X}
 {\sc Theisen, L., and Stamm, B.}
 \newblock A scalable two-level domain decomposition eigensolver for periodic
