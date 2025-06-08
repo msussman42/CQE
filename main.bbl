@@ -117,6 +117,16 @@
   quantum circuit on early fault-tolerant quantum computers.
 \newblock {\em Quantum 7\/} (2023), 1136.
 
+\bibitem{fei2025switching}
+{\sc Fei, X., Brady, L., Larson, J., Leyffer, S., and Shen, S.}
+\newblock Switching time optimization for binary quantum optimal control.
+\newblock {\em ACM Transactions on Quantum Computing 6}, 1 (2025), 1--38.
+
+\bibitem{fei2023binary}
+{\sc Fei, X., Brady, L.~T., Larson, J., Leyffer, S., and Shen, S.}
+\newblock Binary control pulse optimization for quantum systems.
+\newblock {\em Quantum 7\/} (2023), 892.
+
 \bibitem{PhysRevB.67.121301}
 {\sc Friesen, M., Rugheimer, P., Savage, D.~E., Lagally, M.~G., van~der Weide,
   D.~W., Joynt, R., and Eriksson, M.~A.}
