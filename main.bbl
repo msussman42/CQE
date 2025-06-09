@@ -462,6 +462,12 @@
   tensor network methods.
 \newblock {\em arXiv preprint arXiv:2401.06188\/} (2024).
 
+\bibitem{viamontes2004high}
+{\sc Viamontes, G.~F., Markov, I.~L., and Hayes, J.~P.}
+\newblock High-performance quidd-based simulation of quantum circuits.
+\newblock In {\em Proceedings Design, Automation and Test in Europe Conference
+  and Exhibition\/} (2004), vol.~2, IEEE, pp.~1354--1355.
+
 \bibitem{yu2025situ}
 {\sc Yu, Y., Yan, K., Biswas, D., Zhang, V.~N., Harraz, B., Noel, C., Monroe,
   C., and Kozhanov, A.}
@@ -475,5 +481,12 @@
 \newblock Observation of a many-body dynamical phase transition with a 53-qubit
   quantum simulator.
 \newblock {\em Nature 551}, 7682 (2017), 601--604.
+
+\bibitem{zhang2024quantum}
+{\sc Zhang, Q., Saligane, M., Kim, H.-S., Blaauw, D., Tzimpragos, G., and
+  Sylvester, D.}
+\newblock Quantum circuit simulation with fast tensor decision diagram.
+\newblock In {\em 2024 25th International Symposium on Quality Electronic
+  Design (ISQED)\/} (2024), IEEE, pp.~1--8.
 
 \end{thebibliography}
