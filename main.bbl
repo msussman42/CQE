@@ -245,6 +245,11 @@
 \newblock Evidence for the utility of quantum computing before fault tolerance.
 \newblock {\em Nature 618}, 7965 (2023), 500--505.
 
+\bibitem{kluber2023trotterization}
+{\sc Kluber, G.}
+\newblock Trotterization in quantum theory.
+\newblock {\em arXiv preprint arXiv:2310.13296\/} (2023).
+
 \bibitem{kubischta2023family}
 {\sc Kubischta, E., and Teixeira, I.}
 \newblock Family of quantum codes with exotic transversal gates.
