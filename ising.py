@@ -2,6 +2,50 @@
 # Evidence for the utility of quantum computing before fault
 # tolerance.
 # What is more optimal? with or without fault tolerance?
+# Numerical Recipes in Quantum Information Theory and Quantum Computing.
+# Ramkarthik and Solanki
+# 1 Qubit=a|0>+b|1>  |a|^2 + |b|^2=1  |0>=(1 0)=|+> |1>=(0 1)=|->
+# a and b are complex numbers.
+# given q a "qubit" then q \in C^{2}
+# q1 and q2 belong to a product space C^{2} \otimes C^{2}
+# |q2 q1>=a|00> + b|01> + c|10> + d|11>
+# |00>=|0>\otimes|0>=(1 0 0 0)
+# |10>=|1>\otimes|0>=(0 1)\otimes (1 0)=(0 0 1 0)
+# chapter 6, page 297 Fortran Recipes
+# "Hamiltonian Ising"
+# section 6.1.1, H_{ising}=\sum_{i=1}^{N} B_{i} \sigma_{i}^{x}
+# \sigma_{i}^{x}=(0 1;1 0) \sigmax |0> = (0 1;1 0)(1 0)=(0 1)=|1>
+#                          \sigmax |1> = (0 1;1 0)(0 1)=(1 0)=|0>
+# i.e \sigma_{i}^{x} is single qubit "NOT" gate.
+# What is "H_{ising}" for a 3 qubit example?
+# H is a 2^3 x 2^3 matrix
+# H maps C^{2}^{\otimes 3} to C^{2}^{\otimes 3} and the dimensions of
+# H are the same as the dimensions of C^{2}^{\otimes 3}.
+# Remark:sigmax \otimes sigmax \otimes \sigmax is an 8x8 matrix=
+# 
+#|q2 q1 q0>=a0|000>+a1|001>+a2|010> + ... + a7|111> \in C^{2}^{\otimes 3} =
+# C^{2}\otimes C^{2}\otimes C^{2}
+# |011> = (0 0 0 1 0 0 0 0)^{T}
+# |011> = |01> \otimes |1>=(0 1 0 0) \otimes (0 1)=(0 0 0 1 0 0 0 0)
+# \sigmax \otimes \sigmax=(0 1;1 0) \otimes (0 1; 1 0)=
+# ( 0 0 0 1;
+#   0 0 1 0;
+#   0 1 0 0;
+#   1 0 0 0 )
+# back to H_{ising}
+# I2=2 x 2 identity matrix
+# H_{ising}|000>=B1 \sigma_{1}|000>+B2 \sigma_{2}|000>+B3 \sigma_{3}|000>
+#\sigma_{3} \equiv \sigma\otimes I2 \otimes I2
+#\sigma_{2} \equiv I2 \otimes \sigma \otimes I2
+#\sigma_{1} \equiv I2 \otimes I2 \otimes \sigma 
+#Fact or Fiction?
+#(A \otimes B \otimes C) (|q2> \otimes |q1> \otimes |q0>)=
+#(A|q2>)\otimes(B|q1>)\otimes(C|q0>) ?
+# We will stop here for today, and for next time, resume with the Ising 
+# models, in particular sections 6.1.1, ...,6.2.4.2
+# 6.2.4.2 is difficult, it will be a victory to understand 6.1.1 for next
+# meeting (which is on Monday now, not Wednesday)
+# 6.2.4.2 H_{ising}=-J sum sigma_i^z sigma_{i+1}^z - B sunm sigma_{i}^x 
 # pip3 install qiskit?
 # python3 -m venv venv_sussman
 # source venv_sussman/bin/activate  (this step must be done upon reboot)
