@@ -117,6 +117,18 @@
   quantum circuit on early fault-tolerant quantum computers.
 \newblock {\em Quantum 7\/} (2023), 1136.
 
+\bibitem{SpancerDongthesis}
+{\sc Dong, X.}
+\newblock {\em The self-consistent field energy landscape and its application
+  to describing electron correlation}.
+\newblock Phd thesis, University of Louisville, Louisville, KY, 2023.
+
+\bibitem{drozdov1998improved}
+{\sc Drozdov, A.~N.}
+\newblock Improved feynman’s path integral method with a large time step:
+  Formalism and applications.
+\newblock {\em The Journal of chemical physics 108}, 16 (1998), 6580--6587.
+
 \bibitem{fei2025switching}
 {\sc Fei, X., Brady, L., Larson, J., Leyffer, S., and Shen, S.}
 \newblock Switching time optimization for binary quantum optimal control.
