@@ -152,6 +152,11 @@
 \newblock In {\em Frontiers of Engineering: Reports on Leading-Edge Engineering
   from the 2018 Symposium\/} (2019), National Academies Press, pp.~5--8.
 
+\bibitem{gleissner2024restricted}
+{\sc Glei{\ss}ner, P., Kruse, G., and Ro{\ss}kopf, A.}
+\newblock Restricted global optimization for qaoa.
+\newblock {\em APL Quantum 1}, 2 (2024).
+
 \bibitem{goodman2025qglab}
 {\sc Goodman, R.~H., Conte, G., and Marzuola, J.~L.}
 \newblock Qglab: A matlab package for computations on quantum graphs.
@@ -214,6 +219,13 @@
 {\sc Ilin, Y., and Arad, I.}
 \newblock Dissipative variational quantum algorithms for gibbs state
   preparation, 2024.
+
+\bibitem{jamet2025anderson}
+{\sc Jamet, F., Lindoy, L.~P., Rath, Y., Lenihan, C., Agarwal, A., Fontana, E.,
+  Simkovic, F., Martin, B.~A., and Rungger, I.}
+\newblock Anderson impurity solver integrating tensor network methods with
+  quantum computing.
+\newblock {\em APL Quantum 2}, 1 (2025).
 
 \bibitem{jiang2024high}
 {\sc Jiang, K., Li, S., and Zhang, J.}
