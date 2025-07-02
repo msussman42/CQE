@@ -4,45 +4,45 @@ The top-level auxiliary file: main.aux
 The style file: acm.bst
 Database file #1: references.bib
 Warning--empty journal in moore2021cramming
-You've used 87 entries,
+You've used 89 entries,
             2253 wiz_defined-function locations,
-            1010 strings with 22360 characters,
-and the built_in function-call counts, 33574 in all, are:
-= -- 3022
-> -- 2234
+            1020 strings with 22667 characters,
+and the built_in function-call counts, 34251 in all, are:
+= -- 3084
+> -- 2273
 < -- 0
-+ -- 922
-- -- 824
-* -- 3040
-:= -- 5683
-add.period$ -- 256
-call.type$ -- 87
-change.case$ -- 664
++ -- 938
+- -- 838
+* -- 3102
+:= -- 5799
+add.period$ -- 262
+call.type$ -- 89
+change.case$ -- 677
 chr.to.int$ -- 0
-cite$ -- 88
-duplicate$ -- 926
-empty$ -- 2256
-format.name$ -- 824
-if$ -- 6662
+cite$ -- 90
+duplicate$ -- 944
+empty$ -- 2306
+format.name$ -- 838
+if$ -- 6797
 int.to.chr$ -- 0
-int.to.str$ -- 87
-missing$ -- 85
-newline$ -- 433
-num.names$ -- 174
-pop$ -- 610
+int.to.str$ -- 89
+missing$ -- 87
+newline$ -- 443
+num.names$ -- 178
+pop$ -- 619
 preamble$ -- 1
-purify$ -- 580
+purify$ -- 591
 quote$ -- 0
-skip$ -- 589
+skip$ -- 599
 stack$ -- 0
-substring$ -- 1730
-swap$ -- 241
+substring$ -- 1770
+swap$ -- 245
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 342
+type$ -- 350
 warning$ -- 1
-while$ -- 269
-width$ -- 89
-write$ -- 855
+while$ -- 275
+width$ -- 91
+write$ -- 875
 (There was 1 warning)

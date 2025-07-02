@@ -364,6 +364,11 @@
 \newblock Limits on fundamental limits to computation.
 \newblock {\em Nature 512}, 7513 (2014), 147--154.
 
+\bibitem{mcclean2018barren}
+{\sc McClean, J.~R., Boixo, S., Smelyanskiy, V.~N., Babbush, R., and Neven, H.}
+\newblock Barren plateaus in quantum neural network training landscapes.
+\newblock {\em Nature communications 9}, 1 (2018), 4812.
+
 \bibitem{moore2021cramming}
 {\sc Moore, G.}
 \newblock Cramming more components onto integrated circuits (1965).
@@ -374,6 +379,11 @@
   software development on ibm’s quantum computers.
 \newblock In {\em Companion Proceedings of the 32nd ACM International
   Conference on the Foundations of Software Engineering\/} (2024), pp.~80--91.
+
+\bibitem{nghiem2023quantum}
+{\sc Nghiem, N.~A., and Wei, T.-C.}
+\newblock Quantum algorithm for estimating largest eigenvalues.
+\newblock {\em Physics Letters A 488\/} (2023), 129138.
 
 \bibitem{nguyen2022tensor}
 {\sc Nguyen, T., Lyakh, D., Dumitrescu, E., Clark, D., Larkin, J., and
