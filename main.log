@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  6 JUL 2025 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  6 JUL 2025 17:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -264,47 +264,47 @@ Overfull \hbox (1.91719pt too wide) in paragraph at lines 393--395
 Mea-sure-ments
  []
 
-Excluding 'comment' comment.
-Underfull \hbox (badness 10000) in paragraph at lines 427--428
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 428--430
+[8] Excluding 'comment' comment.
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 432--433
+Underfull \hbox (badness 10000) in paragraph at lines 429--431
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 434--436
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--439
+Underfull \hbox (badness 10000) in paragraph at lines 435--437
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--442
+Underfull \hbox (badness 10000) in paragraph at lines 438--440
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--445
+Underfull \hbox (badness 10000) in paragraph at lines 442--443
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--451
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
 
  []
 
-(./main.bbl [9] [10] [11] [12] [13]
+
+Underfull \hbox (badness 10000) in paragraph at lines 451--452
+
+ []
+
+[9] (./main.bbl [10] [11] [12] [13]
 Underfull \hbox (badness 1796) in paragraph at lines 290--293
 []\OT1/cmr/m/sc/10 Kluber, G.  \OT1/cmr/m/n/10 Trot-ter-i-za-tion in quan-tum t
 he-ory.  \OT1/cmr/m/it/10 arXiv preprint
@@ -322,10 +322,10 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2904 strings out of 474116
- 42442 string characters out of 5743681
+ 2905 strings out of 474116
+ 42462 string characters out of 5743681
  1935187 words of memory out of 5000000
- 25246 multiletter control sequences out of 15000+600000
+ 25247 multiletter control sequences out of 15000+600000
  564768 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,6n,65p,1705b,224s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -337,7 +337,7 @@ sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 /local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
 local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/l
 ocal/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (17 pages, 171156 bytes).
+Output written on main.pdf (17 pages, 171396 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream

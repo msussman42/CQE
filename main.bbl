@@ -545,6 +545,12 @@
 \newblock In {\em 2024 25th International Symposium on Quality Electronic
   Design (ISQED)\/} (2024), IEEE, pp.~1--8.
 
+\bibitem{zheng2004numerical}
+{\sc Zheng, W., Ying, L.-A., and Ding, P.}
+\newblock Numerical solutions of the schr{\"o}dinger equation for the ground
+  lithium by the finite element method.
+\newblock {\em Applied mathematics and computation 153}, 3 (2004), 685--695.
+
 \bibitem{zoufal2019quantum}
 {\sc Zoufal, C., Lucchi, A., and Woerner, S.}
 \newblock Quantum generative adversarial networks for learning and loading
