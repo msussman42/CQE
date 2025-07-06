@@ -70,6 +70,18 @@
 \newblock Quantum machine learning.
 \newblock {\em Nature 549}, 7671 (2017), 195--202.
 
+\bibitem{blote2002cluster}
+{\sc Bl{\"o}te, H.~W., and Deng, Y.}
+\newblock Cluster monte carlo simulation of the transverse ising model.
+\newblock {\em Physical Review E 66}, 6 (2002), 066110.
+
+\bibitem{cadi2024folded}
+{\sc Cadi~Tazi, L., and Thom, A.~J.}
+\newblock Folded spectrum vqe: A quantum computing method for the calculation
+  of molecular excited states.
+\newblock {\em Journal of Chemical Theory and Computation 20}, 6 (2024),
+  2491--2504.
+
 \bibitem{callison2022hybrid}
 {\sc Callison, A., and Chancellor, N.}
 \newblock Hybrid quantum-classical algorithms in the noisy intermediate-scale
