@@ -227,6 +227,11 @@
   quantum computing.
 \newblock {\em APL Quantum 2}, 1 (2025).
 
+\bibitem{jiang2025review}
+{\sc Jiang, C., Gui, J., Jin, L., and Li, S.}
+\newblock A review on zeroing neural networks.
+\newblock {\em arXiv preprint arXiv:2507.00387\/} (2025).
+
 \bibitem{jiang2024high}
 {\sc Jiang, K., Li, S., and Zhang, J.}
 \newblock High-accuracy numerical methods and convergence analysis for
