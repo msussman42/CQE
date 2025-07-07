@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  6 JUL 2025 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  7 JUL 2025 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -265,67 +265,67 @@ Mea-sure-ments
  []
 
 [8] Excluding 'comment' comment.
-Underfull \hbox (badness 10000) in paragraph at lines 428--429
+Underfull \hbox (badness 10000) in paragraph at lines 430--431
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 429--431
+Underfull \hbox (badness 10000) in paragraph at lines 431--433
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 435--437
+Underfull \hbox (badness 10000) in paragraph at lines 437--439
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 438--440
+Underfull \hbox (badness 10000) in paragraph at lines 440--442
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--443
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--446
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--452
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
 
  []
 
 [9] (./main.bbl [10] [11] [12] [13]
-Underfull \hbox (badness 1796) in paragraph at lines 290--293
+Underfull \hbox (badness 1796) in paragraph at lines 295--298
 []\OT1/cmr/m/sc/10 Kluber, G.  \OT1/cmr/m/n/10 Trot-ter-i-za-tion in quan-tum t
 he-ory.  \OT1/cmr/m/it/10 arXiv preprint
  []
 
 [14] [15]
-Underfull \hbox (badness 1629) in paragraph at lines 450--458
+Underfull \hbox (badness 1629) in paragraph at lines 455--463
 []\OT1/cmr/m/sc/10 Sawaya, N. P., Marti-Dafcik, D., Ho, Y., Ta-bor, D. P.,
  []
 
-[16]) [17] (./main.aux)
+[16]) [17] [18] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2905 strings out of 474116
- 42462 string characters out of 5743681
+ 2906 strings out of 474116
+ 42483 string characters out of 5743681
  1935187 words of memory out of 5000000
- 25247 multiletter control sequences out of 15000+600000
+ 25248 multiletter control sequences out of 15000+600000
  564768 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,6n,65p,1705b,224s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -337,10 +337,10 @@ sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 /local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
 local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/l
 ocal/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (17 pages, 171396 bytes).
+Output written on main.pdf (18 pages, 171855 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
+ 103 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

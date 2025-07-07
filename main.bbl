@@ -75,6 +75,11 @@
 \newblock Cluster monte carlo simulation of the transverse ising model.
 \newblock {\em Physical Review E 66}, 6 (2002), 066110.
 
+\bibitem{bravyi2002fermionic}
+{\sc Bravyi, S.~B., and Kitaev, A.~Y.}
+\newblock Fermionic quantum computation.
+\newblock {\em Annals of Physics 298}, 1 (2002), 210--226.
+
 \bibitem{cadi2024folded}
 {\sc Cadi~Tazi, L., and Thom, A.~J.}
 \newblock Folded spectrum vqe: A quantum computing method for the calculation
