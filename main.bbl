@@ -386,6 +386,11 @@
 \newblock Limits on fundamental limits to computation.
 \newblock {\em Nature 512}, 7513 (2014), 147--154.
 
+\bibitem{mcardle2020quantum}
+{\sc McArdle, S., Endo, S., Aspuru-Guzik, A., Benjamin, S.~C., and Yuan, X.}
+\newblock Quantum computational chemistry.
+\newblock {\em Reviews of Modern Physics 92}, 1 (2020), 015003.
+
 \bibitem{mcclean2018barren}
 {\sc McClean, J.~R., Boixo, S., Smelyanskiy, V.~N., Babbush, R., and Neven, H.}
 \newblock Barren plateaus in quantum neural network training landscapes.
@@ -504,6 +509,13 @@
   schrödinger eigenstates in anisotropically expanding domains.
 \newblock {\em SIAM Journal on Scientific Computing 46}, 5 (2024),
   A3067--A3093.
+
+\bibitem{tilly2022variational}
+{\sc Tilly, J., Chen, H., Cao, S., Picozzi, D., Setia, K., Li, Y., Grant, E.,
+  Wossnig, L., Rungger, I., Booth, G.~H., et~al.}
+\newblock The variational quantum eigensolver: a review of methods and best
+  practices.
+\newblock {\em Physics Reports 986\/} (2022), 1--128.
 
 \bibitem{tuysuz2024learning}
 {\sc T{\"u}ys{\"u}z, C., Demidik, M., Coopmans, L., Rinaldi, E., Croft, V.,
