@@ -436,12 +436,27 @@
   bath.
 \newblock {\em Phys. Rev. B 101\/} (Apr 2020), 155134.
 
+\bibitem{PhysRevX.6.031007}
+{\sc O'Malley, P. J.~J., Babbush, R., Kivlichan, I.~D., Romero, J., McClean,
+  J.~R., Barends, R., Kelly, J., Roushan, P., Tranter, A., Ding, N., Campbell,
+  B., Chen, Y., Chen, Z., Chiaro, B., Dunsworth, A., Fowler, A.~G., Jeffrey,
+  E., Lucero, E., Megrant, A., Mutus, J.~Y., Neeley, M., Neill, C., Quintana,
+  C., Sank, D., Vainsencher, A., Wenner, J., White, T.~C., Coveney, P.~V.,
+  Love, P.~J., Neven, H., Aspuru-Guzik, A., and Martinis, J.~M.}
+\newblock Scalable quantum simulation of molecular energies.
+\newblock {\em Phys. Rev. X 6\/} (Jul 2016), 031007.
+
 \bibitem{parekh2021quantum}
 {\sc Parekh, R., Ricciardi, A., Darwish, A., and DiAdamo, S.}
 \newblock Quantum algorithms and simulation for parallel and distributed
   quantum computing.
 \newblock In {\em 2021 IEEE/ACM Second International Workshop on Quantum
   Computing Software (QCS)\/} (2021), IEEE, pp.~9--19.
+
+\bibitem{qing2023usevqecalculateground}
+{\sc Qing, M., and Xie, W.}
+\newblock Use vqe to calculate the ground energy of hydrogen molecules on ibm
+  quantum, 2023.
 
 \bibitem{riedel2023wavetrain}
 {\sc Riedel, J., Gel{\ss}, P., Klein, R., and Schmidt, B.}
