@@ -255,6 +255,12 @@
   schr{\"o}dinger equation with incommensurate potentials.
 \newblock {\em Journal of Scientific Computing 101}, 1 (2024), 18.
 
+\bibitem{jiang2025walking}
+{\sc Jiang, T., Zhang, J., Baumgarten, M.~K., Chen, M.-F., Dinh, H.~Q.,
+  Ganeshram, A., Maskara, N., Ni, A., and Lee, J.}
+\newblock Walking through hilbert space with quantum computers.
+\newblock {\em Chemical Reviews 125}, 9 (2025), 4569--4602.
+
 \bibitem{doi:10.1137/23M1563451}
 {\sc Jin, S., Li, X., Liu, N., and Yu, Y.}
 \newblock Quantum simulation for quantum dynamics with artificial boundary
