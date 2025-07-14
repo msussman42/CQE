@@ -36,7 +36,7 @@ from qiskit_aer import AerSimulator
 a=np.array
 hamiltonian = SparsePauliOp.from_list([("II", 0.5), ("XX", -0.5), ("YY", -0.5), ("ZZ", 0.5)])
 hmat = hamiltonian.to_matrix()
-hmat
+print(hmat)
 w,v=eig(hmat)
 print('E-value:',w)
 print('E-vector:',v)
@@ -239,7 +239,7 @@ def vqe(theta, rotations, flag = True):
     ---------
     energy: Energy of the system
     """
-    shots = 8192
+    shots = 6000
     vqe_res = dict()
     qc_list = dict()
 
@@ -270,8 +270,8 @@ def vqe(theta, rotations, flag = True):
 
     if flag:
         print("Mean values from measurement results: \n")
-        print(f"Theta   Energy       XX        YY         ZZ")
-        print(f"{theta }    {energy:.6f}   {vqe_res['XX']:.6f}    {vqe_res['YY']:.6f}   {vqe_res['ZZ']:.6f}")
+        print(f"Theta                  Energy       XX        YY         ZZ")
+        print(f"{theta:.15f}    {energy:.6f}   {vqe_res['XX']:.6f}    {vqe_res['YY']:.6f}   {vqe_res['ZZ']:.6f}")
 
         return energy, qc_list
     else:
@@ -284,9 +284,10 @@ for op in ['YY', 'ZZ', 'XX']:
     print(f"Quantum circuit for measurment of {op}")
     print(qc_list[op].draw())
 
-minimize_scalar(vqe, args=(False, False), bounds=(0, pi), method='bounded')
-
-lowest_eigen_val, _ = vqe(3.1199, False)
+res=minimize_scalar(vqe, args=(False, False), bounds=(0, pi), method='bounded')
+print(res.fun)
+print(res.x)
+lowest_eigen_val, _ = vqe(res.x, False)
 
 def energy_expectation(x, y):
     """
