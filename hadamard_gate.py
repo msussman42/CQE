@@ -1,4 +1,4 @@
-# pip3 install qiskit?
+# pip3 install qiskit
 # python3 -m venv venv_sussman
 # source venv_sussman/bin/activate  (this step must be done upon reboot)
 # python3 -m pip install qiskit
