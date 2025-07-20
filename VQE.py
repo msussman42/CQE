@@ -6,6 +6,8 @@
 # pip3 install matplotlib
 # python3 VQE.py
 # Import necessary libraries
+use_emulator_only=True
+
 import numpy as np
 from numpy.linalg import eig
 from numpy import pi
@@ -18,6 +20,17 @@ from qiskit import QuantumCircuit
 from qiskit.quantum_info import SparsePauliOp
 from qiskit.circuit.library import RealAmplitudes
 from qiskit_aer import AerSimulator
+from qiskit_ibm_runtime import QiskitRuntimeService
+#QiskitRuntimeService.save_account('token')
+from qiskit import transpile
+from qiskit_ibm_runtime import SamplerV2, EstimatorV2, QiskitRuntimeService
+from qiskit.transpiler.preset_passmanagers import generate_preset_pass_manager
+from qiskit_ibm_runtime import Session
+from qiskit_ibm_runtime.fake_provider import FakeManilaV2
+
+if (not use_emulator_only):
+   backend_osk = QiskitRuntimeService(channel='ibm_quantum',token="set your own token here").get_backend('ibm_osaka') #ibm_kyoto
+
 #from qiskit.algorithms.optimizers import COBYLA
 #from qiskit_optimization import QuadraticProgram
 #from qiskit_optimization.applications import Maxcut
@@ -51,11 +64,9 @@ qc.cx(0,1)
 qc.measure(1,0) 
 print(f"measurement code in ZZ basis")
 print(qc.draw())
-simulator=AerSimulator()
-result=simulator.run(qc,shots=100).result()
-counts = result.get_counts(qc)
-#print(result)
-print(counts)
+backend_aer=AerSimulator()
+result_aer=backend_aer.run(qc,shots=100).result()
+print(result_aer.get_counts(qc))
 #plot_histogram(counts).savefig('Qiskit_plot.png') # Save the histogram as an image file
 #plt.show()
 #XX basis measurement
@@ -80,11 +91,9 @@ qc.cx(0,1)
 qc.measure(1,0)
 print(f"measurement code in XX basis")
 print(qc.draw())
-simulator=AerSimulator()
-result=simulator.run(qc,shots=100).result()
-counts = result.get_counts(qc)
-#print(result)
-print(counts)
+backend_aer=AerSimulator()
+result_aer=backend_aer.run(qc,shots=100).result()
+print(result_aer.get_counts(qc))
 #YY basis measurement
 #sdg=(1 0;0 -i)
 #sdg |0>=|0>
@@ -99,10 +108,9 @@ qc.measure(1, 0)
 
 print(f"measurement code in YY basis")
 print(qc.draw())
-simulator=AerSimulator()
-result=simulator.run(qc,shots=100).result()
-counts = result.get_counts(qc)
-#print(result)
+backend_aer=AerSimulator()
+result_aer=backend_aer.run(qc,shots=100).result()
+counts = result_aer.get_counts(qc)
 print(counts)
 
 def prepare_ansatz(qc, qr, theta):
@@ -257,9 +265,16 @@ def vqe(theta, rotations, flag = True):
 
         qc = measurments(qc, qr, cr, op)
 
-        simulator=AerSimulator()
-        result=simulator.run(qc,shots=shots).result()
-        counts = result.get_counts(qc)
+        backend_aer=AerSimulator()
+
+        qc_transpile=transpile(qc,backend_aer,optimization_level=0)
+
+        if (not use_emulator_only):
+           result_aer=backend_osk.run(qc_transpile,shots=shots).result()
+        else:
+           result_aer=backend_aer.run(qc_transpile,shots=shots).result()
+
+        counts = result_aer.get_counts(qc_transpile)
 
         exp_val = calc_expectation_value(counts, shots)
 
