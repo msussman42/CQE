@@ -28,9 +28,11 @@ from qiskit.transpiler.preset_passmanagers import generate_preset_pass_manager
 from qiskit_ibm_runtime import Session
 from qiskit_ibm_runtime.fake_provider import FakeManilaV2
 
+backend_man = FakeManilaV2()
+
 # ibm_brisbane, ibm_sherbrooke, ibm_torino
 if (not use_emulator_only):
-   backend_osk = QiskitRuntimeService(channel='ibm_quantum',token="set your own token here").get_backend('ibm_osaka') #ibm_kyoto
+   backend_osk = QiskitRuntimeService(channel='ibm_quantum',token="set your own token here").get_backend('ibm_brisbane') #ibm_kyoto
 
 #from qiskit.algorithms.optimizers import COBYLA
 #from qiskit_optimization import QuadraticProgram
@@ -268,12 +270,15 @@ def vqe(theta, rotations, flag = True):
 
         backend_aer=AerSimulator()
 
-        qc_transpile=transpile(qc,backend_aer,optimization_level=0)
+#        qc_transpile=transpile(qc,backend_aer,optimization_level=0)
+        qc_transpile=transpile(qc,backend_man,optimization_level=0)
 
         if (not use_emulator_only):
+           qc_transpile=transpile(qc,backend_osk,optimization_level=0)
            result_aer=backend_osk.run(qc_transpile,shots=shots).result()
         else:
-           result_aer=backend_aer.run(qc_transpile,shots=shots).result()
+           qc_transpile=transpile(qc,backend_man,optimization_level=0)
+           result_aer=backend_man.run(qc_transpile,shots=shots).result()
 
         counts = result_aer.get_counts(qc_transpile)
 
@@ -315,17 +320,18 @@ def energy_expectation(x, y):
             energy[idx][ind] = vqe([np.pi, theta1, y[ind][idx]], True, False)
     return energy
 
-theta1 = np.linspace(0.0, 2*np.pi, 2)
-theta2 = np.linspace(0.0, 2*np.pi, 2)
+if (False) :
+   theta1 = np.linspace(0.0, 2*np.pi, 2)
+   theta2 = np.linspace(0.0, 2*np.pi, 2)
 
-X, Y = np.meshgrid(theta1, theta2)
-Z = energy_expectation(X, Y)
+   X, Y = np.meshgrid(theta1, theta2)
+   Z = energy_expectation(X, Y)
 
-fig = plt.figure()
-ax = plt.axes(projection='3d')
-ax.contour3D(X, Y, Z, 50, cmap="summer")
-ax.set_xlabel('theta_1')
-ax.set_ylabel('theta_2')
-ax.set_zlabel('Expectation Value')
-plt.show()
+   fig = plt.figure()
+   ax = plt.axes(projection='3d')
+   ax.contour3D(X, Y, Z, 50, cmap="summer")
+   ax.set_xlabel('theta_1')
+   ax.set_ylabel('theta_2')
+   ax.set_zlabel('Expectation Value')
+   plt.show()
 
