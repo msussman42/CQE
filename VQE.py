@@ -28,6 +28,7 @@ from qiskit.transpiler.preset_passmanagers import generate_preset_pass_manager
 from qiskit_ibm_runtime import Session
 from qiskit_ibm_runtime.fake_provider import FakeManilaV2
 
+# ibm_brisbane, ibm_sherbrooke, ibm_torino
 if (not use_emulator_only):
    backend_osk = QiskitRuntimeService(channel='ibm_quantum',token="set your own token here").get_backend('ibm_osaka') #ibm_kyoto
 
