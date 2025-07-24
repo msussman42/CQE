@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  21 JUL 2025 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  24 JUL 2025 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
+**main
 (./main.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06>
@@ -254,42 +254,42 @@ Mea-sure-ments
  []
 
 [8] Excluding 'comment' comment.
-Underfull \hbox (badness 10000) in paragraph at lines 437--438
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 438--440
+Underfull \hbox (badness 10000) in paragraph at lines 439--441
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--443
+Underfull \hbox (badness 10000) in paragraph at lines 443--444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--446
+Underfull \hbox (badness 10000) in paragraph at lines 445--447
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 447--449
+Underfull \hbox (badness 10000) in paragraph at lines 448--450
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--452
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 454--455
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--461
+Underfull \hbox (badness 10000) in paragraph at lines 461--462
 
  []
 
@@ -300,19 +300,19 @@ he-ory.  \OT1/cmr/m/it/10 arXiv preprint
  []
 
 [14] [15] [16]
-Underfull \hbox (badness 1168) in paragraph at lines 488--496
+Underfull \hbox (badness 1168) in paragraph at lines 494--502
 []\OT1/cmr/m/sc/10 Sawaya, N. P., Marti-Dafcik, D., Ho, Y., Ta-bor, D. P.,
  []
 
 [17] [18]) [19] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 2610 strings out of 480608
- 34348 string characters out of 5903631
- 272240 words of memory out of 5000000
- 18486 multiletter control sequences out of 15000+600000
+ 2611 strings out of 480608
+ 34355 string characters out of 5903631
+ 272245 words of memory out of 5000000
+ 18487 multiletter control sequences out of 15000+600000
  539037 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,6n,31p,1709b,208s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,6n,31p,1705b,208s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvi
 ps/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pub
@@ -323,7 +323,7 @@ amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-s
 uper/sfrm1000.pfb>
-Output written on main.pdf (19 pages, 167993 bytes).
+Output written on main.pdf (19 pages, 168497 bytes).
 PDF statistics:
  99 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream

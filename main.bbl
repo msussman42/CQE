@@ -471,6 +471,12 @@
   chain-like systems based on tensor trains.
 \newblock {\em The Journal of Chemical Physics 158}, 16 (2023).
 
+\bibitem{VQSVD}
+{\sc Ryu, J., Jung, J., Lee, J., Gwon, Y., and Kevin~Rhee, J.}
+\newblock A variational quantum algorithm for ordered svd.
+\newblock In {\em 2021 IEEE Global Communications Conference (GLOBECOM)\/}
+  (2021), pp.~01--05.
+
 \bibitem{saha2025high}
 {\sc Saha, S., Shalaev, M., O’Reilly, J., Goetting, I., Toh, G., Kalakuntla,
   A., Yu, Y., and Monroe, C.}

@@ -10,6 +10,7 @@
 
 \usepackage[fleqn]{amsmath} 
 \usepackage{amssymb}
+\usepackage{braket}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{tabularx} 
@@ -246,7 +247,7 @@ A good textbook that describes these fundamentals is by Purcell and Morin third 
 %https://www.feynmanlectures.caltech.edu/
 \par\noindent
 Maxwell's equations, and relativity though are not sufficient to describe the
-quantum nature of matter and light.  Matter and Light, when considering
+quantum and particle nature of matter and light.  Matter and Light, when considering
 small enough scales, have a dual particle and wave property to them.  Also
 Matter and light posess discrete ``quantum,'' energy levels.
 For a good reference, see the following quantum mechanics 
@@ -255,7 +256,8 @@ explained by classical electromagnetism are the
 %demonstrates that the magnitude of the angular momentum is quantized.
 Stern-Gerlach experiment\cite{gerlach1989experimentelle}, 
 the photo-electric effect\cite{wheaton1978philipp}, and
-the electron double slit experiment\cite{bach2013controlled}.
+the electron double slit experiment\cite{bach2013controlled}, amongst many
+more.
 %%photons interacting with thin membrane?
 \par\noindent
 The mathematical model that describes the dynamics of matter and light, including ``quantum'' properties and the dual particle wave property is Schrodinger's equation:
@@ -290,35 +292,7 @@ is the energy of the system.
 %https://www.feynmanlectures.caltech.edu/
 %% See Electron Magnetic Moment
 %% See Schrodinger equation for electrons as distinguished from photons.
-If relativistic effects must be considered then the following relativistic wave equation models have been developed:
-\begin{itemize}
-\item Klein Gordon equation (spin zero particles) (flat space time)
-\begin{equation}
-\left(\frac{1}{c^2}\frac{\partial^2}{\partial t^2} - \nabla^2 + \frac{m^2 c^2}{\hbar^2}\right) \phi(x,t) = 0
-\end{equation}
-\item Klein Gordon equation (spin zero particles) (in terms of the four-dimensional derivative operator (d'Alembertian))
-\begin{equation}
-\Box \phi(x) + \frac{m^2 c^2}{\hbar^2} \phi(x) = 0
-\end{equation}
-\begin{equation}
-\Box=\frac{1}{c^{2}}\frac{\partial^{2}}{\partial t^{2}}-\nabla^{2}
-\end{equation}
-\item Dirac equation (spin one half particles)
-\begin{align}
-& \left(\beta m c^2 + c \left(\sum_{n=1}^3\alpha_n p_n\right)\right) \psi(x,t) = i\hbar \frac{\partial \psi(x,t)}{\partial t}\\
-& i\hbar\gamma^\mu \partial_\mu \psi - mc\psi = 0 \\
-& (i\slashed{\partial} - m)\psi = 0
-\end{align}
-\end{itemize}
-
-Finally, in some scenarios, the most appropriate mathematical models 
-correspond to the nonlinear Schrodinger equation:
-\begin{eqnarray*}
-i\frac{\partial \psi}{\partial t} = -\frac{1}{2} \nabla^2 \psi + V(\psi) \psi
-\end{eqnarray*}
-
-Feynman path integral\cite{beau2012feynman}
-Relativistic Feynman path integral\cite{struckmeier2024relativistic}
+When discussing the engineering of quantum computers, relativistic effects do not have to be considered. Also, nonlinear Shrodinger mathematical models do not have to be considered.
 
 For the applications of quantum computing and quantum information 
 processing, it is argued that relativity effects can be ignored since
@@ -328,6 +302,8 @@ superposition state or the energy to carry out a unitary operator on a
 current quantum state.
 
 ``Quantum computers operate on energy levels far below those where relativistic effects become noticeable. The speeds of qubits and the interactions between them are slow enough that the effects of time dilation and length contraction are practically insignificant. ''
+
+
 
 \begin{comment}
 	1. PDE constrained optimization and control. QUANDARY
@@ -373,12 +349,46 @@ python3 hadamard_gate.py
 \item Kubischta, Eric and Teixeira, Ian\cite{kubischta2023family}
 \end{itemize}
 
-\section{Control and optimization of numerical models for open
-  quantum systems}
+\section{Control and optimization of numerical models for simulating
+  quantum computers}
 
 \begin{itemize}
 \item Günther et al\cite{9651392}
 \end{itemize}
+Open quantum systems\cite{lidar2019lecture}
+
+\begin{eqnarray}
+\dot{\rho}(t)=-i[H(t),\rho(t)]+\ell(\rho(t))
+\end{eqnarray}
+\begin{eqnarray}
+\ell(\rho)=\sum_{q=1}^{Q}\sum_{l=1}^{2} \ell_{lq}\rho\ell^{\dag}_{lq}-
+  \frac{1}{2}(\ell^{\dag}_{lq}\ell_{lq}\rho+\rho\ell^{\dag}_{lq}\ell_{lq})
+\end{eqnarray}
+\begin{eqnarray}
+N=\Pi_{q=1}^{Q}n_{q}
+\end{eqnarray}
+\begin{eqnarray}
+\rho(t)\in\mathbb{C}^{N\times N}
+\end{eqnarray}
+From \cite{lidar2019lecture}, given the pure state ensemble,
+\begin{eqnarray}
+{q_{i},\ket\psi_{i}}_{i=1}^{N},
+\end{eqnarray}
+the density operator is
+\begin{eqnarray}
+\rho=\sum_{i}q_{i}\ket\psi_{i}\bra\psi_{i}.
+\end{eqnarray}
+\begin{eqnarray}
+H=H_{sys}+H_{c}(t)
+\end{eqnarray}
+\begin{eqnarray}
+H_{c}(t)=\sum_{q=1}^{Q}d_{q}(\alpha_{q},t)a_{q}+
+  d_{q}(\alpha_{q},t)^{\ast}(t)a_{q}^{\dag}
+\end{eqnarray}
+\begin{eqnarray}
+\cal G(\bmalpha)=\frac{1}{M}\sum_{i=1}^{M} ....
+\end{eqnarray}
+
 
 \begin{comment}
 
@@ -590,11 +600,16 @@ https://www.elsevier.com/editor/role/guest/guide
 1. compare VQE on classical computer vs IBM hardware to demonstrate the need
 for improved hardware.
 
-2. compare QUANDARY to other quantum optimal control algorithms.
+2. compare QUANDARY to other quantum optimal control algorithms. inverse
+problems.
 
 3. compare Error correction algorithms.
 
-4. compare emulator algorithms
+4. compare emulator algorithms and compare algorithms for emulating a
+``NISQC''
+
+5. quantum and hybrid classical/quantum algorithms for benchmarking quantum 
+computers.
 
 remark:
 Schrodinger equation direct model: ~$10^{3N}$  $x^t H x/x^t x$ $H$ has
