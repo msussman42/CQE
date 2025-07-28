@@ -52,6 +52,7 @@
 \newcommand{\bmI}{\mbox{\boldmath $I$\unboldmath}}
 \newcommand{\bmD}{\mbox{\boldmath $D$\unboldmath}}
 \newcommand{\bmnu}{\mbox{\boldmath $\nu$\unboldmath}}
+\newcommand{\bmalpha}{\mbox{\boldmath $\alpha$\unboldmath}}
 
 \newcommand{\DefTen}{\mathbb{D}}
 \newcommand{\EyeTen}{\mathbb{I}}
@@ -222,7 +223,7 @@ In order to appreciate the complexities associated with designing a quantum comp
 Classical electromagnetism is a very complex topic, in of itself.  One could choose as a starting point Maxwell's equations which are,
 \begin{align}
     \label{eq:gauss_law_e}
-    \nabla \cdot \mathbf{E} &= \frac{\rho}{\epsilon_0} \quad \text{(Gauss's Law for Electricity)} \\
+    \nabla \cdot \mathbf{E} &= \frac{\rho}{\epsilon_{0}} \quad \text{(Gauss's Law for Electricity)} \\
     \label{eq:gauss_law_m}
     \nabla \cdot \mathbf{B} &= 0 \quad \text{(Gauss's Law for Magnetism)} \\
     \label{eq:faraday_law}
@@ -234,6 +235,8 @@ Also, there is the Lorentz force law:
 \begin{eqnarray*}
 \textbf{F} = q(\textbf{E} + \textbf{v} \times \textbf{B})
 \end{eqnarray*}
+
+\begin{comment}
 Maxwell's equations and the Lorentz force can be formulated in such a way as to satisfy the invarience condition under the rectilinear Lorentz transformation:
 \begin{eqnarray*}
 t'=\gamma(t-\frac{vx}{c^{2}}) \\
@@ -242,6 +245,8 @@ y'=y \\
 z'=z \\
 \gamma=\frac{1}{\sqrt{1-v^{2}/c^{2}}}
 \end{eqnarray*}
+\end{comment}
+
 \par\noindent
 A good textbook that describes these fundamentals is by Purcell and Morin third edition\cite{purcell2013electricity}.
 %https://www.feynmanlectures.caltech.edu/
@@ -354,11 +359,14 @@ python3 hadamard_gate.py
 
 \begin{itemize}
 \item Günther et al\cite{9651392}
+\item Fei et al\cite{fei2025switching}
 \end{itemize}
-Open quantum systems\cite{lidar2019lecture}
 
+\subsection{Control of open quantum systems}
+
+The Lindblad master equation for Open quantum systems\cite{lidar2019lecture} is
 \begin{eqnarray}
-\dot{\rho}(t)=-i[H(t),\rho(t)]+\ell(\rho(t))
+\dot{\rho}(t)=-i[H(t),\rho(t)]+\ell(\rho(t)) \hspace{10pt} 0\le t\le T
 \end{eqnarray}
 \begin{eqnarray}
 \ell(\rho)=\sum_{q=1}^{Q}\sum_{l=1}^{2} \ell_{lq}\rho\ell^{\dag}_{lq}-
@@ -372,7 +380,7 @@ N=\Pi_{q=1}^{Q}n_{q}
 \end{eqnarray}
 From \cite{lidar2019lecture}, given the pure state ensemble,
 \begin{eqnarray}
-{q_{i},\ket\psi_{i}}_{i=1}^{N},
+\{q_{i},\ket\psi_{i}\}_{i=1}^{N},
 \end{eqnarray}
 the density operator is
 \begin{eqnarray}
@@ -381,14 +389,47 @@ the density operator is
 \begin{eqnarray}
 H=H_{sys}+H_{c}(t)
 \end{eqnarray}
+The control Hamiltonian has the form
 \begin{eqnarray}
 H_{c}(t)=\sum_{q=1}^{Q}d_{q}(\alpha_{q},t)a_{q}+
-  d_{q}(\alpha_{q},t)^{\ast}(t)a_{q}^{\dag}
+  d_{q}(\alpha_{q},t)^{\ast}(t)a_{q}^{\dag}.
+\end{eqnarray}
+The objective function has the form
+\begin{eqnarray}
+{\cal G}(\bmalpha)=\frac{1}{M}\sum_{i=1}^{M} \left( 
+\beta_{i} J(\rho_{i}^{target},\rho_{i}(T))+
+\gamma_{1}\int_{0}^{T}\beta(t)J(\rho_{i}^{target},\rho_{i}(t))dt \right)+
+\gamma_{2} ||\bmalpha||_{2}^{2}/2
+\end{eqnarray}
+In Quandary the following choices for $J$ are\cite{9651392}
+\begin{eqnarray}
+J_{Frob}(\rho^{target},\rho)=||\rho^{target}-\rho||^{2}_{F}/2
 \end{eqnarray}
 \begin{eqnarray}
-\cal G(\bmalpha)=\frac{1}{M}\sum_{i=1}^{M} ....
+J_{Trace}(\rho^{target},\rho)=1-Tr((\rho^{target})^{\dag}\rho)
+\end{eqnarray}
+\begin{eqnarray}
+J_{N_{m}}(\rho)=Tr(N_{m}\rho)
 \end{eqnarray}
 
+\subsection{Switching time optimization Control of binary quantum systems}
+
+\begin{eqnarray}
+\dot{X}(t)=-iH(t)X(t) \hspace{10pt} 0\le t\le T
+\end{eqnarray}
+\begin{eqnarray}
+H(t)=H^{(0)}+\sum_{j=1}^{J} u_{j}(t)H^{(j)}  \hspace{10pt} 0\le t\le T
+\end{eqnarray}
+\begin{eqnarray}
+\sum_{j=1}^{J}u_{j}(t)=1 \hspace{10pt} 0\le t\le T
+\end{eqnarray}
+\begin{eqnarray}
+u_{j}(t) \in \left\{ 0,1 \right\} \hspace{10pt} j=1,\ldots,J
+\end{eqnarray}
+Cost function example ($Q=2$):
+\begin{eqnarray}
+{\cal G}(X[u_{1}(t),\ldots,u_{J}(t)](T))=1-\frac{1}{4}|\mbox{Trace}\left\{X_{CNOT}^{\dag}X(T)\right\}|
+\end{eqnarray}
 
 \begin{comment}
 
@@ -596,37 +637,24 @@ https://www.elsevier.com/editor/role/guest/guide
 
 \end{comment}
 
-
-1. compare VQE on classical computer vs IBM hardware to demonstrate the need
+\begin{itemize}
+\item compare VQE on classical computer vs IBM hardware to demonstrate the need
 for improved hardware.
-
-2. compare QUANDARY to other quantum optimal control algorithms. inverse
+\item compare QUANDARY to other quantum optimal control algorithms. inverse
 problems.
-
-3. compare Error correction algorithms.
-
-4. compare emulator algorithms and compare algorithms for emulating a
-``NISQC''
-
-5. quantum and hybrid classical/quantum algorithms for benchmarking quantum 
+\item compare Error correction algorithms.
+%4. compare emulator algorithms and compare algorithms for emulating a ``NISQC''
+\item quantum and hybrid classical/quantum algorithms for benchmarking quantum 
 computers.
+\end{itemize}
 
+\begin{comment}
 remark:
 Schrodinger equation direct model: ~$10^{3N}$  $x^t H x/x^t x$ $H$ has
 dimensions of $10^{3N}$ by $10^{3N}$
 Density functional theory: N * (10)
 if $N$ electrons, what is the size of the Hamiltonian?
-
-
-
-
-
-
-
-
-
-
-
+\end{comment}
 
 
 \begin{comment}

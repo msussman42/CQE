@@ -31,6 +31,11 @@
   on quantum simulators.
 \newblock {\em Applied Sciences 13}, 20 (2023), 11491.
 
+\bibitem{fei2025switching}
+{\sc Fei, X., Brady, L., Larson, J., Leyffer, S., and Shen, S.}
+\newblock Switching time optimization for binary quantum optimal control.
+\newblock {\em ACM Transactions on Quantum Computing 6}, 1 (2025), 1--38.
+
 \bibitem{gamble2019quantum}
 {\sc Gamble, S.}
 \newblock Quantum computing: What it is, why we want it, and how we’re trying
@@ -79,6 +84,11 @@
 {\sc Kubischta, E., and Teixeira, I.}
 \newblock Family of quantum codes with exotic transversal gates.
 \newblock {\em Physical Review Letters 131}, 24 (2023), 240601.
+
+\bibitem{lidar2019lecture}
+{\sc Lidar, D.~A.}
+\newblock Lecture notes on the theory of open quantum systems.
+\newblock {\em arXiv preprint arXiv:1902.00967\/} (2019).
 
 \bibitem{mack2015multiple}
 {\sc Mack, C.}
