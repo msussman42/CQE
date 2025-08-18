@@ -520,6 +520,12 @@
   superconductors.
 \newblock {\em Superconductor Science and Technology 30}, 2 (2016), 024006.
 
+\bibitem{sim2019expressibility}
+{\sc Sim, S., Johnson, P.~D., and Aspuru-Guzik, A.}
+\newblock Expressibility and entangling capability of parameterized quantum
+  circuits for hybrid quantum-classical algorithms.
+\newblock {\em Advanced Quantum Technologies 2}, 12 (2019), 1900070.
+
 \bibitem{somma2024shadowhamiltoniansimulation}
 {\sc Somma, R.~D., King, R., Kothari, R., O'Brien, T., and Babbush, R.}
 \newblock Shadow hamiltonian simulation, 2024.
