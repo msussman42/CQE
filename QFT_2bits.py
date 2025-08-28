@@ -62,11 +62,11 @@ print("-------------")
 print(qc.decompose(reps=4).draw())
 backend_aer=AerSimulator()
 
-transpiled_qc=transpile(qc,backend_aer)
-result_aer=backend_aer.run(transpiled_qc,shots=9000).result()
+#transpiled_qc=transpile(qc,backend_aer)
+#result_aer=backend_aer.run(transpiled_qc,shots=9000).result()
 
-#transpiled_qc=transpile(qc,backend_man)
-#result_aer=backend_man.run(transpiled_qc,shots=1000).result()
+transpiled_qc=transpile(qc,backend_man)
+result_aer=backend_man.run(transpiled_qc,shots=9000).result()
 
 print(result_aer.get_counts(qc))
 
@@ -87,11 +87,11 @@ print("-------------")
 print(qc.decompose(reps=4).draw())
 backend_aer=AerSimulator()
 
-transpiled_qc=transpile(qc,backend_aer)
-result_aer=backend_aer.run(transpiled_qc,shots=9000).result()
+#transpiled_qc=transpile(qc,backend_aer)
+#result_aer=backend_aer.run(transpiled_qc,shots=9000).result()
 
-#transpiled_qc=transpile(qc,backend_man)
-#result_aer=backend_man.run(transpiled_qc,shots=1000).result()
+transpiled_qc=transpile(qc,backend_man)
+result_aer=backend_man.run(transpiled_qc,shots=9000).result()
 
 
 print(result_aer.get_counts(qc))
