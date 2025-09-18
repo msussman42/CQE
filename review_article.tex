@@ -340,8 +340,11 @@ pip3 install qiskit-ibm-runtime
 python3 hadamard_gate.py
 \end{comment}
 
+Discuss the latest technologies for Quantum Computer Emulators.
+
 Examples: (1)VQE using slater determinant form, only valence electrons, 
-(2) SVD, (3) Shor's prime number factorization algorithm, (4) heat 
+(2) SVD (SVT, self consitent field theory), 
+(3) Shor's prime number factorization algorithm, (4) heat 
 equation, and (5) Quantum Fourier Transform.
 
 \begin{itemize}
@@ -363,8 +366,22 @@ equation, and (5) Quantum Fourier Transform.
 \item Kubischta, Eric and Teixeira, Ian\cite{kubischta2023family}
 \end{itemize}
 
-\section{Control and optimization of numerical models for simulating
-  quantum computers}
+\begin{itemize}
+\item Preskill's notes chapter 7.
+\item Eastin and Knill: A transversal quantum gate does not spread
+  errors between physical qubits. ``if there are $n_{e}$ errors in the
+  physical qubits representing the logical system, then after the 
+  application of a transversal gate, there will still be $n_{e}$ errors.''
+  i.e., if the number of errors is below the ``correctable'' threshold $t$
+  prior to the application of a transversal gate, it will still be 
+  correctable after the application of a tranversal gate.
+\item Kubischta and Teixeira (a quantum code for making the 2I gates
+  transversal (i.e. product gates))
+\item Ide et al\cite{ide2025fault} (surface codes)
+\end{itemize}
+
+\section{Control and optimization of Quantum Computers using 
+  numerical model surrogates in place of the actual quantum computer}
 
 \begin{itemize}
 \item Günther et al\cite{9651392}
