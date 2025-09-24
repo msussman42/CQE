@@ -1,217 +1,225 @@
       recursive subroutine permutations(k,n,nfact,counter,A,B)
       integer, intent(in) :: k,n,nfact
+      integer, intent(inout) :: counter
       integer, intent(inout), dimension(n) :: A
       integer, intent(inout), dimension(nfact,n) :: B
+      integer i,j,hold
+
+      i=1
+      do j=1,n
+       i=i*j
+      enddo
+      if (i.eq.nfact) then
+       !do nothing
+      else
+       print *,"i <> nfact"
+       stop
+      endif
+      if ((counter.ge.1).and.(counter.le.nfact)) then
+       !do nothing
+      else
+       print *,"counter invalid"
+       stop
+      endif
 
       if (k.eq.1) then
-              copy A to B
-              counter=counter+1
+       do i=1,n
+        B(counter,i)=A(i)
+       enddo
+       counter=counter+1
       else
-              permutations(k-1,n,nfact,counter,A,B)
-              https://en.wikipedia.org/wiki/Heap%27s_algorithm
-
-      subroutine check_iso(nv,ne,A,B)
-      IMPLICIT NONE
-
-      integer, intent(int) :: ne,nv
-      real(8), intent(in), dimension(ne,nv) :: A,B
-
-      if (1.eq.0) then  ! spherical explosion
-       A=5.484D+12
-       B=0.09375D+12
-       R1=4.94D0
-       R2=1.21D0
-       GAMMA=1.28D0
-       RHOI=1.63D
-      else if (1.eq.1) then !hydrobulge
-!      A=6.17D+12 !cgs
-       A=6.1327D+12 !cgs
-!      B=1.69D+11 !cgs 
-       B=1.5069D+11 !cgs 
-       R1=4.4D0
-       R2=1.2D0
-       GAMMA=1.25D0
-       RHOI=1.765D0 !cgs
-      else if (1.eq.0) then  ! bubble jetting
-       A=3.712D+12
-       B=0.03231D+12
-       R1=4.15D0
-       R2=0.95D0
-       GAMMA=1.3D0
-       RHOI=1.63D0
-      else if (1.eq.0) then ! cavitation
-       A=3.712D+12
-       B=0.03231D+12
-       R1=4.15D0
-       R2=0.95D0
-       GAMMA=1.3D0
-       RHOI=1.63D0
-      else
-       print *,"get_jwl_constants failure"
-       stop
+       call permutations(k-1,n,nfact,counter,A,B)
+       do i=0,k-2
+        if (2*(k/2).eq.k) then
+         hold=A(i+1)
+         A(i+1)=A(k)
+         A(k)=hold
+        else
+         hold=A(1)
+         A(1)=A(k)
+         A(k)=hold
+        endif
+        call permutations(k-1,n,nfact,counter,A,B)
+       enddo
       endif
 
       return
-      end subroutine get_jwl_constants
+      end subroutine permutations
 
-
-      subroutine INTERNAL_jwl(rho,temperature,internal_energy)
+      subroutine check_iso(nv,nvfact,ne,A,B,nv_permute)
       IMPLICIT NONE
 
-      real(8), intent(in) :: rho,temperature
-      real(8), intent(out) :: internal_energy
-      real(8) :: cv
+      integer, intent(in) :: ne,nv,nvfact
+      integer, intent(in), dimension(ne,nv) :: A,B
+      integer, intent(in), dimension(nvfact,nv) :: nv_permute
+      integer i,j,i1,j1,iso_flag,k,k2,i3
+      real*8 counter,total_counter,sub_counter
+      integer, dimension(ne,nv) :: Bhold
 
-      if (rho.gt.0.0d0) then
+      print *,"nvfact= ",nvfact
+
+      i=1
+      do j=1,nv
+       i=i*j
+      enddo
+      if (i.eq.nvfact) then
        !do nothing
       else
-       print *,"density negative INTERNAL_jwl:",rho
-       stop
-      endif
-      if (temperature.gt.0.0d0) then
-       !do nothing
-      else
-       print *,"temperature <=0 INTERNAL_jwl: ",temperature
+       print *,"i <> nvfact"
        stop
       endif
 
-      cv=4.1855D+7
-      internal_energy=cv*temperature
+      counter=1.0d0
+      sub_counter=1.0d0
+      total_counter=nvfact
+      do j=1,nvfact
+       counter=counter+1.0d0
+       sub_counter=sub_counter+1.0d0
+       if (sub_counter.ge.100.0) then
+        print *,"counter= ",counter
+        print *,"testing j=",j
+        print *,"total counter= ",total_counter
+        sub_counter=1.0d0
+       endif
+       iso_flag=1
+       do i1=1,ne
+       do j1=1,nv
+        Bhold(i1,j1)=B(i1,nv_permute(j,j1))
+        if (Bhold(i1,j1).ne.A(i1,j1)) then
+         iso_flag=0
+        endif
+        if ((Bhold(i1,j1).eq.0).or. &
+            (Bhold(i1,j1).eq.1)) then
+         !do nothing
+        else
+         print *,"i1,j1,Bhold invalid: ",i1,j1,Bhold(i1,j1)
+         stop
+        endif
+        if ((A(i1,j1).eq.0).or. &
+            (A(i1,j1).eq.1)) then
+         !do nothing
+        else
+         print *,"i1,j1,A invalid: ",i1,j1,A(i1,j1)
+         stop
+        endif
+       enddo
+       enddo
+       if (iso_flag.eq.1) then
+
+        print *,"is_flag=1 for j=",j
+        do j1=1,nv
+         print *,"j1,nv_permute(j,j1) ",j1,nv_permute(j,j1)
+        enddo
+       endif
+      enddo
 
       return
-      end subroutine INTERNAL_jwl
+      end subroutine check_iso
 
-      subroutine TEMPERATURE_jwl(rho,temperature,internal_energy)
-      IMPLICIT NONE
-
-      real(8), intent(in) :: rho,internal_energy
-      real(8), intent(out) :: temperature
-      real(8) :: cv
-
-      if (rho.gt.0.0d0) then
-       !do nothing
-      else
-       print *,"density negative TEMPERATURE_jwl:",rho
-       stop
-      endif
-      if (internal_energy.gt.0.0d0) then
-       !do nothing
-      else
-       print *,"internal energy <=0 TEMPERATURE_jwl:",internal_energy
-       stop
-      endif
-
-      cv=4.1855D+7
-      temperature=internal_energy/cv
-
-      return
-      end subroutine TEMPERATURE_jwl
-
-! e=(E/rho) - (1/2) (u^2 + v^2)
-      subroutine EOS_NAjwl(rho,internal_energy,pressure)
-      IMPLICIT NONE
-
-      real(8), intent(in) :: rho,internal_energy
-      real(8), intent(out) :: pressure
-      real(8) A,B,R1,R2,GAMMA,RHOI,OMEGA
-
-      call get_jwl_constants(A,B,GAMMA,R1,R2,RHOI)
-      OMEGA=GAMMA-1.0d0
-
-      if (rho.gt.0.0d0) then
-       !do nothing
-      else
-       print *,"rho invalid EOS_NAjwl: ",rho
-       stop
-      endif
-      if (internal_energy.gt.0.0d0) then
-       !do nothing
-      else
-       print *,"e invalid EOS_NAjwl: ",internal_energy
-       stop
-      endif
-      pressure= &
-        A*(1.0d0-OMEGA*rho/(R1*RHOI))*exp(-R1*RHOI/rho)+ &
-        B*(1.0d0-OMEGA*rho/(R2*RHOI))*exp(-R2*RHOI/rho)+ &
-        OMEGA*rho*internal_energy
-
-      if (pressure.gt.0.0d0) then
-       !do nothing
-      else
-       print *,"vacuum error in NA JWL: ",pressure
-       stop
-      endif
-
-      return
-      end subroutine EOS_NAjwl
-
-! initial sound speed is:
-! C=7.8039D+10-5.484D+12 e^(-4.94)-0.09375D+12 e^(-1.21)=
-      subroutine SOUNDSQR_NAjwl(rho,internal_energy,soundsqr)
-      IMPLICIT NONE
-
-      real(8), intent(in) :: rho,internal_energy
-      real(8), intent(out) :: soundsqr
-      real(8) A,B,R1,R2,GAMMA,RHOI,OMEGA
-      real(8) pressure,dp_de,dp_drho
-
-      call get_jwl_constants(A,B,GAMMA,R1,R2,RHOI)
-      OMEGA=GAMMA-1.0d0
-
-      if (rho.gt.0.0d0) then
-       !do nothing
-      else
-       print *,"rho invalid SOUNDSQR_NAjwl: ",rho
-       stop
-      endif
-      if (internal_energy.gt.0.0d0) then
-       !do nothing
-      else
-       print *,"e invalid SOUNDSQR_NAjwl: ",internal_energy
-       stop
-      endif
-
-      call EOS_NAjwl(rho,internal_energy,pressure)
-      dp_de=OMEGA*rho
-      dp_drho= &
-        A*(1.0d0-OMEGA*rho/(R1*RHOI))*exp(-R1*RHOI/rho)* &
-        R1*RHOI/(rho**2)- &
-        (A*OMEGA/(R1*RHOI))*exp(-R1*RHOI/rho)+ &
-        B*(1.0d0-OMEGA*rho/(R2*RHOI))*exp(-R2*RHOI/rho)* &
-        R2*RHOI/(rho**2)- &
-        B*(OMEGA/(R2*RHOI))*exp(-R2*RHOI/rho)+ &
-        OMEGA*internal_energy
-    
-      soundsqr=(pressure*dp_de)/(rho**2)+dp_drho
- 
-      if (soundsqr.gt.0.0d0) then
-       !do nothing
-      else
-       print *,"soundsqr invalid in SOUNDSQR_NAjwl:",soundsqr
-       stop
-      endif
-
-      return
-      end subroutine SOUNDSQR_NAjwl
 
       program main
       IMPLICIT NONE
-      real*8 E0,E0_per_mass,RHOI,T0,P0,C2,C
+      integer, parameter :: ne=11
+      integer, parameter :: nv=6
+      integer, parameter :: nvfact=720
 
-      RHOI=1.765d0 ! cgs
-      E0=10.1D+10 ! cgs ergs/cm^3=g cm^2/s^2/cm^3=g/(s^2 cm)
-      E0_per_mass=E0/RHOI
-      call TEMPERATURE_jwl(RHOI,T0,E0_per_mass)
-      call EOS_NAjwl(RHOI,E0_per_mass,P0)
-      call SOUNDSQR_NAjwl(RHOI,E0_per_mass,C2)
-      C=sqrt(C2)
+      integer, dimension(ne,nv) :: A,B,C
+      integer, dimension(nvfact,nv) :: nv_permute
+      integer, dimension(nv) :: nv_single
+      integer counter,i,j
+      
+      do i=1,nv
+       nv_single(i)=i
+      enddo
+      counter=1
+      call permutations(nv,nv,nvfact,counter,nv_single,nv_permute)
+      do i=1,ne
+      do j=1,nv
+       A(i,j)=0 
+       B(i,j)=0 
+       C(i,j)=0 
+      enddo
+      enddo
 
-      print *,"E0=",E0
-      print *,"E0_per_mass=",E0_per_mass
-      print *,"T0=",T0
-      print *,"RHOI=",RHOI
-      print *,"P0=",P0
-      print *,"C=",C
+      A(1,1)=1
+      A(1,6)=1
+      A(2,5)=1
+      A(2,6)=1
+      A(3,4)=1
+      A(3,5)=1
+      A(4,3)=1
+      A(4,4)=1
+      A(5,2)=1
+      A(5,3)=1
+      A(6,1)=1
+      A(6,2)=1
+
+      A(7,4)=1
+      A(8,1)=1
+      A(8,3)=1
+      A(9,4)=1
+      A(9,6)=1
+      A(10,2)=1
+      A(10,6)=1
+      A(11,3)=1
+      A(11,5)=1
+
+      B(1,1)=1
+      B(1,6)=1
+      B(2,5)=1
+      B(2,6)=1
+      B(3,4)=1
+      B(3,5)=1
+      B(4,3)=1
+      B(4,4)=1
+      B(5,2)=1
+      B(5,3)=1
+      B(6,1)=1
+      B(6,2)=1
+
+      B(7,1)=1
+      B(7,4)=1
+      B(8,6)=1
+      B(8,3)=1
+      B(9,1)=1
+      B(9,5)=1
+      B(10,4)=1
+      B(10,6)=1
+      B(11,2)=1
+      B(11,5)=1
+
+      C(1,1)=1
+      C(1,6)=1
+      C(2,5)=1
+      C(2,6)=1
+      C(3,4)=1
+      C(3,5)=1
+      C(4,3)=1
+      C(4,4)=1
+      C(5,2)=1
+      C(5,3)=1
+      C(6,1)=1
+      C(6,2)=1
+
+      C(7,1)=1
+      C(7,4)=1
+      C(8,1)=1
+      C(8,5)=1
+      C(9,4)=1
+      C(9,6)=1
+      C(10,2)=1
+      C(10,6)=1
+      C(11,3)=1
+      C(11,5)=1
+
+      print *,"checking A and B"
+      call check_iso(nv,nvfact,ne,A,B,nv_permute)
+
+      print *,"checking B and C"
+      call check_iso(nv,nvfact,ne,B,C,nv_permute)
+
+      print *,"checking A and C"
+      call check_iso(nv,nvfact,ne,A,C,nv_permute)
 
       return
       end
