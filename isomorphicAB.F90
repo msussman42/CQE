@@ -53,7 +53,7 @@
       integer, intent(in) :: nv,nvfact
       integer, intent(in), dimension(nv,nv) :: A,B
       integer, intent(in), dimension(nvfact,nv) :: nv_permute
-      integer i,j,i1,j1,iso_flag,k,k2,i3
+      integer i,j,i1,j1,iso_flag,k,k2,i3,expect_flag
       integer counter,total_counter,sub_counter
       integer, dimension(nv,nv) :: Bhold
 
@@ -76,12 +76,13 @@
       do j=1,nvfact
        counter=counter+1
        sub_counter=sub_counter+1
-       if (sub_counter.ge.1000) then
+       if (sub_counter.ge.10000) then
         print *,"counter= ",counter
         print *,"testing j=",j
         print *,"total counter= ",total_counter
         sub_counter=1
        endif
+
        iso_flag=1
        do i1=1,nv
        do j1=1,nv
@@ -123,7 +124,7 @@
       integer, parameter :: nv=7
       integer, parameter :: nvfact=5040
 
-      integer, dimension(nv,nv) :: A,B,C,D,E
+      integer, dimension(nv,nv) :: A,B
       integer, dimension(nvfact,nv) :: nv_permute
       integer, dimension(nv) :: nv_single
       integer counter,i,j
@@ -137,17 +138,11 @@
       do j=1,nv
        A(i,j)=0 
        B(i,j)=0 
-       C(i,j)=0 
-       D(i,j)=0 
-       E(i,j)=0 
       enddo
       enddo
       do i=1,nv
        A(i,i)=1
        B(i,i)=1
-       C(i,i)=1
-       D(i,i)=1
-       E(i,i)=1
       enddo
 
 
@@ -191,76 +186,11 @@
 
       B(6,7)=1
 
-
-      C(1,7)=1
-      C(1,3)=1
-      C(1,2)=1
-      C(1,6)=1
-
-      C(2,7)=1
-      C(2,5)=1
-      C(2,3)=1
-
-      C(3,4)=1
-      C(3,5)=1
-
-      C(4,5)=1
-      C(4,6)=1
-      C(4,7)=1
-
-      C(5,6)=1
-
-      C(6,7)=1
-
-      D(1,7)=1
-      D(1,4)=1
-      D(1,2)=1
-      D(1,5)=1
-
-      D(2,7)=1
-      D(2,6)=1
-      D(2,3)=1
-
-      D(3,4)=1
-      D(3,5)=1
-      D(3,7)=1
-
-      D(4,5)=1
-      D(4,6)=1
-
-      D(5,6)=1
-
-      D(6,7)=1
-
-
-      E(1,7)=1
-      E(1,4)=1
-      E(1,2)=1
-      E(1,5)=1
-
-      E(2,5)=1
-      E(2,6)=1
-      E(2,3)=1
-
-      E(3,4)=1
-      E(3,6)=1
-      E(3,7)=1
-
-      E(4,5)=1
-      E(4,7)=1
-
-      E(5,6)=1
-
-      E(6,7)=1
-
       do i=1,nv
       do j=1,nv
        if (i.lt.j) then
         A(j,i)=A(i,j)
         B(j,i)=B(i,j)
-        C(j,i)=C(i,j)
-        D(j,i)=D(i,j)
-        E(j,i)=E(i,j)
        endif
       enddo
       enddo
@@ -268,21 +198,6 @@
       print *,"---------------------"
       print *,"checking A and B"
       call check_iso(nv,nvfact,A,B,nv_permute)
-      print *,"---------------------"
-      print *,"checking B and C"
-      call check_iso(nv,nvfact,B,C,nv_permute)
-      print *,"---------------------"
-
-      print *,"checking A and C"
-      call check_iso(nv,nvfact,A,C,nv_permute)
-      print *,"---------------------"
-
-      print *,"checking A and D"
-      call check_iso(nv,nvfact,A,D,nv_permute)
-      print *,"---------------------"
-
-      print *,"checking A and E"
-      call check_iso(nv,nvfact,A,E,nv_permute)
       print *,"---------------------"
 
       return
