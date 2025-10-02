@@ -112,95 +112,26 @@
 \maketitle
 
 ABSTRACT:
-The main techniques in physically storing information in a ``Quantum superposition state'' and inducing ``entanglement'' amongst pairs of ``Qubits'' are (a) trapped ions, (b) superconducting circuits (e.g. Unimon Qubit), (c) Nitrogen-vacancy centers in diamond, and (d) Photonic Qubits.  Each of these vehicles for quantum information technology have their advantages and disadvantages.  Important properties to consider are (i) resiliance to noise, (ii) ability to communicate ``quantum'' information over long distances, (iii) decoherence time, (iv) operating temperature, (v) scalability of multi Qubit entanglement, and (vi) being amenable to strategic control.  Right now, Quantum computers are in the ``Noisy Intermediate-Scale Quantum'' (NISQ) era.  In an effort to constantly improve the design of quantum computers, scientists and engineers answer questions regarding the aforementioned Qubit technology either experimentally or computationally.  In this review article, it is the computational methods which are reported on.  It is the objective of this review article to serve as a reference on the subject matter of ``Numerical Methods for Engineering Quantum Computers'' for use by students and established researchers.  As a side benefit, it is expected that understanding the mathematical models and computational algorithms used to engineer Quantum Computers will also lead to improved algorithms for utilizing Quantum Computers.
+In the article by Herrmann et al, ``Quantum utility – definition and 
+assessment of a practical quantum advantage,'' the ``Application
+Readiness Level'' (ARL) is defined: (1) ``concept with unknown potential,'' 
+(2) ``beneficial in small idealized systems,'' (3) ``utility indicated by 
+theory or resource estimations,'' (4) ``simulated utility demonstration,''
+and (5) ``utility demonstration on quantum hardware.''  At the present, 
+practitioners have reached ARL 3 with the Variational Quantum Eigenvalue
+(VQE) algorithm.  In this review article, the latest activities from the
+computational ``digital twin'' perspective are reported on in which scientists
+are working hard to bring practitioners out of the Noisy Intermediate
+Scale Quantum (NISQ) era into an era of ``Quantum supremacy.'' In
+otherwords digital twin activities that help to advance from ARL 3 to 
+ARL 4 amd ARL 5.  The three main categories in this review article are
+(1) Quantum algorithms for benchmarking quantum computers (to include
+emulator algorithms like Qiskit), (2) Optimization, Control, and inverse
+problem algorithms for Schrodinger's equation, and (3) Error correction
+algorithms and algorithms for optimizing the ``surface topology'' of
+logical qubits.
 
-\begin{comment}
-
-\section{Guest Editors}
-
-\begin{itemize}
-\item
-Mark Sussman, Florida State University \verb=sussman@math.fsu.edu=
-\item
-Lin Lin, University of California, Berkeley \verb=linlin@math.berkeley.edu=
-\item
-Shi Jin, Shanghai Jiao Tong University \verb=shijin-m@sjtu.edu.cn=
-\item
-Stefanie Guenther, Lawrence Livermore National Laboratory
-\verb=guenther5@llnl.gov=
-\item
-Anders Petersson, Lawrence Livermore National Laboratory
-\verb=petersson1@llnl.gov=
-\item
-Philip Lotshaw, Oak Ridge National Laboratory
-\verb=lotshawpc@ornl.gov=
-\end{itemize}
-
-\end{comment}
-
-\begin{comment}
- 
-\section{Full scope of the special issue }
-
-%Compuational Quantum Physics
-%``error mitigation techniques''
-Numerical Algorithms for the optimal control of Qubit(s), computing ground states and sensitivity thereof due to perturbations in the Hamiltonian, Quantum or hybrid classical/quantum algorithms for benchmarking quantum computers, Quantum or hybrid Quantum/classical numerical methods for the unsteady/steady many body Schrodinger equation, Computational Quantum Electrodynamics,
-Error Correction Algorithms.
-\end{comment}
-
-\begin{comment}
-
-\section{Special Issue Keywords }
-
-Computational Quantum Physics, Quantum Computer, control of Quantum Systems, Schrodinger equation, inverse problems in Quantum Mechanics, Quantum error correction, Designing Fault Tolerant Quantum Computers, Hybrid Quantum/Classical algorithms, Benchmarking Quantum circuits, Computational Quantum Electrodynamics.
-
-\section{Rationale for special issue and recommended contibuters}
-\end{comment}
-
-\begin{comment}
-
-\cite{BLATT1967382}
-``Practical points concerning the solution of the Schrödinger equation''
-\cite{FEIT1982412}
-``Solution of the Schrödinger equation by a spectral method''
-\cite{https://doi.org/10.1002/andp.19273892002}
-``Zur Quantentheorie der Molekeln''
-\cite{wang2020localization}
-``Localization and delocalization of light in photonic moir{\'e} lattices''
-``Approximating spectral densities of large matrices''
-\cite{ramkarthik2021numerical}
-``Numerical recipes in quantum information theory and quantum computing: an adventure in FORTRAN 90''
-\cite{yeomans1988theory}
-``The theory and application of axial Ising models''
-\cite{milburn2000ion}
-``Ion trap quantum computing with warm ions''
-
-\cite{shastri2021photonics}
-``Photonics for artificial intelligence and neuromorphic computing''
-
-\cite{wanjura2024fully}
-``Fully nonlinear neuromorphic computing with linear wave scattering''
-\cite{de2024spin}
-``A spin-optical quantum computing architecture''
-\cite{heurtel2023perceval}
-``Perceval: A software platform for discrete variable photonic quantum computing''
-\cite{wiebe2014quantum}
-``Quantum deep learning''
-
-\end{comment}
-
-\begin{comment}
-
-Pre-submission
-Unless you have been approached directly by the Editor-in-Chief of a journal or another member of its editorial or publishing team, you will need to submit a proposal to guest edit a special issue to the relevant editorial office. If you are contemplating a special issue proposal, you might find the following recommendations helpful.
-
-Preparing a proposal for a special issue
-Working together with any other guest editors, you should prepare a proposal that, in addition to observing any special guidelines which are imposed by the journal's guide for authors or special issue guide (if any):
-
-Sets out the importance of the area on which the special issue will focus;
-
-\end{comment}
-
+\par\noindent
 As quoted from Shalf\cite{shalf2020future},
 ``Moore’s Law [1] is a techno-economic model that has enabled the IT industry to double the performance and functionality of digital electronics roughly every 2 years within a fixed cost, power and area. This expectation has led to a relatively stable ecosystem (e.g. electronic design automation tools, compilers, simulators and emulators) built around general-purpose processor technologies, such as the ×86, ARM and Power instruction set architectures. However, within a decade, the technological underpinnings for the process that Gordon Moore described will come to an end, as lithography gets down to atomic scale. At that point, it will be feasible to create lithographically produced devices with dimensions nearing atomic scale, where a dozen or fewer silicon atoms are present across critical device features, and will therefore represent a practical limit for implementing logic gates for digital computing [2]. Indeed, the ITRS (International Technology Roadmap for Semiconductors), which has tracked the historical improvements over the past 30 years, has projected no improvements beyond 2021, as shown in figure 1, and subsequently disbanded, having no further purpose. The classical technological driver that has underpinned Moore’s Law for the past 50 years is failing [3] and is anticipated to flatten by 2025, as shown in figure 2. Evolving technology in the absence of Moore’s Law will require an investment now in computer architecture and the basic sciences (including materials science), to study candidate replacement materials and alternative device physics to foster continued technology scaling.'' 
 \par\noindent
