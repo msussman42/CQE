@@ -114,17 +114,19 @@
 ABSTRACT:
 In the article by Herrmann et al, ``Quantum utility – definition and 
 assessment of a practical quantum advantage,'' the ``Application
-Readiness Level'' (ARL) is defined: (1) ``concept with unknown potential,'' 
-(2) ``beneficial in small idealized systems,'' (3) ``utility indicated by 
-theory or resource estimations,'' (4) ``simulated utility demonstration,''
-and (5) ``utility demonstration on quantum hardware.''  At the present, 
-practitioners have reached ARL 3 with the Variational Quantum Eigenvalue
-(VQE) algorithm.  In this review article, the latest activities from the
+Readiness Level'' (ARL) is defined: (ARL1) ``concept with unknown potential,'' 
+(ARL2) ``beneficial in small idealized systems,'' (ARL3) ``utility indicated by 
+theory or resource estimations,'' (ARL4) ``simulated utility demonstration,''
+and (ARL5) ``utility demonstration on quantum hardware.''  At the present, 
+practitioners have reached ARL3 with the Variational Quantum Eigenvalue
+(VQE) algorithm.  This seems to indicate that there is still much work
+to be done in order to reach ARL4 or ARL5.
+In this review article, the latest activities from the
 computational ``digital twin'' perspective are reported on in which scientists
 are working hard to bring practitioners out of the Noisy Intermediate
 Scale Quantum (NISQ) era into an era of ``Quantum supremacy.'' In
-otherwords digital twin activities that help to advance from ARL 3 to 
-ARL 4 amd ARL 5.  The three main categories in this review article are
+otherwords digital twin activities that help to advance from ARL3 to 
+ARL4, or even ARL5.  The three main categories in this review article are
 (1) Quantum algorithms for benchmarking quantum computers (to include
 emulator algorithms like Qiskit), (2) Optimization, Control, and inverse
 problem algorithms for Schrodinger's equation, and (3) Error correction
@@ -132,19 +134,57 @@ algorithms and algorithms for optimizing the ``surface topology'' of
 logical qubits.
 
 \par\noindent
+The motivation for this review article is the fact that Moore's law is no 
+longer applicable\cite{moore2021cramming}.
 As quoted from Shalf\cite{shalf2020future},
-``Moore’s Law [1] is a techno-economic model that has enabled the IT industry to double the performance and functionality of digital electronics roughly every 2 years within a fixed cost, power and area. This expectation has led to a relatively stable ecosystem (e.g. electronic design automation tools, compilers, simulators and emulators) built around general-purpose processor technologies, such as the ×86, ARM and Power instruction set architectures. However, within a decade, the technological underpinnings for the process that Gordon Moore described will come to an end, as lithography gets down to atomic scale. At that point, it will be feasible to create lithographically produced devices with dimensions nearing atomic scale, where a dozen or fewer silicon atoms are present across critical device features, and will therefore represent a practical limit for implementing logic gates for digital computing [2]. Indeed, the ITRS (International Technology Roadmap for Semiconductors), which has tracked the historical improvements over the past 30 years, has projected no improvements beyond 2021, as shown in figure 1, and subsequently disbanded, having no further purpose. The classical technological driver that has underpinned Moore’s Law for the past 50 years is failing [3] and is anticipated to flatten by 2025, as shown in figure 2. Evolving technology in the absence of Moore’s Law will require an investment now in computer architecture and the basic sciences (including materials science), to study candidate replacement materials and alternative device physics to foster continued technology scaling.'' 
+``Moore’s Law [1] is a techno-economic model that has enabled 
+the IT industry to double the performance and 
+functionality of digital electronics roughly 
+every 2 years within a fixed cost, power and area. 
+This expectation has led to a relatively stable ecosystem (e.g. 
+electronic design automation tools, compilers, simulators and 
+emulators) built around general-purpose processor technologies, 
+such as the ×86, ARM and Power instruction set architectures. 
+However, within a decade, the technological underpinnings 
+for the process that Gordon Moore described will come to an end, 
+as lithography gets down to atomic scale. At that point, 
+it will be feasible to create lithographically produced devices 
+with dimensions nearing atomic scale, where a dozen or fewer 
+silicon atoms are present across critical device features, and 
+will therefore represent a practical limit for implementing logic 
+gates for digital computing [2]. Indeed, the ITRS (International 
+Technology Roadmap for Semiconductors), which has tracked the 
+historical improvements over the past 30 years, has projected no 
+improvements beyond 2021, as shown in figure 1, and 
+subsequently disbanded, having no further purpose. 
+The classical technological driver that has underpinned Moore’s Law 
+for the past 50 years is failing [3] and is anticipated to flatten by 
+2025, as shown in figure 2. Evolving technology in the absence of 
+Moore’s Law will require an investment now in computer 
+architecture and the basic sciences (including materials science), 
+to study candidate replacement materials and alternative 
+device physics to foster continued technology scaling.'' 
 \par\noindent
 References one through three in the above quote 
 correspond to the following references respectively: 
 \cite{moore2021cramming}\cite{mack2015multiple}\cite{markov2014limits}.
 \par\noindent
-In Figure 3 of the article by Shalf\cite{shalf2020future}, a roadmap is provided for possible paths forward when the density of circuits on classical computers exceeds a critical value.  There are three categories: (a) roadmap for the next ten years, (b) 20 years, and (c) ``Decades beyond exascale,'' ``New Models of Computation.'' For category (c), some of the prospective technology listed is:
-(i) approximate computing, (ii) adiabatic reversible, (iii) Analog, (iv) Neuromorhic, and (v) quantum.
+As further motivation for this review article,
+in Figure 3 of the article by Shalf\cite{shalf2020future}, a 
+roadmap is provided for possible paths forward when the 
+density of circuits on classical computers exceeds a critical 
+value.  There are three categories: (a) roadmap for the next ten years, 
+(b) 20 years, and (c) ``Decades beyond exascale,'' 
+``New Models of Computation.'' For category (c), some of the 
+prospective technology listed is:
+(i) approximate computing, (ii) adiabatic reversible, 
+(iii) Analog, (iv) Neuromorhic, and (v) quantum.
 \par\noindent
 Of the ``new models of computation'' listed in 
 Shalf's article\cite{shalf2020future}, this review article will address
-the ``Numerical Methods for Engineering Quantum Computers'' aspects associated with the emerging ``quantum computing'' paradigm.  As outlined by
+the ``Numerical Methods for Engineering Quantum Computers'' 
+aspects associated with the emerging ``quantum computing'' paradigm.  
+As outlined by
 Gamble\cite{gamble2019quantum}, the development of reliable quantum
 computers will have a tranformative effect on computer technology.  That being said, right now we are in the ``Noisy Intermediate-Scale Quantum''\cite{callison2022hybrid} (NISQ) era.  The purpose of this review article is to bring to the forefront the current research being done, from the computational perspective, in order to move beyond the NISQ era.
 
