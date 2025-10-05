@@ -125,7 +125,8 @@ In this review article, the latest activities from the
 computational ``digital twin'' perspective are reported on in which scientists
 are working hard to bring practitioners out of the Noisy Intermediate
 Scale Quantum (NISQ) era into an era of ``Quantum supremacy.'' In
-otherwords digital twin activities that help to advance from ARL3 to 
+otherwords this review article discusses 
+digital twin activities that help to advance from ARL3 to 
 ARL4, or even ARL5.  The three main categories in this review article are
 (1) Quantum algorithms for benchmarking quantum computers (to include
 emulator algorithms like Qiskit), (2) Optimization, Control, and inverse
@@ -175,8 +176,9 @@ roadmap is provided for possible paths forward when the
 density of circuits on classical computers exceeds a critical 
 value.  There are three categories: (a) roadmap for the next ten years, 
 (b) 20 years, and (c) ``Decades beyond exascale,'' 
-``New Models of Computation.'' For category (c), some of the 
-prospective technology listed is:
+``New Models of Computation.'' For category (c), Shalf\cite{shalf2020future}
+refers to the following
+prospective technology:
 (i) approximate computing, (ii) adiabatic reversible, 
 (iii) Analog, (iv) Neuromorhic, and (v) quantum.
 \par\noindent
@@ -186,45 +188,43 @@ the ``Numerical Methods for Engineering Quantum Computers''
 aspects associated with the emerging ``quantum computing'' paradigm.  
 As outlined by
 Gamble\cite{gamble2019quantum}, the development of reliable quantum
-computers will have a tranformative effect on computer technology.  That being said, right now we are in the ``Noisy Intermediate-Scale Quantum''\cite{callison2022hybrid} (NISQ) era.  The purpose of this review article is to bring to the forefront the current research being done, from the computational perspective, in order to move beyond the NISQ era.
+computers will have a tranformative effect on computer technology.  
+That being said, right now we are in the 
+``Noisy Intermediate-Scale Quantum''\cite{callison2022hybrid} (NISQ) era.  
+The purpose of this review article is to bring to the 
+forefront the current research being done, from the 
+computational perspective, in order to move beyond the NISQ era.
 
-\section{preliminaries}
-In order to appreciate the complexities associated with designing a quantum computer, it is suggested that one first gain some intuition on electricity and magnetism.
-\par\noindent
-Classical electromagnetism is a very complex topic, in of itself.  One could choose as a starting point Maxwell's equations which are,
-\begin{align}
-    \label{eq:gauss_law_e}
-    \nabla \cdot \mathbf{E} &= \frac{\rho}{\epsilon_{0}} \quad \text{(Gauss's Law for Electricity)} \\
-    \label{eq:gauss_law_m}
-    \nabla \cdot \mathbf{B} &= 0 \quad \text{(Gauss's Law for Magnetism)} \\
-    \label{eq:faraday_law}
-    \nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t} \quad \text{(Faraday's Law of Induction)} \\
-    \label{eq:ampere_maxwell_law}
-    \nabla \times \mathbf{B} &= \mu_0 \left( \mathbf{J} + \epsilon_0 \frac{\partial \mathbf{E}}{\partial t} \right) \quad \text{(Ampere-Maxwell's Law)}
-\end{align}
-Also, there is the Lorentz force law:
-\begin{eqnarray*}
-\textbf{F} = q(\textbf{E} + \textbf{v} \times \textbf{B})
-\end{eqnarray*}
+\section{Recommended Foundational Literature}
 
-\begin{comment}
-Maxwell's equations and the Lorentz force can be formulated in such a way as to satisfy the invarience condition under the rectilinear Lorentz transformation:
-\begin{eqnarray*}
-t'=\gamma(t-\frac{vx}{c^{2}}) \\
-x'=\gamma(x-vt) \\
-y'=y \\
-z'=z \\
-\gamma=\frac{1}{\sqrt{1-v^{2}/c^{2}}}
-\end{eqnarray*}
-\end{comment}
+The following reading material is recommended for understanding physics in
+general, and quantum mechanics in particular:
+\begin{itemize}
+\item ``The Feynman lectures on Physics,'' Feynman, Leighton, 
+ Sands\cite{feynman2011feynman}.
+\item ``Electricity and Magnetism third edition,'' 
+  Purcell and Morin\cite{purcell2013electricity}.
+\item ``Modern Quantum Mechanics,'' 
+  Sakurai and Napolitano\cite{sakurai2020modern}.
+\end{itemize}
+\par\noindent
+At the next level, the following foundational material on 
+density functional 
+theory are important for understanding the state-of-the-art for
+enegineering and benchmarking quantum
+computers\cite{ko2023implementation}:
+\begin{itemize}
+\item ``A mathematical introduction to electronic structure theory,''
+  Lin and Lu\cite{lin2019mathematical}.
+\item ``Density-Functional theory of Atoms and Molecules,'' Parr and
+ Yang\cite{ParrYang}
+\item ``Modern quantum chemistry: introduction to advanced electronic
+ structure theory,'' Szabo and Ostlund\cite{szabo1996modern}.
+\end{itemize}
 
-\par\noindent
-A good textbook that describes these fundamentals is by Purcell and Morin third edition\cite{purcell2013electricity}.
-%https://www.feynmanlectures.caltech.edu/
-\par\noindent
-Maxwell's equations, and relativity though are not sufficient to describe the
-quantum and particle nature of matter and light.  Matter and Light, when considering
-small enough scales, have a dual particle and wave property to them.  Also
+
+mathematics and quantum mechanics and abstract algebra and error correction
+
 Matter and light posess discrete ``quantum,'' energy levels.
 For a good reference, see the following quantum mechanics 
 textbook\cite{sakurai2020modern}.  Experiments which cannot be
