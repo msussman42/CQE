@@ -195,91 +195,23 @@ The purpose of this review article is to bring to the
 forefront the current research being done, from the 
 computational perspective, in order to move beyond the NISQ era.
 
-\section{Recommended Foundational Literature}
+\section{Quantum algorithms and Quantum emulators
+  for benchmarking quantum computers}
 
-The following reading material is recommended for understanding physics in
-general, and quantum mechanics in particular:
-\begin{itemize}
-\item ``The Feynman lectures on Physics,'' Feynman, Leighton, 
- Sands\cite{feynman2011feynman}.
-\item ``Electricity and Magnetism third edition,'' 
-  Purcell and Morin\cite{purcell2013electricity}.
-\item ``Modern Quantum Mechanics,'' 
-  Sakurai and Napolitano\cite{sakurai2020modern}.
-\end{itemize}
-\par\noindent
-At the next level, the following foundational material on 
-density functional 
-theory are important for understanding the state-of-the-art for
-enegineering and benchmarking quantum
-computers\cite{ko2023implementation}:
-\begin{itemize}
-\item ``A mathematical introduction to electronic structure theory,''
-  Lin and Lu\cite{lin2019mathematical}.
-\item ``Density-Functional theory of Atoms and Molecules,'' Parr and
- Yang\cite{ParrYang}
-\item ``Modern quantum chemistry: introduction to advanced electronic
- structure theory,'' Szabo and Ostlund\cite{szabo1996modern}.
-\end{itemize}
-
-
-mathematics and quantum mechanics and abstract algebra and error correction
-
-Matter and light posess discrete ``quantum,'' energy levels.
-For a good reference, see the following quantum mechanics 
-textbook\cite{sakurai2020modern}.  Experiments which cannot be
-explained by classical electromagnetism are the
-%demonstrates that the magnitude of the angular momentum is quantized.
-Stern-Gerlach experiment\cite{gerlach1989experimentelle}, 
-the photo-electric effect\cite{wheaton1978philipp}, and
-the electron double slit experiment\cite{bach2013controlled}, amongst many
-more.
-%%photons interacting with thin membrane?
-\par\noindent
-The mathematical model that describes the dynamics of matter and light, including ``quantum'' properties and the dual particle wave property is Schrodinger's equation:
-\begin{eqnarray*}
-i\hbar \frac{\partial}{\partial t} \Psi(\mathbf{r}, t) = \hat{H} \Psi(\mathbf{r}, t)
-\end{eqnarray*}
-where:
-i is the imaginary unit
-$\hbar$ is the reduced Planck constant
-$\frac{\partial}{\partial t}$ is the partial derivative with respect to time
-$\Psi(\mathbf{r}, t)$ is the wave function
-$\hat{H}$ is the Hamiltonian operator
-$\mathbf{r}$ is the position vector
-$t$ is time
-The time-independent Schrödinger equation can be written as:
-\begin{eqnarray*}
-\hat{H} \psi(\mathbf{r}) = E \psi(\mathbf{r})
-\end{eqnarray*}
-where:
-\begin{eqnarray*}
-\hat{H} 
-\end{eqnarray*}
-is the Hamiltonian operator
-\begin{eqnarray*}
-\psi(\mathbf{r}) 
-\end{eqnarray*}
-is the time-independent wave function
-\begin{eqnarray*}
-E 
-\end{eqnarray*}
-is the energy of the system.
-%https://www.feynmanlectures.caltech.edu/
-%% See Electron Magnetic Moment
-%% See Schrodinger equation for electrons as distinguished from photons.
-When discussing the engineering of quantum computers, relativistic effects do not have to be considered. Also, nonlinear Shrodinger mathematical models do not have to be considered.
-
-For the applications of quantum computing and quantum information 
-processing, it is argued that relativity effects can be ignored since
-the rest energy possessed by an electron is $E=m_{e}c^{2}$ which is 
-significantly larger than the energy required for inducing a 
-superposition state or the energy to carry out a unitary operator on a
-current quantum state.
-
-``Quantum computers operate on energy levels far below those where relativistic effects become noticeable. The speeds of qubits and the interactions between them are slow enough that the effects of time dilation and length contraction are practically insignificant. ''
-
-
+Quantum Emulators:
+\begin{enumerate}
+\item (IBM) ``Quantum Computing with Qiskit'' (2024)\cite{javadi2024quantum}
+\item ``Intel Quantum Simulator: a cloud-ready high-performance
+ simulator of quantum circuits'' (2020)\cite{Guerreschi_Intel_Quantum_Simulator_2020}
+\item (Microsoft) ``LIQUid: A Software design architecture 
+ and domain specific language
+ for quantum computing'' (2014)\cite{1402.4467}
+\item ``QuESTlink—Mathematica embiggened by a hardware-optimised quantum emulator'' (2020)\cite{Jones_2020}
+\item (Matlab) ``QCLAB: A Matlab Toolbox for Quantum Computing'' 
+ (2025)\cite{keip2025qclabmatlabtoolboxquantum}
+\item ``PennyLane-Lightning MPI: A massively scalable quantum circuit simulator based on distributed computing in CPU clusters'' (2025)\cite{kang2025pennylane}
+\item (Google) ``qsim''(2020)\cite{quantum_ai_team_and_collaborators_2020_4023103}
+\end{enumerate}
 
 \begin{comment}
 	1. PDE constrained optimization and control. QUANDARY
