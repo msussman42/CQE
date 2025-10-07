@@ -1,10 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{bach2013controlled}
-{\sc Bach, R., Pope, D., Liou, S.-H., and Batelaan, H.}
-\newblock Controlled double-slit electron diffraction.
-\newblock {\em New Journal of Physics 15}, 3 (2013), 033018.
-
 \bibitem{beck2024integrating}
 {\sc Beck, T., Baroni, A., Bennink, R., Buchs, G., P{\'e}rez, E. A.~C.,
   Eisenbach, M., da~Silva, R.~F., Meena, M.~G., Gottiparthi, K., Groszkowski,
@@ -13,11 +8,29 @@
   ecosystems.
 \newblock {\em Future Generation Computer Systems 161\/} (2024), 11--25.
 
+\bibitem{Benedetti_2019}
+{\sc Benedetti, M., Lloyd, E., Sack, S., and Fiorentini, M.}
+\newblock Parameterized quantum circuits as machine learning models.
+\newblock {\em Quantum Science and Technology 4}, 4 (nov 2019), 043001.
+
+\bibitem{biamonte2017quantum}
+{\sc Biamonte, J., Wittek, P., Pancotti, N., Rebentrost, P., Wiebe, N., and
+  Lloyd, S.}
+\newblock Quantum machine learning.
+\newblock {\em Nature 549}, 7671 (2017), 195--202.
+
 \bibitem{bravo2023variational}
 {\sc Bravo-Prieto, C., LaRose, R., Cerezo, M., Subasi, Y., Cincio, L., and
   Coles, P.~J.}
 \newblock Variational quantum linear solver.
 \newblock {\em Quantum 7\/} (2023), 1188.
+
+\bibitem{cadi2024folded}
+{\sc Cadi~Tazi, L., and Thom, A.~J.}
+\newblock Folded spectrum vqe: A quantum computing method for the calculation
+  of molecular excited states.
+\newblock {\em Journal of Chemical Theory and Computation 20}, 6 (2024),
+  2491--2504.
 
 \bibitem{callison2022hybrid}
 {\sc Callison, A., and Chancellor, N.}
@@ -25,11 +38,23 @@
   quantum era and beyond.
 \newblock {\em Physical Review A 106}, 1 (2022), 010101.
 
+\bibitem{cerezo2021variational}
+{\sc Cerezo, M., Arrasmith, A., Babbush, R., Benjamin, S.~C., Endo, S., Fujii,
+  K., McClean, J.~R., Mitarai, K., Yuan, X., Cincio, L., et~al.}
+\newblock Variational quantum algorithms.
+\newblock {\em Nature Reviews Physics 3}, 9 (2021), 625--644.
+
 \bibitem{daribayev2023implementation}
 {\sc Daribayev, B., Mukhanbet, A., and Imankulov, T.}
 \newblock Implementation of the hhl algorithm for solving the poisson equation
   on quantum simulators.
 \newblock {\em Applied Sciences 13}, 20 (2023), 11491.
+
+\bibitem{ding2023simultaneous}
+{\sc Ding, Z., and Lin, L.}
+\newblock Simultaneous estimation of multiple eigenvalues with short-depth
+  quantum circuit on early fault-tolerant quantum computers.
+\newblock {\em Quantum 7\/} (2023), 1136.
 
 \bibitem{fei2025switching}
 {\sc Fei, X., Brady, L., Larson, J., Leyffer, S., and Shen, S.}
@@ -43,18 +68,18 @@
 \newblock In {\em Frontiers of Engineering: Reports on Leading-Edge Engineering
   from the 2018 Symposium\/} (2019), National Academies Press, pp.~5--8.
 
-\bibitem{gerlach1989experimentelle}
-{\sc Gerlach, W., and Stern, O.}
-\newblock Der experimentelle nachweis der richtungsquantelung im magnetfeld.
-\newblock {\em Walther Gerlach (1889--1979) Eine Auswahl aus seinen Schriften
-  und Briefen\/} (1989), 26--29.
-
 \bibitem{gopalakrishnan2024solving}
 {\sc Gopalakrishnan~Meena, M., Gottiparthi, K.~C., Lietz, J.~G., Georgiadou,
   A., and Coello~P{\'e}rez, E.~A.}
 \newblock Solving the hele--shaw flow using the harrow--hassidim--lloyd
   algorithm on superconducting devices: A study of efficiency and challenges.
 \newblock {\em Physics of Fluids 36}, 10 (2024).
+
+\bibitem{Guerreschi_Intel_Quantum_Simulator_2020}
+{\sc Guerreschi, G.~G., Hogaboam, J., Baruffa, F., and Sawaya, N. P.~D.}
+\newblock {Intel Quantum Simulator: a cloud-ready high-performance simulator of
+  quantum circuits}.
+\newblock {\em Quantum Science and Technology 5}, 3 (July 2020).
 
 \bibitem{9651392}
 {\sc Günther, S., Petersson, N.~A., and DuBois, J.~L.}
@@ -68,6 +93,17 @@
 \newblock Quantum algorithm for linear systems of equations.
 \newblock {\em Physical review letters 103}, 15 (2009), 150502.
 
+\bibitem{ide2025fault}
+{\sc Ide, B., Gowda, M.~G., Nadkarni, P.~J., and Dauphinais, G.}
+\newblock Fault-tolerant logical measurements via homological measurement.
+\newblock {\em Physical Review X 15}, 2 (2025), 021088.
+
+\bibitem{javadi2024quantum}
+{\sc Javadi-Abhari, A., Treinish, M., Krsulich, K., Wood, C.~J., Lishman, J.,
+  Gacon, J., Martiel, S., Nation, P.~D., Bishop, L.~S., Cross, A.~W., et~al.}
+\newblock Quantum computing with qiskit.
+\newblock {\em arXiv preprint arXiv:2405.08810\/} (2024).
+
 \bibitem{doi:10.1137/23M1563451}
 {\sc Jin, S., Li, X., Liu, N., and Yu, Y.}
 \newblock Quantum simulation for quantum dynamics with artificial boundary
@@ -80,6 +116,34 @@
   conditions via schrodingerisation.
 \newblock {\em arXiv preprint arXiv:2407.15895\/} (2024).
 
+\bibitem{Jones_2020}
+{\sc Jones, T., and Benjamin, S.}
+\newblock Questlink—mathematica embiggened by a hardware-optimised quantum
+  emulator*.
+\newblock {\em Quantum Science and Technology 5}, 3 (May 2020), 034012.
+
+\bibitem{kang2025pennylane}
+{\sc Kang, J.-H., and Ryu, H.}
+\newblock Pennylane-lightning mpi: A massively scalable quantum circuit
+  simulator based on distributed computing in cpu clusters.
+\newblock {\em arXiv preprint arXiv:2508.13615\/} (2025).
+
+\bibitem{keip2025qclabmatlabtoolboxquantum}
+{\sc Keip, S., Camps, D., and Beeumen, R.~V.}
+\newblock Qclab: A matlab toolbox for quantum computing, 2025.
+
+\bibitem{khait2023variational}
+{\sc Khait, I., Tham, E., Segal, D., and Brodutch, A.}
+\newblock Variational quantum eigensolvers in the era of distributed quantum
+  computers.
+\newblock {\em Physical Review A 108}, 5 (2023), L050401.
+
+\bibitem{kim2023evidence}
+{\sc Kim, Y., Eddins, A., Anand, S., Wei, K.~X., Van Den~Berg, E., Rosenblatt,
+  S., Nayfeh, H., Wu, Y., Zaletel, M., Temme, K., et~al.}
+\newblock Evidence for the utility of quantum computing before fault tolerance.
+\newblock {\em Nature 618}, 7965 (2023), 500--505.
+
 \bibitem{kubischta2023family}
 {\sc Kubischta, E., and Teixeira, I.}
 \newblock Family of quantum codes with exotic transversal gates.
@@ -89,6 +153,14 @@
 {\sc Lidar, D.~A.}
 \newblock Lecture notes on the theory of open quantum systems.
 \newblock {\em arXiv preprint arXiv:1902.00967\/} (2019).
+
+\bibitem{doi:10.1098/rsta.2021.0414}
+{\sc Lotshaw, P.~C., Xu, H., Khalid, B., Buchs, G., Humble, T.~S., and
+  Banerjee, A.}
+\newblock Simulations of frustrated ising hamiltonians using quantum
+  approximate optimization.
+\newblock {\em Philosophical Transactions of the Royal Society A: Mathematical,
+  Physical and Engineering Sciences 381}, 2241 (2023), 20210414.
 
 \bibitem{mack2015multiple}
 {\sc Mack, C.}
@@ -104,14 +176,49 @@
 {\sc Moore, G.}
 \newblock Cramming more components onto integrated circuits (1965).
 
-\bibitem{purcell2013electricity}
-{\sc Purcell, E., and Morin, D.}
-\newblock Electricity and magnetism third edition, 2013.
+\bibitem{nghiem2023quantum}
+{\sc Nghiem, N.~A., and Wei, T.-C.}
+\newblock Quantum algorithm for estimating largest eigenvalues.
+\newblock {\em Physics Letters A 488\/} (2023), 129138.
 
-\bibitem{sakurai2020modern}
-{\sc Sakurai, J.~J., and Napolitano, J.}
-\newblock {\em Modern quantum mechanics}.
-\newblock Cambridge University Press, 2020.
+\bibitem{nguyen2022tensor}
+{\sc Nguyen, T., Lyakh, D., Dumitrescu, E., Clark, D., Larkin, J., and
+  McCaskey, A.}
+\newblock Tensor network quantum virtual machine for simulating quantum
+  circuits at exascale.
+\newblock {\em ACM Transactions on Quantum Computing 4}, 1 (2022), 1--21.
+
+\bibitem{nielsen2010quantum}
+{\sc Nielsen, M.~A., and Chuang, I.~L.}
+\newblock {\em Quantum computation and quantum information}.
+\newblock Cambridge university press, 2010.
+
+\bibitem{qing2023usevqecalculateground}
+{\sc Qing, M., and Xie, W.}
+\newblock Use vqe to calculate the ground energy of hydrogen molecules on ibm
+  quantum, 2023.
+
+\bibitem{ramkarthik2021numerical}
+{\sc Ramkarthik, M., and Solanki, P.~D.}
+\newblock {\em Numerical recipes in quantum information theory and quantum
+  computing: an adventure in FORTRAN 90}.
+\newblock CRC Press, 2021.
+
+\bibitem{VQSVD}
+{\sc Ryu, J., Jung, J., Lee, J., Gwon, Y., and Kevin~Rhee, J.}
+\newblock A variational quantum algorithm for ordered svd.
+\newblock In {\em 2021 IEEE Global Communications Conference (GLOBECOM)\/}
+  (2021), pp.~01--05.
+
+\bibitem{10313872}
+{\sc Sawaya, N.~P., Marti-Dafcik, D., Ho, Y., Tabor, D.~P., Bernal~Neira,
+  D.~E., Magann, A.~B., Premaratne, S., Dubey, P., Matsuura, A., Bishop, N.,
+  De~Jong, W.~A., Benjamin, S., Parekh, O.~D., Tubman, N.~M., Klymko, K., and
+  Camps, D.}
+\newblock Hamlib: A library of hamiltonians for benchmarking quantum algorithms
+  and hardware.
+\newblock In {\em 2023 IEEE International Conference on Quantum Computing and
+  Engineering (QCE)\/} (2023), vol.~02, pp.~389--390.
 
 \bibitem{shalf2020future}
 {\sc Shalf, J.}
@@ -119,10 +226,39 @@
 \newblock {\em Philosophical Transactions of the Royal Society A 378}, 2166
   (2020), 20190061.
 
-\bibitem{wheaton1978philipp}
-{\sc Wheaton, B.~R.}
-\newblock Philipp lenard and the photoelectric effect, 1889-1911.
-\newblock {\em Historical Studies in the Physical Sciences 9\/} (1978),
-  299--322.
+\bibitem{PhysRevResearch.6.043008}
+{\sc Shirakawa, T., Ueda, H., and Yunoki, S.}
+\newblock Automatic quantum circuit encoding of a given arbitrary quantum
+  state.
+\newblock {\em Phys. Rev. Res. 6\/} (Oct 2024), 043008.
+
+\bibitem{quantum_ai_team_and_collaborators_2020_4023103}
+{\sc team, Q.~A., and collaborators}.
+\newblock qsim, Sept. 2020.
+
+\bibitem{tilly2022variational}
+{\sc Tilly, J., Chen, H., Cao, S., Picozzi, D., Setia, K., Li, Y., Grant, E.,
+  Wossnig, L., Rungger, I., Booth, G.~H., et~al.}
+\newblock The variational quantum eigensolver: a review of methods and best
+  practices.
+\newblock {\em Physics Reports 986\/} (2022), 1--128.
+
+\bibitem{1402.4467}
+{\sc Wecker, D., and Svore, K.~M.}
+\newblock {LIQU}i|>: {A} {S}oftware {D}esign {A}rchitecture and
+  {D}omain-{S}pecific {L}anguage for {Q}uantum {C}omputing, 2014.
+
+\bibitem{zhang2024quantum}
+{\sc Zhang, Q., Saligane, M., Kim, H.-S., Blaauw, D., Tzimpragos, G., and
+  Sylvester, D.}
+\newblock Quantum circuit simulation with fast tensor decision diagram.
+\newblock In {\em 2024 25th International Symposium on Quality Electronic
+  Design (ISQED)\/} (2024), IEEE, pp.~1--8.
+
+\bibitem{zoufal2019quantum}
+{\sc Zoufal, C., Lucchi, A., and Woerner, S.}
+\newblock Quantum generative adversarial networks for learning and loading
+  random distributions.
+\newblock {\em npj Quantum Information 5}, 1 (2019), 103.
 
 \end{thebibliography}

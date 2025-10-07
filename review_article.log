@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  28 JUL 2025 02:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  7 OCT 2025 01:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -208,72 +208,73 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 112
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Excluding 'comment' comment. Excluding 'comment' comment.
-Excluding 'comment' comment. Excluding 'comment' comment.
-Excluding 'comment' comment. [2] Excluding 'comment' comment.
-Overfull \hbox (7.02843pt too wide) in paragraph at lines 267--269
-\OT1/cmr/m/n/10 clud-ing ``quan-tum'' prop-er-ties and the dual par-ti-cle wave
- prop-erty is Schrodinger's
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Overfull \hbox (5.30528pt too wide) in paragraph at lines 211--213
+[]\OT1/cmr/m/n/10 (Matlab) ``QCLAB: A Mat-lab Tool-box for Quan-tum Com-put-ing
+'' (2025)[[]] 
  []
 
 [3] Excluding 'comment' comment.
-Overfull \hbox (2.1729pt too wide) in paragraph at lines 325--325
+Overfull \hbox (2.1729pt too wide) in paragraph at lines 273--273
 []\OT1/cmr/bx/n/14.4 Quantum Al-go-rithms for bench-mark-ing Quan-
  []
 
-Excluding 'comment' comment.
-Overfull \hbox (13.19795pt too wide) in paragraph at lines 351--351
+Excluding 'comment' comment. [4]
+Overfull \hbox (13.19795pt too wide) in paragraph at lines 301--301
 []\OT1/cmr/bx/n/14.4 Quantum Al-go-rithms with er-ror cor-rec-tion logic 
  []
 
-[4]
-Overfull \hbox (25.74933pt too wide) in alignment at lines 398--403
+[5]
+Overfull \hbox (25.74933pt too wide) in alignment at lines 365--370
  [][][] []
  []
 
-[5] Excluding 'comment' comment. Excluding 'comment' comment.
+[6] Excluding 'comment' comment. Excluding 'comment' comment.
 Excluding 'comment' comment. Excluding 'comment' comment.
 Excluding 'comment' comment.
-Overfull \hbox (2.22296pt too wide) in paragraph at lines 647--649
+Overfull \hbox (2.22296pt too wide) in paragraph at lines 614--616
 []\OT1/cmr/m/n/10 quantum and hy-brid clas-si-cal/quantum al-go-rithms for benc
 h-mark-ing quan-
  []
 
 Excluding 'comment' comment. Excluding 'comment' comment. (./review_article.bbl
-[6] [7]) [8] (./review_article.aux) ) 
+[7] [8] [9]
+Underfull \hbox (badness 1629) in paragraph at lines 214--222
+[]\OT1/cmr/m/sc/10 Sawaya, N. P., Marti-Dafcik, D., Ho, Y., Ta-bor, D. P.,
+ []
+
+[10]) [11] (./review_article.aux) ) 
 Here is how much of TeX's memory you used:
- 2606 strings out of 480608
- 33954 string characters out of 5903631
- 272924 words of memory out of 5000000
- 18463 multiletter control sequences out of 15000+600000
+ 2623 strings out of 480608
+ 34344 string characters out of 5903631
+ 273980 words of memory out of 5000000
+ 18480 multiletter control sequences out of 15000+600000
  543800 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,10n,31p,1667b,207s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/
-enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/s
-ymbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-sup
-er/sfrm1000.pfb>
-Output written on review_article.pdf (8 pages, 227614 bytes).
+ 30i,9n,31p,810b,207s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/en
+c/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-supe
+r/sfrm1000.pfb>
+Output written on review_article.pdf (11 pages, 223388 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 109 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
