@@ -129,10 +129,9 @@ otherwords this review article discusses
 digital twin activities that help to advance from ARL3 to 
 ARL4, or even ARL5.  The three main categories in this review article are
 (1) Quantum algorithms for benchmarking quantum computers (to include
-emulator algorithms like Qiskit), (2) Optimization, Control, and inverse
-problem algorithms for Schrodinger's equation, and (3) Error correction
-algorithms and algorithms for optimizing the ``surface topology'' of
-logical qubits.
+emulator algorithms like Qiskit), (2) Optimization, Control, inverse
+problems, and exploratory simulation algorithms for Schrodinger's equation, and (3) Quantum Error correction
+algorithms and surface codes.
 
 \par\noindent
 The motivation for this review article is the fact that Moore's law is no 
@@ -180,7 +179,8 @@ value.  There are three categories: (a) roadmap for the next ten years,
 refers to the following
 prospective technology:
 (i) approximate computing, (ii) adiabatic reversible, 
-(iii) Analog, (iv) Neuromorhic, and (v) quantum.
+(iii) Analog, (iv) Neuromorhic, and (v) 
+quantum\cite{richard1982feynman,richard1986feynman}.
 \par\noindent
 Of the ``new models of computation'' listed in 
 Shalf's article\cite{shalf2020future}, this review article will address
@@ -212,23 +212,29 @@ Quantum Emulators:
  (2025)\cite{keip2025qclabmatlabtoolboxquantum}
 \item ``PennyLane-Lightning MPI: A massively scalable quantum circuit simulator based on distributed computing in CPU clusters'' (2025)\cite{kang2025pennylane}
 \item (Google) ``qsim''(2020)\cite{quantum_ai_team_and_collaborators_2020_4023103}
+\item (nVidea) ``cuQuantum SDK: A High-Performance Library for Accelerating Quantum Science'' (2023)\cite{10313722}
 \item ``Numerical recipes in quantum information theory and quantum computing: an adventure in FORTRAN 90''(2021)\cite{ramkarthik2021numerical}
 \item Nguyen et al(2022)\cite{nguyen2022tensor}
 ``Tensor network quantum virtual machine for simulating quantum circuits at exascale''
-\item Zhang et al\cite{zhang2024quantum}, ``Quantum circuit simulation with fast tensor decision diagram''
+\item Zhang et al (2024)\cite{zhang2024quantum}, ``Quantum circuit simulation with fast tensor decision diagram''
+\item Viamontes et al (2004)\cite{viamontes2004high}, ``High-performance QuIDD-based simulation of quantum circuits.''
 \end{enumerate}
 
 \par\noindent
 Quantum Algorithms for benchmarking Quantum Computers:
 \begin{enumerate}
+\item Kitaev (1995)\cite{kitaev1995quantum}, ``Quantum measurements and the Abelian stabilizer problem'' (quantum phase estimation)
+\item Shor (1999)\cite{doi:10.1137/S0036144598347011}, ``Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer''
 \item Callison and Chancellor (2022)\cite{callison2022hybrid} ``Hybrid quantum-classical algorithms in the noisy intermediate-scale quantum era and beyond''
+\item Jin et al (2024)\cite{doi:10.1137/23M1563451}, ``Quantum Simulation for Quantum Dynamics with Artificial Boundary Conditions.''
 \item S. Jin, N. Liu, and Y. Yu (2024)\cite{jin2024quantum}, ``Quantum Circuits for the heat equation with physical boundary conditions via Schrodingerisation''
 \item 
 Cerezo et al (2021)\cite{cerezo2021variational} ``Variational quantum algorithms''
 \item
 Lotshaw et al (2021)\cite{doi:10.1098/rsta.2021.0414} ``Simulations of frustrated Ising Hamiltonians using quantum approximate optimization''
 \item Nielsen and Chuang (2010)\cite{nielsen2010quantum}
-``Quantum computation and quantum information'' (quantum Fourier Transform)
+``Quantum computation and quantum information'' (quantum Fourier Transform and
+quantum phase estimation)
 \item Ding and Lin (2023)\cite{ding2023simultaneous}
 ``Simultaneous estimation of multiple eigenvalues with short-depth quantum circuit on early fault-tolerant quantum computers''
 \item Biamonte et al (2017)\cite{biamonte2017quantum}
@@ -254,26 +260,20 @@ Lotshaw et al (2021)\cite{doi:10.1098/rsta.2021.0414} ``Simulations of frustrate
   ``Implementation of the hhl algorithm for solving the poisson equation on quantum simulators.''
 \item Bravo-Prieto et al (2023)\cite{bravo2023variational},
   ''Variational quantum linear solver''
+\item Gilyen et al (2019)\cite{gilyen2019quantum},
+  ``Quantum singular value transformation and beyond: exponential improvements for quantum matrix arithmetics''
+\item Gundlach et al (2025)\cite{gundlach2025quantumadvantagecomputationalchemistry}, ``Quantum Advantage in Computational Chemistry?''
+\item Ko et al (2023)\cite{ko2023implementation}, ``Implementation of the density-functional theory on quantum computers with linear scaling with respect to the number of atoms''
+\item Jin et al (2025)\cite{jin2025quantum}, ``Quantum preconditioning method for linear systems problems via Schrodingerization''
+\item Itani et al (2024)\cite{itani2024quantum}, ``Quantum algorithm for lattice Boltzmann (QALB) simulation of incompressible fluids with a nonlinear collision term''
+\item Hibat-Allah et al (2024)\cite{hibat2024framework}, ``A framework for demonstrating practical quantum advantage: comparing quantum against classical generative models''
+\item Herrmann et al (2023)\cite{herrmann2023quantum}, ``Quantum utility--definition and assessment of a practical quantum advantage''
+\item Lotshaw et al (2023)\cite{PhysRevA.107.062406}, ``Modeling noise in global Molmer-Sorensen interactions applied to quantum approximate optimization.''
+\item De Luo et al (2025)\cite{luo2025quantumsimulationbubblenucleation}, ``Quantum simulation of bubble nucleation across a quantum phase transition.''
 \end{enumerate}
 
 \begin{comment}
-	1. PDE constrained optimization and control. QUANDARY
-	  (PDE constraint is Schrodinger equation)
-	  Anders Petersson and Stefanie Guenther
-	2. Quantum algorithms for benchmarking quantum computers
-	   Shi Jin, Antigoni Georgiadou (discuss emulators Qiskit,
-           Penny Lane, ...; when discussing emulators, also discuss how they
-	   emulate the noise of a real quantum computer) 
-	   VQE, Shor's prime factorization algorithm,
-           Quantum Fourier Transform
-	3. Quantum error correction algorithms
-	   Eric Kubischta
-\end{comment}
-
-\section{Quantum Algorithms for benchmarking Quantum Computers}
-
 \verb=https://www.ibm.com/quantum/qiskit=
-\begin{comment}
 mkdir qiskit
 cd qiskit
 pip3 install qiskit
@@ -286,28 +286,47 @@ pip3 install qiskit-ibm-runtime
 python3 hadamard_gate.py
 \end{comment}
 
-Discuss the latest technologies for Quantum Computer Emulators.
 
-Examples: (1)VQE using slater determinant form, only valence electrons, 
-(2) SVD (SVT, self consitent field theory), 
-(3) Shor's prime number factorization algorithm, (4) heat 
-equation, and (5) Quantum Fourier Transform.
+\section{Optimization, Control, inverse
+problems, and exploratory simulation algorithms for Schrodinger's equation}
 
-\begin{itemize}
-\item Jin et al\cite{doi:10.1137/23M1563451}
-\item Beck et al\cite{beck2024integrating}
-\end{itemize}
+\begin{enumerate}
+\item Feit et al (1982)\cite{FEIT1982412}, ``Solution of the Schrödinger equation by a spectral method.''
+\item Bao et al (2002)\cite{BAO2002487}, ``On Time-Splitting Spectral Approximations for the Schrödinger Equation in the Semiclassical Regime.''
+\item Lin et al (2016)\cite{lin2016approximating}, ``Approximating spectral densities of large matrices.''
+\item Zhang et al (2017)\cite{zhang2017observation}, ``Observation of a many-body dynamical phase transition with a 53-qubit quantum simulator.''
+\item Han et al (2019)\cite{HAN2019108929}, ``Solving many-electron Schrödinger equation using deep neural networks.''
+\item Günther et al (2021) \cite{9651392}, ``Quandary: An open-source C++ package for high-performance optimal control of open quantum systems.'' the article
+by Lidar (2019)\cite{lidar2019lecture} (``Lecture notes on the theory of open quantum systems'') gives the derivation of the model for open quantum systems.
+\item Günther and Petersson (2023) \cite{gunther2023practical}, ``A practical approach to determine minimal quantum gate durations using amplitude-bounded quantum controls.''
+\item Fei et al (2025)\cite{fei2025switching}, ``Switching time optimization for binary quantum optimal control.''
+\item Fei et al (2023)\cite{fei2023binary}, ``Binary control pulse optimization for quantum systems.''
+\item Kanai et al (2024)\cite{PhysRevLett.132.250603}, ``Single-Electron Qubits Based on Quantum Ring States on Solid Neon Surface.''
+\item Hermann et al (2020)\cite{hermann2020deep}, ``Deep-neural-network solution of the electronic Schr{\"o}dinger equation.''
+\item Andrade et al (2022)\cite{Andrade_2022}, ``Engineering an effective three-spin Hamiltonian in trapped-ion systems for applications in quantum simulation.''
+\item Wille et al (2018)\cite{wille2018computer}, ``Computer-aided design for quantum computation.''
+\item He et al (2024)\cite{he2024efficientoptimalcontrolopen}, ``Efficient Optimal Control of Open Quantum Systems''
+\item Nusseler et al (2020) \cite{PhysRevB.101.155134}, ``Efficient simulation of open quantum systems coupled to a fermionic bath.''
+\item Selsto and Kvaal (2010)\cite{Selsto2010}, ``Absorbing boundary conditions for dynamical many-body quantum systems.''
+\item Sawaya et al (2023)\cite{10313872}, ``HamLib: A Library of Hamiltonians for Benchmarking Quantum Algorithms and Hardware.''
+\item Grivopoulos (2005)\cite{grivopoulos2005optimal}, ``Optimal control of quantum systems.''
+\item Hangleiter et al (2024)\cite{hangleiter2024robustly}, ``Robustly learning the Hamiltonian dynamics of a superconducting quantum processor.''
+\item Shukrinov et al (2016)\cite{shukrinov2016modeling}, ``Modeling of LC-shunted intrinsic Josephson junctions in high-Tc superconductors.''
+\item Sun and Galperin (2025)\cite{sun2025control}, ``Control of open quantum systems: The nonequilibrium Green’s function perspective.''
+\item Zhang et al (2004)\cite{zheng2004numerical}, ``Numerical solutions of the Schrodinger equation for the ground lithium by the finite element method.''
+\end{enumerate}
 
-\section{Quantum Algorithms with error correction logic}
 
-\begin{itemize}
-\item Shor's algorithm for bit flip and phase flip errors.  e.g. given
- bit flip probability $p$, what is the probability of a bit flip 
- error occurring with and without error correction?
-\item Kubischta, Eric and Teixeira, Ian\cite{kubischta2023family}
-\end{itemize}
+\section{Quantum Error Correction algorithms and surface codes}
 
-\begin{itemize}
+\begin{enumerate}
+\item Shor (1995)\cite{shor1995scheme}, ``Scheme for reducing decoherence in quantum computer memory.''
+\item Anthony-Petersen et al (2024)\cite{anthony2024stress}, ``A stress-induced source of phonon bursts and quasiparticle poisoning.''
+\item Lotshaw et al (2024)\cite{PhysRevA.110.L030803}, ``Exactly solvable model of light-scattering errors in quantum simulations with metastable trapped-ion qubits.''
+\item Kubischta, Eric and Teixeira, Ian (2023)\cite{kubischta2023family}, ``Family of quantum codes with exotic transversal gates.''
+\item Barends et al (2014)\cite{barends2014superconducting}, ``Superconducting quantum circuits at the surface code threshold for fault tolerance.''
+\item Baum et al (2021)\cite{baum2021experimental}, ``Experimental deep reinforcement learning for error-robust gate-set design on a superconducting quantum computer.''
+\item Cheng and Guo (2025)\cite{cheng2025modeling}, ``Modeling correlated-noise in silicon spin qubit device.''
 \item Preskill's notes chapter 7.
 \item Eastin and Knill: A transversal quantum gate does not spread
   errors between physical qubits. ``if there are $n_{e}$ errors in the
@@ -316,369 +335,15 @@ equation, and (5) Quantum Fourier Transform.
   i.e., if the number of errors is below the ``correctable'' threshold $t$
   prior to the application of a transversal gate, it will still be 
   correctable after the application of a tranversal gate.
-\item Kubischta and Teixeira (a quantum code for making the 2I gates
-  transversal (i.e. product gates))
 \item Ide et al\cite{ide2025fault} (surface codes)
-\end{itemize}
+\end{enumerate}
 
-\section{Control and optimization of Quantum Computers using 
-  numerical model surrogates in place of the actual quantum computer}
 
-\begin{itemize}
-\item Günther et al\cite{9651392}
-\item Fei et al\cite{fei2025switching}
-\end{itemize}
 
-\subsection{Control of open quantum systems}
-
-The Lindblad master equation for Open quantum systems\cite{lidar2019lecture} is
-\begin{eqnarray}
-\dot{\rho}(t)=-i[H(t),\rho(t)]+\ell(\rho(t)) \hspace{10pt} 0\le t\le T
-\end{eqnarray}
-\begin{eqnarray}
-\ell(\rho)=\sum_{q=1}^{Q}\sum_{l=1}^{2} \ell_{lq}\rho\ell^{\dag}_{lq}-
-  \frac{1}{2}(\ell^{\dag}_{lq}\ell_{lq}\rho+\rho\ell^{\dag}_{lq}\ell_{lq})
-\end{eqnarray}
-\begin{eqnarray}
-N=\Pi_{q=1}^{Q}n_{q}
-\end{eqnarray}
-\begin{eqnarray}
-\rho(t)\in\mathbb{C}^{N\times N}
-\end{eqnarray}
-From \cite{lidar2019lecture}, given the pure state ensemble,
-\begin{eqnarray}
-\{q_{i},\ket\psi_{i}\}_{i=1}^{N},
-\end{eqnarray}
-the density operator is
-\begin{eqnarray}
-\rho=\sum_{i}q_{i}\ket\psi_{i}\bra\psi_{i}.
-\end{eqnarray}
-\begin{eqnarray}
-H=H_{sys}+H_{c}(t)
-\end{eqnarray}
-The control Hamiltonian has the form
-\begin{eqnarray}
-H_{c}(t)=\sum_{q=1}^{Q}d_{q}(\alpha_{q},t)a_{q}+
-  d_{q}(\alpha_{q},t)^{\ast}(t)a_{q}^{\dag}.
-\end{eqnarray}
-The objective function has the form
-\begin{eqnarray}
-{\cal G}(\bmalpha)=\frac{1}{M}\sum_{i=1}^{M} \left( 
-\beta_{i} J(\rho_{i}^{target},\rho_{i}(T))+
-\gamma_{1}\int_{0}^{T}\beta(t)J(\rho_{i}^{target},\rho_{i}(t))dt \right)+
-\gamma_{2} ||\bmalpha||_{2}^{2}/2
-\end{eqnarray}
-In Quandary the following choices for $J$ are\cite{9651392}
-\begin{eqnarray}
-J_{Frob}(\rho^{target},\rho)=||\rho^{target}-\rho||^{2}_{F}/2
-\end{eqnarray}
-\begin{eqnarray}
-J_{Trace}(\rho^{target},\rho)=1-Tr((\rho^{target})^{\dag}\rho)
-\end{eqnarray}
-\begin{eqnarray}
-J_{N_{m}}(\rho)=Tr(N_{m}\rho)
-\end{eqnarray}
-
-\subsection{Switching time optimization Control of binary quantum systems}
-
-\begin{eqnarray}
-\dot{X}(t)=-iH(t)X(t) \hspace{10pt} 0\le t\le T
-\end{eqnarray}
-\begin{eqnarray}
-H(t)=H^{(0)}+\sum_{j=1}^{J} u_{j}(t)H^{(j)}  \hspace{10pt} 0\le t\le T
-\end{eqnarray}
-\begin{eqnarray}
-\sum_{j=1}^{J}u_{j}(t)=1 \hspace{10pt} 0\le t\le T
-\end{eqnarray}
-\begin{eqnarray}
-u_{j}(t) \in \left\{ 0,1 \right\} \hspace{10pt} j=1,\ldots,J
-\end{eqnarray}
-Cost function example ($Q=2$):
-\begin{eqnarray}
-{\cal G}(X[u_{1}(t),\ldots,u_{J}(t)](T))=1-\frac{1}{4}|\mbox{Trace}\left\{X_{CNOT}^{\dag}X(T)\right\}|
-\end{eqnarray}
-
-\begin{comment}
-
-Explains how the anticipated contribution of the special issue will advance understanding in this area;
-
-\end{comment}
-\begin{comment}
-
-At the present, the research activity associated with ``Numerical Methods for Engineering Quantum Computers''
-is spread out over many journals: IEEE Journals, 
-``Quantum Information Processing,'' 
-``Quantum Science and Technology,'' 
-``Quantum,'' 
-``ACM Transactions on Quantum Computing,''
-``SIAM review,''
-``Journal of Computational Physics,''
-``Journal of Scientific Computing,''
-``Physical Review A,'' 
-``Journal of Chemical Physics,'' 
-``Journal of Physics: Condensed Matter,''
-``Physical Review A,''
-``Physical Review Letters,''
-``Physical Review Research,''
-``Nature,''
-``Nature Communications,''
-``Nature Physics,''
-``Nature Photonics,''
-``Nature Chemistry,''
-``PRX Quantum,''
-``AVS Quantum Science,''
-``Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences.''
-
-It is the intention of this special issue to have information pertaining
-to ``Numerical Methods for Engineering Quantum Computers'' in one accessble issue.
-\end{comment}
-
-\begin{comment}
-
-Identifies papers and authors for possible inclusion in the special issue, with a brief description of each paper. (These papers do not need to have been written at this time, although it might be the case that work is already in progress.);
-
-\end{comment}
 
 %Oak Ridge: Travis Humble, Stephen Jesse, Benjamin Lawrie, 
 %Gilles Buchs, Rob Moore, Zac Ward
 %FSU: Wei Guo, Lukasz Dusanowski
-\begin{comment}
-
-The following is a list of authors and the articles they
-have previously published which motivate inviting them to 
-contribute to the proposed special issue on ``Numerical Methods for Engineering Quantum Computers.''
-
-\begin{itemize}
-\item Callison and Chancellor\cite{callison2022hybrid} 
- ``Hybrid quantum-classical algorithms in the noisy intermediate-scale quantum era and beyond''
-\item Muqeet et al\cite{muqeet2024machine}
-``A Machine Learning-Based Error Mitigation Approach for Reliable Software Development on IBM’s Quantum Computers''
-\item Anthony-Petersen et al\cite{anthony2024stress}
-``A stress-induced source of phonon bursts and quasiparticle poisoning''
-\item Tuysuz et al\cite{tuysuz2024learning}
-  ``Learning to generate high-dimensional distributions with low-dimensional quantum Boltzmann machines''
-\item W. Bao, Z. Chang, X. Zhao\cite{BAO2025113486}, ``Computing ground states of Bose-Einstein condensation by normalized deep neural network''
-\item W. Bao, S. Jin, and P. Markowich\cite{BAO2002487}
-``On Time-Splitting Spectral Approximations for the Schrödinger Equation in the Semiclassical Regime''
-\item S. Jin, X. Li, N. Liu, and Y. Yu\cite{doi:10.1137/23M1563451},
- ``Quantum Simulation for Quantum Dynamics with Artificial Boundary 
-Conditions''
-\item S. Jin, N. Liu, and Y. Yu\cite{jin2024quantum}, ``Quantum Circuits for the heat equation with physical boundary conditions via Schrodingerisation''
-\item S. Jin, H. Liu, S. Osher, R. Tsai\cite{jin2005computing}, ``Computing multivalued physical observables for the semiclassical limit of the Schr{\"o}dinger equation''
-\item
-Jiequn Han and Linfeng Zhang and Weinan E\cite{HAN2019108929}
-``Solving many-electron Schrödinger equation using deep neural networks''
-\item
-Bernien et al\cite{bernien2017probing}
-``Probing many-body dynamics on a 51-atom quantum simulator''
-\item
-Zhang et al\cite{zhang2017observation}
-``Observation of a many-body dynamical phase transition with a 53-qubit quantum simulator''
-\item 
-Cerezo et al\cite{cerezo2021variational}
-``Variational quantum algorithms''
-\item
-Anshu et al\cite{anshu2021sample}
-``Sample-efficient learning of interacting quantum systems''
-\item
-Toshiaki Kanai, Dafei Jin, and Wei Guo\cite{PhysRevLett.132.250603}
-``Single-Electron Qubits Based on Quantum Ring States on Solid Neon Surface''
-\item
-Hermann et al\cite{hermann2020deep}
-``Deep-neural-network solution of the electronic Schr{\"o}dinger equation''
-\item
-Ilin and Arad\cite{ilin2024dissipativevariationalquantumalgorithms}
-``Dissipative variational quantum algorithms for Gibbs state preparation''
-\item
-Somma et al\cite{somma2024shadowhamiltoniansimulation}
-``Shadow Hamiltonian Simulation''
-\item 
-Lotshaw et al\cite{PhysRevA.110.L030803}
-``Exactly solvable model of light-scattering errors in quantum simulations with metastable trapped-ion qubits''
-\item
-Lotshaw et al\cite{PhysRevA.107.062406}
-``Modeling noise in global M\o{}lmer-S\o{}rensen interactions applied to quantum approximate optimization''
-\item
-Lotshaw et al\cite{doi:10.1098/rsta.2021.0414}
-``Simulations of frustrated Ising Hamiltonians using quantum approximate optimization''
-\item Friesen et al\cite{PhysRevB.67.121301}
-  ``Practical design and simulation of silicon-based quantum-dot qubits''
-\item Kai Jiang et al\cite{jiang2024high}
-``High-accuracy numerical methods and convergence analysis for Schr{\"o}dinger equation with incommensurate potentials''
-\item Lin and Lu\cite{lin2019mathematical}
-``A mathematical introduction to electronic structure theory''
-\item Nielsen and Chuang\cite{nielsen2010quantum}
-``Quantum computation and quantum information''
-\item Ding and Lin\cite{ding2023simultaneous}
-``Simultaneous estimation of multiple eigenvalues with short-depth quantum circuit on early fault-tolerant quantum computers''
-\item Ding et al\cite{ding2024random}
-  ``Random coordinate descent: A simple alternative for optimizing parameterized quantum circuits''
-\item Liu and Lin\cite{LIU2024113213}
-``Dense outputs from quantum simulations''
-\item Lin, Saad, and Yang\cite{lin2016approximating}
-``Approximating spectral densities of large matrices''
-\item Kubischta and Teixeira\cite{kubischta2023family}
-``Family of quantum codes with exotic transversal gates''
-\item Chen et al\cite{10628380}
-``Quantum-Classical-Quantum Workflow in Quantum-HPC Middleware with GPU Acceleration''
-\item Biamonte et al\cite{biamonte2017quantum}
-``Quantum machine learning''
-\item Benedetti et al\cite{Benedetti_2019}
-``Parameterized quantum circuits as machine learning models''
-\item Jin-Guo Liu et al\cite{PhysRevResearch.1.023025}
-''Variational quantum eigensolver with fewer qubits''
-\item Saurabh et al\cite{saurabh2023conceptual}
-``A conceptual architecture for a quantum-hpc middleware''
-\item Uvarov et al\cite{uvarov2020machine}
-``Machine learning phase transitions with a quantum processor''
-\item Khait et al\cite{khait2023variational}
-''Variational quantum eigensolvers in the era of distributed quantum computers''
-\item Huang et al\cite{huang2020predicting}
-``Predicting many properties of a quantum system from very few measurements''
-\item Cong et al\cite{cong2019quantum}
-``Quantum convolutional neural networks''
-\item Parekh et al\cite{parekh2021quantum}
-``Quantum algorithms and simulation for parallel and distributed quantum computing''
-\item Vallero et al\cite{vallero2024state}
-``State of practice: evaluating GPU performance of state vector and tensor network methods''
-\item Nguyen et al\cite{nguyen2022tensor}
-``Tensor network quantum virtual machine for simulating quantum circuits at exascale''
-\item Liu et al\cite{liu2024training}
-``Training classical neural networks by quantum machine learning''
-\item Bayraktar et al\cite{10313722}
-``cuQuantum SDK: A High-Performance Library for Accelerating Quantum Science''
-\item Andrade et al\cite{Andrade_2022}
-``Engineering an effective three-spin Hamiltonian in trapped-ion systems for applications in quantum simulation''
-%%\item https://github.com/lin-lin/Quantum290
-\item Wenhao He et al
- \cite{he2024efficientoptimalcontrolopen},
- ``Efficient Optimal Control of Open Quantum Systems''
-\item Alexander Nusseler et al
-\cite{PhysRevB.101.155134},
-``Efficient simulation of open quantum systems coupled to a fermionic bath''
-\item Selsto and Kvaal
-\cite{Selsto2010},
-``Absorbing boundary conditions for dynamical many-body quantum systems''
-\item Sawaya et al\cite{10313872},
-  ``HamLib: A Library of Hamiltonians for Benchmarking Quantum Algorithms and Hardware''
-\item Symeon Grivopoulos\cite{grivopoulos2005optimal},
- ``Optimal control of quantum systems''
-\item Theisen and Stamm\cite{doi:10.1137/23M161848X},
-  ''A Scalable Two-Level Domain Decomposition Eigensolver for Periodic Schrödinger Eigenstates in Anisotropically Expanding Domains''
-\item Guenther, Petersson, and DuBois\cite{9651392},
-  ``Quandary: An open-source C++ package for high-performance optimal control of open quantum systems''
-\item Guenther and Petersson\cite{gunther2023practical},
-``A practical approach to determine minimal quantum gate durations using amplitude-bounded quantum controls''
-\item Lidar\cite{lidar2019lecture},
-``Lecture notes on the theory of open quantum systems''
-\item Hangleiter et al\cite{hangleiter2024robustly},
-``Robustly learning the Hamiltonian dynamics of a superconducting quantum processor''
-\item Beer et al\cite{beer2020training},
-``Training deep quantum neural networks''
-\item Lalanne et al\cite{LalanneETAL},
-``Light Interaction with Photonic and Plasmonic Resonances''
-\item Shukrinov et al\cite{shukrinov2016modeling},
-``Modeling of LC-shunted intrinsic Josephson junctions in high-Tc superconductors''
-\item Georgadou et al\cite{gopalakrishnan2024solving}
-	Hele-Shaw simulation on quantum computer.
-\item Rupert Klein\cite{riedel2023wavetrain} WaveTrain: A Python package for numerical quantum mechanics of chain-like systems based on tensor trains
-\item {\verb=psiquantum.com=} \cite{bartolucci2023fusion}  ``Fusion based quantum computation,'' Bartolucci et al
-\item Roy Goodman et al\cite{goodman2025qglab}, ``QGLAB: A MATLAB PACKAGE FOR COMPUTATIONS ON QUANTUM GRAPHS''
-\item Campolattaro, Alfonso A ``Generalized Maxwell equations and quantum mechanics. I. Dirac equation for the free electron''
-\item Brannick et al, ``Least-Squares Finite Element Methods for Quantum Electrodynamics''
-\item Roth and Chew, ``Macroscopic Circuit Quantum Electrodynamics: A New Look Toward Developing Full-Wave Numerical Models''
-\item Devoret et al, ``Quantum fluctuations in electrical circuits''
-\end{itemize}
-\end{comment}
-
-\begin{comment}
-
-Indicates the timeframe in which the special issue could be produced (to include paper writing, reviewing and submission of final copy to the journal) assuming the proposal is accepted;
-Includes a short biography of all authors and guest editors;
-Indicates any special timing, associated events, funding support, partnerships or other links or relationships which could influence the development of the issue;
-Provides any further information which you feel is relevant.
-A special issue normally contains between five and 20 full-length articles, in addition to an editorial written by the special issue organizers. Because it is highly unlikely that all articles submitted for potential inclusion in a special issue will successfully pass the peer review process, it is wise to consider more papers than you anticipate as the upper limit. If fewer than three articles are accepted for publication, the articles will be published as stand-alone articles in the journal.
-Once you're ready, use the link below to find your chosen journal and submit your proposal.
-
-https://www.elsevier.com/editor/role/guest/guide
-
-\end{comment}
-
-\begin{itemize}
-\item compare VQE on classical computer vs IBM hardware to demonstrate the need
-for improved hardware.
-\item compare QUANDARY to other quantum optimal control algorithms. inverse
-problems.
-\item compare Error correction algorithms.
-%4. compare emulator algorithms and compare algorithms for emulating a ``NISQC''
-\item quantum and hybrid classical/quantum algorithms for benchmarking quantum 
-computers.
-\end{itemize}
-
-\begin{comment}
-remark:
-Schrodinger equation direct model: ~$10^{3N}$  $x^t H x/x^t x$ $H$ has
-dimensions of $10^{3N}$ by $10^{3N}$
-Density functional theory: N * (10)
-if $N$ electrons, what is the size of the Hamiltonian?
-\end{comment}
-
-
-\begin{comment}
-The following is a template for inviting researchers to contribute to the special issue: \\
-\par\noindent
-Dear first and last name, \\
-\par\noindent
-
-In response to the growing interest in Quantum Computing, and the constant effort to design ever more resilient systems, we plan to publish a Special Issue on ``Numerical Methods for Engineering Quantum Computers'' in the Journal of Computational Physics (JCP). This Special Issue will span a broad range of related topics from numerical methods for determining ground states, numerical methods for solving the unsteady or nonlinear Schrodinger Equation, Density Functional Theory, Computer Aided Design of Quantum Algorithms in order to optimize the ``decoherence time,'' Hybrid classical quantum algorithms, and optimal design and control of qubits. Our special issue will serve as a complete reference on the subject matter for use by students and established researchers. \\
-
-\par\noindent
-Given your expertise in the related field, we extend a personal invitation to you to contribute a paper to this Special Issue on a topic of your choice. If agreeable, please send us a reply by Email with a tentative title by 22 November, 2024. Please copy Ms Yuan Li (yuan.li@elsevier.com) who is copied on this Email and happy to answer any questions you may have. Please see below details about the submission portal and other relevant information. \\
-
-\par\noindent
-We look forward to hearing from you. \\
-\par\noindent
-
-Our kindest regards, \\
-\par\noindent
-
-Mark Sussman, guest editor 2, guest editor 3, \ldots \\
-\par\noindent
-
-Journal:
-\par\noindent
-
-Journal of Computational Physics (ISSN: , CiteScore: , Impact Factor: ) \\
-\par\noindent
-
-Special Issue: ``Numerical Methods for Engineering Quantum Computers''
-\par\noindent
-
-Website: 
-\par\noindent
-
-Guest Editors: (e.g. 3 or more)
-\par\noindent
-
-All submissions will be peer-reviewed.
-\par\noindent
-
-Important dates:
-\par\noindent
-
-Submission Website: 
-\par\noindent
-select the article type of `` VSI: Numerical Methods for Engineering Quantum Computers '' 
-\par\noindent
-
-Submission portal closes: 30 November 2025.
-\par\noindent
-
-%Publication date (estimate): 30 October 2025.
-Editorial acceptance deadline: 30 May 2026
-\par\noindent
-
-\end{comment}
 
 %%\biboptions{sort&compress}
 \bibliography{references}

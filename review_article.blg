@@ -1,54 +1,50 @@
-This is BibTeX, Version 0.99d (TeX Live 2020)
+This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: review_article.aux
 The style file: acm.bst
 Database file #1: references.bib
-Repeated entry---line 3546 of file references.bib
- : @article{beck2024integrating
- :                             ,
-I'm skipping whatever remains of this entry
 Warning--entry type for "quantum_ai_team_and_collaborators_2020_4023103" isn't style-file defined
---line 3971 of file references.bib
+--line 3973 of file references.bib
 Warning--empty journal in moore2021cramming
-You've used 44 entries,
+You've used 83 entries,
             2253 wiz_defined-function locations,
-            784 strings with 12977 characters,
-and the built_in function-call counts, 16126 in all, are:
-= -- 1457
-> -- 1023
+            996 strings with 21168 characters,
+and the built_in function-call counts, 31215 in all, are:
+= -- 2815
+> -- 2011
 < -- 0
-+ -- 422
-- -- 374
-* -- 1419
-:= -- 2724
-add.period$ -- 127
-call.type$ -- 44
-change.case$ -- 312
++ -- 828
+- -- 738
+* -- 2776
+:= -- 5253
+add.period$ -- 242
+call.type$ -- 83
+change.case$ -- 609
 chr.to.int$ -- 0
-cite$ -- 45
-duplicate$ -- 461
-empty$ -- 1134
-format.name$ -- 374
-if$ -- 3221
+cite$ -- 84
+duplicate$ -- 886
+empty$ -- 2165
+format.name$ -- 738
+if$ -- 6241
 int.to.chr$ -- 0
-int.to.str$ -- 44
-missing$ -- 42
-newline$ -- 218
-num.names$ -- 88
-pop$ -- 301
+int.to.str$ -- 83
+missing$ -- 79
+newline$ -- 411
+num.names$ -- 166
+pop$ -- 579
 preamble$ -- 1
-purify$ -- 270
+purify$ -- 529
 quote$ -- 0
-skip$ -- 295
+skip$ -- 576
 stack$ -- 0
-substring$ -- 832
-swap$ -- 115
+substring$ -- 1610
+swap$ -- 233
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 172
+type$ -- 326
 warning$ -- 1
-while$ -- 136
-width$ -- 46
-write$ -- 428
-(There was 1 error message)
+while$ -- 255
+width$ -- 85
+write$ -- 812
+(There were 2 warnings)

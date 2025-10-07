@@ -1,12 +1,47 @@
 \begin{thebibliography}{10}
 
-\bibitem{beck2024integrating}
-{\sc Beck, T., Baroni, A., Bennink, R., Buchs, G., P{\'e}rez, E. A.~C.,
-  Eisenbach, M., da~Silva, R.~F., Meena, M.~G., Gottiparthi, K., Groszkowski,
-  P., et~al.}
-\newblock Integrating quantum computing resources into scientific hpc
-  ecosystems.
-\newblock {\em Future Generation Computer Systems 161\/} (2024), 11--25.
+\bibitem{Andrade_2022}
+{\sc Andrade, B., Davoudi, Z., Graß, T., Hafezi, M., Pagano, G., and Seif, A.}
+\newblock Engineering an effective three-spin hamiltonian in trapped-ion
+  systems for applications in quantum simulation.
+\newblock {\em Quantum Science and Technology 7}, 3 (apr 2022), 034001.
+
+\bibitem{anthony2024stress}
+{\sc Anthony-Petersen, R., Biekert, A., Bunker, R., Chang, C.~L., Chang, Y.-Y.,
+  Chaplinsky, L., Fascione, E., Fink, C.~W., Garcia-Sciveres, M., Germond, R.,
+  et~al.}
+\newblock A stress-induced source of phonon bursts and quasiparticle poisoning.
+\newblock {\em Nature Communications 15}, 1 (2024), 6444.
+
+\bibitem{BAO2002487}
+{\sc Bao, W., Jin, S., and Markowich, P.~A.}
+\newblock On time-splitting spectral approximations for the schrödinger
+  equation in the semiclassical regime.
+\newblock {\em Journal of Computational Physics 175}, 2 (2002), 487--524.
+
+\bibitem{barends2014superconducting}
+{\sc Barends, R., Kelly, J., Megrant, A., Veitia, A., Sank, D., Jeffrey, E.,
+  White, T.~C., Mutus, J., Fowler, A.~G., Campbell, B., et~al.}
+\newblock Superconducting quantum circuits at the surface code threshold for
+  fault tolerance.
+\newblock {\em Nature 508}, 7497 (2014), 500--503.
+
+\bibitem{baum2021experimental}
+{\sc Baum, Y., Amico, M., Howell, S., Hush, M., Liuzzi, M., Mundada, P., Merkh,
+  T., Carvalho, A.~R., and Biercuk, M.~J.}
+\newblock Experimental deep reinforcement learning for error-robust gate-set
+  design on a superconducting quantum computer.
+\newblock {\em PRX Quantum 2}, 4 (2021), 040324.
+
+\bibitem{10313722}
+{\sc Bayraktar, H., Charara, A., Clark, D., Cohen, S., Costa, T., Fang,
+  Y.-L.~L., Gao, Y., Guan, J., Gunnels, J., Haidar, A., Hehn, A., Hohnerbach,
+  M., Jones, M., Lubowe, T., Lyakh, D., Morino, S., Springer, P., Stanwyck, S.,
+  Terentyev, I., Varadhan, S., Wong, J., and Yamaguchi, T.}
+\newblock cuquantum sdk: A high-performance library for accelerating quantum
+  science.
+\newblock In {\em 2023 IEEE International Conference on Quantum Computing and
+  Engineering (QCE)\/} (2023), vol.~01, pp.~1050--1061.
 
 \bibitem{Benedetti_2019}
 {\sc Benedetti, M., Lloyd, E., Sack, S., and Fiorentini, M.}
@@ -44,6 +79,11 @@
 \newblock Variational quantum algorithms.
 \newblock {\em Nature Reviews Physics 3}, 9 (2021), 625--644.
 
+\bibitem{cheng2025modeling}
+{\sc Cheng, G., and Guo, J.}
+\newblock Modeling correlated-noise in silicon spin qubit device.
+\newblock {\em APL Quantum 2}, 1 (2025).
+
 \bibitem{daribayev2023implementation}
 {\sc Daribayev, B., Mukhanbet, A., and Imankulov, T.}
 \newblock Implementation of the hhl algorithm for solving the poisson equation
@@ -61,12 +101,41 @@
 \newblock Switching time optimization for binary quantum optimal control.
 \newblock {\em ACM Transactions on Quantum Computing 6}, 1 (2025), 1--38.
 
+\bibitem{fei2023binary}
+{\sc Fei, X., Brady, L.~T., Larson, J., Leyffer, S., and Shen, S.}
+\newblock Binary control pulse optimization for quantum systems.
+\newblock {\em Quantum 7\/} (2023), 892.
+
+\bibitem{FEIT1982412}
+{\sc Feit, M., Fleck, J., and Steiger, A.}
+\newblock Solution of the schrödinger equation by a spectral method.
+\newblock {\em Journal of Computational Physics 47}, 3 (1982), 412--433.
+
+\bibitem{richard1982feynman}
+{\sc Feynman, R.~P.}
+\newblock Simulating physics with quantum computers.
+\newblock {\em Inernational Journal of Theoretical Physics 21}, 7 (1982),
+  467--488.
+
+\bibitem{richard1986feynman}
+{\sc Feynman, R.~P.}
+\newblock Quantum mechanical computers.
+\newblock {\em Foundations of Physics 16\/} (1986), 507--531.
+\newblock originally published in Optics News, February 1985, pp. 11-20.
+
 \bibitem{gamble2019quantum}
 {\sc Gamble, S.}
 \newblock Quantum computing: What it is, why we want it, and how we’re trying
   to get it.
 \newblock In {\em Frontiers of Engineering: Reports on Leading-Edge Engineering
   from the 2018 Symposium\/} (2019), National Academies Press, pp.~5--8.
+
+\bibitem{gilyen2019quantum}
+{\sc Gily{\'e}n, A., Su, Y., Low, G.~H., and Wiebe, N.}
+\newblock Quantum singular value transformation and beyond: exponential
+  improvements for quantum matrix arithmetics.
+\newblock In {\em Proceedings of the 51st annual ACM SIGACT symposium on theory
+  of computing\/} (2019), pp.~193--204.
 
 \bibitem{gopalakrishnan2024solving}
 {\sc Gopalakrishnan~Meena, M., Gottiparthi, K.~C., Lietz, J.~G., Georgiadou,
@@ -75,11 +144,28 @@
   algorithm on superconducting devices: A study of efficiency and challenges.
 \newblock {\em Physics of Fluids 36}, 10 (2024).
 
+\bibitem{grivopoulos2005optimal}
+{\sc Grivopoulos, S.}
+\newblock {\em Optimal control of quantum systems}.
+\newblock University of California, Santa Barbara, 2005.
+
 \bibitem{Guerreschi_Intel_Quantum_Simulator_2020}
 {\sc Guerreschi, G.~G., Hogaboam, J., Baruffa, F., and Sawaya, N. P.~D.}
 \newblock {Intel Quantum Simulator: a cloud-ready high-performance simulator of
   quantum circuits}.
 \newblock {\em Quantum Science and Technology 5}, 3 (July 2020).
+
+\bibitem{gundlach2025quantumadvantagecomputationalchemistry}
+{\sc Gundlach, H., Sharkey, K., Lynch, J., Hazoglou, V., Hsu, K.-C., Dukatz,
+  C., Crane, E., Walczyk, K., Bodziak, M., Galatsanos-Dueck, J., and Thompson,
+  N.}
+\newblock Quantum advantage in computational chemistry?, 2025.
+
+\bibitem{gunther2023practical}
+{\sc G{\"u}nther, S., and Petersson, N.~A.}
+\newblock A practical approach to determine minimal quantum gate durations
+  using amplitude-bounded quantum controls.
+\newblock {\em AVS Quantum Science 5}, 4 (2023).
 
 \bibitem{9651392}
 {\sc Günther, S., Petersson, N.~A., and DuBois, J.~L.}
@@ -88,15 +174,57 @@
 \newblock In {\em 2021 IEEE/ACM Second International Workshop on Quantum
   Computing Software (QCS)\/} (2021), pp.~88--98.
 
+\bibitem{HAN2019108929}
+{\sc Han, J., Zhang, L., and E, W.}
+\newblock Solving many-electron schrödinger equation using deep neural
+  networks.
+\newblock {\em Journal of Computational Physics 399\/} (2019), 108929.
+
+\bibitem{hangleiter2024robustly}
+{\sc Hangleiter, D., Roth, I., Fuksa, J., Eisert, J., and Roushan, P.}
+\newblock Robustly learning the hamiltonian dynamics of a superconducting
+  quantum processor.
+\newblock {\em Nature Communications 15}, 1 (2024), 9595.
+
 \bibitem{harrow2009quantum}
 {\sc Harrow, A.~W., Hassidim, A., and Lloyd, S.}
 \newblock Quantum algorithm for linear systems of equations.
 \newblock {\em Physical review letters 103}, 15 (2009), 150502.
 
+\bibitem{he2024efficientoptimalcontrolopen}
+{\sc He, W., Li, T., Li, X., Li, Z., Wang, C., and Wang, K.}
+\newblock Efficient optimal control of open quantum systems, 2024.
+
+\bibitem{hermann2020deep}
+{\sc Hermann, J., Sch{\"a}tzle, Z., and No{\'e}, F.}
+\newblock Deep-neural-network solution of the electronic schr{\"o}dinger
+  equation.
+\newblock {\em Nature Chemistry 12}, 10 (2020), 891--897.
+
+\bibitem{herrmann2023quantum}
+{\sc Herrmann, N., Arya, D., Doherty, M.~W., Mingare, A., Pillay, J.~C., Preis,
+  F., and Prestel, S.}
+\newblock Quantum utility--definition and assessment of a practical quantum
+  advantage.
+\newblock In {\em 2023 IEEE International Conference on Quantum Software
+  (QSW)\/} (2023), IEEE, pp.~162--174.
+
+\bibitem{hibat2024framework}
+{\sc Hibat-Allah, M., Mauri, M., Carrasquilla, J., and Perdomo-Ortiz, A.}
+\newblock A framework for demonstrating practical quantum advantage: comparing
+  quantum against classical generative models.
+\newblock {\em Communications Physics 7}, 1 (2024), 68.
+
 \bibitem{ide2025fault}
 {\sc Ide, B., Gowda, M.~G., Nadkarni, P.~J., and Dauphinais, G.}
 \newblock Fault-tolerant logical measurements via homological measurement.
 \newblock {\em Physical Review X 15}, 2 (2025), 021088.
+
+\bibitem{itani2024quantum}
+{\sc Itani, W., Sreenivasan, K.~R., and Succi, S.}
+\newblock Quantum algorithm for lattice boltzmann (qalb) simulation of
+  incompressible fluids with a nonlinear collision term.
+\newblock {\em Physics of Fluids 36}, 1 (2024).
 
 \bibitem{javadi2024quantum}
 {\sc Javadi-Abhari, A., Treinish, M., Krsulich, K., Wood, C.~J., Lishman, J.,
@@ -110,6 +238,12 @@
   conditions.
 \newblock {\em SIAM Journal on Scientific Computing 46}, 4 (2024), B403--B421.
 
+\bibitem{jin2025quantum}
+{\sc Jin, S., Liu, N., Ma, C., and Yu, Y.}
+\newblock Quantum preconditioning method for linear systems problems via
+  schr$\backslash$" odingerization.
+\newblock {\em arXiv preprint arXiv:2505.06866\/} (2025).
+
 \bibitem{jin2024quantum}
 {\sc Jin, S., Liu, N., and Yu, Y.}
 \newblock Quantum circuits for the heat equation with physical boundary
@@ -121,6 +255,12 @@
 \newblock Questlink—mathematica embiggened by a hardware-optimised quantum
   emulator*.
 \newblock {\em Quantum Science and Technology 5}, 3 (May 2020), 034012.
+
+\bibitem{PhysRevLett.132.250603}
+{\sc Kanai, T., Jin, D., and Guo, W.}
+\newblock Single-electron qubits based on quantum ring states on solid neon
+  surface.
+\newblock {\em Phys. Rev. Lett. 132\/} (Jun 2024), 250603.
 
 \bibitem{kang2025pennylane}
 {\sc Kang, J.-H., and Ryu, H.}
@@ -144,6 +284,17 @@
 \newblock Evidence for the utility of quantum computing before fault tolerance.
 \newblock {\em Nature 618}, 7965 (2023), 500--505.
 
+\bibitem{kitaev1995quantum}
+{\sc Kitaev, A.~Y.}
+\newblock Quantum measurements and the abelian stabilizer problem.
+\newblock {\em arXiv preprint quant-ph/9511026\/} (1995).
+
+\bibitem{ko2023implementation}
+{\sc Ko, T., Li, X., and Wang, C.}
+\newblock Implementation of the density-functional theory on quantum computers
+  with linear scaling with respect to the number of atoms.
+\newblock {\em arXiv preprint arXiv:2307.07067\/} (2023).
+
 \bibitem{kubischta2023family}
 {\sc Kubischta, E., and Teixeira, I.}
 \newblock Family of quantum codes with exotic transversal gates.
@@ -154,6 +305,24 @@
 \newblock Lecture notes on the theory of open quantum systems.
 \newblock {\em arXiv preprint arXiv:1902.00967\/} (2019).
 
+\bibitem{lin2016approximating}
+{\sc Lin, L., Saad, Y., and Yang, C.}
+\newblock Approximating spectral densities of large matrices.
+\newblock {\em SIAM review 58}, 1 (2016), 34--65.
+
+\bibitem{PhysRevA.107.062406}
+{\sc Lotshaw, P.~C., Battles, K.~D., Gard, B., Buchs, G., Humble, T.~S., and
+  Herold, C.~D.}
+\newblock Modeling noise in global m\o{}lmer-s\o{}rensen interactions applied
+  to quantum approximate optimization.
+\newblock {\em Phys. Rev. A 107\/} (Jun 2023), 062406.
+
+\bibitem{PhysRevA.110.L030803}
+{\sc Lotshaw, P.~C., Sawyer, B.~C., Herold, C.~D., and Buchs, G.}
+\newblock Exactly solvable model of light-scattering errors in quantum
+  simulations with metastable trapped-ion qubits.
+\newblock {\em Phys. Rev. A 110\/} (Sep 2024), L030803.
+
 \bibitem{doi:10.1098/rsta.2021.0414}
 {\sc Lotshaw, P.~C., Xu, H., Khalid, B., Buchs, G., Humble, T.~S., and
   Banerjee, A.}
@@ -161,6 +330,12 @@
   approximate optimization.
 \newblock {\em Philosophical Transactions of the Royal Society A: Mathematical,
   Physical and Engineering Sciences 381}, 2241 (2023), 20210414.
+
+\bibitem{luo2025quantumsimulationbubblenucleation}
+{\sc Luo, D., Surace, F.~M., De, A., Lerose, A., Bennewitz, E.~R., Ware, B.,
+  Schuckert, A., Davoudi, Z., Gorshkov, A.~V., Katz, O., and Monroe, C.}
+\newblock Quantum simulation of bubble nucleation across a quantum phase
+  transition, 2025.
 
 \bibitem{mack2015multiple}
 {\sc Mack, C.}
@@ -193,6 +368,12 @@
 \newblock {\em Quantum computation and quantum information}.
 \newblock Cambridge university press, 2010.
 
+\bibitem{PhysRevB.101.155134}
+{\sc N\"u\ss{}eler, A., Dhand, I., Huelga, S.~F., and Plenio, M.~B.}
+\newblock Efficient simulation of open quantum systems coupled to a fermionic
+  bath.
+\newblock {\em Phys. Rev. B 101\/} (Apr 2020), 155134.
+
 \bibitem{qing2023usevqecalculateground}
 {\sc Qing, M., and Xie, W.}
 \newblock Use vqe to calculate the ground energy of hydrogen molecules on ibm
@@ -220,6 +401,13 @@
 \newblock In {\em 2023 IEEE International Conference on Quantum Computing and
   Engineering (QCE)\/} (2023), vol.~02, pp.~389--390.
 
+\bibitem{Selsto2010}
+{\sc Selstø, S., and Kvaal, S.}
+\newblock Absorbing boundary conditions for dynamical many-body quantum
+  systems.
+\newblock {\em Journal of Physics B: Atomic, Molecular and Optical Physics 43},
+  6 (mar 2010), 065004.
+
 \bibitem{shalf2020future}
 {\sc Shalf, J.}
 \newblock The future of computing beyond moore’s law.
@@ -232,6 +420,30 @@
   state.
 \newblock {\em Phys. Rev. Res. 6\/} (Oct 2024), 043008.
 
+\bibitem{shor1995scheme}
+{\sc Shor, P.~W.}
+\newblock Scheme for reducing decoherence in quantum computer memory.
+\newblock {\em Physical review A 52}, 4 (1995), R2493.
+
+\bibitem{doi:10.1137/S0036144598347011}
+{\sc Shor, P.~W.}
+\newblock Polynomial-time algorithms for prime factorization and discrete
+  logarithms on a quantum computer.
+\newblock {\em SIAM Review 41}, 2 (1999), 303--332.
+
+\bibitem{shukrinov2016modeling}
+{\sc Shukrinov, Y.~M., Rahmonov, I., Kulikov, K., Botha, A., Plecenik, A.,
+  Seidel, P., and Nawrocki, W.}
+\newblock Modeling of lc-shunted intrinsic josephson junctions in high-tc
+  superconductors.
+\newblock {\em Superconductor Science and Technology 30}, 2 (2016), 024006.
+
+\bibitem{sun2025control}
+{\sc Sun, H., and Galperin, M.}
+\newblock Control of open quantum systems: The nonequilibrium green’s
+  function perspective.
+\newblock {\em APL Quantum 2}, 1 (2025).
+
 \bibitem{quantum_ai_team_and_collaborators_2020_4023103}
 {\sc team, Q.~A., and collaborators}.
 \newblock qsim, Sept. 2020.
@@ -243,10 +455,29 @@
   practices.
 \newblock {\em Physics Reports 986\/} (2022), 1--128.
 
+\bibitem{viamontes2004high}
+{\sc Viamontes, G.~F., Markov, I.~L., and Hayes, J.~P.}
+\newblock High-performance quidd-based simulation of quantum circuits.
+\newblock In {\em Proceedings Design, Automation and Test in Europe Conference
+  and Exhibition\/} (2004), vol.~2, IEEE, pp.~1354--1355.
+
 \bibitem{1402.4467}
 {\sc Wecker, D., and Svore, K.~M.}
 \newblock {LIQU}i|>: {A} {S}oftware {D}esign {A}rchitecture and
   {D}omain-{S}pecific {L}anguage for {Q}uantum {C}omputing, 2014.
+
+\bibitem{wille2018computer}
+{\sc Wille, R., Fowler, A., and Naveh, Y.}
+\newblock Computer-aided design for quantum computation.
+\newblock In {\em 2018 IEEE/ACM International Conference on Computer-Aided
+  Design (ICCAD)\/} (2018), IEEE, pp.~1--6.
+
+\bibitem{zhang2017observation}
+{\sc Zhang, J., Pagano, G., Hess, P.~W., Kyprianidis, A., Becker, P., Kaplan,
+  H., Gorshkov, A.~V., Gong, Z.-X., and Monroe, C.}
+\newblock Observation of a many-body dynamical phase transition with a 53-qubit
+  quantum simulator.
+\newblock {\em Nature 551}, 7682 (2017), 601--604.
 
 \bibitem{zhang2024quantum}
 {\sc Zhang, Q., Saligane, M., Kim, H.-S., Blaauw, D., Tzimpragos, G., and
@@ -254,6 +485,12 @@
 \newblock Quantum circuit simulation with fast tensor decision diagram.
 \newblock In {\em 2024 25th International Symposium on Quality Electronic
   Design (ISQED)\/} (2024), IEEE, pp.~1--8.
+
+\bibitem{zheng2004numerical}
+{\sc Zheng, W., Ying, L.-A., and Ding, P.}
+\newblock Numerical solutions of the schr{\"o}dinger equation for the ground
+  lithium by the finite element method.
+\newblock {\em Applied mathematics and computation 153}, 3 (2004), 685--695.
 
 \bibitem{zoufal2019quantum}
 {\sc Zoufal, C., Lucchi, A., and Woerner, S.}
