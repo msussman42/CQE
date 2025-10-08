@@ -1,4 +1,8 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
+
+\bibitem{google2025quantum}
+Quantum error correction below the surface code threshold.
+\newblock {\em Nature 638}, 8052 (2025), 920--926.
 
 \bibitem{Andrade_2022}
 {\sc Andrade, B., Davoudi, Z., Graß, T., Hafezi, M., Pagano, G., and Seif, A.}
@@ -54,11 +58,22 @@
 \newblock Quantum machine learning.
 \newblock {\em Nature 549}, 7671 (2017), 195--202.
 
+\bibitem{bluvstein2024logical}
+{\sc Bluvstein, D., Evered, S.~J., Geim, A.~A., Li, S.~H., Zhou, H., Manovitz,
+  T., Ebadi, S., Cain, M., Kalinowski, M., Hangleiter, D., et~al.}
+\newblock Logical quantum processor based on reconfigurable atom arrays.
+\newblock {\em Nature 626}, 7997 (2024), 58--65.
+
 \bibitem{bravo2023variational}
 {\sc Bravo-Prieto, C., LaRose, R., Cerezo, M., Subasi, Y., Cincio, L., and
   Coles, P.~J.}
 \newblock Variational quantum linear solver.
 \newblock {\em Quantum 7\/} (2023), 1188.
+
+\bibitem{bravyi2002fermionic}
+{\sc Bravyi, S.~B., and Kitaev, A.~Y.}
+\newblock Fermionic quantum computation.
+\newblock {\em Annals of Physics 298}, 1 (2002), 210--226.
 
 \bibitem{cadi2024folded}
 {\sc Cadi~Tazi, L., and Thom, A.~J.}
@@ -84,17 +99,41 @@
 \newblock Modeling correlated-noise in silicon spin qubit device.
 \newblock {\em APL Quantum 2}, 1 (2025).
 
+\bibitem{dalton2024quantifying}
+{\sc Dalton, K., Long, C.~K., Yordanov, Y.~S., Smith, C.~G., Barnes, C.~H.,
+  Mertig, N., and Arvidsson-Shukur, D.~R.}
+\newblock Quantifying the effect of gate errors on variational quantum
+  eigensolvers for quantum chemistry.
+\newblock {\em npj Quantum Information 10}, 1 (2024), 18.
+
 \bibitem{daribayev2023implementation}
 {\sc Daribayev, B., Mukhanbet, A., and Imankulov, T.}
 \newblock Implementation of the hhl algorithm for solving the poisson equation
   on quantum simulators.
 \newblock {\em Applied Sciences 13}, 20 (2023), 11491.
 
+\bibitem{dennis2002topological}
+{\sc Dennis, E., Kitaev, A., Landahl, A., and Preskill, J.}
+\newblock Topological quantum memory.
+\newblock {\em Journal of Mathematical Physics 43}, 9 (2002), 4452--4505.
+
 \bibitem{ding2023simultaneous}
 {\sc Ding, Z., and Lin, L.}
 \newblock Simultaneous estimation of multiple eigenvalues with short-depth
   quantum circuit on early fault-tolerant quantum computers.
 \newblock {\em Quantum 7\/} (2023), 1136.
+
+\bibitem{eastin2009restrictions}
+{\sc Eastin, B., and Knill, E.}
+\newblock Restrictions on transversal encoded quantum gate sets.
+\newblock {\em Physical review letters 102}, 11 (2009), 110502.
+
+\bibitem{evered2023high}
+{\sc Evered, S.~J., Bluvstein, D., Kalinowski, M., Ebadi, S., Manovitz, T.,
+  Zhou, H., Li, S.~H., Geim, A.~A., Wang, T.~T., Maskara, N., et~al.}
+\newblock High-fidelity parallel entangling gates on a neutral-atom quantum
+  computer.
+\newblock {\em Nature 622}, 7982 (2023), 268--272.
 
 \bibitem{fei2025switching}
 {\sc Fei, X., Brady, L., Larson, J., Leyffer, S., and Shen, S.}
@@ -136,6 +175,13 @@
   improvements for quantum matrix arithmetics.
 \newblock In {\em Proceedings of the 51st annual ACM SIGACT symposium on theory
   of computing\/} (2019), pp.~193--204.
+
+\bibitem{gonthier2022measurements}
+{\sc Gonthier, J.~F., Radin, M.~D., Buda, C., Doskocil, E.~J., Abuan, C.~M.,
+  and Romero, J.}
+\newblock Measurements as a roadblock to near-term practical quantum advantage
+  in chemistry: Resource analysis.
+\newblock {\em Physical Review Research 4}, 3 (2022), 033154.
 
 \bibitem{gopalakrishnan2024solving}
 {\sc Gopalakrishnan~Meena, M., Gottiparthi, K.~C., Lietz, J.~G., Georgiadou,
@@ -278,6 +324,12 @@
   computers.
 \newblock {\em Physical Review A 108}, 5 (2023), L050401.
 
+\bibitem{khan2025separate}
+{\sc Khan, M.~Q., Norris, L.~M., and Viola, L.}
+\newblock Separate and efficient characterization of state-preparation and
+  measurement errors using single-qubit operations.
+\newblock {\em arXiv preprint arXiv:2509.19448\/} (2025).
+
 \bibitem{kim2023evidence}
 {\sc Kim, Y., Eddins, A., Anand, S., Wei, K.~X., Van Den~Berg, E., Rosenblatt,
   S., Nayfeh, H., Wu, Y., Zaletel, M., Temme, K., et~al.}
@@ -289,11 +341,28 @@
 \newblock Quantum measurements and the abelian stabilizer problem.
 \newblock {\em arXiv preprint quant-ph/9511026\/} (1995).
 
+\bibitem{kitaev2003fault}
+{\sc Kitaev, A.~Y.}
+\newblock Fault-tolerant quantum computation by anyons.
+\newblock {\em Annals of physics 303}, 1 (2003), 2--30.
+
+\bibitem{knill1997theory}
+{\sc Knill, E., and Laflamme, R.}
+\newblock Theory of quantum error-correcting codes.
+\newblock {\em Physical Review A 55}, 2 (1997), 900.
+
 \bibitem{ko2023implementation}
 {\sc Ko, T., Li, X., and Wang, C.}
 \newblock Implementation of the density-functional theory on quantum computers
   with linear scaling with respect to the number of atoms.
 \newblock {\em arXiv preprint arXiv:2307.07067\/} (2023).
+
+\bibitem{krinner2022realizing}
+{\sc Krinner, S., Lacroix, N., Remm, A., Di~Paolo, A., Genois, E., Leroux, C.,
+  Hellings, C., Lazar, S., Swiadek, F., Herrmann, J., et~al.}
+\newblock Realizing repeated quantum error correction in a distance-three
+  surface code.
+\newblock {\em Nature 605}, 7911 (2022), 669--674.
 
 \bibitem{kubischta2023family}
 {\sc Kubischta, E., and Teixeira, I.}
@@ -347,9 +416,20 @@
 \newblock Limits on fundamental limits to computation.
 \newblock {\em Nature 512}, 7513 (2014), 147--154.
 
+\bibitem{marra2022majorana}
+{\sc Marra, P.}
+\newblock Majorana nanowires for topological quantum computation.
+\newblock {\em Journal of Applied Physics 132}, 23 (2022).
+
 \bibitem{moore2021cramming}
 {\sc Moore, G.}
 \newblock Cramming more components onto integrated circuits (1965).
+
+\bibitem{nautrup2019optimizing}
+{\sc Nautrup, H.~P., Delfosse, N., Dunjko, V., Briegel, H.~J., and Friis, N.}
+\newblock Optimizing quantum error correction codes with reinforcement
+  learning.
+\newblock {\em Quantum 3\/} (2019), 215.
 
 \bibitem{nghiem2023quantum}
 {\sc Nghiem, N.~A., and Wei, T.-C.}
@@ -374,6 +454,33 @@
   bath.
 \newblock {\em Phys. Rev. B 101\/} (Apr 2020), 155134.
 
+\bibitem{Putterman_2025}
+{\sc Putterman, H., Noh, K., Hann, C.~T., MacCabe, G.~S., Aghaeimeibodi, S.,
+  Patel, R.~N., Lee, M., Jones, W.~M., Moradinejad, H., Rodriguez, R., Mahuli,
+  N., Rose, J., Owens, J.~C., Levine, H., Rosenfeld, E., Reinhold, P.,
+  Moncelsi, L., Alcid, J.~A., Alidoust, N., Arrangoiz-Arriola, P., Barnett, J.,
+  Bienias, P., Carson, H.~A., Chen, C., Chen, L., Chinkezian, H., Chisholm,
+  E.~M., Chou, M.-H., Clerk, A., Clifford, A., Cosmic, R., Curiel, A.~V.,
+  Davis, E., DeLorenzo, L., D’Ewart, J.~M., Diky, A., D’Souza, N.,
+  Dumitrescu, P.~T., Eisenmann, S., Elkhouly, E., Evenbly, G., Fang, M.~T.,
+  Fang, Y., Fling, M.~J., Fon, W., Garcia, G., Gorshkov, A.~V., Grant, J.~A.,
+  Gray, M.~J., Grimberg, S., Grimsmo, A.~L., Haim, A., Hand, J., He, Y.,
+  Hernandez, M., Hover, D., Hung, J. S.~C., Hunt, M., Iverson, J., Jarrige, I.,
+  Jaskula, J.-C., Jiang, L., Kalaee, M., Karabalin, R., Karalekas, P.~J.,
+  Keller, A.~J., Khalajhedayati, A., Kubica, A., Lee, H., Leroux, C., Lieu, S.,
+  Ly, V., Madrigal, K.~V., Marcaud, G., McCabe, G., Miles, C., Milsted, A.,
+  Minguzzi, J., Mishra, A., Mukherjee, B., Naghiloo, M., Oblepias, E., Ortuno,
+  G., Pagdilao, J., Pancotti, N., Panduro, A., Paquette, J., Park, M., Peairs,
+  G.~A., Perello, D., Peterson, E.~C., Ponte, S., Preskill, J., Qiao, J.,
+  Refael, G., Resnick, R., Retzker, A., Reyna, O.~A., Runyan, M., Ryan, C.~A.,
+  Sahmoud, A., Sanchez, E., Sanil, R., Sankar, K., Sato, Y., Scaffidi, T.,
+  Siavoshi, S., Sivarajah, P., Skogland, T., Su, C.-J., Swenson, L.~J., Teo,
+  S.~M., Tomada, A., Torlai, G., Wollack, E.~A., Ye, Y., Zerrudo, J.~A., Zhang,
+  K., Brandão, F. G. S.~L., Matheny, M.~H., and Painter, O.}
+\newblock Hardware-efficient quantum error correction via concatenated bosonic
+  qubits.
+\newblock {\em Nature 638}, 8052 (Feb. 2025), 927–934.
+
 \bibitem{qing2023usevqecalculateground}
 {\sc Qing, M., and Xie, W.}
 \newblock Use vqe to calculate the ground energy of hydrogen molecules on ibm
@@ -384,6 +491,11 @@
 \newblock {\em Numerical recipes in quantum information theory and quantum
   computing: an adventure in FORTRAN 90}.
 \newblock CRC Press, 2021.
+
+\bibitem{roffe2019quantum}
+{\sc Roffe, J.}
+\newblock Quantum error correction: an introductory guide.
+\newblock {\em Contemporary Physics 60}, 3 (2019), 226--245.
 
 \bibitem{VQSVD}
 {\sc Ryu, J., Jung, J., Lee, J., Gwon, Y., and Kevin~Rhee, J.}
@@ -438,6 +550,11 @@
   superconductors.
 \newblock {\em Superconductor Science and Technology 30}, 2 (2016), 024006.
 
+\bibitem{stetina2025firstquantizedquantumsimulationnonrelativistic}
+{\sc Stetina, T., and Wiebe, N.}
+\newblock First-quantized quantum simulation of non-relativistic qed with
+  emergent topologically protected coulomb interactions, 2025.
+
 \bibitem{sun2025control}
 {\sc Sun, H., and Galperin, M.}
 \newblock Control of open quantum systems: The nonequilibrium green’s
@@ -472,6 +589,13 @@
 \newblock In {\em 2018 IEEE/ACM International Conference on Computer-Aided
   Design (ICCAD)\/} (2018), IEEE, pp.~1--6.
 
+\bibitem{wintersperger2023neutral}
+{\sc Wintersperger, K., Dommert, F., Ehmer, T., Hoursanov, A., Klepsch, J.,
+  Mauerer, W., Reuber, G., Strohm, T., Yin, M., and Luber, S.}
+\newblock Neutral atom quantum computing hardware: performance and end-user
+  perspective.
+\newblock {\em EPJ Quantum Technology 10}, 1 (2023), 32.
+
 \bibitem{zhang2017observation}
 {\sc Zhang, J., Pagano, G., Hess, P.~W., Kyprianidis, A., Becker, P., Kaplan,
   H., Gorshkov, A.~V., Gong, Z.-X., and Monroe, C.}
@@ -491,6 +615,12 @@
 \newblock Numerical solutions of the schr{\"o}dinger equation for the ground
   lithium by the finite element method.
 \newblock {\em Applied mathematics and computation 153}, 3 (2004), 685--695.
+
+\bibitem{zou2025algebraic}
+{\sc Zou, X., and Lo, H.-K.}
+\newblock Algebraic topology principles behind topological quantum error
+  correction.
+\newblock {\em arXiv preprint arXiv:2505.06082\/} (2025).
 
 \bibitem{zoufal2019quantum}
 {\sc Zoufal, C., Lucchi, A., and Woerner, S.}
