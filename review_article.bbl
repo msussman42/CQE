@@ -117,6 +117,12 @@ Quantum error correction below the surface code threshold.
 \newblock Topological quantum memory.
 \newblock {\em Journal of Mathematical Physics 43}, 9 (2002), 4452--4505.
 
+\bibitem{di2023noisy}
+{\sc Di~Bartolomeo, G., Vischi, M., Cesa, F., Wixinger, R., Grossi, M., Donadi,
+  S., and Bassi, A.}
+\newblock Noisy gates for simulating quantum computers.
+\newblock {\em Physical Review Research 5}, 4 (2023), 043210.
+
 \bibitem{ding2023simultaneous}
 {\sc Ding, Z., and Lin, L.}
 \newblock Simultaneous estimation of multiple eigenvalues with short-depth
