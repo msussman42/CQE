@@ -412,6 +412,11 @@ Quantum error correction below the surface code threshold.
 \newblock Quantum simulation of bubble nucleation across a quantum phase
   transition, 2025.
 
+\bibitem{maciejewski2024improvingquantumapproximateoptimization}
+{\sc Maciejewski, F.~B., Biamonte, J., Hadfield, S., and Venturelli, D.}
+\newblock Improving quantum approximate optimization by noise-directed adaptive
+  remapping, 2024.
+
 \bibitem{mack2015multiple}
 {\sc Mack, C.}
 \newblock The multiple lives of moore's law.
