@@ -243,6 +243,12 @@ Quantum error correction below the surface code threshold.
 \newblock Quantum algorithm for linear systems of equations.
 \newblock {\em Physical review letters 103}, 15 (2009), 150502.
 
+\bibitem{he2024zeroing}
+{\sc He, J., and Wu, D.}
+\newblock Zeroing neural dynamics solving time-variant complex conjugate matrix
+  equation.
+\newblock {\em arXiv preprint arXiv:2406.12783\/} (2024).
+
 \bibitem{he2024efficientoptimalcontrolopen}
 {\sc He, W., Li, T., Li, X., Li, Z., Wang, C., and Wang, K.}
 \newblock Efficient optimal control of open quantum systems, 2024.
@@ -375,10 +381,23 @@ Quantum error correction below the surface code threshold.
 \newblock Family of quantum codes with exotic transversal gates.
 \newblock {\em Physical Review Letters 131}, 24 (2023), 240601.
 
+\bibitem{liao2020modified}
+{\sc Liao, S., Liu, J., Xiao, X., Fu, D., Wang, G., and Jin, L.}
+\newblock Modified gradient neural networks for solving the time-varying
+  sylvester equation with adaptive coefficients and elimination of matrix
+  inversion.
+\newblock {\em Neurocomputing 379\/} (2020), 1--11.
+
 \bibitem{lidar2019lecture}
 {\sc Lidar, D.~A.}
 \newblock Lecture notes on the theory of open quantum systems.
 \newblock {\em arXiv preprint arXiv:1902.00967\/} (2019).
+
+\bibitem{lin2025dissipative}
+{\sc Lin, L.}
+\newblock Dissipative preparation of many-body quantum states: Toward practical
+  quantum advantage.
+\newblock {\em APL Computational Physics 1}, 1 (2025), 010901.
 
 \bibitem{lin2016approximating}
 {\sc Lin, L., Saad, Y., and Yang, C.}
