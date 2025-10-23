@@ -284,6 +284,14 @@ Quantum error correction below the surface code threshold.
   incompressible fluids with a nonlinear collision term.
 \newblock {\em Physics of Fluids 36}, 1 (2024).
 
+\bibitem{Ito2024}
+{\sc Ito, N., and Yoshioka, N.}
+\newblock Quantum computer simulation on hpc.
+\newblock In {\em Proceedings of the 21st ACM International Conference on
+  Computing Frontiers: Workshops and Special Sessions (CF '24 Companion).
+  Association for Computing Machinery, New York, NY, USA, 144.\/} (2024),
+  vol.~144.
+
 \bibitem{javadi2024quantum}
 {\sc Javadi-Abhari, A., Treinish, M., Krsulich, K., Wood, C.~J., Lishman, J.,
   Gacon, J., Martiel, S., Nation, P.~D., Bishop, L.~S., Cross, A.~W., et~al.}
@@ -380,6 +388,14 @@ Quantum error correction below the surface code threshold.
 {\sc Kubischta, E., and Teixeira, I.}
 \newblock Family of quantum codes with exotic transversal gates.
 \newblock {\em Physical Review Letters 131}, 24 (2023), 240601.
+
+\bibitem{li2021sv}
+{\sc Li, A., Fang, B., Granade, C., Prawiroatmodjo, G., Heim, B., Roetteler,
+  M., and Krishnamoorthy, S.}
+\newblock Sv-sim: scalable pgas-based state vector simulation of quantum
+  circuits.
+\newblock In {\em Proceedings of the International Conference for High
+  Performance Computing, Networking, Storage and Analysis\/} (2021), pp.~1--14.
 
 \bibitem{liao2020modified}
 {\sc Liao, S., Liu, J., Xiao, X., Fu, D., Wang, G., and Jin, L.}
@@ -625,6 +641,20 @@ Quantum error correction below the surface code threshold.
 \newblock Neutral atom quantum computing hardware: performance and end-user
   perspective.
 \newblock {\em EPJ Quantum Technology 10}, 1 (2023), 32.
+
+\bibitem{xu2024atlas}
+{\sc Xu, M., Cao, S., Miao, X., Acar, U.~A., and Jia, Z.}
+\newblock Atlas: Hierarchical partitioning for quantum circuit simulation on
+  gpus.
+\newblock In {\em SC24: International Conference for High Performance
+  Computing, Networking, Storage and Analysis\/} (2024), IEEE, pp.~1--17.
+
+\bibitem{zhang2021hyquas}
+{\sc Zhang, C., Song, Z., Wang, H., Rong, K., and Zhai, J.}
+\newblock Hyquas: hybrid partitioner based quantum circuit simulation system on
+  gpu.
+\newblock In {\em Proceedings of the 35th ACM International Conference on
+  Supercomputing\/} (2021), pp.~443--454.
 
 \bibitem{zhang2017observation}
 {\sc Zhang, J., Pagano, G., Hess, P.~W., Kyprianidis, A., Becker, P., Kaplan,
