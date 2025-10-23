@@ -377,6 +377,12 @@ Quantum error correction below the surface code threshold.
   with linear scaling with respect to the number of atoms.
 \newblock {\em arXiv preprint arXiv:2307.07067\/} (2023).
 
+\bibitem{PhysRevB.111.195129}
+{\sc Kodali, N., and Motamarri, P.}
+\newblock Finite-element methods for noncollinear magnetism and spin-orbit
+  coupling in real-space pseudopotential density functional theory.
+\newblock {\em Phys. Rev. B 111\/} (May 2025), 195129.
+
 \bibitem{krinner2022realizing}
 {\sc Krinner, S., Lacroix, N., Remm, A., Di~Paolo, A., Genois, E., Leroux, C.,
   Hellings, C., Lazar, S., Swiadek, F., Herrmann, J., et~al.}
