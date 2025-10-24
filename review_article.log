@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  23 OCT 2025 16:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.1)  24 OCT 2025 17:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**review_article
+**review_article.tex
 (./review_article.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -242,40 +242,46 @@ Overfull \hbox (3.86188pt too wide) in paragraph at lines 327--328
 for non-collinear
  []
 
+[7]
+Overfull \hbox (16.02853pt too wide) in paragraph at lines 329--330
+[]\OT1/cmr/m/n/10 Nieminen et al (2023)[[]], ``Atom-istic mod-el-ing of a super
+conductor--transition
+ []
 
-Overfull \hbox (5.96298pt too wide) in paragraph at lines 331--331
+
+Overfull \hbox (5.96298pt too wide) in paragraph at lines 333--333
 []\OT1/cmr/bx/n/14.4 Quantum Er-ror Cor-rec-tion al-go-rithms and sur-
  []
 
-[7]
-Overfull \hbox (4.7507pt too wide) in paragraph at lines 343--344
+
+Overfull \hbox (4.7507pt too wide) in paragraph at lines 345--346
 []\OT1/cmr/m/n/10 Knill and Laflamme (1997)[[]], ``The-ory of quan-tum error-co
 rrecting codes'' 
  []
 
-
-Overfull \hbox (3.834pt too wide) in paragraph at lines 352--353
+[8]
+Overfull \hbox (3.834pt too wide) in paragraph at lines 354--355
 []\OT1/cmr/m/n/10 Evered et al (2023)[[]], ``High-fidelity par-al-lel en-tan-gl
 ing gates on a neutral-
  []
 
-[8] (./review_article.bbl [9]
-Underfull \hbox (badness 1038) in paragraph at lines 34--39
+(./review_article.bbl [9]
+Underfull \hbox (badness 1038) in paragraph at lines 38--43
 []\OT1/cmr/m/sc/10 Baum, Y., Am-ico, M., How-ell, S., Hush, M., Li-uzzi, M.,
  []
 
 [10]
-Underfull \hbox (badness 1137) in paragraph at lines 138--143
+Underfull \hbox (badness 1137) in paragraph at lines 142--147
 []\OT1/cmr/m/sc/10 Evered, S. J., Blu-vstein, D., Kali-nowski, M., Ebadi, S.,
  []
 
 [11] [12] [13] [14] [15]
-Underfull \hbox (badness 1178) in paragraph at lines 510--535
+Underfull \hbox (badness 1178) in paragraph at lines 520--545
 []\OT1/cmr/m/sc/10 Putterman, H., Noh, K., Hann, C. T., Mac-Cabe, G. S.,
  []
 
 [16]
-Underfull \hbox (badness 1168) in paragraph at lines 559--567
+Underfull \hbox (badness 1168) in paragraph at lines 569--577
 []\OT1/cmr/m/sc/10 Sawaya, N. P., Marti-Dafcik, D., Ho, Y., Ta-bor, D. P.,
  []
 
@@ -286,13 +292,13 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2995 strings out of 474116
- 44522 string characters out of 5743681
- 1936187 words of memory out of 5000000
- 25328 multiletter control sequences out of 15000+600000
+ 2997 strings out of 474116
+ 44590 string characters out of 5743683
+ 1937187 words of memory out of 5000000
+ 25330 multiletter control sequences out of 15000+600000
  566299 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,294b,226s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,65p,298b,226s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
@@ -301,7 +307,7 @@ sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 /local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
 local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/l
 ocal/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on review_article.pdf (19 pages, 169460 bytes).
+Output written on review_article.pdf (19 pages, 169805 bytes).
 PDF statistics:
  107 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream

@@ -30,6 +30,10 @@ Quantum error correction below the surface code threshold.
   fault tolerance.
 \newblock {\em Nature 508}, 7497 (2014), 500--503.
 
+\bibitem{barrera2025movingbornoppenheimerapproximation}
+{\sc Barrera, B., Arovas, D.~P., Chandran, A., and Polkovnikov, A.}
+\newblock The moving born-oppenheimer approximation, 2025.
+
 \bibitem{baum2021experimental}
 {\sc Baum, Y., Amico, M., Howell, S., Hush, M., Liuzzi, M., Mundada, P., Merkh,
   T., Carvalho, A.~R., and Biercuk, M.~J.}
@@ -499,6 +503,12 @@ Quantum error correction below the surface code threshold.
 {\sc Nielsen, M.~A., and Chuang, I.~L.}
 \newblock {\em Quantum computation and quantum information}.
 \newblock Cambridge university press, 2010.
+
+\bibitem{PhysRevB.107.174524}
+{\sc Nieminen, J., Dhara, S., Chiu, W.-C., Mucciolo, E.~R., and Bansil, A.}
+\newblock Atomistic modeling of a superconductor--transition metal
+  dichalcogenide--superconductor josephson junction.
+\newblock {\em Phys. Rev. B 107\/} (May 2023), 174524.
 
 \bibitem{PhysRevB.101.155134}
 {\sc N\"u\ss{}eler, A., Dhand, I., Huelga, S.~F., and Plenio, M.~B.}
