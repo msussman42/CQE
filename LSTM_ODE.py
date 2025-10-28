@@ -4,6 +4,8 @@
 # pip3 install scipy
 # pip3 install scikit-learn
 # pip3 install tensorflow
+# or
+# /Applications/Python\ 3.12/Python\ Launcher.app/Contents/MacOS/Python\ Launcher -m pip install tensorflow
 # pip3 install IPython
 # pip3 install netron
 # pip3 install pydot
