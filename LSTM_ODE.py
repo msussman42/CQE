@@ -7,6 +7,8 @@
 # pip3 install IPython
 # pip3 install netron
 # pip3 install pydot
+# pip3 install onnxruntime
+# pip3 install tf2onnx
 # python3 LSTM_ODE.py
 
 
@@ -43,6 +45,9 @@ import IPython
 #import time
 #import os
 import netron
+import tf2onnx
+import onnx
+#import keras2onnx
 
 
 # ----------------------------
@@ -267,6 +272,8 @@ if __name__ == "__main__":
 
     # Build & train LSTM
     model = build_lstm(window=window, out_dim=2*horizon, units=96, dropout=0.1)
+    model.output_names=['output']
+
     cbs = [
         keras.callbacks.EarlyStopping(monitor="val_loss", patience=8, restore_best_weights=True),
         keras.callbacks.ReduceLROnPlateau(monitor="val_loss", factor=0.5, patience=4, min_lr=1e-5)
@@ -282,8 +289,28 @@ if __name__ == "__main__":
     model.summary()
     plot_model(model, to_file='model_topology.png', show_shapes=True, show_layer_names=True)
     #files.download("model_topology.png")
-    model.save('my_model.h5')
-    model_path = 'my_model.h5' # or 'my_model.onnx'
+    #model.save('my_model.h5')
+    model.save('my_model.keras')
+    #convert to ONNX and save
+    tspecs=[tf.TensorSpec(i.shape,name=i.name) for i in model.inputs]
+
+    tf2onnx.convert.from_keras(
+            model=model,
+            input_signature=tspecs,
+            #opset=18,
+            output_path="tf2onnx_onnx_model.onnx",
+            )
+
+    #netron:
+    print("https://github.com/lutzroeder/netron")
+    #onnx
+    print("https://onnx.ai/onnx/operators/onnx__LSTM.html")
+    #wikipedia
+    print("https://en.wikipedia.org/wiki/Long_short-term_memory")
+    
+    #onnx_model_modern=keras2onnx.convert_keras(model)
+    #keras2onnx.save_model(onnx_model_modern,"keras2onnx_onnx_model_modern.onnx") 
+    model_path = 'my_model.keras' # or 'my_model.onnx'
     display_netron_local(model_path)
     #sys.exit()
     exit()
