@@ -91,6 +91,16 @@ def make_trajectory(p: ODEParams, x0=1.0, v0=0.0, T=20.0, dt=0.01):
     return sol.t, Y
 
 def generate_dataset(n_traj=20, T=20.0, dt=0.01, seed=0):
+    print("in generate_dataset: n_traj,T,dt,nsteps ")
+    print(n_traj)
+    print(T)
+    print(dt)
+    nsteps=T/dt
+    print(nsteps)
+    print("predicted amount of data from generate_dataset: ")
+    data_predict=2*n_traj*nsteps
+    print(data_predict)
+
     rng = np.random.default_rng(seed)
     p = ODEParams()
     all_t, all_Y = [], []
@@ -146,7 +156,12 @@ def display_netron_local(model_path):
     # Start Netron server in a separate thread
 
     #netron.start(model_path,port)
-    netron.start(model_path)
+    #netron.start(model_path)
+    print("the netron file is:")
+    print(model_path)
+    print("go to this website to run netron:")
+    print("https://github.com/lutzroeder/netron")
+    print("select-> Browser: Start the browser version.")
 
     #thread = threading.Thread(target=netron.start, args=(model_path, port))
     #thread = threading.Thread(target=display_netron, args=(model_path,port))
@@ -215,8 +230,12 @@ if __name__ == "__main__":
     window = 50
     horizon = 1  # predict only the next state; set >1 for multi-step blocks
 
+    nsteps=T/dt
+
     # Generate multiple trajectories for training & validation
     all_t, all_Y, params = generate_dataset(n_traj=24, T=T, dt=dt, seed=123)
+    print("after generate_dataset len(all_Y)=")
+    print(len(all_Y))
 
     # Train/val split by trajectories
     n_train = int(0.8 * len(all_Y))
@@ -230,10 +249,19 @@ if __name__ == "__main__":
 
     train_scaled = [scaler.transform(y) for y in train_trajs]
     val_scaled   = [scaler.transform(y) for y in val_trajs]
+    print("len(train_scaled), len(val_scaled)")
+    print(len(train_scaled),len(val_scaled))
+    print("predicted num training windows=(nsteps-window+1)*n_train=")
+    print((nsteps-window+1)*n_train)
+
 
     # Windowed supervised sets
     Xtr, Ytr = make_supervised_multi(train_scaled, window=window, horizon=horizon)
     Xva, Yva = make_supervised_multi(val_scaled,   window=window, horizon=horizon)
+    print("window,horizon:")
+    print(window,horizon)
+
+    print("Xtr.shape, Ytr.shape, Xva.shape, Yva.shape:")
     print(Xtr.shape, Ytr.shape, Xva.shape, Yva.shape)
     #sys.exit()
 
