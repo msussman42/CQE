@@ -277,6 +277,12 @@ Quantum error correction below the surface code threshold.
   quantum against classical generative models.
 \newblock {\em Communications Physics 7}, 1 (2024), 68.
 
+\bibitem{Hsu31122024}
+{\sc Hsu, N.-W., Wang, C.-C., Hsu, C.-H., Tu, C.-H., and Hung, S.-H.}
+\newblock Toward cost-effective quantum circuit simulation with performance
+  tuning techniques.
+\newblock {\em Connection Science 36}, 1 (2024), 2349541.
+
 \bibitem{ide2025fault}
 {\sc Ide, B., Gowda, M.~G., Nadkarni, P.~J., and Dauphinais, G.}
 \newblock Fault-tolerant logical measurements via homological measurement.
@@ -387,6 +393,12 @@ Quantum error correction below the surface code threshold.
   coupling in real-space pseudopotential density functional theory.
 \newblock {\em Phys. Rev. B 111\/} (May 2025), 195129.
 
+\bibitem{kolarovszki2025piquasso}
+{\sc Kolarovszki, Z., Rybotycki, T., Rakyta, P., Kaposi, {\'A}., Po{\'o}r, B.,
+  J{\'o}czik, S., Nagy, D.~T., Varga, H., El-Safty, K.~H., Morse, G., et~al.}
+\newblock Piquasso: A photonic quantum computer simulation software platform.
+\newblock {\em Quantum 9\/} (2025), 1708.
+
 \bibitem{krinner2022realizing}
 {\sc Krinner, S., Lacroix, N., Remm, A., Di~Paolo, A., Genois, E., Leroux, C.,
   Hellings, C., Lazar, S., Swiadek, F., Herrmann, J., et~al.}
@@ -481,6 +493,12 @@ Quantum error correction below the surface code threshold.
 {\sc Moore, G.}
 \newblock Cramming more components onto integrated circuits (1965).
 
+\bibitem{mucciolo2025greensfunctionmethodscomputing}
+{\sc Mucciolo, E.~R., Nieminen, J., Xiao, X., Chiu, W.-C., Leuenberger, M.~N.,
+  and Bansil, A.}
+\newblock Green's function methods for computing supercurrents in josephson
+  junctions, 2025.
+
 \bibitem{nautrup2019optimizing}
 {\sc Nautrup, H.~P., Delfosse, N., Dunjko, V., Briegel, H.~J., and Friis, N.}
 \newblock Optimizing quantum error correction codes with reinforcement
@@ -516,6 +534,19 @@ Quantum error correction below the surface code threshold.
   bath.
 \newblock {\em Phys. Rev. B 101\/} (Apr 2020), 155134.
 
+\bibitem{10.1145/3524059.3532375}
+{\sc Park, D., Kim, H., Kim, J., Kim, T., and Lee, J.}
+\newblock Snuqs: scaling quantum circuit simulation using storage devices.
+\newblock In {\em Proceedings of the 36th ACM International Conference on
+  Supercomputing\/} (New York, NY, USA, 2022), ICS '22, Association for
+  Computing Machinery.
+
+\bibitem{popovici2025closenesscentralitybasedcircuitpartitioner}
+{\sc Popovici, D.~T., Lee, H., Ben, M.~D., Yoshioka, N., Ito, N., Klymko, K.,
+  Camps, D., and Butko, A.}
+\newblock A closeness centrality-based circuit partitioner for quantum
+  simulations, 2025.
+
 \bibitem{Putterman_2025}
 {\sc Putterman, H., Noh, K., Hann, C.~T., MacCabe, G.~S., Aghaeimeibodi, S.,
   Patel, R.~N., Lee, M., Jones, W.~M., Moradinejad, H., Rodriguez, R., Mahuli,
@@ -548,6 +579,12 @@ Quantum error correction below the surface code threshold.
 \newblock Use vqe to calculate the ground energy of hydrogen molecules on ibm
   quantum, 2023.
 
+\bibitem{rakyta2024highly}
+{\sc Rakyta, P., Morse, G., N{\'a}dori, J., Majnay-Tak{\'a}cs, Z., Mencer, O.,
+  and Zimbor{\'a}s, Z.}
+\newblock Highly optimized quantum circuits synthesized via data-flow engines.
+\newblock {\em Journal of Computational Physics 500\/} (2024), 112756.
+
 \bibitem{ramkarthik2021numerical}
 {\sc Ramkarthik, M., and Solanki, P.~D.}
 \newblock {\em Numerical recipes in quantum information theory and quantum
@@ -574,6 +611,12 @@ Quantum error correction below the surface code threshold.
   and hardware.
 \newblock In {\em 2023 IEEE International Conference on Quantum Computing and
   Engineering (QCE)\/} (2023), vol.~02, pp.~389--390.
+
+\bibitem{PhysRevResearch.7.023032}
+{\sc Seki, K., Kikuchi, Y., Hayata, T., and Yunoki, S.}
+\newblock Simulating floquet scrambling circuits on trapped-ion quantum
+  computers.
+\newblock {\em Phys. Rev. Res. 7\/} (Apr 2025), 023032.
 
 \bibitem{Selsto2010}
 {\sc Selstø, S., and Kvaal, S.}
@@ -650,6 +693,13 @@ Quantum error correction below the surface code threshold.
 \newblock Computer-aided design for quantum computation.
 \newblock In {\em 2018 IEEE/ACM International Conference on Computer-Aided
   Design (ICCAD)\/} (2018), IEEE, pp.~1--6.
+
+\bibitem{williams2023distributed}
+{\sc Williams-Young, D.~B., Asadchev, A., Popovici, D.~T., Clark, D., Waldrop,
+  J., Windus, T.~L., Valeev, E.~F., and de~Jong, W.~A.}
+\newblock Distributed memory, gpu accelerated fock construction for hybrid,
+  gaussian basis density functional theory.
+\newblock {\em The Journal of Chemical Physics 158}, 23 (2023).
 
 \bibitem{wintersperger2023neutral}
 {\sc Wintersperger, K., Dommert, F., Ehmer, T., Hoursanov, A., Klepsch, J.,

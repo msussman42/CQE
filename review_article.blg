@@ -8,45 +8,45 @@ Warning--entry type for "quantum_ai_team_and_collaborators_2020_4023103" isn't s
 Warning--to sort, need author or key in google2025quantum
 Warning--empty author in google2025quantum
 Warning--empty journal in moore2021cramming
-You've used 114 entries,
+You've used 122 entries,
             2253 wiz_defined-function locations,
-            1155 strings with 30047 characters,
-and the built_in function-call counts, 46299 in all, are:
-= -- 4088
-> -- 3332
+            1193 strings with 32138 characters,
+and the built_in function-call counts, 49633 in all, are:
+= -- 4363
+> -- 3613
 < -- 0
-+ -- 1364
-- -- 1242
-* -- 4276
-:= -- 7879
-add.period$ -- 331
-call.type$ -- 114
-change.case$ -- 951
++ -- 1479
+- -- 1348
+* -- 4591
+:= -- 8463
+add.period$ -- 353
+call.type$ -- 122
+change.case$ -- 1027
 chr.to.int$ -- 0
-cite$ -- 117
-duplicate$ -- 1204
-empty$ -- 2967
-format.name$ -- 1242
-if$ -- 9105
+cite$ -- 125
+duplicate$ -- 1281
+empty$ -- 3164
+format.name$ -- 1348
+if$ -- 9744
 int.to.chr$ -- 0
-int.to.str$ -- 114
-missing$ -- 107
-newline$ -- 562
-num.names$ -- 226
-pop$ -- 908
+int.to.str$ -- 122
+missing$ -- 113
+newline$ -- 600
+num.names$ -- 242
+pop$ -- 987
 preamble$ -- 1
-purify$ -- 840
+purify$ -- 908
 quote$ -- 0
-skip$ -- 777
+skip$ -- 825
 stack$ -- 0
-substring$ -- 2208
-swap$ -- 310
+substring$ -- 2318
+swap$ -- 326
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 450
+type$ -- 482
 warning$ -- 3
-while$ -- 353
-width$ -- 117
-write$ -- 1111
+while$ -- 373
+width$ -- 125
+write$ -- 1187
 (There were 4 warnings)
