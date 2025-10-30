@@ -200,7 +200,13 @@ computational perspective, in order to move beyond the NISQ era.
   for benchmarking quantum computers}
 
 \par\noindent
-Quantum Emulators:
+\subsection{Quantum Emulators}
+The development of Quantum Emulators is essential for benchmarking quantum 
+computers since (i) the level of noise in Quantum Emulators can be prescribed exactly thereby enabling practitioners to debug their quantum circuit and (ii)
+one can prescribe a given noise model\cite{PhysRevA.107.062406} and then
+compare emulator results with an actual quantum computer in order to 
+characterise the actual noise present in a quantum computer.
+
 \begin{enumerate}
 \item (IBM) ``Quantum Computing with Qiskit'' (2024)\cite{javadi2024quantum}
 \item ``Intel Quantum Simulator: a cloud-ready high-performance
@@ -224,6 +230,7 @@ Quantum Emulators:
 \item Zhang et al (2021)\cite{zhang2021hyquas}, ``HyQuas: hybrid partitioner based quantum circuit simulation system on GPU''
 \item Li et al (2021)\cite{li2021sv}, ``Sv-sim: scalable pgas-based state vector simulation of quantum circuits''
 \item Kolarovszki et al (2025)\cite{kolarovszki2025piquasso}, ``Piquasso: A photonic quantum computer simulation software platform''
+\item Lotshaw et al (2023)\cite{PhysRevA.107.062406}, ``Modeling noise in global Molmer-Sorensen interactions applied to quantum approximate optimization.''
 \end{enumerate}
 
 \par\noindent
@@ -274,7 +281,6 @@ quantum phase estimation)
 \item Itani et al (2024)\cite{itani2024quantum}, ``Quantum algorithm for lattice Boltzmann (QALB) simulation of incompressible fluids with a nonlinear collision term''
 \item Hibat-Allah et al (2024)\cite{hibat2024framework}, ``A framework for demonstrating practical quantum advantage: comparing quantum against classical generative models''
 \item Herrmann et al (2023)\cite{herrmann2023quantum}, ``Quantum utility--definition and assessment of a practical quantum advantage''
-\item Lotshaw et al (2023)\cite{PhysRevA.107.062406}, ``Modeling noise in global Molmer-Sorensen interactions applied to quantum approximate optimization.''
 \item Di Bartolomeo et al (2023)\cite{di2023noisy}, ``Noisy gates for simulating quantum computers.''
 \item De Luo et al (2025)\cite{luo2025quantumsimulationbubblenucleation}, ``Quantum simulation of bubble nucleation across a quantum phase transition.''
 \item Maciejewski et al (2024)\cite{maciejewski2024improvingquantumapproximateoptimization}, ``Improving Quantum Approximate Optimization by Noise-Directed Adaptive Remapping.''
