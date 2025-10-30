@@ -4,6 +4,43 @@
 Quantum error correction below the surface code threshold.
 \newblock {\em Nature 638}, 8052 (2025), 920--926.
 
+\bibitem{aasen2025roadmapfaulttolerantquantum}
+{\sc Aasen, D., Aghaee, M., Alam, Z., Andrzejczuk, M., Antipov, A., Astafev,
+  M., Avilovas, L., Barzegar, A., Bauer, B., Becker, J., Bello-Rivas, J.~M.,
+  Bhaskar, U., Bocharov, A., Boddapati, S., Bohn, D., Bommer, J., Bonderson,
+  P., Borovsky, J., Bourdet, L., Boutin, S., Brown, T., Campbell, G., Casparis,
+  L., Chakravarthi, S., Chao, R., Chapman, B.~J., Chatoor, S., Christensen,
+  A.~W., Codd, P., Cole, W., Cooper, P., Corsetti, F., Cui, A., van Dam, W.,
+  Dandachi, T.~E., Daraeizadeh, S., Dumitrascu, A., Ekefjärd, A., Fallahi, S.,
+  Galletti, L., Gardner, G., Gatta, R., Gavranovic, H., Goulding, M., Govender,
+  D., Griggio, F., Grigoryan, R., Grijalva, S., Gronin, S., Gukelberger, J.,
+  Haah, J., Hamdast, M., Hansen, E.~B., Hastings, M., Heedt, S., Ho, S.,
+  Hogaboam, J., Holgaard, L., Hoogdalem, K.~V., Indrapiromkul, J., Ingerslev,
+  H., Ivancevic, L., Jablonski, S., Jensen, T., Jhoja, J., Jones, J.,
+  Kalashnikov, K., Kallaher, R., Kalra, R., Karimi, F., Karzig, T., Kimes, S.,
+  Kliuchnikov, V., Kloster, M.~E., Knapp, C., Knee, D., Koski, J., Kostamo, P.,
+  Kuesel, J., Lackey, B., Laeven, T., Lai, J., de~Lange, G., Larsen, T., Lee,
+  J., Lee, K., Leum, G., Li, K., Lindemann, T., Lucas, M., Lutchyn, R., Madsen,
+  M.~H., Madulid, N., Manfra, M., Markussen, S.~B., Martinez, E., Mattila, M.,
+  Mattinson, J., McNeil, R., Mei, A.~R., Mishmash, R.~V., Mohandas, G.,
+  Mollgaard, C., de~Moor, M., Morgan, T., Moussa, G., Narla, A., Nayak, C.,
+  Nielsen, J.~H., Nielsen, W. H.~P., Nolet, F., Nystrom, M., O'Farrell, E.,
+  Otani, K., Paetznick, A., Papon, C., Paz, A., Petersson, K., Petit, L.,
+  Pikulin, D., Pons, D. O.~F., Quinn, S., Rajpalke, M., Ramirez, A.~A.,
+  Rasmussen, K., Razmadze, D., Reichardt, B., Ren, Y., Reneris, K., Riccomini,
+  R., Sadovskyy, I., Sainiemi, L., Saldaña, J. C.~E., Sanlorenzo, I., Schaal,
+  S., Schmidgall, E., Sfiligoj, C., da~Silva, M.~P., Singh, S., Sinha, S.,
+  Soeken, M., Sohr, P., Stankevic, T., Stek, L., Strøm-Hansen, P., Stuppard,
+  E., Sundaram, A., Suominen, H., Suter, J., Suzuki, S., Svore, K., Teicher,
+  S., Thiyagarajah, N., Tholapi, R., Thomas, M., Tom, D., Toomey, E., Tracy,
+  J., Troyer, M., Turley, M., Turner, M.~D., Upadhyay, S., Urban, I.,
+  Vaschillo, A., Viazmitinov, D., Vogel, D., Wang, Z., Watson, J., Webster, A.,
+  Weston, J., Williamson, T., Winkler, G.~W., van Woerkom, D.~J., Wütz, B.~P.,
+  Yang, C.~K., Yu, R., Yucelen, E., Zamorano, J.~H., Zeisel, R., Zheng, G.,
+  Zilke, J., and Zimmerman, A.}
+\newblock Roadmap to fault tolerant quantum computation using topological qubit
+  arrays, 2025.
+
 \bibitem{Andrade_2022}
 {\sc Andrade, B., Davoudi, Z., Graß, T., Hafezi, M., Pagano, G., and Seif, A.}
 \newblock Engineering an effective three-spin hamiltonian in trapped-ion
@@ -67,6 +104,12 @@ Quantum error correction below the surface code threshold.
   T., Ebadi, S., Cain, M., Kalinowski, M., Hangleiter, D., et~al.}
 \newblock Logical quantum processor based on reconfigurable atom arrays.
 \newblock {\em Nature 626}, 7997 (2024), 58--65.
+
+\bibitem{bonilla2021xzzx}
+{\sc Bonilla~Ataides, J.~P., Tuckett, D.~K., Bartlett, S.~D., Flammia, S.~T.,
+  and Brown, B.~J.}
+\newblock The xzzx surface code.
+\newblock {\em Nature communications 12}, 1 (2021), 2172.
 
 \bibitem{bravo2023variational}
 {\sc Bravo-Prieto, C., LaRose, R., Cerezo, M., Subasi, Y., Cincio, L., and
@@ -171,6 +214,11 @@ Quantum error correction below the surface code threshold.
 \newblock Quantum mechanical computers.
 \newblock {\em Foundations of Physics 16\/} (1986), 507--531.
 \newblock originally published in Optics News, February 1985, pp. 11-20.
+
+\bibitem{fujii2015quantumcomputationtopologicalcodes}
+{\sc Fujii, K.}
+\newblock Quantum computation with topological codes: from qubit to topological
+  fault-tolerance, 2015.
 
 \bibitem{gamble2019quantum}
 {\sc Gamble, S.}
