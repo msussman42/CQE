@@ -105,6 +105,12 @@ Quantum error correction below the surface code threshold.
 \newblock Logical quantum processor based on reconfigurable atom arrays.
 \newblock {\em Nature 626}, 7997 (2024), 58--65.
 
+\bibitem{boixo2018characterizing}
+{\sc Boixo, S., Isakov, S.~V., Smelyanskiy, V.~N., Babbush, R., Ding, N.,
+  Jiang, Z., Bremner, M.~J., Martinis, J.~M., and Neven, H.}
+\newblock Characterizing quantum supremacy in near-term devices.
+\newblock {\em Nature Physics 14}, 6 (2018), 595--600.
+
 \bibitem{bonilla2021xzzx}
 {\sc Bonilla~Ataides, J.~P., Tuckett, D.~K., Bartlett, S.~D., Flammia, S.~T.,
   and Brown, B.~J.}
@@ -324,6 +330,11 @@ Quantum error correction below the surface code threshold.
 \newblock A framework for demonstrating practical quantum advantage: comparing
   quantum against classical generative models.
 \newblock {\em Communications Physics 7}, 1 (2024), 68.
+
+\bibitem{L_Hormozi_thesis}
+{\sc Hormozi, L.}
+\newblock {\em Topological Quantum Compiling}.
+\newblock Phd thesis, Florida State University, Tallahassee, FL, 2007.
 
 \bibitem{Hsu31122024}
 {\sc Hsu, N.-W., Wang, C.-C., Hsu, C.-H., Tu, C.-H., and Hung, S.-H.}

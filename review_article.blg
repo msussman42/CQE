@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2024)
+This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: review_article.aux
 The style file: acm.bst
@@ -8,45 +8,45 @@ Warning--entry type for "quantum_ai_team_and_collaborators_2020_4023103" isn't s
 Warning--to sort, need author or key in google2025quantum
 Warning--empty author in google2025quantum
 Warning--empty journal in moore2021cramming
-You've used 125 entries,
+You've used 127 entries,
             2253 wiz_defined-function locations,
-            1204 strings with 36090 characters,
-and the built_in function-call counts, 56031 in all, are:
-= -- 4793
-> -- 4559
+            1217 strings with 36475 characters,
+and the built_in function-call counts, 56780 in all, are:
+= -- 4863
+> -- 4613
 < -- 0
-+ -- 1859
-- -- 1724
-* -- 5368
-:= -- 9679
-add.period$ -- 360
-call.type$ -- 125
-change.case$ -- 1224
++ -- 1881
+- -- 1744
+* -- 5437
+:= -- 9814
+add.period$ -- 366
+call.type$ -- 127
+change.case$ -- 1240
 chr.to.int$ -- 0
-cite$ -- 128
-duplicate$ -- 1306
-empty$ -- 3234
-format.name$ -- 1724
-if$ -- 10811
+cite$ -- 130
+duplicate$ -- 1325
+empty$ -- 3276
+format.name$ -- 1744
+if$ -- 10952
 int.to.chr$ -- 0
-int.to.str$ -- 125
-missing$ -- 114
-newline$ -- 613
-num.names$ -- 248
-pop$ -- 1192
+int.to.str$ -- 127
+missing$ -- 115
+newline$ -- 623
+num.names$ -- 252
+pop$ -- 1205
 preamble$ -- 1
-purify$ -- 1102
+purify$ -- 1116
 quote$ -- 0
-skip$ -- 846
+skip$ -- 856
 stack$ -- 0
-substring$ -- 2346
-swap$ -- 332
+substring$ -- 2381
+swap$ -- 336
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 494
+type$ -- 502
 warning$ -- 3
-while$ -- 380
-width$ -- 128
-write$ -- 1213
+while$ -- 386
+width$ -- 130
+write$ -- 1235
 (There were 4 warnings)
