@@ -1,3 +1,13 @@
+#python3 -m venv venv_sussman
+#from the bash shell:
+#source venv_sussman/bin/activate  (this step must be done upon reboot)
+#python3 -m pip install qiskit
+#pip3 install qiskit-aer
+#pip3 install matplotlib
+#python3 hadamard_gate.py
+#Transpilation is the process of rewriting a given input circuit to 
+#match the topology of a specific quantum device, and optimize the 
+#circuit instructions for execution on noisy quantum computers.
 import numpy as np
 from qiskit import QuantumCircuit
 from qiskit import transpile
@@ -19,7 +29,7 @@ import os
 # read in 4x4 matrix to m from a file
 #--------------------------------------
 #m = np.loadtxt("/Users/x3e/Desktop/QC/QSVD/matrix.txt", dtype=float)
-m = np.loadtxt("/Users/x3e/Desktop/python_test/QC/matrix_64_2.txt",dtype=float)
+m = np.loadtxt("matrix_64_2.txt",dtype=float)
 d = m.reshape(64)
 print('m is',m)
 
@@ -53,7 +63,9 @@ num_layers = 5
 circuit = QuantumCircuit(num_qubits)
 circuit.initialize(initial_state)
 transpiled_circuit = transpile(circuit, basis_gates = ['cx', 'rz', 'ry', 'rx', 'x', 's', 'sdg', 'h'], optimization_level=0)
+print("transpiled initial_state quantum code")
 print(transpiled_circuit.draw())
+print("end transpiled initial_state quantum code")
 
 simulator_aer = Aer()
 #estimator = Estimator(mode=backend)
@@ -101,8 +113,8 @@ def PQC_2(num_qubits=2,layers=num_layers):
             pqc.rz(thetas[2*q+1+2*num_qubits*l], q)
     return pqc
 
-pqc = PQC_2(num_qubits//2,num_layers)
-print(pqc.draw())
+#pqc = PQC_2(num_qubits//2,num_layers)
+#print(pqc.draw())
 
 
 
@@ -139,7 +151,9 @@ def PQC2_2(num_qubits=2,layers=1):
 
 
 pqc = PQC2_2(num_qubits//2,num_layers)
+print("pqc=PQC2_2: ")
 print(pqc.draw())
+print("end pqc=PQC2_2: ")
 
 def PQC3(num_qubits=2):
     '''
