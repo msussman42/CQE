@@ -111,11 +111,22 @@ def reverse_SDE(x0, score_likelihood=None, time_steps=100,
 
         # Update
         # drift_fun=-1/(1-t) if eps=0 and no parameters specified.
+        # From (21) in Bao et al (2024) (N=1):
+        # S_{t|t-1}\approx -(z_{t,\tau}-alpha_\tau f(x_{t-1},w_{t-1}))/beta^{2}
+        # for score likelihood:
+        # S=grad log p(x)
+        # p(x) is the distribution function associated with drawing Y_t
+        # given X_t.  See equation (24) of Bao et al (2024)
+        # Here: p(x)=Ae^{-(atan(x)-y)^2/(2 sigma^2)}
+        # log p(x)=C-(atan(x)-y)^2/(2 sigma^2)
+        # S=grad log p(x)=(-(atan(x)-y)/sigma^2) * atan'(x)
+        # Note:grad log pq=grad(log p + log q)=score_{p}+score_{q}
         if score_likelihood is not None:
             xt += - dt*( drift_fun(t)*xt + diffuse**2 * ( (xt - alpha_t*x0)/sigma2_t) - diffuse**2 * score_likelihood(xt, t) ) \
                   + np.sqrt(dt)*diffuse*torch.randn_like(xt)
         else:
-            xt += - dt*( drift_fun(t)*xt + diffuse**2 * ( (xt - alpha_t*x0)/sigma2_t) ) + np.sqrt(dt)*diffuse*torch.randn_like(xt)
+            xt += - dt*( drift_fun(t)*xt + diffuse**2 * ( (xt - alpha_t*x0)/sigma2_t) ) \
+                  + np.sqrt(dt)*diffuse*torch.randn_like(xt)
 
         # Store the state in the path
         if save_path:
@@ -145,7 +156,7 @@ if __name__ == "__main__":
 
     nx=n_dim
 
-    SDE_sigma = 0.1
+    SDE_sigma = 0.1 #standard deviation
 
     # filtering setup
     dt = 0.005
@@ -159,7 +170,7 @@ if __name__ == "__main__":
     Z = np.zeros ( [ nx, nt + 1 ] )
 
     # observation sigma
-    obs_sigma = 0.05
+    obs_sigma = 0.05 #standard deviation
 
     ####################################################################
     # EnSF setup
@@ -234,8 +245,11 @@ if __name__ == "__main__":
 
         # define likelihood score
         # S=grad log p(x)
-        # e.g. p(x)=(1/sqrt(sigma 2 pi))e^{-(x-mu)^2/sigma}
-        # then S=A+B(x-mu
+        # p(x) is the distribution function associated with drawing Y_t
+        # given X_t.  See equation (24) of Bao et al (2024)
+        # Here: p(x)=Ae^{-(atan(x)-y)^2/(2 sigma^2)}
+        # log p(x)=C-(atan(x)-y)^2/(2 sigma^2)
+        # S=grad log p(x)=(-(atan(x)-y)/sigma^2) * atan'(x)
         def score_likelihood(xt, t):
             # obs: (d)
             # xt: (ensemble, d)
