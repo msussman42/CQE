@@ -142,12 +142,21 @@ if __name__ == "__main__":
     F = 8
     # n_dim = 1000000
     n_dim=100
+
+    nx=n_dim
+
     SDE_sigma = 0.1
 
     # filtering setup
     dt = 0.005
      #filtering_step=number of steps in the data assimilation window.
     filtering_steps = 50
+
+    nt=filtering_steps
+
+    X = np.zeros ( [ nx, nt + 1 ] )
+    Y = np.zeros ( [ nx, nt + 1 ] )
+    Z = np.zeros ( [ nx, nt + 1 ] )
 
     # observation sigma
     obs_sigma = 0.05
@@ -192,6 +201,14 @@ if __name__ == "__main__":
     # x_state is the result of the new "score function" data assimilation method
     x_state = torch.randn(ensemble_size, n_dim, device=device)  # pure Gaussian initial
 
+    x_est = torch.mean(x_state,dim=0)
+
+    j_time=0
+    for i in range ( 0, nx ):
+        X[i,j_time]=i
+        Y[i,j_time]=j_time
+        Z[i,j_time]=x_est[i]
+
     # get state memory size
     mem_state = state_target.element_size() * state_target.nelement()/1e+6
     mem_ensemble = mem_state * ensemble_size
@@ -233,6 +250,12 @@ if __name__ == "__main__":
         # get state estimates
         x_est = torch.mean(x_state,dim=0)
 
+        j_time=j_time+1
+        for i in range ( 0, nx ):
+          X[i,j_time]=i
+          Y[i,j_time]=j_time
+          Z[i,j_time]=x_est[i]
+
         # get rmse
         rmse_temp = torch.sqrt(torch.mean((x_est - state_target)**2)).item()
 
@@ -248,20 +271,6 @@ if __name__ == "__main__":
             print('diverge!')
             break
 
-    nx=32
-    nt=32
-    
-    X = np.zeros ( [ nx, nt + 1 ] )
-    Y = np.zeros ( [ nx, nt + 1 ] )
-    Z = np.zeros ( [ nx, nt + 1 ] )
-    for j in range ( 0, nt + 1 ):
-        t=j/32.0
-        for i in range ( 0, nx ):
-          x=i/32.0
-          X[i,j] = x
-          Y[i,j] = t
-          Z[i,j] = x+t
-
     fig = plt.figure ( )
     ax = fig.add_subplot ( projection = '3d' )
     surf = ax.plot_surface ( X, Y, Z, cmap = cm.coolwarm, \
@@ -270,6 +279,6 @@ if __name__ == "__main__":
     ax.set_ylabel ( '<--T-->' )
     ax.set_zlabel ( '<--U(X,T)-->' )
     fig.colorbar ( surf, shrink = 0.5, aspect = 10 )
-    plt.savefig ( 'fd1d_advection_lax_wendroff.png' )
+    plt.savefig ( 'L96_results.png' )
     plt.show ( )
     
