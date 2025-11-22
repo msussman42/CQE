@@ -151,6 +151,10 @@ def PQC2_2(num_qubits=2,layers=1):
 
 
 pqc = PQC2_2(num_qubits//2,num_layers)
+print("num_qubits=")
+print(num_qubits)
+print("num_layers=")
+print(num_layers)
 print("pqc=PQC2_2: ")
 print(pqc.draw())
 print("end pqc=PQC2_2: ")
@@ -321,6 +325,11 @@ def test_loss(thetas, initial_state, u_pqc, v_pqc, num_qubits, gradient=False):
 #------------------------------------------------------------------
 
 test_thetas = [random.uniform(0,2*(np.pi)) for _ in range(2*num_qubits*num_layers)]
+print("num_qubits=")
+print(num_qubits)
+print("num_layers=")
+print(num_layers)
+print("test_thetas=")
 print(test_thetas)
 
 
@@ -331,7 +340,13 @@ print(test_thetas)
 
 circuit,counts,state,time = circuit_counts(test_thetas,PQC3_2(layers=num_layers),PQC3_2(layers=num_layers),num_qubits)
 qc = transpile(circuit, basis_gates = ['cx', 'rz', 'ry', 'rx', 'x', 's', 'sdg', 'h'], optimization_level=0)
+print("num_qubits=")
+print(num_qubits)
+print("num_layers=")
+print(num_layers)
+print("PQC3_2=")
 print(qc.draw())
+print("end output of PQC3_2")
 
 
 #-----------------------------------------------------------------
@@ -436,7 +451,7 @@ print('EXP:',EXP)
 # Minimize loss_function computed based on reference paper (0 is ideal)
 #----------------------------------------------------------------------
 
-num_qubits = 6
+#num_qubits = 6 (set at top of this code)
 loss,grad = test_loss(test_thetas, initial_state, PQC3_2(layers=num_layers), PQC3_2(layers=num_layers), num_qubits, gradient=True)
 print('loss is',loss)
 print('grad is ',grad)
@@ -446,9 +461,9 @@ print('type of test_thetas',type(test_thetas))
 
 args = (initial_state, PQC3_2(layers=num_layers), PQC3_2(layers=num_layers), num_qubits, False)
 
-
+maxiter=2
 result_opt = minimize(test_loss, x0=test_thetas, args=args, jac=False, method='COBYLA',
-                      options={'tol':1e-7, 'maxiter':1000})
+                      options={'tol':1e-7, 'maxiter':maxiter})
 
 #result_opt = minimize(test_loss, x0=test_thetas, args=args, jac=False, method='L-BFGS-B',
 #                      options={'ftol':1e-6, 'maxiter':1000,'gtol':1e-6,'maxfun': len(test_thetas)*100})
