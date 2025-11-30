@@ -183,18 +183,36 @@ def generate_dataset(n_traj=24, T=20.0, dt=0.01, seed=123):
         t, Y = make_trajectory(p, x0=x0, v0=v0, T=T, dt=dt)
         all_t.append(t); all_Y.append(Y)
     print("       generated", len(all_Y), "trajectories.")
+    print("len(all_t) ")
+    print(len(all_t)) #should be equal to the number of trajectories
+    print("len(all_Y) ")
+    print(len(all_Y)) #should be equal to the number of trajectories
     return all_t, all_Y, p
 
 # -----------------------------
 # 2) Windowed supervised data
 # -----------------------------
 def make_supervised_multi(trajs, window=50, horizon=1):
+    print("make_supervise_multi")
+    print("window=")
+    print(window)
+    print("horizon=")
+    print(horizon)
     X, Y = [], []
+    i_traj=0
     for Ytraj in trajs:
         Tlen = len(Ytraj)
-        for i in range(Tlen - window - horizon + 1):
+        print("i_traj,Tlen")
+        print(i_traj,Tlen)
+        number_windows=Tlen-window-horizon+1
+        print("window=")
+        print(window)
+        print("number_windows=")
+        print(number_windows)
+        for i in range(number_windows):
             X.append(Ytraj[i:i+window, :])
             Y.append(Ytraj[i+window:i+window+horizon, :].ravel())
+        i_traj=i_traj+1
     return np.array(X, np.float32), np.array(Y, np.float32)
 
 # -----------------------------
@@ -352,6 +370,11 @@ if __name__ == "__main__":
     # Data
     all_t, all_Y, params = generate_dataset(n_traj=n_traj, T=T, dt=dt, seed=123)
     n_train = int(0.8 * len(all_Y))
+    print("len(all_Y)")
+    print(len(all_Y))
+    print("n_train")
+    print(n_train)
+
     train_trajs, val_trajs = all_Y[:n_train], all_Y[n_train:]
 
     scaler = MinMaxScaler()
@@ -359,7 +382,11 @@ if __name__ == "__main__":
     train_scaled = [scaler.transform(y) for y in train_trajs]
     val_scaled   = [scaler.transform(y) for y in val_trajs]
 
+    print("n_traj")
+    print(n_traj)
+    print("make_supervised_multi (Xtr,Ytr)")
     Xtr, Ytr = make_supervised_multi(train_scaled, window=window, horizon=horizon)
+    print("make_supervised_multi (Xva,Yva)")
     Xva, Yva = make_supervised_multi(val_scaled,   window=window, horizon=horizon)
     print(f"[DATA] Xtr: {Xtr.shape}, Ytr: {Ytr.shape} | Xva: {Xva.shape}, Yva: {Yva.shape}")
 

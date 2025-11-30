@@ -190,6 +190,9 @@ def generate_dataset(n_traj=24, T=20.0, dt=0.01, n_nodes=2, seed=123):
         speed=1.0
         amp = rng.uniform(1.0, 5.0)
         phase=rng.uniform(0.0,2.0*np.pi)
+        if (n_traj==1):
+            amp=2.0
+            phase=np.pi
         t, Y = make_trajectory(n_nodes=n_nodes,speed=speed,amp=amp,phase=phase,T=T, dt=dt)
         all_t.append(t); all_Y.append(Y)
     print("       generated", len(all_Y), "trajectories.")
@@ -305,27 +308,29 @@ def save_all_artifacts(model, history, scaler, Xtr, Ytr, cfg):
     except Exception as e:
         print("[WARN] Could not create model diagram (graphviz/pydot missing?):", e)
 
-    # C) Training history
-    hist = {k: [float(x) for x in v] for k, v in history.history.items()}
-    np.savetxt(out / "history.csv",
+    if (1==0):
+
+      # C) Training history
+      hist = {k: [float(x) for x in v] for k, v in history.history.items()}
+      np.savetxt(out / "history.csv",
                np.array([hist.get("loss", []), hist.get("val_loss", [])]).T,
                delimiter=",", header="loss,val_loss", comments="")
-    with open(out / "history.json", "w") as f:
-        json.dump(hist, f, indent=2)
-    plt.figure()
-    plt.plot(hist.get("loss", []), label="train")
-    plt.plot(hist.get("val_loss", []), label="val")
-    plt.xlabel("epoch"); plt.ylabel("MSE"); plt.legend(); plt.tight_layout()
-    plt.savefig(out / "history.png", dpi=200); plt.close()
+      with open(out / "history.json", "w") as f:
+          json.dump(hist, f, indent=2)
+      plt.figure()
+      plt.plot(hist.get("loss", []), label="train")
+      plt.plot(hist.get("val_loss", []), label="val")
+      plt.xlabel("epoch"); plt.ylabel("MSE"); plt.legend(); plt.tight_layout()
+      plt.savefig(out / "history.png", dpi=200); plt.close()
 
-    # D) Scaler + config
-    joblib.dump(scaler, out / "minmax_scaler.joblib")
-    config = dict(**cfg,
-                  Xtr_shape=tuple(Xtr.shape),
-                  Ytr_shape=tuple(Ytr.shape),
-                  use_decomposed=USE_DECOMPOSED)
-    with open(out / "config.json", "w") as f:
-        json.dump(config, f, indent=2)
+      # D) Scaler + config
+      joblib.dump(scaler, out / "minmax_scaler.joblib")
+      config = dict(**cfg,
+                    Xtr_shape=tuple(Xtr.shape),
+                    Ytr_shape=tuple(Ytr.shape),
+                    use_decomposed=USE_DECOMPOSED)
+      with open(out / "config.json", "w") as f:
+          json.dump(config, f, indent=2)
 
     # E) ONNX export/check (optional)
     if tf2onnx is None:
@@ -372,35 +377,38 @@ if __name__ == "__main__":
     #window, horizon = 50, 1
     window, horizon = 4, 1
     #n_traj, EPOCHS, BATCH = 24, 10, 256
-    n_traj, EPOCHS, BATCH = 4, 2, 256
+    n_traj, EPOCHS, BATCH = 1, 1000, 256
     #UNITS, DROPOUT, NUM_DENSE = 96, 0.10, 64
-    UNITS, DROPOUT, NUM_DENSE = 6, 0.10, 4
+    UNITS, DROPOUT, NUM_DENSE = 8, 0.10, 8
 
     print(f"[CFG] T={T}, dt={dt}, window={window}, horizon={horizon}, "
           f"n_traj={n_traj}, epochs={EPOCHS}, units={UNITS}, decomposed={USE_DECOMPOSED}")
 
     # Data
     all_t, all_Y = generate_dataset(n_traj=n_traj, T=T, dt=dt, n_nodes=n_nodes,seed=123)
-    n_train = int(0.8 * len(all_Y))
+    #n_train = int(0.8 * len(all_Y))
+    n_train = len(all_Y)
     print("len(all_Y)")
     print(len(all_Y))
     print("n_train")
     print(n_train)
 
-    train_trajs, val_trajs = all_Y[:n_train], all_Y[n_train:]
+    #train_trajs, val_trajs = all_Y[:n_train], all_Y[n_train:]
+    train_trajs = all_Y[:n_train]
 
     scaler = MinMaxScaler()
     scaler.fit(np.vstack(train_trajs))
     train_scaled = [scaler.transform(y) for y in train_trajs]
-    val_scaled   = [scaler.transform(y) for y in val_trajs]
+    #val_scaled   = [scaler.transform(y) for y in val_trajs]
 
     print("n_traj,n_nodes")
     print(n_traj,n_nodes)
     print("make_supervised_multi (Xtr,Ytr)")
     Xtr, Ytr = make_supervised_multi(train_scaled, window=window, horizon=horizon)
-    print("make_supervised_multi (Xva,Yva)")
-    Xva, Yva = make_supervised_multi(val_scaled,   window=window, horizon=horizon)
-    print(f"[DATA] Xtr: {Xtr.shape}, Ytr: {Ytr.shape} | Xva: {Xva.shape}, Yva: {Yva.shape}")
+    #print("make_supervised_multi (Xva,Yva)")
+    #Xva, Yva = make_supervised_multi(val_scaled,   window=window, horizon=horizon)
+    print(f"[DATA] Xtr: {Xtr.shape}, Ytr: {Ytr.shape} ")
+    #print(f"[DATA] Xva: {Xva.shape}, Yva: {Yva.shape}")
 
     # Model + train
     if USE_DECOMPOSED:
@@ -416,7 +424,7 @@ if __name__ == "__main__":
     ]
     history = model.fit(
         Xtr, Ytr,
-        validation_data=(Xva, Yva),
+        #validation_data=(Xva, Yva),
         epochs=EPOCHS,
         batch_size=BATCH,
         callbacks=cbs,
@@ -435,9 +443,17 @@ if __name__ == "__main__":
     # Evaluate on a fresh trajectory + plots
     print("\n[EVAL] Free-roll on a fresh test trajectory …")
     speed=1.0
-    amp=1.25
+    amp=2.0
     phase=np.pi
-    t_te, Y_te = make_trajectory(n_nodes=n_nodes,speed=speed,amp=amp,phase=phase,T=T, dt=dt)
+    print("amp,phase: ")
+    print(amp,phase)
+    T_free_roll=12.0*dt
+    #T_free_roll=T
+    #T_free_roll=5.0*dt
+    print("T,T_free_roll: ")
+    print(T,T_free_roll)
+
+    t_te, Y_te = make_trajectory(n_nodes=n_nodes,speed=speed,amp=amp,phase=phase,T=T_free_roll, dt=dt)
     init_hist = Y_te[:window, :]
     steps     = len(Y_te) - window
     Y_pred    = freeroll(model, scaler, init_hist, steps=steps, horizon=horizon,n_nodes=n_nodes)
