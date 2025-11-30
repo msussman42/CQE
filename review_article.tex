@@ -113,14 +113,16 @@
 
 ABSTRACT:
 In the article by Herrmann et al, ``Quantum utility – definition and 
-assessment of a practical quantum advantage,'' the ``Application
-Readiness Level'' (ARL) is defined: (ARL1) ``concept with unknown potential,'' 
-(ARL2) ``beneficial in small idealized systems,'' (ARL3) ``utility indicated by 
-theory or resource estimations,'' (ARL4) ``simulated utility demonstration,''
-and (ARL5) ``utility demonstration on quantum hardware.''  At the present, 
-practitioners have reached ARL3 with the Variational Quantum Eigenvalue
-(VQE) algorithm.  This seems to indicate that there is still much work
-to be done in order to reach ARL4 or ARL5.
+assessment of a practical quantum advantage,'' the quantum computer
+``Application Readiness Level'' (ARL) is defined: 
+(ARL1) ``concept with unknown potential,'' 
+(ARL2) ``beneficial in small idealized systems,'' 
+(ARL3) ``utility indicated by 
+theory or resource estimations,'' 
+(ARL4) ``simulated utility demonstration,''
+and (ARL5) ``utility demonstration on quantum hardware.''  
+Hermann et al posit that ARL3 has been reached via demonstrations
+of the Variational Quantum Eigenvalue (VQE) algorithm.
 In this review article, the latest activities from the
 computational ``digital twin'' perspective are reported on in which scientists
 are working hard to bring practitioners out of the Noisy Intermediate
@@ -128,10 +130,12 @@ Scale Quantum (NISQ) era into an era of ``Quantum supremacy.'' In
 otherwords this review article discusses 
 digital twin activities that help to advance from ARL3 to 
 ARL4, or even ARL5.  The three main categories in this review article are
-(1) Quantum algorithms for benchmarking quantum computers (to include
-emulator algorithms like Qiskit), (2) Optimization, Control, inverse
-problems, and exploratory simulation algorithms for Schrodinger's equation, and (3) Quantum Error correction
-algorithms and surface codes.
+(1) Optimization, Control, inverse
+problems, and exploratory simulation algorithms for Schrodinger's equation,
+(2) Quantum computer Error correction,
+and 
+(3)  Quantum algorithms for benchmarking quantum computers (to include
+emulator algorithms like Qiskit).
 
 \section{Introduction}
 
@@ -190,11 +194,112 @@ aspects associated with the emerging ``quantum computing'' paradigm.
 As outlined by
 Gamble\cite{gamble2019quantum}, the development of reliable quantum
 computers will have a tranformative effect on computer technology.  
+A perfectly working fifty qubit quantum computer can efficiently 
+process $2^{50}$ pieces of data which is 1024 Terabytes (1 Petabyte)!
+%1024 petabytes $2^{60}$=1 exabyte
 That being said, right now we are in the 
 ``Noisy Intermediate-Scale Quantum''\cite{callison2022hybrid} (NISQ) era.  
 The purpose of this review article is to bring to the 
 forefront the current research being done, from the 
 computational perspective, in order to move beyond the NISQ era.
+
+
+\section{Optimization, Control, inverse
+problems, and exploratory simulation algorithms for Schrodinger's equation}
+
+%make a table: (chronological order)
+%dimension, steady/non-steady, DFT or no DFT, optimizaton?, inverse?,
+%control?, number of quantum particles? spin interaction?
+In 1982, Feit et al\cite{FEIT1982412} developed a spectral
+method for determining the eigenvalues and eigenfunctions of 
+the time independent Schrodinger equation:
+\begin{eqnarray}
+i\frac{\partial\psi}{\partial t}=-\frac{1}{2M}\nabla^{2}\psi+V(x,y)\psi
+\end{eqnarray}
+\begin{eqnarray}
+\psi(x,y,t)=\sum_{n,j}A_{nj}u_{nj}(x,y)e^{-i E_{n}t}
+\end{eqnarray}
+\begin{eqnarray}
+E_{n}u_{nj}=-\frac{1}{2M}\nabla^{2}u_{nj}+Vu_{nj},
+\end{eqnarray}
+where
+\begin{eqnarray}
+\nabla^{2}=\frac{\partial^{2}}{\partial x^{2}}+
+           \frac{\partial^{2}}{\partial y^{2}}.
+\end{eqnarray}
+\par\noindent
+In 2002, Bao et al\cite{BAO2002487} developed a time splitting
+spectral approximation for the time dependent Schrodinger equation
+in the ``semiclassical'' regime:
+\begin{eqnarray}
+iu_{t}^{\epsilon}=-\frac{\epsilon}{2}\Delta u^{\epsilon}+
+\frac{1}{\epsilon}V(x)u^{\epsilon} \hspace{10pt} x\in R^{d} \hspace{10pt}
+u^{\epsilon}(x,0)=u_{0}^{\epsilon}(x)
+\end{eqnarray}
+Bao et al report results in one and two space dimensions.
+\par\noindent
+In 2004, Zheng et al\cite{zheng2004numerical} developed a finite element
+method for finding the ground state of the lithium atom.  In otherwords,
+Zheng et al found the smallest eigenvalue and the associated eigenfunction
+for the time independent Schrodinger equation:
+\begin{eqnarray}
+E\psi=H\psi
+\end{eqnarray}
+where the Hamiltonian operator $H$ is defined as
+\begin{eqnarray}
+H=-\frac{1}{2}(\Delta_{1}+\Delta_{2}+\Delta_{3})-
+\frac{3}{r_{1}}-
+\frac{3}{r_{2}}-
+\frac{3}{r_{3}}+
+\frac{1}{r_{12}}+
+\frac{1}{r_{13}}+
+\frac{1}{r_{23}}
+\end{eqnarray}
+\begin{eqnarray}
+\Delta_{j}=\frac{\partial^{2}}{\partial x_{j}^{2}}+ 
+\frac{\partial^{2}}{\partial y_{j}^{2}}+ 
+\frac{\partial^{2}}{\partial z_{j}^{2}} \hspace{10pt} 1\le j\le 3
+\end{eqnarray}
+\begin{eqnarray}
+r_{jk}=|\vec{r}_{j}-\vec{r}_{k}| \hspace{10pt} r_{j}=|\vec{r}_{j}|
+\end{eqnarray}
+After converting from cartesian coordinate system to spherical 
+coordinate system, the authors were able to reduce the dimension of the
+problem from 9 to 6.
+
+\begin{enumerate}
+\item Lin et al (2016)\cite{lin2016approximating}, ``Approximating spectral densities of large matrices.''
+\item Zhang et al (2017)\cite{zhang2017observation}, ``Observation of a many-body dynamical phase transition with a 53-qubit quantum simulator.''
+\item Han et al (2019)\cite{HAN2019108929}, ``Solving many-electron Schrödinger equation using deep neural networks.''
+\item Günther et al (2021) \cite{9651392}, ``Quandary: An open-source C++ package for high-performance optimal control of open quantum systems.'' the article
+by Lidar (2019)\cite{lidar2019lecture} (``Lecture notes on the theory of open quantum systems'') gives the derivation of the model for open quantum systems.
+\item Günther and Petersson (2023) \cite{gunther2023practical}, ``A practical approach to determine minimal quantum gate durations using amplitude-bounded quantum controls.''
+\item Fei et al (2025)\cite{fei2025switching}, ``Switching time optimization for binary quantum optimal control.''
+\item Fei et al (2023)\cite{fei2023binary}, ``Binary control pulse optimization for quantum systems.''
+\item Kanai et al (2024)\cite{PhysRevLett.132.250603}, ``Single-Electron Qubits Based on Quantum Ring States on Solid Neon Surface.''
+\item Hermann et al (2020)\cite{hermann2020deep}, ``Deep-neural-network solution of the electronic Schr{\"o}dinger equation.''
+\item Andrade et al (2022)\cite{Andrade_2022}, ``Engineering an effective three-spin Hamiltonian in trapped-ion systems for applications in quantum simulation.''
+\item Wille et al (2018)\cite{wille2018computer}, ``Computer-aided design for quantum computation.''
+\item He et al (2024)\cite{he2024efficientoptimalcontrolopen}, ``Efficient Optimal Control of Open Quantum Systems''
+\item Nusseler et al (2020) \cite{PhysRevB.101.155134}, ``Efficient simulation of open quantum systems coupled to a fermionic bath.''
+\item Selsto and Kvaal (2010)\cite{Selsto2010}, ``Absorbing boundary conditions for dynamical many-body quantum systems.''
+\item Sawaya et al (2023)\cite{10313872}, ``HamLib: A Library of Hamiltonians for Benchmarking Quantum Algorithms and Hardware.''
+\item Grivopoulos (2005)\cite{grivopoulos2005optimal}, ``Optimal control of quantum systems.''
+\item Hangleiter et al (2024)\cite{hangleiter2024robustly}, ``Robustly learning the Hamiltonian dynamics of a superconducting quantum processor.''
+\item Shukrinov et al (2016)\cite{shukrinov2016modeling}, ``Modeling of LC-shunted intrinsic Josephson junctions in high-Tc superconductors.''
+\item Sun and Galperin (2025)\cite{sun2025control}, ``Control of open quantum systems: The nonequilibrium Green’s function perspective.''
+\item Zhang et al (2004)\cite{zheng2004numerical}, ``Numerical solutions of the Schrodinger equation for the ground lithium by the finite element method.''
+\item He and Wu (2024)\cite{he2024zeroing}, ``Zeroing neural dynamics solving time-variant complex conjugate matrix equation''
+\item Liao et al (2020)\cite{liao2020modified}, ``Modified gradient neural networks for solving the time-varying Sylvester equation with adaptive coefficients and elimination of matrix inversion''
+\item Lin Lin (2025)\cite{lin2025dissipative}, ``Dissipative preparation of many-body quantum states: Toward practical quantum advantage''
+\item Kodali and Motamarri (2025)\cite{PhysRevB.111.195129}, ``Finite-element methods for noncollinear magnetism and spin-orbit coupling in real-space pseudopotential density functional theory''
+\item Barrera et al (2025)\cite{barrera2025movingbornoppenheimerapproximation}, ``The Moving Born-Oppenheimer Approximation''
+\item Nieminen et al (2023)\cite{PhysRevB.107.174524}, ``Atomistic modeling of a superconductor--transition metal dichalcogenide--superconductor Josephson junction''
+\item Mucciolo et al (2025)\cite{mucciolo2025greensfunctionmethodscomputing}, ``Green's Function Methods for Computing Supercurrents in Josephson Junctions''
+\item Williams-Young et al (2023)\cite{williams2023distributed}, ``Distributed memory, GPU accelerated Fock construction for hybrid, Gaussian basis density functional theory''
+\end{enumerate}
+
+
 
 \section{Quantum algorithms and Quantum emulators
   for benchmarking quantum computers}
@@ -310,42 +415,6 @@ python3 hadamard_gate.py
 \end{comment}
 
 
-\section{Optimization, Control, inverse
-problems, and exploratory simulation algorithms for Schrodinger's equation}
-
-\begin{enumerate}
-\item Feit et al (1982)\cite{FEIT1982412}, ``Solution of the Schrödinger equation by a spectral method.''
-\item Bao et al (2002)\cite{BAO2002487}, ``On Time-Splitting Spectral Approximations for the Schrödinger Equation in the Semiclassical Regime.''
-\item Lin et al (2016)\cite{lin2016approximating}, ``Approximating spectral densities of large matrices.''
-\item Zhang et al (2017)\cite{zhang2017observation}, ``Observation of a many-body dynamical phase transition with a 53-qubit quantum simulator.''
-\item Han et al (2019)\cite{HAN2019108929}, ``Solving many-electron Schrödinger equation using deep neural networks.''
-\item Günther et al (2021) \cite{9651392}, ``Quandary: An open-source C++ package for high-performance optimal control of open quantum systems.'' the article
-by Lidar (2019)\cite{lidar2019lecture} (``Lecture notes on the theory of open quantum systems'') gives the derivation of the model for open quantum systems.
-\item Günther and Petersson (2023) \cite{gunther2023practical}, ``A practical approach to determine minimal quantum gate durations using amplitude-bounded quantum controls.''
-\item Fei et al (2025)\cite{fei2025switching}, ``Switching time optimization for binary quantum optimal control.''
-\item Fei et al (2023)\cite{fei2023binary}, ``Binary control pulse optimization for quantum systems.''
-\item Kanai et al (2024)\cite{PhysRevLett.132.250603}, ``Single-Electron Qubits Based on Quantum Ring States on Solid Neon Surface.''
-\item Hermann et al (2020)\cite{hermann2020deep}, ``Deep-neural-network solution of the electronic Schr{\"o}dinger equation.''
-\item Andrade et al (2022)\cite{Andrade_2022}, ``Engineering an effective three-spin Hamiltonian in trapped-ion systems for applications in quantum simulation.''
-\item Wille et al (2018)\cite{wille2018computer}, ``Computer-aided design for quantum computation.''
-\item He et al (2024)\cite{he2024efficientoptimalcontrolopen}, ``Efficient Optimal Control of Open Quantum Systems''
-\item Nusseler et al (2020) \cite{PhysRevB.101.155134}, ``Efficient simulation of open quantum systems coupled to a fermionic bath.''
-\item Selsto and Kvaal (2010)\cite{Selsto2010}, ``Absorbing boundary conditions for dynamical many-body quantum systems.''
-\item Sawaya et al (2023)\cite{10313872}, ``HamLib: A Library of Hamiltonians for Benchmarking Quantum Algorithms and Hardware.''
-\item Grivopoulos (2005)\cite{grivopoulos2005optimal}, ``Optimal control of quantum systems.''
-\item Hangleiter et al (2024)\cite{hangleiter2024robustly}, ``Robustly learning the Hamiltonian dynamics of a superconducting quantum processor.''
-\item Shukrinov et al (2016)\cite{shukrinov2016modeling}, ``Modeling of LC-shunted intrinsic Josephson junctions in high-Tc superconductors.''
-\item Sun and Galperin (2025)\cite{sun2025control}, ``Control of open quantum systems: The nonequilibrium Green’s function perspective.''
-\item Zhang et al (2004)\cite{zheng2004numerical}, ``Numerical solutions of the Schrodinger equation for the ground lithium by the finite element method.''
-\item He and Wu (2024)\cite{he2024zeroing}, ``Zeroing neural dynamics solving time-variant complex conjugate matrix equation''
-\item Liao et al (2020)\cite{liao2020modified}, ``Modified gradient neural networks for solving the time-varying Sylvester equation with adaptive coefficients and elimination of matrix inversion''
-\item Lin Lin (2025)\cite{lin2025dissipative}, ``Dissipative preparation of many-body quantum states: Toward practical quantum advantage''
-\item Kodali and Motamarri (2025)\cite{PhysRevB.111.195129}, ``Finite-element methods for noncollinear magnetism and spin-orbit coupling in real-space pseudopotential density functional theory''
-\item Barrera et al (2025)\cite{barrera2025movingbornoppenheimerapproximation}, ``The Moving Born-Oppenheimer Approximation''
-\item Nieminen et al (2023)\cite{PhysRevB.107.174524}, ``Atomistic modeling of a superconductor--transition metal dichalcogenide--superconductor Josephson junction''
-\item Mucciolo et al (2025)\cite{mucciolo2025greensfunctionmethodscomputing}, ``Green's Function Methods for Computing Supercurrents in Josephson Junctions''
-\item Williams-Young et al (2023)\cite{williams2023distributed}, ``Distributed memory, GPU accelerated Fock construction for hybrid, Gaussian basis density functional theory''
-\end{enumerate}
 
 
 \section{Quantum Error Correction algorithms and surface codes}

@@ -165,6 +165,12 @@ Quantum error correction below the surface code threshold.
   on quantum simulators.
 \newblock {\em Applied Sciences 13}, 20 (2023), 11491.
 
+\bibitem{de2019massively}
+{\sc De~Raedt, H., Jin, F., Willsch, D., Willsch, M., Yoshioka, N., Ito, N.,
+  Yuan, S., and Michielsen, K.}
+\newblock Massively parallel quantum computer simulator, eleven years later.
+\newblock {\em Computer Physics Communications 237\/} (2019), 47--61.
+
 \bibitem{dennis2002topological}
 {\sc Dennis, E., Kitaev, A., Landahl, A., and Preskill, J.}
 \newblock Topological quantum memory.
