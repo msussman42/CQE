@@ -354,16 +354,54 @@ if __name__ == "__main__":
      # [ [y^{0}] [y^{1}] ... [y^{n}] ]
     all_t, all_Y = make_trajectory(n_nodes=n_nodes,speed=speed,amp=amp,phase=phase,T=T, dt=dt)
 
-    # 1. make sure mean with respect to time is zero for each space location.
-    #    Save XMEAN_i   i=0,...,n_nodes-1
-    # 2. X=U SIGMA WSTAR
-    # 3. TSVD=X W
+    Tlen=len(all_t)
+    print("Tlen=len(all_t) after make_trajectory for training data")
+    print(Tlen)
 
-    n_nodes_reduced=n_nodes
+    Y_array=np.array(all_Y,np.float64)
+    #print("Y_array before mean")
+    #print(Y_array)
+    XMEAN=np.zeros(n_nodes)
+    for i in range(n_nodes):
+        for j in range(Tlen):
+            XMEAN[i]=XMEAN[i]+Y_array[j,i]
+        XMEAN[i]=XMEAN[i]/Tlen
+        for j in range(Tlen):
+            Y_array[j,i]=Y_array[j,i]-XMEAN[i]
+
+    #print("Y_array after mean")
+    #print(Y_array)
+    #print("XMEAN")
+    #print(XMEAN)
+    #exit()
+
+    #Y is mxn
+    #U is mxm
+    #S is a 1d vector; let us turn it into a mxn matrix.
+    #Vh is nxn
+    U,S,Vh=np.linalg.svd(Y_array)
+
+    n_nodes_reduced=n_nodes//3
+
+    S_MATRIX=np.zeros((Tlen,n_nodes_reduced))
+    W_MATRIX=np.zeros((n_nodes,n_nodes_reduced))
+    r=min(Tlen,n_nodes_reduced)
+    for i in range(r):
+        S_MATRIX[i,i]=S[i]
+
+    for i in range(n_nodes):
+        for j in range(n_nodes_reduced):
+            W_MATRIX[i,j]=np.conjugate(Vh[j,i])
+
+    US=np.matmul(U,S_MATRIX)
+    US_test=np.matmul(Y_array,W_MATRIX)
+    SANITY_MAT=np.subtract(US,US_test)
+    #print(SANITY_MAT)
+    #exit()
 
     scaler = MinMaxScaler()
-    scaler.fit(np.vstack(all_Y))
-    train_scaled = scaler.transform(all_Y)
+    scaler.fit(np.vstack(US))
+    train_scaled = scaler.transform(US)
 
     print("n_nodes")
     print(n_nodes)
@@ -414,21 +452,35 @@ if __name__ == "__main__":
     #expected solution
     t_te, Y_te = make_trajectory(n_nodes=n_nodes,speed=speed,amp=amp,phase=phase,T=T_free_roll, dt=dt)
 
-    # 1. adjust each node location by XMEAN_i   i=0,...,n_nodes-1
-    # 2. TSVD=X W
+    Tlen_te=len(t_te)
+    print("Tlen_te=")
+    print(Tlen_te)
 
-    init_hist = Y_te[:window, :]
-    steps     = len(Y_te) - window
+    for i in range(n_nodes):
+        for j in range(Tlen_te):
+            Y_te[j,i]=Y_te[j,i]-XMEAN[i]
+
+    Y_te_array=np.array(Y_te,np.float64)
+    US_te=np.matmul(Y_te_array,W_MATRIX)
+
+    init_hist = US_te[:window, :]
+    steps     = Tlen_te - window
 
     Y_pred    = freeroll(model, scaler, init_hist, steps=steps, horizon=horizon,n_nodes=n_nodes_reduced)
     Y_pred_full = np.vstack([init_hist, Y_pred])
 
-    # for Y_te and Y_pred
-    # 1. X=TSVD * W^{star}
-    # 2. restore the XMEAN_i operation i=0,....,n_nodes-1
+    Y_pred_full_array=np.array(Y_pred_full,np.float64)
 
-    y_true = Y_te[window:, :]
-    y_hat  = Y_pred_full[window:, :]
+    Y_te_array_extend=np.matmul(US_te,W_MATRIX.conj().T)
+    Y_pred_full_array_extend=np.matmul(Y_pred_full_array,W_MATRIX.conj().T)
+
+    for i in range(n_nodes):
+        for j in range(Tlen_te):
+            Y_te_array_extend[j,i]=Y_te_array_extend[j,i]+XMEAN[i]
+            Y_pred_full_array_extend[j,i]=Y_pred_full_array_extend[j,i]+XMEAN[i]
+
+    y_true = Y_te_array_extend[window:, :]
+    y_hat  = Y_pred_full_array_extend[window:, :]
 
     for i in range(n_nodes):
         rmse=np.sqrt(mean_squared_error(y_true[:,i],y_hat[:,i]))
@@ -439,15 +491,15 @@ if __name__ == "__main__":
     out = Path("artifacts")
     plt.figure(figsize=(11, 5))
     plt.subplot(1,2,1)
-    plt.plot(t_te, Y_te[:,0], label="True x(t,0)")
-    plt.plot(t_te, Y_pred_full[:,0], "--", label="LSTM x̂(t)")
+    plt.plot(t_te, Y_te_array_extend[:,0], label="True x(t,0)")
+    plt.plot(t_te, Y_pred_full_array_extend[:,0], "--", label="LSTM x̂(t)")
     plt.axvline(t_te[window], color="k", ls=":", lw=1)
     plt.title("x(t,0)")
     plt.xlabel("Time [s]"); plt.ylabel("x(t,0)"); plt.legend()
 
     plt.subplot(1,2,2)
-    plt.plot(t_te, Y_te[:,1], label="True x(t,1)")
-    plt.plot(t_te, Y_pred_full[:,1], "--", label="LSTM v̂(t)")
+    plt.plot(t_te, Y_te_array_extend[:,1], label="True x(t,1)")
+    plt.plot(t_te, Y_pred_full_array_extend[:,1], "--", label="LSTM v̂(t)")
     plt.axvline(t_te[window], color="k", ls=":", lw=1)
     plt.title("x(t,1)")
     plt.xlabel("Time [s]"); plt.ylabel("x(t,1)"); plt.legend()
