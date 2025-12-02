@@ -544,6 +544,11 @@ Quantum error correction below the surface code threshold.
 \newblock The multiple lives of moore's law.
 \newblock {\em IEEE Spectrum 52}, 4 (2015), 31--31.
 
+\bibitem{manzano2020short}
+{\sc Manzano, D.}
+\newblock A short introduction to the lindblad master equation.
+\newblock {\em Aip advances 10}, 2 (2020).
+
 \bibitem{markov2014limits}
 {\sc Markov, I.~L.}
 \newblock Limits on fundamental limits to computation.

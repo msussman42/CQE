@@ -266,6 +266,58 @@ r_{jk}=|\vec{r}_{j}-\vec{r}_{k}| \hspace{10pt} r_{j}=|\vec{r}_{j}|
 After converting from cartesian coordinate system to spherical 
 coordinate system, the authors were able to reduce the dimension of the
 problem from 9 to 6.
+\par\noindent
+In Grivopoulos' 2005 Phd thesis\cite{grivopoulos2005optimal}, methods
+were developed for the control of quantum systems.  We 
+highlight one such control problem discussed in the thesis. 
+The Lindblad equation\cite{manzano2020short,lidar2019lecture} 
+for open quantum systems is
+(see 3.7 in 
+\cite{grivopoulos2005optimal}):
+\begin{eqnarray}
+	\dot{\rho}=-i[H,\rho]+
+	\sum_{n} K_{n}\rho K_{n}' -\frac{1}{2}
+	\{\sum_{n} K_{n}'K_{n},\rho\}
+\end{eqnarray}
+The Lindblad equation models the interaction of two quantum systems, 
+A and B, with respective Hilbert spaces $H_{A}$ and $H_{B}$.  The
+Hilbert space for the composite space is,
+\begin{eqnarray}
+	H_{AB}=H_{A}\otimes H_{B}
+\end{eqnarray}
+A general state vector on the composite space is,
+\begin{eqnarray}
+	\psi_{AB}=\psi_{A}\otimes\psi_{B}.
+\end{eqnarray}
+As stated in 
+\cite{grivopoulos2005optimal},
+``For the open system $A$ (interacting with its environment $B$), $\rho$ is 
+the state variable analogous to the vector $\psi$ for an 
+isolated quantum system.'' Expressions for $\rho$ are:
+\begin{eqnarray}
+	\rho={\mbox tr}_{B}\psi_{AB}\psi_{AB}'=
+	\sum_{ij}(\sum_{I}(\psi_{AB})^{\ast}_{iI}
+	(\psi_{AB})_{jI})e_{j}e_{i}'
+\end{eqnarray}
+Note that $\rho$ is self-adjoint, positive semi-definite, and
+$\mbox{tr}\rho=1$.  As an example of control of open quantum systems,
+\cite{grivopoulos2005optimal},
+considers a control problem for the laser cooling of atoms and 
+molecules.   The Lindblad equation with Hamiltonian control is
+\begin{eqnarray}
+	\dot{\rho}=-i[H_{0}+V u(t),\rho]+L(\rho), \label{control}
+\end{eqnarray}
+where
+\begin{eqnarray}
+	L(\rho)=\sum_{ij}K_{ij}\rho K_{ij}^{\dag}-\frac{1}{2}
+	\{K_{ij}^{\dag}K_{ij},\rho\}
+\end{eqnarray}
+\cite{grivopoulos2005optimal}, for the $3\times 3$ case,
+determines the control, $u(t)$, in
+(\ref{control}), that maximizes $\rho_{11}(T)$ given $\rho(0)=\rho_{0}$.
+
+
+
 
 \begin{enumerate}
 \item Lin et al (2016)\cite{lin2016approximating}, ``Approximating spectral densities of large matrices.''
@@ -284,11 +336,9 @@ by Lidar (2019)\cite{lidar2019lecture} (``Lecture notes on the theory of open qu
 \item Nusseler et al (2020) \cite{PhysRevB.101.155134}, ``Efficient simulation of open quantum systems coupled to a fermionic bath.''
 \item Selsto and Kvaal (2010)\cite{Selsto2010}, ``Absorbing boundary conditions for dynamical many-body quantum systems.''
 \item Sawaya et al (2023)\cite{10313872}, ``HamLib: A Library of Hamiltonians for Benchmarking Quantum Algorithms and Hardware.''
-\item Grivopoulos (2005)\cite{grivopoulos2005optimal}, ``Optimal control of quantum systems.''
 \item Hangleiter et al (2024)\cite{hangleiter2024robustly}, ``Robustly learning the Hamiltonian dynamics of a superconducting quantum processor.''
 \item Shukrinov et al (2016)\cite{shukrinov2016modeling}, ``Modeling of LC-shunted intrinsic Josephson junctions in high-Tc superconductors.''
 \item Sun and Galperin (2025)\cite{sun2025control}, ``Control of open quantum systems: The nonequilibrium Green’s function perspective.''
-\item Zhang et al (2004)\cite{zheng2004numerical}, ``Numerical solutions of the Schrodinger equation for the ground lithium by the finite element method.''
 \item He and Wu (2024)\cite{he2024zeroing}, ``Zeroing neural dynamics solving time-variant complex conjugate matrix equation''
 \item Liao et al (2020)\cite{liao2020modified}, ``Modified gradient neural networks for solving the time-varying Sylvester equation with adaptive coefficients and elimination of matrix inversion''
 \item Lin Lin (2025)\cite{lin2025dissipative}, ``Dissipative preparation of many-body quantum states: Toward practical quantum advantage''

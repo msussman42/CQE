@@ -4,49 +4,49 @@ The top-level auxiliary file: review_article.aux
 The style file: acm.bst
 Database file #1: references.bib
 Warning--entry type for "quantum_ai_team_and_collaborators_2020_4023103" isn't style-file defined
---line 3976 of file references.bib
+--line 3986 of file references.bib
 Warning--to sort, need author or key in google2025quantum
 Warning--empty author in google2025quantum
 Warning--empty journal in moore2021cramming
-You've used 128 entries,
+You've used 129 entries,
             2253 wiz_defined-function locations,
-            1223 strings with 36748 characters,
-and the built_in function-call counts, 57270 in all, are:
-= -- 4907
-> -- 4655
+            1227 strings with 36843 characters,
+and the built_in function-call counts, 57479 in all, are:
+= -- 4926
+> -- 4662
 < -- 0
-+ -- 1898
-- -- 1760
-* -- 5486
-:= -- 9900
-add.period$ -- 369
-call.type$ -- 128
-change.case$ -- 1251
++ -- 1902
+- -- 1762
+* -- 5502
+:= -- 9936
+add.period$ -- 372
+call.type$ -- 129
+change.case$ -- 1255
 chr.to.int$ -- 0
-cite$ -- 131
-duplicate$ -- 1334
-empty$ -- 3301
-format.name$ -- 1760
-if$ -- 11044
+cite$ -- 132
+duplicate$ -- 1343
+empty$ -- 3320
+format.name$ -- 1762
+if$ -- 11086
 int.to.chr$ -- 0
-int.to.str$ -- 128
-missing$ -- 116
-newline$ -- 628
-num.names$ -- 254
-pop$ -- 1214
+int.to.str$ -- 129
+missing$ -- 117
+newline$ -- 633
+num.names$ -- 256
+pop$ -- 1217
 preamble$ -- 1
-purify$ -- 1126
+purify$ -- 1129
 quote$ -- 0
-skip$ -- 861
+skip$ -- 866
 stack$ -- 0
-substring$ -- 2405
-swap$ -- 338
+substring$ -- 2411
+swap$ -- 340
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 506
+type$ -- 510
 warning$ -- 3
-while$ -- 390
-width$ -- 131
-write$ -- 1245
+while$ -- 392
+width$ -- 132
+write$ -- 1254
 (There were 4 warnings)
