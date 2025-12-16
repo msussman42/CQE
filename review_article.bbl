@@ -117,6 +117,11 @@ Quantum error correction below the surface code threshold.
 \newblock The xzzx surface code.
 \newblock {\em Nature communications 12}, 1 (2021), 2172.
 
+\bibitem{https://doi.org/10.1002/andp.19273892002}
+{\sc Born, M., and Oppenheimer, R.}
+\newblock Zur quantentheorie der molekeln.
+\newblock {\em Annalen der Physik 389}, 20 (1927), 457--484.
+
 \bibitem{bravo2023variational}
 {\sc Bravo-Prieto, C., LaRose, R., Cerezo, M., Subasi, Y., Cincio, L., and
   Coles, P.~J.}
@@ -226,6 +231,11 @@ Quantum error correction below the surface code threshold.
 \newblock Quantum mechanical computers.
 \newblock {\em Foundations of Physics 16\/} (1986), 507--531.
 \newblock originally published in Optics News, February 1985, pp. 11-20.
+
+\bibitem{foulkes2001quantum}
+{\sc Foulkes, W.~M., Mitas, L., Needs, R., and Rajagopal, G.}
+\newblock Quantum monte carlo simulations of solids.
+\newblock {\em Reviews of Modern Physics 73}, 1 (2001), 33.
 
 \bibitem{fujii2015quantumcomputationtopologicalcodes}
 {\sc Fujii, K.}
@@ -463,6 +473,12 @@ Quantum error correction below the surface code threshold.
   J{\'o}czik, S., Nagy, D.~T., Varga, H., El-Safty, K.~H., Morse, G., et~al.}
 \newblock Piquasso: A photonic quantum computer simulation software platform.
 \newblock {\em Quantum 9\/} (2025), 1708.
+
+\bibitem{krantz2019quantum}
+{\sc Krantz, P., Kjaergaard, M., Yan, F., Orlando, T.~P., Gustavsson, S., and
+  Oliver, W.~D.}
+\newblock A quantum engineer's guide to superconducting qubits.
+\newblock {\em Applied physics reviews 6}, 2 (2019).
 
 \bibitem{krinner2022realizing}
 {\sc Krinner, S., Lacroix, N., Remm, A., Di~Paolo, A., Genois, E., Leroux, C.,

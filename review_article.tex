@@ -243,7 +243,7 @@ method for finding the ground state of the lithium atom.  In otherwords,
 Zheng et al found the smallest eigenvalue and the associated eigenfunction
 for the time independent Schrodinger equation:
 \begin{eqnarray}
-E\psi=H\psi
+E\psi=H\psi \label{time_independent}
 \end{eqnarray}
 where the Hamiltonian operator $H$ is defined as
 \begin{eqnarray}
@@ -316,6 +316,44 @@ where
 determines the control, $u(t)$, in
 (\ref{control}), that maximizes $\rho_{11}(T)$ given $\rho(0)=\rho_{0}$.
 \par\noindent
+In the article by Han et al\cite{HAN2019108929}, a neural network 
+algorithm was devised for computing the ground state to the 
+time independent Schrodinger equation (\ref{time_independent}).
+The Hamiltonian operator corresponds to the Born-Oppenheimer 
+approximation\cite{https://doi.org/10.1002/andp.19273892002}
+with $N$ electrons and $M$ ions:
+\begin{eqnarray}
+\vec{r}=(\vec{r}_{1},\ldots,\vec{r}_{N}) \hspace{20pt}
+\vec{R}=(\vec{R}_{1},\ldots,\vec{R}_{M})
+\end{eqnarray}
+\begin{eqnarray}
+H(\vec{r},\vec{R})=
+-\frac{1}{2}\sum_{i=1}^{N}\nabla_{i}^{2}+
+\sum_{i=1}^{N}\sum_{j=i+1}^{N}\frac{1}{|\vec{r}_{i}-\vec{r}_{j}|}-
+\sum_{I=1}^{M}\sum_{i=1}^{N}\frac{Z_{I}}{|\vec{r}_{i}-\vec{R}_{I}|}+
+\sum_{I=1}^{M}\sum_{J=I+1}^{M}\frac{Z_{I}Z_{J}}{|\vec{R}_{I}-\vec{R}_{J}|}
+\end{eqnarray}
+It is assumed that the first $N_{\uparrow}$ electrons are spin-up and the
+remaining $N-N_{\uparrow}$ electrons are spin down\cite{foulkes2001quantum}.
+The trial wave functions are assumed in \cite{HAN2019108929} to be 
+real valued, anti-symmetric, and have the following form:
+\begin{eqnarray}
+\psi(\vec{r},\vec{R})=S(\vec{r},\vec{R})
+ A^{\uparrow}(\vec{r}^{\uparrow})A^{\downarrow}(\vec{r}^{\downarrow})
+\end{eqnarray}
+\cite{HAN2019108929} represent $S$,$A^{\uparrow}$, $A^{\downarrow}$ using
+a deep neural network.  The weights and biases of the network are
+trained in order to minimize:
+\begin{eqnarray}
+E[\psi]=\frac{\psi^{\ast}(\vec{r},\vec{R})H\psi(\vec{r},\vec{R})d\vec{r}}
+    {\psi^{\ast}(\vec{r},\vec{R})\psi(\vec{r},\vec{R})d\vec{r}}
+\end{eqnarray}
+\cite{HAN2019108929} report results within two percent error for 
+$H_{2}$ (two electrons), 
+$Be_{4}$ (four electrons), 
+$LiH_{4}$ (four electrons), 
+$He$ (two electrons), and
+$H_{10}$ (ten electrons).
 
 
 
@@ -324,7 +362,6 @@ determines the control, $u(t)$, in
 \item Krantz et al (2019)\cite{krantz2019quantum}, ``A quantum engineer's guide to superconducting qubits.''
 \item Lin et al (2016)\cite{lin2016approximating}, ``Approximating spectral densities of large matrices.''
 \item Zhang et al (2017)\cite{zhang2017observation}, ``Observation of a many-body dynamical phase transition with a 53-qubit quantum simulator.''
-\item Han et al (2019)\cite{HAN2019108929}, ``Solving many-electron Schrödinger equation using deep neural networks.''
 \item Günther et al (2021) \cite{9651392}, ``Quandary: An open-source C++ package for high-performance optimal control of open quantum systems.'' the article
 by Lidar (2019)\cite{lidar2019lecture} (``Lecture notes on the theory of open quantum systems'') gives the derivation of the model for open quantum systems.
 \item Günther and Petersson (2023) \cite{gunther2023practical}, ``A practical approach to determine minimal quantum gate durations using amplitude-bounded quantum controls.''
@@ -333,7 +370,6 @@ by Lidar (2019)\cite{lidar2019lecture} (``Lecture notes on the theory of open qu
 \item Kanai et al (2024)\cite{PhysRevLett.132.250603}, ``Single-Electron Qubits Based on Quantum Ring States on Solid Neon Surface.''
 \item Hermann et al (2020)\cite{hermann2020deep}, ``Deep-neural-network solution of the electronic Schr{\"o}dinger equation.''
 \item Andrade et al (2022)\cite{Andrade_2022}, ``Engineering an effective three-spin Hamiltonian in trapped-ion systems for applications in quantum simulation.''
-\item Wille et al (2018)\cite{wille2018computer}, ``Computer-aided design for quantum computation.''
 \item He et al (2024)\cite{he2024efficientoptimalcontrolopen}, ``Efficient Optimal Control of Open Quantum Systems''
 \item Nusseler et al (2020) \cite{PhysRevB.101.155134}, ``Efficient simulation of open quantum systems coupled to a fermionic bath.''
 \item Selsto and Kvaal (2010)\cite{Selsto2010}, ``Absorbing boundary conditions for dynamical many-body quantum systems.''
@@ -367,6 +403,7 @@ characterise the actual noise present in a quantum computer.
 
 \begin{enumerate}
 \item (IBM) ``Quantum Computing with Qiskit'' (2024)\cite{javadi2024quantum}
+\item Wille et al (2018)\cite{wille2018computer}, ``Computer-aided design for quantum computation.''
 \item ``Intel Quantum Simulator: a cloud-ready high-performance
  simulator of quantum circuits'' (2020)\cite{Guerreschi_Intel_Quantum_Simulator_2020}
 \item (Microsoft) ``LIQUid: A Software design architecture 

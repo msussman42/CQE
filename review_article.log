@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.1)  2 DEC 2025 17:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  16 DEC 2025 16:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -236,81 +236,86 @@ Overfull \hbox (2.13954pt too wide) in paragraph at lines 240--245
 in-de-pen-dent Schrodinger
  []
 
-[3] [4] [5]
-Overfull \hbox (0.63965pt too wide) in paragraph at lines 344--345
+[3] [4]
+Overfull \hbox (43.08252pt too wide) in alignment at lines 329--335
+ [][][] []
+ []
+
+[5]
+Overfull \hbox (0.63965pt too wide) in paragraph at lines 383--384
 []\OT1/cmr/m/n/10 Lin Lin (2025)[[]], ``Dis-si-pa-tive prepa-ra-tion of many-bo
 dy quan-tum states:
  []
 
 
-Overfull \hbox (3.86188pt too wide) in paragraph at lines 345--346
+Overfull \hbox (3.86188pt too wide) in paragraph at lines 384--385
 []\OT1/cmr/m/n/10 Kodali and Mo-ta-marri (2025)[[]], ``Finite-element meth-ods 
 for non-collinear
  []
 
 
-Overfull \hbox (16.02853pt too wide) in paragraph at lines 347--348
+Overfull \hbox (16.02853pt too wide) in paragraph at lines 386--387
 []\OT1/cmr/m/n/10 Nieminen et al (2023)[[]], ``Atom-istic mod-el-ing of a super
 conductor--transition
  []
 
 [6]
-Overfull \hbox (5.30528pt too wide) in paragraph at lines 373--375
+Overfull \hbox (5.30528pt too wide) in paragraph at lines 413--415
 []\OT1/cmr/m/n/10 (Matlab) ``QCLAB: A Mat-lab Tool-box for Quan-tum Com-put-ing
 '' (2025)[[]] 
  []
 
 [7] [8] [9] Excluding 'comment' comment.
-Overfull \hbox (5.96298pt too wide) in paragraph at lines 470--470
+Overfull \hbox (5.96298pt too wide) in paragraph at lines 510--510
 []\OT1/cmr/bx/n/14.4 Quantum Er-ror Cor-rec-tion al-go-rithms and sur-
  []
 
-
-Overfull \hbox (4.7507pt too wide) in paragraph at lines 482--483
+[10]
+Overfull \hbox (4.7507pt too wide) in paragraph at lines 522--523
 []\OT1/cmr/m/n/10 Knill and Laflamme (1997)[[]], ``The-ory of quan-tum error-co
 rrecting codes'' 
  []
 
-[10]
-Overfull \hbox (3.834pt too wide) in paragraph at lines 492--493
+
+Overfull \hbox (3.834pt too wide) in paragraph at lines 532--533
 []\OT1/cmr/m/n/10 Evered et al (2023)[[]], ``High-fidelity par-al-lel en-tan-gl
 ing gates on a neutral-
  []
 
-[11] (./review_article.bbl [12]
+[11] (./review_article.bbl [12] [13]
 Underfull \hbox (badness 1038) in paragraph at lines 75--80
 []\OT1/cmr/m/sc/10 Baum, Y., Am-ico, M., How-ell, S., Hush, M., Li-uzzi, M.,
  []
 
-[13] [14]
-Underfull \hbox (badness 1137) in paragraph at lines 197--202
+[14] [15]
+Underfull \hbox (badness 1137) in paragraph at lines 202--207
 []\OT1/cmr/m/sc/10 Evered, S. J., Blu-vstein, D., Kali-nowski, M., Ebadi, S.,
  []
 
-[15] [16] [17] [18] [19] [20]
-Underfull \hbox (badness 1178) in paragraph at lines 621--646
+[16] [17] [18] [19] [20] [21]
+Underfull \hbox (badness 1178) in paragraph at lines 637--662
 []\OT1/cmr/m/sc/10 Putterman, H., Noh, K., Hann, C. T., Mac-Cabe, G. S.,
  []
 
-[21]
-Underfull \hbox (badness 1168) in paragraph at lines 676--684
+[22]
+Underfull \hbox (badness 1168) in paragraph at lines 692--700
 []\OT1/cmr/m/sc/10 Sawaya, N. P., Marti-Dafcik, D., Ho, Y., Ta-bor, D. P.,
  []
 
-[22] [23]) [24] (./review_article.aux)
+[23] [24]) [25] (./review_article.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3019 strings out of 474116
- 45108 string characters out of 5743683
- 1938187 words of memory out of 5000000
- 25352 multiletter control sequences out of 15000+600000
+ 3023 strings out of 474116
+ 45207 string characters out of 5743681
+ 1940187 words of memory out of 5000000
+ 25356 multiletter control sequences out of 15000+600000
  566606 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,7n,65p,294b,226s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,8n,65p,294b,226s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
@@ -325,10 +330,10 @@ xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texli
 ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
 e/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on review_article.pdf (24 pages, 241946 bytes).
+Output written on review_article.pdf (25 pages, 247286 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
+ 156 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
