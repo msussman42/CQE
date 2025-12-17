@@ -346,16 +346,42 @@ a deep neural network.  The weights and biases of the network are
 trained in order to minimize:
 \begin{eqnarray}
 E[\psi]=\frac{\psi^{\ast}(\vec{r},\vec{R})H\psi(\vec{r},\vec{R})d\vec{r}}
-    {\psi^{\ast}(\vec{r},\vec{R})\psi(\vec{r},\vec{R})d\vec{r}}
+    {\psi^{\ast}(\vec{r},\vec{R})\psi(\vec{r},\vec{R})d\vec{r}}.
+\end{eqnarray}
+\cite{HAN2019108929} represent the network parameters at epoch $t$ as,
+\begin{eqnarray}
+\vec{\Theta},
+\end{eqnarray}
+and the cost function in terms of $\vec{Theta}$ is given as,
+\begin{eqnarray}
+E[\psi]\equiv \Omega_{E_{ref}(\vec{Theta}). \label{costmin}
+\end{eqnarray}
+The stochastic gradient descent method with learning
+rate $\eta$ is used to minimize (\ref{costmin}):
+\begin{eqnarray}
+\Theta_{t+1}=\Theta_{t}-\eta\nabla_{\vec{\Theta}} \Omega_{E_{ref}(\vec{Theta})
 \end{eqnarray}
 \cite{HAN2019108929} report results within two percent error for 
-$H_{2}$ (two electrons), 
-$Be_{4}$ (four electrons), 
-$LiH_{4}$ (four electrons), 
-$He$ (two electrons), and
-$H_{10}$ (ten electrons).
+$\mbox{H}_{2}$ (two electrons), 
+$\mbox{Be}_{4}$ (four electrons), 
+$\mbox{LiH}_{4}$ (four electrons), 
+$\mbox{He}$ (two electrons), and
+$\mbox{H}_{10}$ (ten electrons).
 
-
+\par\noindent
+\cite{hermann2020deep} developed a similar method as \cite{HAN2019108929}
+for computing the ground state to the
+time independent Schrodinger equation (\ref{time_independent}).  Both
+\cite{hermann2020deep} and \cite{HAN2019108929} express the trial 
+wave functions using a neural network:
+\begin{eqnarray}
+\psi(\vec{r},\vec{R})\approx \psi_{\vec{\Theta}}(\vec{r})
+\end{eqnarray}
+\cite{hermann2020deep} report results within three percent error for
+$\mbox{H}_{2}$ (two electrons), 
+$\mbox{Be}_{4}$ (four electrons), 
+$\mbox{LiH}_{4}$ (four electrons), and
+$\mbox{B}$ (five electrons).
 
 
 \begin{enumerate}
@@ -368,7 +394,6 @@ by Lidar (2019)\cite{lidar2019lecture} (``Lecture notes on the theory of open qu
 \item Fei et al (2025)\cite{fei2025switching}, ``Switching time optimization for binary quantum optimal control.''
 \item Fei et al (2023)\cite{fei2023binary}, ``Binary control pulse optimization for quantum systems.''
 \item Kanai et al (2024)\cite{PhysRevLett.132.250603}, ``Single-Electron Qubits Based on Quantum Ring States on Solid Neon Surface.''
-\item Hermann et al (2020)\cite{hermann2020deep}, ``Deep-neural-network solution of the electronic Schr{\"o}dinger equation.''
 \item Andrade et al (2022)\cite{Andrade_2022}, ``Engineering an effective three-spin Hamiltonian in trapped-ion systems for applications in quantum simulation.''
 \item He et al (2024)\cite{he2024efficientoptimalcontrolopen}, ``Efficient Optimal Control of Open Quantum Systems''
 \item Nusseler et al (2020) \cite{PhysRevB.101.155134}, ``Efficient simulation of open quantum systems coupled to a fermionic bath.''
