@@ -1,9 +1,9 @@
 %% get rid of autoindent   :setl noai nocin nosi inde=
 %%
-%% 1. pdflatex main
-%% 2. bibtex main
-%% 3. pdflatex main
-%% 3. pdflatex main
+%% 1. pdflatex review_article
+%% 2. bibtex review_article
+%% 3. pdflatex review_article
+%% 3. pdflatex review_article
 %\documentclass[review]{elsarticle}
 \documentclass[]{article}
 %\documentclass[preprint]{elsarticle}
@@ -354,12 +354,12 @@ E[\psi]=\frac{\psi^{\ast}(\vec{r},\vec{R})H\psi(\vec{r},\vec{R})d\vec{r}}
 \end{eqnarray}
 and the cost function in terms of $\vec{Theta}$ is given as,
 \begin{eqnarray}
-E[\psi]\equiv \Omega_{E_{ref}(\vec{Theta}). \label{costmin}
+E[\psi]\equiv \Omega_{E_{ref}}(\vec{Theta}). \label{costmin}
 \end{eqnarray}
 The stochastic gradient descent method with learning
 rate $\eta$ is used to minimize (\ref{costmin}):
 \begin{eqnarray}
-\Theta_{t+1}=\Theta_{t}-\eta\nabla_{\vec{\Theta}} \Omega_{E_{ref}(\vec{Theta})
+\Theta_{t+1}=\Theta_{t}-\eta\nabla_{\vec{\Theta}} \Omega_{E_{ref}}(\vec{Theta})
 \end{eqnarray}
 \cite{HAN2019108929} report results within two percent error for 
 $\mbox{H}_{2}$ (two electrons), 
@@ -385,9 +385,9 @@ $\mbox{B}$ (five electrons).
 
 
 \begin{enumerate}
-\item Krantz et al (2019)\cite{krantz2019quantum}, ``A quantum engineer's guide to superconducting qubits.''
-\item Lin et al (2016)\cite{lin2016approximating}, ``Approximating spectral densities of large matrices.''
-\item Zhang et al (2017)\cite{zhang2017observation}, ``Observation of a many-body dynamical phase transition with a 53-qubit quantum simulator.''
+%\item Krantz et al (2019)\cite{krantz2019quantum}, ``A quantum engineer's guide to superconducting qubits.''
+%\item Lin et al (2016)\cite{lin2016approximating}, ``Approximating spectral densities of large matrices.''
+%\item Zhang et al (2017)\cite{zhang2017observation}, ``Observation of a many-body dynamical phase transition with a 53-qubit quantum simulator.''
 \item Günther et al (2021) \cite{9651392}, ``Quandary: An open-source C++ package for high-performance optimal control of open quantum systems.'' the article
 by Lidar (2019)\cite{lidar2019lecture} (``Lecture notes on the theory of open quantum systems'') gives the derivation of the model for open quantum systems.
 \item Günther and Petersson (2023) \cite{gunther2023practical}, ``A practical approach to determine minimal quantum gate durations using amplitude-bounded quantum controls.''
@@ -396,21 +396,24 @@ by Lidar (2019)\cite{lidar2019lecture} (``Lecture notes on the theory of open qu
 \item Kanai et al (2024)\cite{PhysRevLett.132.250603}, ``Single-Electron Qubits Based on Quantum Ring States on Solid Neon Surface.''
 \item Andrade et al (2022)\cite{Andrade_2022}, ``Engineering an effective three-spin Hamiltonian in trapped-ion systems for applications in quantum simulation.''
 \item He et al (2024)\cite{he2024efficientoptimalcontrolopen}, ``Efficient Optimal Control of Open Quantum Systems''
-\item Nusseler et al (2020) \cite{PhysRevB.101.155134}, ``Efficient simulation of open quantum systems coupled to a fermionic bath.''
-\item Selsto and Kvaal (2010)\cite{Selsto2010}, ``Absorbing boundary conditions for dynamical many-body quantum systems.''
-\item Sawaya et al (2023)\cite{10313872}, ``HamLib: A Library of Hamiltonians for Benchmarking Quantum Algorithms and Hardware.''
+%\item Nusseler et al (2020) \cite{PhysRevB.101.155134}, ``Efficient simulation of open quantum systems coupled to a fermionic bath.''
+%\item Selsto and Kvaal (2010)\cite{Selsto2010}, ``Absorbing boundary conditions for dynamical many-body quantum systems.''
 \item Hangleiter et al (2024)\cite{hangleiter2024robustly}, ``Robustly learning the Hamiltonian dynamics of a superconducting quantum processor.''
 %Shukrinov_2017_Supercond._Sci._Technol._30_024006.pdf
-\item Shukrinov et al (2016)\cite{shukrinov2016modeling}, ``Modeling of LC-shunted intrinsic Josephson junctions in high-Tc superconductors.''
+%\item Shukrinov et al (2016)\cite{shukrinov2016modeling}, ``Modeling of LC-shunted intrinsic Josephson junctions in high-Tc superconductors.''
 \item Sun and Galperin (2025)\cite{sun2025control}, ``Control of open quantum systems: The nonequilibrium Green’s function perspective.''
-\item He and Wu (2024)\cite{he2024zeroing}, ``Zeroing neural dynamics solving time-variant complex conjugate matrix equation''
-\item Liao et al (2020)\cite{liao2020modified}, ``Modified gradient neural networks for solving the time-varying Sylvester equation with adaptive coefficients and elimination of matrix inversion''
+%\item He and Wu (2024)\cite{he2024zeroing}, ``Zeroing neural dynamics solving time-variant complex conjugate matrix equation''
+%\item Liao et al (2020)\cite{liao2020modified}, ``Modified gradient neural networks for solving the time-varying Sylvester equation with adaptive coefficients and elimination of matrix inversion''
 \item Lin Lin (2025)\cite{lin2025dissipative}, ``Dissipative preparation of many-body quantum states: Toward practical quantum advantage''
 \item Kodali and Motamarri (2025)\cite{PhysRevB.111.195129}, ``Finite-element methods for noncollinear magnetism and spin-orbit coupling in real-space pseudopotential density functional theory''
 \item Barrera et al (2025)\cite{barrera2025movingbornoppenheimerapproximation}, ``The Moving Born-Oppenheimer Approximation''
 \item Nieminen et al (2023)\cite{PhysRevB.107.174524}, ``Atomistic modeling of a superconductor--transition metal dichalcogenide--superconductor Josephson junction''
 \item Mucciolo et al (2025)\cite{mucciolo2025greensfunctionmethodscomputing}, ``Green's Function Methods for Computing Supercurrents in Josephson Junctions''
 \item Williams-Young et al (2023)\cite{williams2023distributed}, ``Distributed memory, GPU accelerated Fock construction for hybrid, Gaussian basis density functional theory''
+\item Dat-Thuc Nguyen and Vo Anh Khoa (2025)\cite{nguyen2025inversion}, ``An inversion approach to reconstruct the complex potential and intensity function in the Schr{\"o}dinger evolution equation''
+\item Meschede et al (2023)\cite{PhysRevA.107.062806}, ``Quantum scattering of spinless particles in Riemannian manifolds''
+\item Atanasov and Dandoloff (2007)\cite{atanasov2007curvature}, ``Curvature induced quantum potential on deformed surfaces''
+\item Ferrari and Cuoghi (2008)\cite{ferrari2008schrodinger}, ``Schr{\"o}dinger equation for a particle on a curved surface in an electric and magnetic field''
 \end{enumerate}
 
 
@@ -459,6 +462,7 @@ characterise the actual noise present in a quantum computer.
 
 \begin{enumerate}
 %%cross entropy benchmark
+\item Sawaya et al (2023)\cite{10313872}, ``HamLib: A Library of Hamiltonians for Benchmarking Quantum Algorithms and Hardware.''
 \item Boixo et al (2018)\cite{boixo2018characterizing}, ``Characterizing quantum supremacy in near-term devices''
 \item Kitaev (1995)\cite{kitaev1995quantum}, ``Quantum measurements and the Abelian stabilizer problem'' (quantum phase estimation)
 \item Shor (1999)\cite{doi:10.1137/S0036144598347011}, ``Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer''
@@ -528,9 +532,6 @@ pip3 install matplotlib
 pip3 install qiskit-ibm-runtime
 python3 hadamard_gate.py
 \end{comment}
-
-
-
 
 \section{Quantum Error Correction algorithms and surface codes}
 

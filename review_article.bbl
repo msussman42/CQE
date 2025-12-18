@@ -54,6 +54,11 @@ Quantum error correction below the surface code threshold.
 \newblock A stress-induced source of phonon bursts and quasiparticle poisoning.
 \newblock {\em Nature Communications 15}, 1 (2024), 6444.
 
+\bibitem{atanasov2007curvature}
+{\sc Atanasov, V., and Dandoloff, R.}
+\newblock Curvature induced quantum potential on deformed surfaces.
+\newblock {\em Physics Letters A 371}, 1-2 (2007), 118--123.
+
 \bibitem{BAO2002487}
 {\sc Bao, W., Jin, S., and Markowich, P.~A.}
 \newblock On time-splitting spectral approximations for the schrödinger
@@ -220,6 +225,12 @@ Quantum error correction below the surface code threshold.
 \newblock Solution of the schrödinger equation by a spectral method.
 \newblock {\em Journal of Computational Physics 47}, 3 (1982), 412--433.
 
+\bibitem{ferrari2008schrodinger}
+{\sc Ferrari, G., and Cuoghi, G.}
+\newblock Schr{\"o}dinger equation for a particle on a curved surface in an
+  electric and magnetic field.
+\newblock {\em Physical review letters 100}, 23 (2008), 230403.
+
 \bibitem{richard1982feynman}
 {\sc Feynman, R.~P.}
 \newblock Simulating physics with quantum computers.
@@ -316,12 +327,6 @@ Quantum error correction below the surface code threshold.
 {\sc Harrow, A.~W., Hassidim, A., and Lloyd, S.}
 \newblock Quantum algorithm for linear systems of equations.
 \newblock {\em Physical review letters 103}, 15 (2009), 150502.
-
-\bibitem{he2024zeroing}
-{\sc He, J., and Wu, D.}
-\newblock Zeroing neural dynamics solving time-variant complex conjugate matrix
-  equation.
-\newblock {\em arXiv preprint arXiv:2406.12783\/} (2024).
 
 \bibitem{he2024efficientoptimalcontrolopen}
 {\sc He, W., Li, T., Li, X., Li, Z., Wang, C., and Wang, K.}
@@ -474,12 +479,6 @@ Quantum error correction below the surface code threshold.
 \newblock Piquasso: A photonic quantum computer simulation software platform.
 \newblock {\em Quantum 9\/} (2025), 1708.
 
-\bibitem{krantz2019quantum}
-{\sc Krantz, P., Kjaergaard, M., Yan, F., Orlando, T.~P., Gustavsson, S., and
-  Oliver, W.~D.}
-\newblock A quantum engineer's guide to superconducting qubits.
-\newblock {\em Applied physics reviews 6}, 2 (2019).
-
 \bibitem{krinner2022realizing}
 {\sc Krinner, S., Lacroix, N., Remm, A., Di~Paolo, A., Genois, E., Leroux, C.,
   Hellings, C., Lazar, S., Swiadek, F., Herrmann, J., et~al.}
@@ -500,13 +499,6 @@ Quantum error correction below the surface code threshold.
 \newblock In {\em Proceedings of the International Conference for High
   Performance Computing, Networking, Storage and Analysis\/} (2021), pp.~1--14.
 
-\bibitem{liao2020modified}
-{\sc Liao, S., Liu, J., Xiao, X., Fu, D., Wang, G., and Jin, L.}
-\newblock Modified gradient neural networks for solving the time-varying
-  sylvester equation with adaptive coefficients and elimination of matrix
-  inversion.
-\newblock {\em Neurocomputing 379\/} (2020), 1--11.
-
 \bibitem{lidar2019lecture}
 {\sc Lidar, D.~A.}
 \newblock Lecture notes on the theory of open quantum systems.
@@ -517,11 +509,6 @@ Quantum error correction below the surface code threshold.
 \newblock Dissipative preparation of many-body quantum states: Toward practical
   quantum advantage.
 \newblock {\em APL Computational Physics 1}, 1 (2025), 010901.
-
-\bibitem{lin2016approximating}
-{\sc Lin, L., Saad, Y., and Yang, C.}
-\newblock Approximating spectral densities of large matrices.
-\newblock {\em SIAM review 58}, 1 (2016), 34--65.
 
 \bibitem{PhysRevA.107.062406}
 {\sc Lotshaw, P.~C., Battles, K.~D., Gard, B., Buchs, G., Humble, T.~S., and
@@ -575,6 +562,11 @@ Quantum error correction below the surface code threshold.
 \newblock Majorana nanowires for topological quantum computation.
 \newblock {\em Journal of Applied Physics 132}, 23 (2022).
 
+\bibitem{PhysRevA.107.062806}
+{\sc Meschede, L., Schwager, B., Schulz, D., and Berakdar, J.}
+\newblock Quantum scattering of spinless particles in riemannian manifolds.
+\newblock {\em Phys. Rev. A 107\/} (Jun 2023), 062806.
+
 \bibitem{moore2021cramming}
 {\sc Moore, G.}
 \newblock Cramming more components onto integrated circuits (1965).
@@ -596,6 +588,12 @@ Quantum error correction below the surface code threshold.
 \newblock Quantum algorithm for estimating largest eigenvalues.
 \newblock {\em Physics Letters A 488\/} (2023), 129138.
 
+\bibitem{nguyen2025inversion}
+{\sc Nguyen, D.-T., and Khoa, V.~A.}
+\newblock An inversion approach to reconstruct the complex potential and
+  intensity function in the schr{\"o}dinger evolution equation.
+\newblock {\em Journal of Computational Physics\/} (2025), 114476.
+
 \bibitem{nguyen2022tensor}
 {\sc Nguyen, T., Lyakh, D., Dumitrescu, E., Clark, D., Larkin, J., and
   McCaskey, A.}
@@ -613,12 +611,6 @@ Quantum error correction below the surface code threshold.
 \newblock Atomistic modeling of a superconductor--transition metal
   dichalcogenide--superconductor josephson junction.
 \newblock {\em Phys. Rev. B 107\/} (May 2023), 174524.
-
-\bibitem{PhysRevB.101.155134}
-{\sc N\"u\ss{}eler, A., Dhand, I., Huelga, S.~F., and Plenio, M.~B.}
-\newblock Efficient simulation of open quantum systems coupled to a fermionic
-  bath.
-\newblock {\em Phys. Rev. B 101\/} (Apr 2020), 155134.
 
 \bibitem{10.1145/3524059.3532375}
 {\sc Park, D., Kim, H., Kim, J., Kim, T., and Lee, J.}
@@ -704,13 +696,6 @@ Quantum error correction below the surface code threshold.
   computers.
 \newblock {\em Phys. Rev. Res. 7\/} (Apr 2025), 023032.
 
-\bibitem{Selsto2010}
-{\sc Selstø, S., and Kvaal, S.}
-\newblock Absorbing boundary conditions for dynamical many-body quantum
-  systems.
-\newblock {\em Journal of Physics B: Atomic, Molecular and Optical Physics 43},
-  6 (mar 2010), 065004.
-
 \bibitem{shalf2020future}
 {\sc Shalf, J.}
 \newblock The future of computing beyond moore’s law.
@@ -733,13 +718,6 @@ Quantum error correction below the surface code threshold.
 \newblock Polynomial-time algorithms for prime factorization and discrete
   logarithms on a quantum computer.
 \newblock {\em SIAM Review 41}, 2 (1999), 303--332.
-
-\bibitem{shukrinov2016modeling}
-{\sc Shukrinov, Y.~M., Rahmonov, I., Kulikov, K., Botha, A., Plecenik, A.,
-  Seidel, P., and Nawrocki, W.}
-\newblock Modeling of lc-shunted intrinsic josephson junctions in high-tc
-  superconductors.
-\newblock {\em Superconductor Science and Technology 30}, 2 (2016), 024006.
 
 \bibitem{stetina2025firstquantizedquantumsimulationnonrelativistic}
 {\sc Stetina, T., and Wiebe, N.}
@@ -807,13 +785,6 @@ Quantum error correction below the surface code threshold.
   gpu.
 \newblock In {\em Proceedings of the 35th ACM International Conference on
   Supercomputing\/} (2021), pp.~443--454.
-
-\bibitem{zhang2017observation}
-{\sc Zhang, J., Pagano, G., Hess, P.~W., Kyprianidis, A., Becker, P., Kaplan,
-  H., Gorshkov, A.~V., Gong, Z.-X., and Monroe, C.}
-\newblock Observation of a many-body dynamical phase transition with a 53-qubit
-  quantum simulator.
-\newblock {\em Nature 551}, 7682 (2017), 601--604.
 
 \bibitem{zhang2024quantum}
 {\sc Zhang, Q., Saligane, M., Kim, H.-S., Blaauw, D., Tzimpragos, G., and
