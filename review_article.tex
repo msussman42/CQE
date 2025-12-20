@@ -53,6 +53,9 @@
 \newcommand{\bmD}{\mbox{\boldmath $D$\unboldmath}}
 \newcommand{\bmnu}{\mbox{\boldmath $\nu$\unboldmath}}
 \newcommand{\bmalpha}{\mbox{\boldmath $\alpha$\unboldmath}}
+\newcommand{\bm0}{\mbox{\boldmath $0$\unboldmath}}
+\newcommand{\bm1}{\mbox{\boldmath $1$\unboldmath}}
+\newcommand{\bm7}{\mbox{\boldmath $7$\unboldmath}}
 
 \newcommand{\DefTen}{\mathbb{D}}
 \newcommand{\EyeTen}{\mathbb{I}}
@@ -424,10 +427,59 @@ by Lidar (2019)\cite{lidar2019lecture} (``Lecture notes on the theory of open qu
 \par\noindent
 \subsection{Quantum Emulators}
 The development of Quantum Emulators is essential for benchmarking quantum 
-computers since (i) the level of noise in Quantum Emulators can be prescribed exactly thereby enabling practitioners to debug their quantum circuit and (ii)
+computers since (i) the level of noise in Quantum Emulators can be prescribed exactly thereby enabling practitioners to quantify the effect of 
+noise on a given quantum circuit design, (ii)
 one can prescribe a given noise model\cite{PhysRevA.107.062406} and then
 compare emulator results with an actual quantum computer in order to 
-characterise the actual noise present in a quantum computer.
+characterise the actual noise present in a quantum computer, and
+(iii) one can isolate quantum algorithmic problems from intrinsic
+quantum computer noise problems.
+
+A Quantum algorithm consists of (i) state preparation, 
+(ii) state measurement(s), and (iii) a sequence of unitary operation(s).
+We give an example of a naive implemention of these quantum operations
+when performed on a classical computer.
+\subsubsection{state preparation}
+Given $n$ qubits, there will be $N=2^{n}$ basis states.  For example
+if $n=3$, the standard basis is
+\begin{eqnarray*}
+|000>=|0>\otimes |0>\otimes |0>\equiv \vec{\bm0} \\
+|001>=|0>\otimes |0>\otimes |1> \equiv \vec{\bm1}, \ldots, \\
+|111>=|1>\otimes |1>\otimes |1> \equiv \vec{\bm7}
+\end{eqnarray*}
+\begin{eqnarray*}
+|0>=\left( \begin{array}{c} 1 & 0 \end{array} \right)
+\end{eqnarray*}
+\begin{eqnarray*}
+|1>=\left( \begin{array}{c} 0 & 1 \end{array} \right)
+\end{eqnarray*}
+In general if one wants to prepare the state,
+\begin{eqnarray*}
+|\vec{\bmpsi}> \hspace{20pt} |\vec{\bmpsi}> \in C^{N},
+\end{eqnarray*}
+on a quantum computer, then one searches for as sparse a unitary matrix
+$U_{\psi}$ as possible such that,
+\begin{eqnarray*}
+U_{\psi}|\vec{bm0}>=|\vec{\bmpsi}>,
+\end{eqnarray*}
+or, it is ok to search for the following,
+\begin{eqnarray*}
+U_{\psi}|\vec{bm0}>=\frac{e^{i\theta}}{||\psi||}
+ \sum_{i_{1}i_{2}\ldots i_{n}} \psi_{i_{1}i_{2}\ldots i_{n}}
+ |i_{1}i_{2}\ldots i_{n}>.
+\end{eqnarray*}
+The indices $i_{k}$ take values in ${0,1}$,
+$\theta \in [0,2\pi)$, and
+\begin{eqnarray*}
+||\psi||^{2}=\sum_{i_{1}i_{2}\ldots i_{n}} |\psi_{i_{1}i_{2}\ldots i_{n}}|^{2}
+\end{eqnarray*}
+The Grover-Rudolph algorithm \cite{grover2002creating}, as described in
+\cite{ramacciotti2023simplequantumalgorithmefficiently} is as 
+follows:
+
+
+
+
 
 \begin{enumerate}
 \item (IBM) ``Quantum Computing with Qiskit'' (2024)\cite{javadi2024quantum}
