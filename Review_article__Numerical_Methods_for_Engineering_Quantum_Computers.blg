@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Review_article__Numerical_Methods_for_Engineering_Quantum_Computers.aux
+The style file: cas-model2-names.bst
+Database file #1: references.bib
+Warning--entry type for "quantum_ai_team_and_collaborators_2020_4023103" isn't style-file defined
+--line 4004 of file references.bib
+Warning--to sort, need author or key in google2025quantum
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty author in google2025quantum
+Warning--empty pages in Ito2024
+Warning--empty journal in moore2021cramming
+Warning--empty pages in 10.1145/3524059.3532375
+You've used 130 entries,
+            2990 wiz_defined-function locations,
+            1512 strings with 41823 characters,
+and the built_in function-call counts, 113040 in all, are:
+= -- 7558
+> -- 7210
+< -- 59
++ -- 2765
+- -- 2607
+* -- 14151
+:= -- 16825
+add.period$ -- 405
+call.type$ -- 130
+change.case$ -- 1507
+chr.to.int$ -- 128
+cite$ -- 137
+duplicate$ -- 7429
+empty$ -- 6636
+format.name$ -- 3010
+if$ -- 20237
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 1698
+newline$ -- 680
+num.names$ -- 516
+pop$ -- 2735
+preamble$ -- 1
+purify$ -- 1379
+quote$ -- 0
+skip$ -- 1925
+stack$ -- 0
+substring$ -- 3207
+swap$ -- 6505
+text.length$ -- 13
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1161
+warning$ -- 5
+while$ -- 521
+width$ -- 0
+write$ -- 1896
+(There were 6 warnings)

@@ -1,0 +1,1445 @@
+\begin{thebibliography}{130}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{goo(2025)}]{google2025quantum}
+, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Quantum error correction below the surface code
+  threshold}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{638},
+  \bibinfo{pages}{920--926}.
+%Type = Misc
+\bibitem[{Aasen et~al.(2025)Aasen, Aghaee, Alam, Andrzejczuk, Antipov, Astafev,
+  Avilovas, Barzegar, Bauer, Becker, Bello-Rivas, Bhaskar, Bocharov, Boddapati,
+  Bohn, Bommer, Bonderson, Borovsky, Bourdet, Boutin, Brown, Campbell,
+  Casparis, Chakravarthi, Chao, Chapman, Chatoor, Christensen, Codd, Cole,
+  Cooper, Corsetti, Cui, van Dam, Dandachi, Daraeizadeh, Dumitrascu, Ekefjärd,
+  Fallahi, Galletti, Gardner, Gatta, Gavranovic, Goulding, Govender, Griggio,
+  Grigoryan, Grijalva, Gronin, Gukelberger, Haah, Hamdast, Hansen, Hastings,
+  Heedt, Ho, Hogaboam, Holgaard, Hoogdalem, Indrapiromkul, Ingerslev,
+  Ivancevic, Jablonski, Jensen, Jhoja, Jones, Kalashnikov, Kallaher, Kalra,
+  Karimi, Karzig, Kimes, Kliuchnikov, Kloster, Knapp, Knee, Koski, Kostamo,
+  Kuesel, Lackey, Laeven, Lai, de~Lange, Larsen, Lee, Lee, Leum, Li, Lindemann,
+  Lucas, Lutchyn, Madsen, Madulid, Manfra, Markussen, Martinez, Mattila,
+  Mattinson, McNeil, Mei, Mishmash, Mohandas, Mollgaard, de~Moor, Morgan,
+  Moussa, Narla, Nayak, Nielsen, Nielsen, Nolet, Nystrom, O'Farrell, Otani,
+  Paetznick, Papon, Paz, Petersson, Petit, Pikulin, Pons, Quinn, Rajpalke,
+  Ramirez, Rasmussen, Razmadze, Reichardt, Ren, Reneris, Riccomini, Sadovskyy,
+  Sainiemi, Saldaña, Sanlorenzo, Schaal, Schmidgall, Sfiligoj, da~Silva,
+  Singh, Sinha, Soeken, Sohr, Stankevic, Stek, Strøm-Hansen, Stuppard,
+  Sundaram, Suominen, Suter, Suzuki, Svore, Teicher, Thiyagarajah, Tholapi,
+  Thomas, Tom, Toomey, Tracy, Troyer, Turley, Turner, Upadhyay, Urban,
+  Vaschillo, Viazmitinov, Vogel, Wang, Watson, Webster, Weston, Williamson,
+  Winkler, van Woerkom, Wütz, Yang, Yu, Yucelen, Zamorano, Zeisel, Zheng,
+  Zilke and Zimmerman}]{aasen2025roadmapfaulttolerantquantum}
+\bibinfo{author}{Aasen, D.}, \bibinfo{author}{Aghaee, M.},
+  \bibinfo{author}{Alam, Z.}, \bibinfo{author}{Andrzejczuk, M.},
+  \bibinfo{author}{Antipov, A.}, \bibinfo{author}{Astafev, M.},
+  \bibinfo{author}{Avilovas, L.}, \bibinfo{author}{Barzegar, A.},
+  \bibinfo{author}{Bauer, B.}, \bibinfo{author}{Becker, J.},
+  \bibinfo{author}{Bello-Rivas, J.M.}, \bibinfo{author}{Bhaskar, U.},
+  \bibinfo{author}{Bocharov, A.}, \bibinfo{author}{Boddapati, S.},
+  \bibinfo{author}{Bohn, D.}, \bibinfo{author}{Bommer, J.},
+  \bibinfo{author}{Bonderson, P.}, \bibinfo{author}{Borovsky, J.},
+  \bibinfo{author}{Bourdet, L.}, \bibinfo{author}{Boutin, S.},
+  \bibinfo{author}{Brown, T.}, \bibinfo{author}{Campbell, G.},
+  \bibinfo{author}{Casparis, L.}, \bibinfo{author}{Chakravarthi, S.},
+  \bibinfo{author}{Chao, R.}, \bibinfo{author}{Chapman, B.J.},
+  \bibinfo{author}{Chatoor, S.}, \bibinfo{author}{Christensen, A.W.},
+  \bibinfo{author}{Codd, P.}, \bibinfo{author}{Cole, W.},
+  \bibinfo{author}{Cooper, P.}, \bibinfo{author}{Corsetti, F.},
+  \bibinfo{author}{Cui, A.}, \bibinfo{author}{van Dam, W.},
+  \bibinfo{author}{Dandachi, T.E.}, \bibinfo{author}{Daraeizadeh, S.},
+  \bibinfo{author}{Dumitrascu, A.}, \bibinfo{author}{Ekefjärd, A.},
+  \bibinfo{author}{Fallahi, S.}, \bibinfo{author}{Galletti, L.},
+  \bibinfo{author}{Gardner, G.}, \bibinfo{author}{Gatta, R.},
+  \bibinfo{author}{Gavranovic, H.}, \bibinfo{author}{Goulding, M.},
+  \bibinfo{author}{Govender, D.}, \bibinfo{author}{Griggio, F.},
+  \bibinfo{author}{Grigoryan, R.}, \bibinfo{author}{Grijalva, S.},
+  \bibinfo{author}{Gronin, S.}, \bibinfo{author}{Gukelberger, J.},
+  \bibinfo{author}{Haah, J.}, \bibinfo{author}{Hamdast, M.},
+  \bibinfo{author}{Hansen, E.B.}, \bibinfo{author}{Hastings, M.},
+  \bibinfo{author}{Heedt, S.}, \bibinfo{author}{Ho, S.},
+  \bibinfo{author}{Hogaboam, J.}, \bibinfo{author}{Holgaard, L.},
+  \bibinfo{author}{Hoogdalem, K.V.}, \bibinfo{author}{Indrapiromkul, J.},
+  \bibinfo{author}{Ingerslev, H.}, \bibinfo{author}{Ivancevic, L.},
+  \bibinfo{author}{Jablonski, S.}, \bibinfo{author}{Jensen, T.},
+  \bibinfo{author}{Jhoja, J.}, \bibinfo{author}{Jones, J.},
+  \bibinfo{author}{Kalashnikov, K.}, \bibinfo{author}{Kallaher, R.},
+  \bibinfo{author}{Kalra, R.}, \bibinfo{author}{Karimi, F.},
+  \bibinfo{author}{Karzig, T.}, \bibinfo{author}{Kimes, S.},
+  \bibinfo{author}{Kliuchnikov, V.}, \bibinfo{author}{Kloster, M.E.},
+  \bibinfo{author}{Knapp, C.}, \bibinfo{author}{Knee, D.},
+  \bibinfo{author}{Koski, J.}, \bibinfo{author}{Kostamo, P.},
+  \bibinfo{author}{Kuesel, J.}, \bibinfo{author}{Lackey, B.},
+  \bibinfo{author}{Laeven, T.}, \bibinfo{author}{Lai, J.},
+  \bibinfo{author}{de~Lange, G.}, \bibinfo{author}{Larsen, T.},
+  \bibinfo{author}{Lee, J.}, \bibinfo{author}{Lee, K.}, \bibinfo{author}{Leum,
+  G.}, \bibinfo{author}{Li, K.}, \bibinfo{author}{Lindemann, T.},
+  \bibinfo{author}{Lucas, M.}, \bibinfo{author}{Lutchyn, R.},
+  \bibinfo{author}{Madsen, M.H.}, \bibinfo{author}{Madulid, N.},
+  \bibinfo{author}{Manfra, M.}, \bibinfo{author}{Markussen, S.B.},
+  \bibinfo{author}{Martinez, E.}, \bibinfo{author}{Mattila, M.},
+  \bibinfo{author}{Mattinson, J.}, \bibinfo{author}{McNeil, R.},
+  \bibinfo{author}{Mei, A.R.}, \bibinfo{author}{Mishmash, R.V.},
+  \bibinfo{author}{Mohandas, G.}, \bibinfo{author}{Mollgaard, C.},
+  \bibinfo{author}{de~Moor, M.}, \bibinfo{author}{Morgan, T.},
+  \bibinfo{author}{Moussa, G.}, \bibinfo{author}{Narla, A.},
+  \bibinfo{author}{Nayak, C.}, \bibinfo{author}{Nielsen, J.H.},
+  \bibinfo{author}{Nielsen, W.H.P.}, \bibinfo{author}{Nolet, F.},
+  \bibinfo{author}{Nystrom, M.}, \bibinfo{author}{O'Farrell, E.},
+  \bibinfo{author}{Otani, K.}, \bibinfo{author}{Paetznick, A.},
+  \bibinfo{author}{Papon, C.}, \bibinfo{author}{Paz, A.},
+  \bibinfo{author}{Petersson, K.}, \bibinfo{author}{Petit, L.},
+  \bibinfo{author}{Pikulin, D.}, \bibinfo{author}{Pons, D.O.F.},
+  \bibinfo{author}{Quinn, S.}, \bibinfo{author}{Rajpalke, M.},
+  \bibinfo{author}{Ramirez, A.A.}, \bibinfo{author}{Rasmussen, K.},
+  \bibinfo{author}{Razmadze, D.}, \bibinfo{author}{Reichardt, B.},
+  \bibinfo{author}{Ren, Y.}, \bibinfo{author}{Reneris, K.},
+  \bibinfo{author}{Riccomini, R.}, \bibinfo{author}{Sadovskyy, I.},
+  \bibinfo{author}{Sainiemi, L.}, \bibinfo{author}{Saldaña, J.C.E.},
+  \bibinfo{author}{Sanlorenzo, I.}, \bibinfo{author}{Schaal, S.},
+  \bibinfo{author}{Schmidgall, E.}, \bibinfo{author}{Sfiligoj, C.},
+  \bibinfo{author}{da~Silva, M.P.}, \bibinfo{author}{Singh, S.},
+  \bibinfo{author}{Sinha, S.}, \bibinfo{author}{Soeken, M.},
+  \bibinfo{author}{Sohr, P.}, \bibinfo{author}{Stankevic, T.},
+  \bibinfo{author}{Stek, L.}, \bibinfo{author}{Strøm-Hansen, P.},
+  \bibinfo{author}{Stuppard, E.}, \bibinfo{author}{Sundaram, A.},
+  \bibinfo{author}{Suominen, H.}, \bibinfo{author}{Suter, J.},
+  \bibinfo{author}{Suzuki, S.}, \bibinfo{author}{Svore, K.},
+  \bibinfo{author}{Teicher, S.}, \bibinfo{author}{Thiyagarajah, N.},
+  \bibinfo{author}{Tholapi, R.}, \bibinfo{author}{Thomas, M.},
+  \bibinfo{author}{Tom, D.}, \bibinfo{author}{Toomey, E.},
+  \bibinfo{author}{Tracy, J.}, \bibinfo{author}{Troyer, M.},
+  \bibinfo{author}{Turley, M.}, \bibinfo{author}{Turner, M.D.},
+  \bibinfo{author}{Upadhyay, S.}, \bibinfo{author}{Urban, I.},
+  \bibinfo{author}{Vaschillo, A.}, \bibinfo{author}{Viazmitinov, D.},
+  \bibinfo{author}{Vogel, D.}, \bibinfo{author}{Wang, Z.},
+  \bibinfo{author}{Watson, J.}, \bibinfo{author}{Webster, A.},
+  \bibinfo{author}{Weston, J.}, \bibinfo{author}{Williamson, T.},
+  \bibinfo{author}{Winkler, G.W.}, \bibinfo{author}{van Woerkom, D.J.},
+  \bibinfo{author}{Wütz, B.P.}, \bibinfo{author}{Yang, C.K.},
+  \bibinfo{author}{Yu, R.}, \bibinfo{author}{Yucelen, E.},
+  \bibinfo{author}{Zamorano, J.H.}, \bibinfo{author}{Zeisel, R.},
+  \bibinfo{author}{Zheng, G.}, \bibinfo{author}{Zilke, J.},
+  \bibinfo{author}{Zimmerman, A.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Roadmap to fault tolerant quantum computation using
+  topological qubit arrays}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2502.12252},
+  \href{http://arxiv.org/abs/2502.12252}{\tt arXiv:2502.12252}.
+%Type = Article
+\bibitem[{Andrade et~al.(2022)Andrade, Davoudi, Graß, Hafezi, Pagano and
+  Seif}]{Andrade_2022}
+\bibinfo{author}{Andrade, B.}, \bibinfo{author}{Davoudi, Z.},
+  \bibinfo{author}{Graß, T.}, \bibinfo{author}{Hafezi, M.},
+  \bibinfo{author}{Pagano, G.}, \bibinfo{author}{Seif, A.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Engineering an effective three-spin hamiltonian in
+  trapped-ion systems for applications in quantum simulation}.
+\newblock \bibinfo{journal}{Quantum Science and Technology}
+  \bibinfo{volume}{7}, \bibinfo{pages}{034001}.
+\newblock \URLprefix \url{https://dx.doi.org/10.1088/2058-9565/ac5f5b},
+  \DOIprefix\doi{10.1088/2058-9565/ac5f5b}.
+%Type = Article
+\bibitem[{Anthony-Petersen et~al.(2024)Anthony-Petersen, Biekert, Bunker,
+  Chang, Chang, Chaplinsky, Fascione, Fink, Garcia-Sciveres, Germond
+  et~al.}]{anthony2024stress}
+\bibinfo{author}{Anthony-Petersen, R.}, \bibinfo{author}{Biekert, A.},
+  \bibinfo{author}{Bunker, R.}, \bibinfo{author}{Chang, C.L.},
+  \bibinfo{author}{Chang, Y.Y.}, \bibinfo{author}{Chaplinsky, L.},
+  \bibinfo{author}{Fascione, E.}, \bibinfo{author}{Fink, C.W.},
+  \bibinfo{author}{Garcia-Sciveres, M.}, \bibinfo{author}{Germond, R.}, et~al.,
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{A stress-induced source of phonon bursts and
+  quasiparticle poisoning}.
+\newblock \bibinfo{journal}{Nature Communications} \bibinfo{volume}{15},
+  \bibinfo{pages}{6444}.
+%Type = Article
+\bibitem[{Atanasov and Dandoloff(2007)}]{atanasov2007curvature}
+\bibinfo{author}{Atanasov, V.}, \bibinfo{author}{Dandoloff, R.},
+  \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Curvature induced quantum potential on deformed
+  surfaces}.
+\newblock \bibinfo{journal}{Physics Letters A} \bibinfo{volume}{371},
+  \bibinfo{pages}{118--123}.
+%Type = Article
+\bibitem[{Bao et~al.(2002)Bao, Jin and Markowich}]{BAO2002487}
+\bibinfo{author}{Bao, W.}, \bibinfo{author}{Jin, S.},
+  \bibinfo{author}{Markowich, P.A.}, \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{On time-splitting spectral approximations for the
+  schrödinger equation in the semiclassical regime}.
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{175}, \bibinfo{pages}{487--524}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0021999101969566},
+  \DOIprefix\doi{https://doi.org/10.1006/jcph.2001.6956}.
+%Type = Article
+\bibitem[{Barends et~al.(2014)Barends, Kelly, Megrant, Veitia, Sank, Jeffrey,
+  White, Mutus, Fowler, Campbell et~al.}]{barends2014superconducting}
+\bibinfo{author}{Barends, R.}, \bibinfo{author}{Kelly, J.},
+  \bibinfo{author}{Megrant, A.}, \bibinfo{author}{Veitia, A.},
+  \bibinfo{author}{Sank, D.}, \bibinfo{author}{Jeffrey, E.},
+  \bibinfo{author}{White, T.C.}, \bibinfo{author}{Mutus, J.},
+  \bibinfo{author}{Fowler, A.G.}, \bibinfo{author}{Campbell, B.}, et~al.,
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Superconducting quantum circuits at the surface code
+  threshold for fault tolerance}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{508},
+  \bibinfo{pages}{500--503}.
+%Type = Misc
+\bibitem[{Barrera et~al.(2025)Barrera, Arovas, Chandran and
+  Polkovnikov}]{barrera2025movingbornoppenheimerapproximation}
+\bibinfo{author}{Barrera, B.}, \bibinfo{author}{Arovas, D.P.},
+  \bibinfo{author}{Chandran, A.}, \bibinfo{author}{Polkovnikov, A.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{The moving born-oppenheimer approximation}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2502.17557},
+  \href{http://arxiv.org/abs/2502.17557}{\tt arXiv:2502.17557}.
+%Type = Article
+\bibitem[{Baum et~al.(2021)Baum, Amico, Howell, Hush, Liuzzi, Mundada, Merkh,
+  Carvalho and Biercuk}]{baum2021experimental}
+\bibinfo{author}{Baum, Y.}, \bibinfo{author}{Amico, M.},
+  \bibinfo{author}{Howell, S.}, \bibinfo{author}{Hush, M.},
+  \bibinfo{author}{Liuzzi, M.}, \bibinfo{author}{Mundada, P.},
+  \bibinfo{author}{Merkh, T.}, \bibinfo{author}{Carvalho, A.R.},
+  \bibinfo{author}{Biercuk, M.J.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Experimental deep reinforcement learning for
+  error-robust gate-set design on a superconducting quantum computer}.
+\newblock \bibinfo{journal}{PRX Quantum} \bibinfo{volume}{2},
+  \bibinfo{pages}{040324}.
+%Type = Inproceedings
+\bibitem[{Bayraktar et~al.(2023)Bayraktar, Charara, Clark, Cohen, Costa, Fang,
+  Gao, Guan, Gunnels, Haidar, Hehn, Hohnerbach, Jones, Lubowe, Lyakh, Morino,
+  Springer, Stanwyck, Terentyev, Varadhan, Wong and Yamaguchi}]{10313722}
+\bibinfo{author}{Bayraktar, H.}, \bibinfo{author}{Charara, A.},
+  \bibinfo{author}{Clark, D.}, \bibinfo{author}{Cohen, S.},
+  \bibinfo{author}{Costa, T.}, \bibinfo{author}{Fang, Y.L.L.},
+  \bibinfo{author}{Gao, Y.}, \bibinfo{author}{Guan, J.},
+  \bibinfo{author}{Gunnels, J.}, \bibinfo{author}{Haidar, A.},
+  \bibinfo{author}{Hehn, A.}, \bibinfo{author}{Hohnerbach, M.},
+  \bibinfo{author}{Jones, M.}, \bibinfo{author}{Lubowe, T.},
+  \bibinfo{author}{Lyakh, D.}, \bibinfo{author}{Morino, S.},
+  \bibinfo{author}{Springer, P.}, \bibinfo{author}{Stanwyck, S.},
+  \bibinfo{author}{Terentyev, I.}, \bibinfo{author}{Varadhan, S.},
+  \bibinfo{author}{Wong, J.}, \bibinfo{author}{Yamaguchi, T.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{cuquantum sdk: A high-performance library for
+  accelerating quantum science}, in: \bibinfo{booktitle}{2023 IEEE
+  International Conference on Quantum Computing and Engineering (QCE)}, pp.
+  \bibinfo{pages}{1050--1061}.
+\newblock \DOIprefix\doi{10.1109/QCE57702.2023.00119}.
+%Type = Article
+\bibitem[{Benedetti et~al.(2019)Benedetti, Lloyd, Sack and
+  Fiorentini}]{Benedetti_2019}
+\bibinfo{author}{Benedetti, M.}, \bibinfo{author}{Lloyd, E.},
+  \bibinfo{author}{Sack, S.}, \bibinfo{author}{Fiorentini, M.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Parameterized quantum circuits as machine learning
+  models}.
+\newblock \bibinfo{journal}{Quantum Science and Technology}
+  \bibinfo{volume}{4}, \bibinfo{pages}{043001}.
+\newblock \URLprefix \url{https://dx.doi.org/10.1088/2058-9565/ab4eb5},
+  \DOIprefix\doi{10.1088/2058-9565/ab4eb5}.
+%Type = Article
+\bibitem[{Biamonte et~al.(2017)Biamonte, Wittek, Pancotti, Rebentrost, Wiebe
+  and Lloyd}]{biamonte2017quantum}
+\bibinfo{author}{Biamonte, J.}, \bibinfo{author}{Wittek, P.},
+  \bibinfo{author}{Pancotti, N.}, \bibinfo{author}{Rebentrost, P.},
+  \bibinfo{author}{Wiebe, N.}, \bibinfo{author}{Lloyd, S.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Quantum machine learning}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{549},
+  \bibinfo{pages}{195--202}.
+%Type = Article
+\bibitem[{Bluvstein et~al.(2024)Bluvstein, Evered, Geim, Li, Zhou, Manovitz,
+  Ebadi, Cain, Kalinowski, Hangleiter et~al.}]{bluvstein2024logical}
+\bibinfo{author}{Bluvstein, D.}, \bibinfo{author}{Evered, S.J.},
+  \bibinfo{author}{Geim, A.A.}, \bibinfo{author}{Li, S.H.},
+  \bibinfo{author}{Zhou, H.}, \bibinfo{author}{Manovitz, T.},
+  \bibinfo{author}{Ebadi, S.}, \bibinfo{author}{Cain, M.},
+  \bibinfo{author}{Kalinowski, M.}, \bibinfo{author}{Hangleiter, D.}, et~al.,
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Logical quantum processor based on reconfigurable
+  atom arrays}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{626},
+  \bibinfo{pages}{58--65}.
+%Type = Article
+\bibitem[{Boixo et~al.(2018)Boixo, Isakov, Smelyanskiy, Babbush, Ding, Jiang,
+  Bremner, Martinis and Neven}]{boixo2018characterizing}
+\bibinfo{author}{Boixo, S.}, \bibinfo{author}{Isakov, S.V.},
+  \bibinfo{author}{Smelyanskiy, V.N.}, \bibinfo{author}{Babbush, R.},
+  \bibinfo{author}{Ding, N.}, \bibinfo{author}{Jiang, Z.},
+  \bibinfo{author}{Bremner, M.J.}, \bibinfo{author}{Martinis, J.M.},
+  \bibinfo{author}{Neven, H.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Characterizing quantum supremacy in near-term
+  devices}.
+\newblock \bibinfo{journal}{Nature Physics} \bibinfo{volume}{14},
+  \bibinfo{pages}{595--600}.
+%Type = Article
+\bibitem[{Bonilla~Ataides et~al.(2021)Bonilla~Ataides, Tuckett, Bartlett,
+  Flammia and Brown}]{bonilla2021xzzx}
+\bibinfo{author}{Bonilla~Ataides, J.P.}, \bibinfo{author}{Tuckett, D.K.},
+  \bibinfo{author}{Bartlett, S.D.}, \bibinfo{author}{Flammia, S.T.},
+  \bibinfo{author}{Brown, B.J.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{The xzzx surface code}.
+\newblock \bibinfo{journal}{Nature communications} \bibinfo{volume}{12},
+  \bibinfo{pages}{2172}.
+%Type = Article
+\bibitem[{Born and
+  Oppenheimer(1927)}]{https://doi.org/10.1002/andp.19273892002}
+\bibinfo{author}{Born, M.}, \bibinfo{author}{Oppenheimer, R.},
+  \bibinfo{year}{1927}.
+\newblock \bibinfo{title}{Zur quantentheorie der molekeln}.
+\newblock \bibinfo{journal}{Annalen der Physik} \bibinfo{volume}{389},
+  \bibinfo{pages}{457--484}.
+\newblock \URLprefix
+  \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19273892002},
+  \DOIprefix\doi{https://doi.org/10.1002/andp.19273892002},
+  \href{http://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1002/andp.19273892002}{\tt
+  arXiv:https://onlinelibrary.wiley.com/doi/pdf/10.1002/andp.19273892002}.
+%Type = Article
+\bibitem[{Bravo-Prieto et~al.(2023)Bravo-Prieto, LaRose, Cerezo, Subasi, Cincio
+  and Coles}]{bravo2023variational}
+\bibinfo{author}{Bravo-Prieto, C.}, \bibinfo{author}{LaRose, R.},
+  \bibinfo{author}{Cerezo, M.}, \bibinfo{author}{Subasi, Y.},
+  \bibinfo{author}{Cincio, L.}, \bibinfo{author}{Coles, P.J.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Variational quantum linear solver}.
+\newblock \bibinfo{journal}{Quantum} \bibinfo{volume}{7},
+  \bibinfo{pages}{1188}.
+%Type = Article
+\bibitem[{Bravyi and Kitaev(2002)}]{bravyi2002fermionic}
+\bibinfo{author}{Bravyi, S.B.}, \bibinfo{author}{Kitaev, A.Y.},
+  \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{Fermionic quantum computation}.
+\newblock \bibinfo{journal}{Annals of Physics} \bibinfo{volume}{298},
+  \bibinfo{pages}{210--226}.
+%Type = Article
+\bibitem[{Cadi~Tazi and Thom(2024)}]{cadi2024folded}
+\bibinfo{author}{Cadi~Tazi, L.}, \bibinfo{author}{Thom, A.J.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Folded spectrum vqe: A quantum computing method for
+  the calculation of molecular excited states}.
+\newblock \bibinfo{journal}{Journal of Chemical Theory and Computation}
+  \bibinfo{volume}{20}, \bibinfo{pages}{2491--2504}.
+%Type = Article
+\bibitem[{Callison and Chancellor(2022)}]{callison2022hybrid}
+\bibinfo{author}{Callison, A.}, \bibinfo{author}{Chancellor, N.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Hybrid quantum-classical algorithms in the noisy
+  intermediate-scale quantum era and beyond}.
+\newblock \bibinfo{journal}{Physical Review A} \bibinfo{volume}{106},
+  \bibinfo{pages}{010101}.
+%Type = Article
+\bibitem[{Cerezo et~al.(2021)Cerezo, Arrasmith, Babbush, Benjamin, Endo, Fujii,
+  McClean, Mitarai, Yuan, Cincio et~al.}]{cerezo2021variational}
+\bibinfo{author}{Cerezo, M.}, \bibinfo{author}{Arrasmith, A.},
+  \bibinfo{author}{Babbush, R.}, \bibinfo{author}{Benjamin, S.C.},
+  \bibinfo{author}{Endo, S.}, \bibinfo{author}{Fujii, K.},
+  \bibinfo{author}{McClean, J.R.}, \bibinfo{author}{Mitarai, K.},
+  \bibinfo{author}{Yuan, X.}, \bibinfo{author}{Cincio, L.}, et~al.,
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Variational quantum algorithms}.
+\newblock \bibinfo{journal}{Nature Reviews Physics} \bibinfo{volume}{3},
+  \bibinfo{pages}{625--644}.
+%Type = Article
+\bibitem[{Cheng and Guo(2025)}]{cheng2025modeling}
+\bibinfo{author}{Cheng, G.}, \bibinfo{author}{Guo, J.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Modeling correlated-noise in silicon spin qubit
+  device}.
+\newblock \bibinfo{journal}{APL Quantum} \bibinfo{volume}{2}.
+%Type = Article
+\bibitem[{Dalton et~al.(2024)Dalton, Long, Yordanov, Smith, Barnes, Mertig and
+  Arvidsson-Shukur}]{dalton2024quantifying}
+\bibinfo{author}{Dalton, K.}, \bibinfo{author}{Long, C.K.},
+  \bibinfo{author}{Yordanov, Y.S.}, \bibinfo{author}{Smith, C.G.},
+  \bibinfo{author}{Barnes, C.H.}, \bibinfo{author}{Mertig, N.},
+  \bibinfo{author}{Arvidsson-Shukur, D.R.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Quantifying the effect of gate errors on variational
+  quantum eigensolvers for quantum chemistry}.
+\newblock \bibinfo{journal}{npj Quantum Information} \bibinfo{volume}{10},
+  \bibinfo{pages}{18}.
+%Type = Article
+\bibitem[{Daribayev et~al.(2023)Daribayev, Mukhanbet and
+  Imankulov}]{daribayev2023implementation}
+\bibinfo{author}{Daribayev, B.}, \bibinfo{author}{Mukhanbet, A.},
+  \bibinfo{author}{Imankulov, T.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Implementation of the hhl algorithm for solving the
+  poisson equation on quantum simulators}.
+\newblock \bibinfo{journal}{Applied Sciences} \bibinfo{volume}{13},
+  \bibinfo{pages}{11491}.
+%Type = Article
+\bibitem[{De~Raedt et~al.(2019)De~Raedt, Jin, Willsch, Willsch, Yoshioka, Ito,
+  Yuan and Michielsen}]{de2019massively}
+\bibinfo{author}{De~Raedt, H.}, \bibinfo{author}{Jin, F.},
+  \bibinfo{author}{Willsch, D.}, \bibinfo{author}{Willsch, M.},
+  \bibinfo{author}{Yoshioka, N.}, \bibinfo{author}{Ito, N.},
+  \bibinfo{author}{Yuan, S.}, \bibinfo{author}{Michielsen, K.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Massively parallel quantum computer simulator, eleven
+  years later}.
+\newblock \bibinfo{journal}{Computer Physics Communications}
+  \bibinfo{volume}{237}, \bibinfo{pages}{47--61}.
+%Type = Article
+\bibitem[{Dennis et~al.(2002)Dennis, Kitaev, Landahl and
+  Preskill}]{dennis2002topological}
+\bibinfo{author}{Dennis, E.}, \bibinfo{author}{Kitaev, A.},
+  \bibinfo{author}{Landahl, A.}, \bibinfo{author}{Preskill, J.},
+  \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{Topological quantum memory}.
+\newblock \bibinfo{journal}{Journal of Mathematical Physics}
+  \bibinfo{volume}{43}, \bibinfo{pages}{4452--4505}.
+%Type = Article
+\bibitem[{Di~Bartolomeo et~al.(2023)Di~Bartolomeo, Vischi, Cesa, Wixinger,
+  Grossi, Donadi and Bassi}]{di2023noisy}
+\bibinfo{author}{Di~Bartolomeo, G.}, \bibinfo{author}{Vischi, M.},
+  \bibinfo{author}{Cesa, F.}, \bibinfo{author}{Wixinger, R.},
+  \bibinfo{author}{Grossi, M.}, \bibinfo{author}{Donadi, S.},
+  \bibinfo{author}{Bassi, A.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Noisy gates for simulating quantum computers}.
+\newblock \bibinfo{journal}{Physical Review Research} \bibinfo{volume}{5},
+  \bibinfo{pages}{043210}.
+%Type = Article
+\bibitem[{Ding and Lin(2023)}]{ding2023simultaneous}
+\bibinfo{author}{Ding, Z.}, \bibinfo{author}{Lin, L.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Simultaneous estimation of multiple eigenvalues with
+  short-depth quantum circuit on early fault-tolerant quantum computers}.
+\newblock \bibinfo{journal}{Quantum} \bibinfo{volume}{7},
+  \bibinfo{pages}{1136}.
+%Type = Article
+\bibitem[{Eastin and Knill(2009)}]{eastin2009restrictions}
+\bibinfo{author}{Eastin, B.}, \bibinfo{author}{Knill, E.},
+  \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Restrictions on transversal encoded quantum gate
+  sets}.
+\newblock \bibinfo{journal}{Physical review letters} \bibinfo{volume}{102},
+  \bibinfo{pages}{110502}.
+%Type = Article
+\bibitem[{Evered et~al.(2023)Evered, Bluvstein, Kalinowski, Ebadi, Manovitz,
+  Zhou, Li, Geim, Wang, Maskara et~al.}]{evered2023high}
+\bibinfo{author}{Evered, S.J.}, \bibinfo{author}{Bluvstein, D.},
+  \bibinfo{author}{Kalinowski, M.}, \bibinfo{author}{Ebadi, S.},
+  \bibinfo{author}{Manovitz, T.}, \bibinfo{author}{Zhou, H.},
+  \bibinfo{author}{Li, S.H.}, \bibinfo{author}{Geim, A.A.},
+  \bibinfo{author}{Wang, T.T.}, \bibinfo{author}{Maskara, N.}, et~al.,
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{High-fidelity parallel entangling gates on a
+  neutral-atom quantum computer}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{622},
+  \bibinfo{pages}{268--272}.
+%Type = Article
+\bibitem[{Fei et~al.(2025)Fei, Brady, Larson, Leyffer and
+  Shen}]{fei2025switching}
+\bibinfo{author}{Fei, X.}, \bibinfo{author}{Brady, L.},
+  \bibinfo{author}{Larson, J.}, \bibinfo{author}{Leyffer, S.},
+  \bibinfo{author}{Shen, S.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Switching time optimization for binary quantum
+  optimal control}.
+\newblock \bibinfo{journal}{ACM Transactions on Quantum Computing}
+  \bibinfo{volume}{6}, \bibinfo{pages}{1--38}.
+%Type = Article
+\bibitem[{Fei et~al.(2023)Fei, Brady, Larson, Leyffer and Shen}]{fei2023binary}
+\bibinfo{author}{Fei, X.}, \bibinfo{author}{Brady, L.T.},
+  \bibinfo{author}{Larson, J.}, \bibinfo{author}{Leyffer, S.},
+  \bibinfo{author}{Shen, S.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Binary control pulse optimization for quantum
+  systems}.
+\newblock \bibinfo{journal}{Quantum} \bibinfo{volume}{7}, \bibinfo{pages}{892}.
+%Type = Article
+\bibitem[{Feit et~al.(1982)Feit, Fleck and Steiger}]{FEIT1982412}
+\bibinfo{author}{Feit, M.}, \bibinfo{author}{Fleck, J.},
+  \bibinfo{author}{Steiger, A.}, \bibinfo{year}{1982}.
+\newblock \bibinfo{title}{Solution of the schrödinger equation by a spectral
+  method}.
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{47}, \bibinfo{pages}{412--433}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/0021999182900912},
+  \DOIprefix\doi{https://doi.org/10.1016/0021-9991(82)90091-2}.
+%Type = Article
+\bibitem[{Ferrari and Cuoghi(2008)}]{ferrari2008schrodinger}
+\bibinfo{author}{Ferrari, G.}, \bibinfo{author}{Cuoghi, G.},
+  \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{Schr{\"o}dinger equation for a particle on a curved
+  surface in an electric and magnetic field}.
+\newblock \bibinfo{journal}{Physical review letters} \bibinfo{volume}{100},
+  \bibinfo{pages}{230403}.
+%Type = Article
+\bibitem[{Feynman(1982)}]{richard1982feynman}
+\bibinfo{author}{Feynman, R.P.}, \bibinfo{year}{1982}.
+\newblock \bibinfo{title}{Simulating physics with quantum computers}.
+\newblock \bibinfo{journal}{Inernational Journal of Theoretical Physics}
+  \bibinfo{volume}{21}, \bibinfo{pages}{467--488}.
+%Type = Article
+\bibitem[{Feynman(1986)}]{richard1986feynman}
+\bibinfo{author}{Feynman, R.P.}, \bibinfo{year}{1986}.
+\newblock \bibinfo{title}{Quantum mechanical computers}.
+\newblock \bibinfo{journal}{Foundations of Physics} \bibinfo{volume}{16},
+  \bibinfo{pages}{507--531}.
+\newblock \bibinfo{note}{Originally published in Optics News, February 1985,
+  pp. 11-20}.
+%Type = Article
+\bibitem[{Foulkes et~al.(2001)Foulkes, Mitas, Needs and
+  Rajagopal}]{foulkes2001quantum}
+\bibinfo{author}{Foulkes, W.M.}, \bibinfo{author}{Mitas, L.},
+  \bibinfo{author}{Needs, R.}, \bibinfo{author}{Rajagopal, G.},
+  \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{Quantum monte carlo simulations of solids}.
+\newblock \bibinfo{journal}{Reviews of Modern Physics} \bibinfo{volume}{73},
+  \bibinfo{pages}{33}.
+%Type = Misc
+\bibitem[{Fujii(2015)}]{fujii2015quantumcomputationtopologicalcodes}
+\bibinfo{author}{Fujii, K.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Quantum computation with topological codes: from
+  qubit to topological fault-tolerance}.
+\newblock \URLprefix \url{https://arxiv.org/abs/1504.01444},
+  \href{http://arxiv.org/abs/1504.01444}{\tt arXiv:1504.01444}.
+%Type = Inproceedings
+\bibitem[{Gamble(2019)}]{gamble2019quantum}
+\bibinfo{author}{Gamble, S.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Quantum computing: What it is, why we want it, and
+  how we’re trying to get it}, in: \bibinfo{booktitle}{Frontiers of
+  Engineering: Reports on Leading-Edge Engineering from the 2018 Symposium},
+  \bibinfo{organization}{National Academies Press}. pp. \bibinfo{pages}{5--8}.
+%Type = Inproceedings
+\bibitem[{Gily{\'e}n et~al.(2019)Gily{\'e}n, Su, Low and
+  Wiebe}]{gilyen2019quantum}
+\bibinfo{author}{Gily{\'e}n, A.}, \bibinfo{author}{Su, Y.},
+  \bibinfo{author}{Low, G.H.}, \bibinfo{author}{Wiebe, N.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Quantum singular value transformation and beyond:
+  exponential improvements for quantum matrix arithmetics}, in:
+  \bibinfo{booktitle}{Proceedings of the 51st annual ACM SIGACT symposium on
+  theory of computing}, pp. \bibinfo{pages}{193--204}.
+%Type = Article
+\bibitem[{Gonthier et~al.(2022)Gonthier, Radin, Buda, Doskocil, Abuan and
+  Romero}]{gonthier2022measurements}
+\bibinfo{author}{Gonthier, J.F.}, \bibinfo{author}{Radin, M.D.},
+  \bibinfo{author}{Buda, C.}, \bibinfo{author}{Doskocil, E.J.},
+  \bibinfo{author}{Abuan, C.M.}, \bibinfo{author}{Romero, J.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Measurements as a roadblock to near-term practical
+  quantum advantage in chemistry: Resource analysis}.
+\newblock \bibinfo{journal}{Physical Review Research} \bibinfo{volume}{4},
+  \bibinfo{pages}{033154}.
+%Type = Article
+\bibitem[{Gopalakrishnan~Meena et~al.(2024)Gopalakrishnan~Meena, Gottiparthi,
+  Lietz, Georgiadou and Coello~P{\'e}rez}]{gopalakrishnan2024solving}
+\bibinfo{author}{Gopalakrishnan~Meena, M.}, \bibinfo{author}{Gottiparthi,
+  K.C.}, \bibinfo{author}{Lietz, J.G.}, \bibinfo{author}{Georgiadou, A.},
+  \bibinfo{author}{Coello~P{\'e}rez, E.A.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Solving the hele--shaw flow using the
+  harrow--hassidim--lloyd algorithm on superconducting devices: A study of
+  efficiency and challenges}.
+\newblock \bibinfo{journal}{Physics of Fluids} \bibinfo{volume}{36}.
+%Type = Book
+\bibitem[{Grivopoulos(2005)}]{grivopoulos2005optimal}
+\bibinfo{author}{Grivopoulos, S.}, \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Optimal control of quantum systems}.
+\newblock \bibinfo{publisher}{University of California, Santa Barbara}.
+%Type = Article
+\bibitem[{Grover and Rudolph(2002)}]{grover2002creating}
+\bibinfo{author}{Grover, L.}, \bibinfo{author}{Rudolph, T.},
+  \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{Creating superpositions that correspond to
+  efficiently integrable probability distributions}.
+\newblock \bibinfo{journal}{arXiv preprint quant-ph/0208112} .
+%Type = Article
+\bibitem[{Guerreschi et~al.(2020)Guerreschi, Hogaboam, Baruffa and
+  Sawaya}]{Guerreschi_Intel_Quantum_Simulator_2020}
+\bibinfo{author}{Guerreschi, G.G.}, \bibinfo{author}{Hogaboam, J.},
+  \bibinfo{author}{Baruffa, F.}, \bibinfo{author}{Sawaya, N.P.D.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{{Intel Quantum Simulator: a cloud-ready
+  high-performance simulator of quantum circuits}}.
+\newblock \bibinfo{journal}{Quantum Science and Technology}
+  \bibinfo{volume}{5}.
+\newblock \URLprefix \url{https://doi.org/10.1088/2058-9565/ab8505},
+  \DOIprefix\doi{10.1088/2058-9565/ab8505}.
+%Type = Misc
+\bibitem[{Gundlach et~al.(2025)Gundlach, Sharkey, Lynch, Hazoglou, Hsu, Dukatz,
+  Crane, Walczyk, Bodziak, Galatsanos-Dueck and
+  Thompson}]{gundlach2025quantumadvantagecomputationalchemistry}
+\bibinfo{author}{Gundlach, H.}, \bibinfo{author}{Sharkey, K.},
+  \bibinfo{author}{Lynch, J.}, \bibinfo{author}{Hazoglou, V.},
+  \bibinfo{author}{Hsu, K.C.}, \bibinfo{author}{Dukatz, C.},
+  \bibinfo{author}{Crane, E.}, \bibinfo{author}{Walczyk, K.},
+  \bibinfo{author}{Bodziak, M.}, \bibinfo{author}{Galatsanos-Dueck, J.},
+  \bibinfo{author}{Thompson, N.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Quantum advantage in computational chemistry?}
+\newblock \URLprefix \url{https://arxiv.org/abs/2508.20972},
+  \href{http://arxiv.org/abs/2508.20972}{\tt arXiv:2508.20972}.
+%Type = Article
+\bibitem[{G{\"u}nther and Petersson(2023)}]{gunther2023practical}
+\bibinfo{author}{G{\"u}nther, S.}, \bibinfo{author}{Petersson, N.A.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{A practical approach to determine minimal quantum
+  gate durations using amplitude-bounded quantum controls}.
+\newblock \bibinfo{journal}{AVS Quantum Science} \bibinfo{volume}{5}.
+%Type = Inproceedings
+\bibitem[{Günther et~al.(2021)Günther, Petersson and DuBois}]{9651392}
+\bibinfo{author}{Günther, S.}, \bibinfo{author}{Petersson, N.A.},
+  \bibinfo{author}{DuBois, J.L.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Quandary: An open-source c++ package for
+  high-performance optimal control of open quantum systems}, in:
+  \bibinfo{booktitle}{2021 IEEE/ACM Second International Workshop on Quantum
+  Computing Software (QCS)}, pp. \bibinfo{pages}{88--98}.
+\newblock \DOIprefix\doi{10.1109/QCS54837.2021.00014}.
+%Type = Article
+\bibitem[{Han et~al.(2019)Han, Zhang and E}]{HAN2019108929}
+\bibinfo{author}{Han, J.}, \bibinfo{author}{Zhang, L.}, \bibinfo{author}{E,
+  W.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Solving many-electron schrödinger equation using
+  deep neural networks}.
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{399}, \bibinfo{pages}{108929}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0021999119306345},
+  \DOIprefix\doi{https://doi.org/10.1016/j.jcp.2019.108929}.
+%Type = Article
+\bibitem[{Hangleiter et~al.(2024)Hangleiter, Roth, Fuksa, Eisert and
+  Roushan}]{hangleiter2024robustly}
+\bibinfo{author}{Hangleiter, D.}, \bibinfo{author}{Roth, I.},
+  \bibinfo{author}{Fuksa, J.}, \bibinfo{author}{Eisert, J.},
+  \bibinfo{author}{Roushan, P.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Robustly learning the hamiltonian dynamics of a
+  superconducting quantum processor}.
+\newblock \bibinfo{journal}{Nature Communications} \bibinfo{volume}{15},
+  \bibinfo{pages}{9595}.
+%Type = Article
+\bibitem[{Harrow et~al.(2009)Harrow, Hassidim and Lloyd}]{harrow2009quantum}
+\bibinfo{author}{Harrow, A.W.}, \bibinfo{author}{Hassidim, A.},
+  \bibinfo{author}{Lloyd, S.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Quantum algorithm for linear systems of equations}.
+\newblock \bibinfo{journal}{Physical review letters} \bibinfo{volume}{103},
+  \bibinfo{pages}{150502}.
+%Type = Misc
+\bibitem[{He et~al.(2024)He, Li, Li, Li, Wang and
+  Wang}]{he2024efficientoptimalcontrolopen}
+\bibinfo{author}{He, W.}, \bibinfo{author}{Li, T.}, \bibinfo{author}{Li, X.},
+  \bibinfo{author}{Li, Z.}, \bibinfo{author}{Wang, C.}, \bibinfo{author}{Wang,
+  K.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Efficient optimal control of open quantum systems}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2405.19245},
+  \href{http://arxiv.org/abs/2405.19245}{\tt arXiv:2405.19245}.
+%Type = Article
+\bibitem[{Hermann et~al.(2020)Hermann, Sch{\"a}tzle and
+  No{\'e}}]{hermann2020deep}
+\bibinfo{author}{Hermann, J.}, \bibinfo{author}{Sch{\"a}tzle, Z.},
+  \bibinfo{author}{No{\'e}, F.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Deep-neural-network solution of the electronic
+  schr{\"o}dinger equation}.
+\newblock \bibinfo{journal}{Nature Chemistry} \bibinfo{volume}{12},
+  \bibinfo{pages}{891--897}.
+%Type = Inproceedings
+\bibitem[{Herrmann et~al.(2023)Herrmann, Arya, Doherty, Mingare, Pillay, Preis
+  and Prestel}]{herrmann2023quantum}
+\bibinfo{author}{Herrmann, N.}, \bibinfo{author}{Arya, D.},
+  \bibinfo{author}{Doherty, M.W.}, \bibinfo{author}{Mingare, A.},
+  \bibinfo{author}{Pillay, J.C.}, \bibinfo{author}{Preis, F.},
+  \bibinfo{author}{Prestel, S.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Quantum utility--definition and assessment of a
+  practical quantum advantage}, in: \bibinfo{booktitle}{2023 IEEE International
+  Conference on Quantum Software (QSW)}, \bibinfo{organization}{IEEE}. pp.
+  \bibinfo{pages}{162--174}.
+%Type = Article
+\bibitem[{Hibat-Allah et~al.(2024)Hibat-Allah, Mauri, Carrasquilla and
+  Perdomo-Ortiz}]{hibat2024framework}
+\bibinfo{author}{Hibat-Allah, M.}, \bibinfo{author}{Mauri, M.},
+  \bibinfo{author}{Carrasquilla, J.}, \bibinfo{author}{Perdomo-Ortiz, A.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{A framework for demonstrating practical quantum
+  advantage: comparing quantum against classical generative models}.
+\newblock \bibinfo{journal}{Communications Physics} \bibinfo{volume}{7},
+  \bibinfo{pages}{68}.
+%Type = Phdthesis
+\bibitem[{Hormozi(2007)}]{L_Hormozi_thesis}
+\bibinfo{author}{Hormozi, L.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Topological Quantum Compiling}.
+\newblock \bibinfo{type}{Phd thesis}. Florida State University.
+  \bibinfo{address}{Tallahassee, FL}.
+%Type = Article
+\bibitem[{Hsu et~al.(2024)Hsu, Wang, Hsu, Tu and Hung}]{Hsu31122024}
+\bibinfo{author}{Hsu, N.W.}, \bibinfo{author}{Wang, C.C.},
+  \bibinfo{author}{Hsu, C.H.}, \bibinfo{author}{Tu, C.H.},
+  \bibinfo{author}{Hung, S.H.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Toward cost-effective quantum circuit simulation with
+  performance tuning techniques}.
+\newblock \bibinfo{journal}{Connection Science} \bibinfo{volume}{36},
+  \bibinfo{pages}{2349541}.
+\newblock \URLprefix \url{https://doi.org/10.1080/09540091.2024.2349541},
+  \DOIprefix\doi{10.1080/09540091.2024.2349541},
+  \href{http://arxiv.org/abs/https://doi.org/10.1080/09540091.2024.2349541}{\tt
+  arXiv:https://doi.org/10.1080/09540091.2024.2349541}.
+%Type = Article
+\bibitem[{Ide et~al.(2025)Ide, Gowda, Nadkarni and Dauphinais}]{ide2025fault}
+\bibinfo{author}{Ide, B.}, \bibinfo{author}{Gowda, M.G.},
+  \bibinfo{author}{Nadkarni, P.J.}, \bibinfo{author}{Dauphinais, G.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Fault-tolerant logical measurements via homological
+  measurement}.
+\newblock \bibinfo{journal}{Physical Review X} \bibinfo{volume}{15},
+  \bibinfo{pages}{021088}.
+%Type = Article
+\bibitem[{Itani et~al.(2024)Itani, Sreenivasan and Succi}]{itani2024quantum}
+\bibinfo{author}{Itani, W.}, \bibinfo{author}{Sreenivasan, K.R.},
+  \bibinfo{author}{Succi, S.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Quantum algorithm for lattice boltzmann (qalb)
+  simulation of incompressible fluids with a nonlinear collision term}.
+\newblock \bibinfo{journal}{Physics of Fluids} \bibinfo{volume}{36}.
+%Type = Inproceedings
+\bibitem[{Ito and Yoshioka(2024)}]{Ito2024}
+\bibinfo{author}{Ito, N.}, \bibinfo{author}{Yoshioka, N.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Quantum computer simulation on hpc}, in:
+  \bibinfo{booktitle}{Proceedings of the 21st ACM International Conference on
+  Computing Frontiers: Workshops and Special Sessions (CF '24 Companion).
+  Association for Computing Machinery, New York, NY, USA, 144.}
+\newblock \DOIprefix\doi{https://doi.org/10.1145/3637543.3653433}.
+%Type = Article
+\bibitem[{Javadi-Abhari et~al.(2024)Javadi-Abhari, Treinish, Krsulich, Wood,
+  Lishman, Gacon, Martiel, Nation, Bishop, Cross et~al.}]{javadi2024quantum}
+\bibinfo{author}{Javadi-Abhari, A.}, \bibinfo{author}{Treinish, M.},
+  \bibinfo{author}{Krsulich, K.}, \bibinfo{author}{Wood, C.J.},
+  \bibinfo{author}{Lishman, J.}, \bibinfo{author}{Gacon, J.},
+  \bibinfo{author}{Martiel, S.}, \bibinfo{author}{Nation, P.D.},
+  \bibinfo{author}{Bishop, L.S.}, \bibinfo{author}{Cross, A.W.}, et~al.,
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Quantum computing with qiskit}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:2405.08810} .
+%Type = Article
+\bibitem[{Jin et~al.(2024a)Jin, Li, Liu and Yu}]{doi:10.1137/23M1563451}
+\bibinfo{author}{Jin, S.}, \bibinfo{author}{Li, X.}, \bibinfo{author}{Liu, N.},
+  \bibinfo{author}{Yu, Y.}, \bibinfo{year}{2024}a.
+\newblock \bibinfo{title}{Quantum simulation for quantum dynamics with
+  artificial boundary conditions}.
+\newblock \bibinfo{journal}{SIAM Journal on Scientific Computing}
+  \bibinfo{volume}{46}, \bibinfo{pages}{B403--B421}.
+\newblock \URLprefix \url{https://doi.org/10.1137/23M1563451},
+  \DOIprefix\doi{10.1137/23M1563451},
+  \href{http://arxiv.org/abs/https://doi.org/10.1137/23M1563451}{\tt
+  arXiv:https://doi.org/10.1137/23M1563451}.
+%Type = Article
+\bibitem[{Jin et~al.(2025)Jin, Liu, Ma and Yu}]{jin2025quantum}
+\bibinfo{author}{Jin, S.}, \bibinfo{author}{Liu, N.}, \bibinfo{author}{Ma, C.},
+  \bibinfo{author}{Yu, Y.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Quantum preconditioning method for linear systems
+  problems via schr$\backslash$" odingerization}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:2505.06866} .
+%Type = Article
+\bibitem[{Jin et~al.(2024b)Jin, Liu and Yu}]{jin2024quantum}
+\bibinfo{author}{Jin, S.}, \bibinfo{author}{Liu, N.}, \bibinfo{author}{Yu, Y.},
+  \bibinfo{year}{2024}b.
+\newblock \bibinfo{title}{Quantum circuits for the heat equation with physical
+  boundary conditions via schrodingerisation}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:2407.15895} .
+%Type = Article
+\bibitem[{Jones and Benjamin(2020)}]{Jones_2020}
+\bibinfo{author}{Jones, T.}, \bibinfo{author}{Benjamin, S.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Questlink—mathematica embiggened by a
+  hardware-optimised quantum emulator*}.
+\newblock \bibinfo{journal}{Quantum Science and Technology}
+  \bibinfo{volume}{5}, \bibinfo{pages}{034012}.
+\newblock \URLprefix \url{http://dx.doi.org/10.1088/2058-9565/ab8506},
+  \DOIprefix\doi{10.1088/2058-9565/ab8506}.
+%Type = Article
+\bibitem[{Kanai et~al.(2024)Kanai, Jin and Guo}]{PhysRevLett.132.250603}
+\bibinfo{author}{Kanai, T.}, \bibinfo{author}{Jin, D.}, \bibinfo{author}{Guo,
+  W.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Single-electron qubits based on quantum ring states
+  on solid neon surface}.
+\newblock \bibinfo{journal}{Phys. Rev. Lett.} \bibinfo{volume}{132},
+  \bibinfo{pages}{250603}.
+\newblock \URLprefix
+  \url{https://link.aps.org/doi/10.1103/PhysRevLett.132.250603},
+  \DOIprefix\doi{10.1103/PhysRevLett.132.250603}.
+%Type = Article
+\bibitem[{Kang and Ryu(2025)}]{kang2025pennylane}
+\bibinfo{author}{Kang, J.H.}, \bibinfo{author}{Ryu, H.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Pennylane-lightning mpi: A massively scalable quantum
+  circuit simulator based on distributed computing in cpu clusters}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:2508.13615} .
+%Type = Misc
+\bibitem[{Keip et~al.(2025)Keip, Camps and
+  Beeumen}]{keip2025qclabmatlabtoolboxquantum}
+\bibinfo{author}{Keip, S.}, \bibinfo{author}{Camps, D.},
+  \bibinfo{author}{Beeumen, R.V.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Qclab: A matlab toolbox for quantum computing}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2503.03016},
+  \href{http://arxiv.org/abs/2503.03016}{\tt arXiv:2503.03016}.
+%Type = Article
+\bibitem[{Khait et~al.(2023)Khait, Tham, Segal and
+  Brodutch}]{khait2023variational}
+\bibinfo{author}{Khait, I.}, \bibinfo{author}{Tham, E.},
+  \bibinfo{author}{Segal, D.}, \bibinfo{author}{Brodutch, A.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Variational quantum eigensolvers in the era of
+  distributed quantum computers}.
+\newblock \bibinfo{journal}{Physical Review A} \bibinfo{volume}{108},
+  \bibinfo{pages}{L050401}.
+%Type = Article
+\bibitem[{Khan et~al.(2025)Khan, Norris and Viola}]{khan2025separate}
+\bibinfo{author}{Khan, M.Q.}, \bibinfo{author}{Norris, L.M.},
+  \bibinfo{author}{Viola, L.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Separate and efficient characterization of
+  state-preparation and measurement errors using single-qubit operations}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:2509.19448} .
+%Type = Article
+\bibitem[{Kim et~al.(2023)Kim, Eddins, Anand, Wei, Van Den~Berg, Rosenblatt,
+  Nayfeh, Wu, Zaletel, Temme et~al.}]{kim2023evidence}
+\bibinfo{author}{Kim, Y.}, \bibinfo{author}{Eddins, A.},
+  \bibinfo{author}{Anand, S.}, \bibinfo{author}{Wei, K.X.},
+  \bibinfo{author}{Van Den~Berg, E.}, \bibinfo{author}{Rosenblatt, S.},
+  \bibinfo{author}{Nayfeh, H.}, \bibinfo{author}{Wu, Y.},
+  \bibinfo{author}{Zaletel, M.}, \bibinfo{author}{Temme, K.}, et~al.,
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Evidence for the utility of quantum computing before
+  fault tolerance}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{618},
+  \bibinfo{pages}{500--505}.
+%Type = Article
+\bibitem[{Kitaev(1995)}]{kitaev1995quantum}
+\bibinfo{author}{Kitaev, A.Y.}, \bibinfo{year}{1995}.
+\newblock \bibinfo{title}{Quantum measurements and the abelian stabilizer
+  problem}.
+\newblock \bibinfo{journal}{arXiv preprint quant-ph/9511026} .
+%Type = Article
+\bibitem[{Kitaev(2003)}]{kitaev2003fault}
+\bibinfo{author}{Kitaev, A.Y.}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{Fault-tolerant quantum computation by anyons}.
+\newblock \bibinfo{journal}{Annals of physics} \bibinfo{volume}{303},
+  \bibinfo{pages}{2--30}.
+%Type = Article
+\bibitem[{Knill and Laflamme(1997)}]{knill1997theory}
+\bibinfo{author}{Knill, E.}, \bibinfo{author}{Laflamme, R.},
+  \bibinfo{year}{1997}.
+\newblock \bibinfo{title}{Theory of quantum error-correcting codes}.
+\newblock \bibinfo{journal}{Physical Review A} \bibinfo{volume}{55},
+  \bibinfo{pages}{900}.
+%Type = Article
+\bibitem[{Ko et~al.(2023)Ko, Li and Wang}]{ko2023implementation}
+\bibinfo{author}{Ko, T.}, \bibinfo{author}{Li, X.}, \bibinfo{author}{Wang, C.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Implementation of the density-functional theory on
+  quantum computers with linear scaling with respect to the number of atoms}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:2307.07067} .
+%Type = Article
+\bibitem[{Kodali and Motamarri(2025)}]{PhysRevB.111.195129}
+\bibinfo{author}{Kodali, N.}, \bibinfo{author}{Motamarri, P.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Finite-element methods for noncollinear magnetism and
+  spin-orbit coupling in real-space pseudopotential density functional theory}.
+\newblock \bibinfo{journal}{Phys. Rev. B} \bibinfo{volume}{111},
+  \bibinfo{pages}{195129}.
+\newblock \URLprefix
+  \url{https://link.aps.org/doi/10.1103/PhysRevB.111.195129},
+  \DOIprefix\doi{10.1103/PhysRevB.111.195129}.
+%Type = Article
+\bibitem[{Kolarovszki et~al.(2025)Kolarovszki, Rybotycki, Rakyta, Kaposi,
+  Po{\'o}r, J{\'o}czik, Nagy, Varga, El-Safty, Morse
+  et~al.}]{kolarovszki2025piquasso}
+\bibinfo{author}{Kolarovszki, Z.}, \bibinfo{author}{Rybotycki, T.},
+  \bibinfo{author}{Rakyta, P.}, \bibinfo{author}{Kaposi, {\'A}.},
+  \bibinfo{author}{Po{\'o}r, B.}, \bibinfo{author}{J{\'o}czik, S.},
+  \bibinfo{author}{Nagy, D.T.}, \bibinfo{author}{Varga, H.},
+  \bibinfo{author}{El-Safty, K.H.}, \bibinfo{author}{Morse, G.}, et~al.,
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Piquasso: A photonic quantum computer simulation
+  software platform}.
+\newblock \bibinfo{journal}{Quantum} \bibinfo{volume}{9},
+  \bibinfo{pages}{1708}.
+%Type = Article
+\bibitem[{Krinner et~al.(2022)Krinner, Lacroix, Remm, Di~Paolo, Genois, Leroux,
+  Hellings, Lazar, Swiadek, Herrmann et~al.}]{krinner2022realizing}
+\bibinfo{author}{Krinner, S.}, \bibinfo{author}{Lacroix, N.},
+  \bibinfo{author}{Remm, A.}, \bibinfo{author}{Di~Paolo, A.},
+  \bibinfo{author}{Genois, E.}, \bibinfo{author}{Leroux, C.},
+  \bibinfo{author}{Hellings, C.}, \bibinfo{author}{Lazar, S.},
+  \bibinfo{author}{Swiadek, F.}, \bibinfo{author}{Herrmann, J.}, et~al.,
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Realizing repeated quantum error correction in a
+  distance-three surface code}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{605},
+  \bibinfo{pages}{669--674}.
+%Type = Article
+\bibitem[{Kubischta and Teixeira(2023)}]{kubischta2023family}
+\bibinfo{author}{Kubischta, E.}, \bibinfo{author}{Teixeira, I.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Family of quantum codes with exotic transversal
+  gates}.
+\newblock \bibinfo{journal}{Physical Review Letters} \bibinfo{volume}{131},
+  \bibinfo{pages}{240601}.
+%Type = Inproceedings
+\bibitem[{Li et~al.(2021)Li, Fang, Granade, Prawiroatmodjo, Heim, Roetteler and
+  Krishnamoorthy}]{li2021sv}
+\bibinfo{author}{Li, A.}, \bibinfo{author}{Fang, B.}, \bibinfo{author}{Granade,
+  C.}, \bibinfo{author}{Prawiroatmodjo, G.}, \bibinfo{author}{Heim, B.},
+  \bibinfo{author}{Roetteler, M.}, \bibinfo{author}{Krishnamoorthy, S.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Sv-sim: scalable pgas-based state vector simulation
+  of quantum circuits}, in: \bibinfo{booktitle}{Proceedings of the
+  International Conference for High Performance Computing, Networking, Storage
+  and Analysis}, pp. \bibinfo{pages}{1--14}.
+\newblock \DOIprefix\doi{doi:10.1145/3458817.3476169}.
+%Type = Article
+\bibitem[{Lidar(2019)}]{lidar2019lecture}
+\bibinfo{author}{Lidar, D.A.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Lecture notes on the theory of open quantum systems}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:1902.00967} .
+%Type = Article
+\bibitem[{Lin(2025)}]{lin2025dissipative}
+\bibinfo{author}{Lin, L.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Dissipative preparation of many-body quantum states:
+  Toward practical quantum advantage}.
+\newblock \bibinfo{journal}{APL Computational Physics} \bibinfo{volume}{1},
+  \bibinfo{pages}{010901}.
+%Type = Article
+\bibitem[{Lotshaw et~al.(2023a)Lotshaw, Battles, Gard, Buchs, Humble and
+  Herold}]{PhysRevA.107.062406}
+\bibinfo{author}{Lotshaw, P.C.}, \bibinfo{author}{Battles, K.D.},
+  \bibinfo{author}{Gard, B.}, \bibinfo{author}{Buchs, G.},
+  \bibinfo{author}{Humble, T.S.}, \bibinfo{author}{Herold, C.D.},
+  \bibinfo{year}{2023}a.
+\newblock \bibinfo{title}{Modeling noise in global m\o{}lmer-s\o{}rensen
+  interactions applied to quantum approximate optimization}.
+\newblock \bibinfo{journal}{Phys. Rev. A} \bibinfo{volume}{107},
+  \bibinfo{pages}{062406}.
+\newblock \URLprefix
+  \url{https://link.aps.org/doi/10.1103/PhysRevA.107.062406},
+  \DOIprefix\doi{10.1103/PhysRevA.107.062406}.
+%Type = Article
+\bibitem[{Lotshaw et~al.(2024)Lotshaw, Sawyer, Herold and
+  Buchs}]{PhysRevA.110.L030803}
+\bibinfo{author}{Lotshaw, P.C.}, \bibinfo{author}{Sawyer, B.C.},
+  \bibinfo{author}{Herold, C.D.}, \bibinfo{author}{Buchs, G.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Exactly solvable model of light-scattering errors in
+  quantum simulations with metastable trapped-ion qubits}.
+\newblock \bibinfo{journal}{Phys. Rev. A} \bibinfo{volume}{110},
+  \bibinfo{pages}{L030803}.
+\newblock \URLprefix
+  \url{https://link.aps.org/doi/10.1103/PhysRevA.110.L030803},
+  \DOIprefix\doi{10.1103/PhysRevA.110.L030803}.
+%Type = Article
+\bibitem[{Lotshaw et~al.(2023b)Lotshaw, Xu, Khalid, Buchs, Humble and
+  Banerjee}]{doi:10.1098/rsta.2021.0414}
+\bibinfo{author}{Lotshaw, P.C.}, \bibinfo{author}{Xu, H.},
+  \bibinfo{author}{Khalid, B.}, \bibinfo{author}{Buchs, G.},
+  \bibinfo{author}{Humble, T.S.}, \bibinfo{author}{Banerjee, A.},
+  \bibinfo{year}{2023}b.
+\newblock \bibinfo{title}{Simulations of frustrated ising hamiltonians using
+  quantum approximate optimization}.
+\newblock \bibinfo{journal}{Philosophical Transactions of the Royal Society A:
+  Mathematical, Physical and Engineering Sciences} \bibinfo{volume}{381},
+  \bibinfo{pages}{20210414}.
+\newblock \URLprefix
+  \url{https://royalsocietypublishing.org/doi/abs/10.1098/rsta.2021.0414},
+  \DOIprefix\doi{10.1098/rsta.2021.0414},
+  \href{http://arxiv.org/abs/https://royalsocietypublishing.org/doi/pdf/10.1098/rsta.2021.0414}{\tt
+  arXiv:https://royalsocietypublishing.org/doi/pdf/10.1098/rsta.2021.0414}.
+%Type = Misc
+\bibitem[{Luo et~al.(2025)Luo, Surace, De, Lerose, Bennewitz, Ware, Schuckert,
+  Davoudi, Gorshkov, Katz and
+  Monroe}]{luo2025quantumsimulationbubblenucleation}
+\bibinfo{author}{Luo, D.}, \bibinfo{author}{Surace, F.M.}, \bibinfo{author}{De,
+  A.}, \bibinfo{author}{Lerose, A.}, \bibinfo{author}{Bennewitz, E.R.},
+  \bibinfo{author}{Ware, B.}, \bibinfo{author}{Schuckert, A.},
+  \bibinfo{author}{Davoudi, Z.}, \bibinfo{author}{Gorshkov, A.V.},
+  \bibinfo{author}{Katz, O.}, \bibinfo{author}{Monroe, C.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Quantum simulation of bubble nucleation across a
+  quantum phase transition}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2505.09607},
+  \href{http://arxiv.org/abs/2505.09607}{\tt arXiv:2505.09607}.
+%Type = Misc
+\bibitem[{Maciejewski et~al.(2024)Maciejewski, Biamonte, Hadfield and
+  Venturelli}]{maciejewski2024improvingquantumapproximateoptimization}
+\bibinfo{author}{Maciejewski, F.B.}, \bibinfo{author}{Biamonte, J.},
+  \bibinfo{author}{Hadfield, S.}, \bibinfo{author}{Venturelli, D.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Improving quantum approximate optimization by
+  noise-directed adaptive remapping}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2404.01412},
+  \href{http://arxiv.org/abs/2404.01412}{\tt arXiv:2404.01412}.
+%Type = Article
+\bibitem[{Mack(2015)}]{mack2015multiple}
+\bibinfo{author}{Mack, C.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{The multiple lives of moore's law}.
+\newblock \bibinfo{journal}{IEEE Spectrum} \bibinfo{volume}{52},
+  \bibinfo{pages}{31--31}.
+%Type = Article
+\bibitem[{Manzano(2020)}]{manzano2020short}
+\bibinfo{author}{Manzano, D.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{A short introduction to the lindblad master
+  equation}.
+\newblock \bibinfo{journal}{Aip advances} \bibinfo{volume}{10}.
+%Type = Article
+\bibitem[{Markov(2014)}]{markov2014limits}
+\bibinfo{author}{Markov, I.L.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Limits on fundamental limits to computation}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{512},
+  \bibinfo{pages}{147--154}.
+%Type = Article
+\bibitem[{Marra(2022)}]{marra2022majorana}
+\bibinfo{author}{Marra, P.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Majorana nanowires for topological quantum
+  computation}.
+\newblock \bibinfo{journal}{Journal of Applied Physics} \bibinfo{volume}{132}.
+%Type = Article
+\bibitem[{Meschede et~al.(2023)Meschede, Schwager, Schulz and
+  Berakdar}]{PhysRevA.107.062806}
+\bibinfo{author}{Meschede, L.}, \bibinfo{author}{Schwager, B.},
+  \bibinfo{author}{Schulz, D.}, \bibinfo{author}{Berakdar, J.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Quantum scattering of spinless particles in
+  riemannian manifolds}.
+\newblock \bibinfo{journal}{Phys. Rev. A} \bibinfo{volume}{107},
+  \bibinfo{pages}{062806}.
+\newblock \URLprefix
+  \url{https://link.aps.org/doi/10.1103/PhysRevA.107.062806},
+  \DOIprefix\doi{10.1103/PhysRevA.107.062806}.
+%Type = Article
+\bibitem[{Moore(2021)}]{moore2021cramming}
+\bibinfo{author}{Moore, G.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Cramming more components onto integrated circuits
+  (1965)} .
+%Type = Misc
+\bibitem[{Mucciolo et~al.(2025)Mucciolo, Nieminen, Xiao, Chiu, Leuenberger and
+  Bansil}]{mucciolo2025greensfunctionmethodscomputing}
+\bibinfo{author}{Mucciolo, E.R.}, \bibinfo{author}{Nieminen, J.},
+  \bibinfo{author}{Xiao, X.}, \bibinfo{author}{Chiu, W.C.},
+  \bibinfo{author}{Leuenberger, M.N.}, \bibinfo{author}{Bansil, A.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Green's function methods for computing supercurrents
+  in josephson junctions}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2509.07165},
+  \href{http://arxiv.org/abs/2509.07165}{\tt arXiv:2509.07165}.
+%Type = Article
+\bibitem[{Nautrup et~al.(2019)Nautrup, Delfosse, Dunjko, Briegel and
+  Friis}]{nautrup2019optimizing}
+\bibinfo{author}{Nautrup, H.P.}, \bibinfo{author}{Delfosse, N.},
+  \bibinfo{author}{Dunjko, V.}, \bibinfo{author}{Briegel, H.J.},
+  \bibinfo{author}{Friis, N.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Optimizing quantum error correction codes with
+  reinforcement learning}.
+\newblock \bibinfo{journal}{Quantum} \bibinfo{volume}{3}, \bibinfo{pages}{215}.
+%Type = Article
+\bibitem[{Nghiem and Wei(2023)}]{nghiem2023quantum}
+\bibinfo{author}{Nghiem, N.A.}, \bibinfo{author}{Wei, T.C.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Quantum algorithm for estimating largest
+  eigenvalues}.
+\newblock \bibinfo{journal}{Physics Letters A} \bibinfo{volume}{488},
+  \bibinfo{pages}{129138}.
+%Type = Article
+\bibitem[{Nguyen and Khoa(2025)}]{nguyen2025inversion}
+\bibinfo{author}{Nguyen, D.T.}, \bibinfo{author}{Khoa, V.A.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{An inversion approach to reconstruct the complex
+  potential and intensity function in the schr{\"o}dinger evolution equation}.
+\newblock \bibinfo{journal}{Journal of Computational Physics} ,
+  \bibinfo{pages}{114476}.
+%Type = Article
+\bibitem[{Nguyen et~al.(2022)Nguyen, Lyakh, Dumitrescu, Clark, Larkin and
+  McCaskey}]{nguyen2022tensor}
+\bibinfo{author}{Nguyen, T.}, \bibinfo{author}{Lyakh, D.},
+  \bibinfo{author}{Dumitrescu, E.}, \bibinfo{author}{Clark, D.},
+  \bibinfo{author}{Larkin, J.}, \bibinfo{author}{McCaskey, A.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Tensor network quantum virtual machine for simulating
+  quantum circuits at exascale}.
+\newblock \bibinfo{journal}{ACM Transactions on Quantum Computing}
+  \bibinfo{volume}{4}, \bibinfo{pages}{1--21}.
+%Type = Book
+\bibitem[{Nielsen and Chuang(2010)}]{nielsen2010quantum}
+\bibinfo{author}{Nielsen, M.A.}, \bibinfo{author}{Chuang, I.L.},
+  \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Quantum computation and quantum information}.
+\newblock \bibinfo{publisher}{Cambridge university press}.
+%Type = Article
+\bibitem[{Nieminen et~al.(2023)Nieminen, Dhara, Chiu, Mucciolo and
+  Bansil}]{PhysRevB.107.174524}
+\bibinfo{author}{Nieminen, J.}, \bibinfo{author}{Dhara, S.},
+  \bibinfo{author}{Chiu, W.C.}, \bibinfo{author}{Mucciolo, E.R.},
+  \bibinfo{author}{Bansil, A.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Atomistic modeling of a superconductor--transition
+  metal dichalcogenide--superconductor josephson junction}.
+\newblock \bibinfo{journal}{Phys. Rev. B} \bibinfo{volume}{107},
+  \bibinfo{pages}{174524}.
+\newblock \URLprefix
+  \url{https://link.aps.org/doi/10.1103/PhysRevB.107.174524},
+  \DOIprefix\doi{10.1103/PhysRevB.107.174524}.
+%Type = Inproceedings
+\bibitem[{Park et~al.(2022)Park, Kim, Kim, Kim and
+  Lee}]{10.1145/3524059.3532375}
+\bibinfo{author}{Park, D.}, \bibinfo{author}{Kim, H.}, \bibinfo{author}{Kim,
+  J.}, \bibinfo{author}{Kim, T.}, \bibinfo{author}{Lee, J.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Snuqs: scaling quantum circuit simulation using
+  storage devices}, in: \bibinfo{booktitle}{Proceedings of the 36th ACM
+  International Conference on Supercomputing}, \bibinfo{publisher}{Association
+  for Computing Machinery}, \bibinfo{address}{New York, NY, USA}.
+\newblock \URLprefix \url{https://doi.org/10.1145/3524059.3532375},
+  \DOIprefix\doi{10.1145/3524059.3532375}.
+%Type = Misc
+\bibitem[{Popovici et~al.(2025)Popovici, Lee, Ben, Yoshioka, Ito, Klymko, Camps
+  and Butko}]{popovici2025closenesscentralitybasedcircuitpartitioner}
+\bibinfo{author}{Popovici, D.T.}, \bibinfo{author}{Lee, H.},
+  \bibinfo{author}{Ben, M.D.}, \bibinfo{author}{Yoshioka, N.},
+  \bibinfo{author}{Ito, N.}, \bibinfo{author}{Klymko, K.},
+  \bibinfo{author}{Camps, D.}, \bibinfo{author}{Butko, A.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{A closeness centrality-based circuit partitioner for
+  quantum simulations}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2509.14098},
+  \href{http://arxiv.org/abs/2509.14098}{\tt arXiv:2509.14098}.
+%Type = Article
+\bibitem[{Putterman et~al.(2025)Putterman, Noh, Hann, MacCabe, Aghaeimeibodi,
+  Patel, Lee, Jones, Moradinejad, Rodriguez, Mahuli, Rose, Owens, Levine,
+  Rosenfeld, Reinhold, Moncelsi, Alcid, Alidoust, Arrangoiz-Arriola, Barnett,
+  Bienias, Carson, Chen, Chen, Chinkezian, Chisholm, Chou, Clerk, Clifford,
+  Cosmic, Curiel, Davis, DeLorenzo, D’Ewart, Diky, D’Souza, Dumitrescu,
+  Eisenmann, Elkhouly, Evenbly, Fang, Fang, Fling, Fon, Garcia, Gorshkov,
+  Grant, Gray, Grimberg, Grimsmo, Haim, Hand, He, Hernandez, Hover, Hung, Hunt,
+  Iverson, Jarrige, Jaskula, Jiang, Kalaee, Karabalin, Karalekas, Keller,
+  Khalajhedayati, Kubica, Lee, Leroux, Lieu, Ly, Madrigal, Marcaud, McCabe,
+  Miles, Milsted, Minguzzi, Mishra, Mukherjee, Naghiloo, Oblepias, Ortuno,
+  Pagdilao, Pancotti, Panduro, Paquette, Park, Peairs, Perello, Peterson,
+  Ponte, Preskill, Qiao, Refael, Resnick, Retzker, Reyna, Runyan, Ryan,
+  Sahmoud, Sanchez, Sanil, Sankar, Sato, Scaffidi, Siavoshi, Sivarajah,
+  Skogland, Su, Swenson, Teo, Tomada, Torlai, Wollack, Ye, Zerrudo, Zhang,
+  Brandão, Matheny and Painter}]{Putterman_2025}
+\bibinfo{author}{Putterman, H.}, \bibinfo{author}{Noh, K.},
+  \bibinfo{author}{Hann, C.T.}, \bibinfo{author}{MacCabe, G.S.},
+  \bibinfo{author}{Aghaeimeibodi, S.}, \bibinfo{author}{Patel, R.N.},
+  \bibinfo{author}{Lee, M.}, \bibinfo{author}{Jones, W.M.},
+  \bibinfo{author}{Moradinejad, H.}, \bibinfo{author}{Rodriguez, R.},
+  \bibinfo{author}{Mahuli, N.}, \bibinfo{author}{Rose, J.},
+  \bibinfo{author}{Owens, J.C.}, \bibinfo{author}{Levine, H.},
+  \bibinfo{author}{Rosenfeld, E.}, \bibinfo{author}{Reinhold, P.},
+  \bibinfo{author}{Moncelsi, L.}, \bibinfo{author}{Alcid, J.A.},
+  \bibinfo{author}{Alidoust, N.}, \bibinfo{author}{Arrangoiz-Arriola, P.},
+  \bibinfo{author}{Barnett, J.}, \bibinfo{author}{Bienias, P.},
+  \bibinfo{author}{Carson, H.A.}, \bibinfo{author}{Chen, C.},
+  \bibinfo{author}{Chen, L.}, \bibinfo{author}{Chinkezian, H.},
+  \bibinfo{author}{Chisholm, E.M.}, \bibinfo{author}{Chou, M.H.},
+  \bibinfo{author}{Clerk, A.}, \bibinfo{author}{Clifford, A.},
+  \bibinfo{author}{Cosmic, R.}, \bibinfo{author}{Curiel, A.V.},
+  \bibinfo{author}{Davis, E.}, \bibinfo{author}{DeLorenzo, L.},
+  \bibinfo{author}{D’Ewart, J.M.}, \bibinfo{author}{Diky, A.},
+  \bibinfo{author}{D’Souza, N.}, \bibinfo{author}{Dumitrescu, P.T.},
+  \bibinfo{author}{Eisenmann, S.}, \bibinfo{author}{Elkhouly, E.},
+  \bibinfo{author}{Evenbly, G.}, \bibinfo{author}{Fang, M.T.},
+  \bibinfo{author}{Fang, Y.}, \bibinfo{author}{Fling, M.J.},
+  \bibinfo{author}{Fon, W.}, \bibinfo{author}{Garcia, G.},
+  \bibinfo{author}{Gorshkov, A.V.}, \bibinfo{author}{Grant, J.A.},
+  \bibinfo{author}{Gray, M.J.}, \bibinfo{author}{Grimberg, S.},
+  \bibinfo{author}{Grimsmo, A.L.}, \bibinfo{author}{Haim, A.},
+  \bibinfo{author}{Hand, J.}, \bibinfo{author}{He, Y.},
+  \bibinfo{author}{Hernandez, M.}, \bibinfo{author}{Hover, D.},
+  \bibinfo{author}{Hung, J.S.C.}, \bibinfo{author}{Hunt, M.},
+  \bibinfo{author}{Iverson, J.}, \bibinfo{author}{Jarrige, I.},
+  \bibinfo{author}{Jaskula, J.C.}, \bibinfo{author}{Jiang, L.},
+  \bibinfo{author}{Kalaee, M.}, \bibinfo{author}{Karabalin, R.},
+  \bibinfo{author}{Karalekas, P.J.}, \bibinfo{author}{Keller, A.J.},
+  \bibinfo{author}{Khalajhedayati, A.}, \bibinfo{author}{Kubica, A.},
+  \bibinfo{author}{Lee, H.}, \bibinfo{author}{Leroux, C.},
+  \bibinfo{author}{Lieu, S.}, \bibinfo{author}{Ly, V.},
+  \bibinfo{author}{Madrigal, K.V.}, \bibinfo{author}{Marcaud, G.},
+  \bibinfo{author}{McCabe, G.}, \bibinfo{author}{Miles, C.},
+  \bibinfo{author}{Milsted, A.}, \bibinfo{author}{Minguzzi, J.},
+  \bibinfo{author}{Mishra, A.}, \bibinfo{author}{Mukherjee, B.},
+  \bibinfo{author}{Naghiloo, M.}, \bibinfo{author}{Oblepias, E.},
+  \bibinfo{author}{Ortuno, G.}, \bibinfo{author}{Pagdilao, J.},
+  \bibinfo{author}{Pancotti, N.}, \bibinfo{author}{Panduro, A.},
+  \bibinfo{author}{Paquette, J.}, \bibinfo{author}{Park, M.},
+  \bibinfo{author}{Peairs, G.A.}, \bibinfo{author}{Perello, D.},
+  \bibinfo{author}{Peterson, E.C.}, \bibinfo{author}{Ponte, S.},
+  \bibinfo{author}{Preskill, J.}, \bibinfo{author}{Qiao, J.},
+  \bibinfo{author}{Refael, G.}, \bibinfo{author}{Resnick, R.},
+  \bibinfo{author}{Retzker, A.}, \bibinfo{author}{Reyna, O.A.},
+  \bibinfo{author}{Runyan, M.}, \bibinfo{author}{Ryan, C.A.},
+  \bibinfo{author}{Sahmoud, A.}, \bibinfo{author}{Sanchez, E.},
+  \bibinfo{author}{Sanil, R.}, \bibinfo{author}{Sankar, K.},
+  \bibinfo{author}{Sato, Y.}, \bibinfo{author}{Scaffidi, T.},
+  \bibinfo{author}{Siavoshi, S.}, \bibinfo{author}{Sivarajah, P.},
+  \bibinfo{author}{Skogland, T.}, \bibinfo{author}{Su, C.J.},
+  \bibinfo{author}{Swenson, L.J.}, \bibinfo{author}{Teo, S.M.},
+  \bibinfo{author}{Tomada, A.}, \bibinfo{author}{Torlai, G.},
+  \bibinfo{author}{Wollack, E.A.}, \bibinfo{author}{Ye, Y.},
+  \bibinfo{author}{Zerrudo, J.A.}, \bibinfo{author}{Zhang, K.},
+  \bibinfo{author}{Brandão, F.G.S.L.}, \bibinfo{author}{Matheny, M.H.},
+  \bibinfo{author}{Painter, O.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Hardware-efficient quantum error correction via
+  concatenated bosonic qubits}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{638},
+  \bibinfo{pages}{927–934}.
+\newblock \URLprefix \url{http://dx.doi.org/10.1038/s41586-025-08642-7},
+  \DOIprefix\doi{10.1038/s41586-025-08642-7}.
+%Type = Misc
+\bibitem[{Qing and Xie(2023)}]{qing2023usevqecalculateground}
+\bibinfo{author}{Qing, M.}, \bibinfo{author}{Xie, W.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Use vqe to calculate the ground energy of hydrogen
+  molecules on ibm quantum}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2305.06538},
+  \href{http://arxiv.org/abs/2305.06538}{\tt arXiv:2305.06538}.
+%Type = Article
+\bibitem[{Rakyta et~al.(2024)Rakyta, Morse, N{\'a}dori, Majnay-Tak{\'a}cs,
+  Mencer and Zimbor{\'a}s}]{rakyta2024highly}
+\bibinfo{author}{Rakyta, P.}, \bibinfo{author}{Morse, G.},
+  \bibinfo{author}{N{\'a}dori, J.}, \bibinfo{author}{Majnay-Tak{\'a}cs, Z.},
+  \bibinfo{author}{Mencer, O.}, \bibinfo{author}{Zimbor{\'a}s, Z.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Highly optimized quantum circuits synthesized via
+  data-flow engines}.
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{500}, \bibinfo{pages}{112756}.
+%Type = Misc
+\bibitem[{Ramacciotti et~al.(2023)Ramacciotti, Lefterovici and
+  Rotundo}]{ramacciotti2023simplequantumalgorithmefficiently}
+\bibinfo{author}{Ramacciotti, D.}, \bibinfo{author}{Lefterovici, A.I.},
+  \bibinfo{author}{Rotundo, A.F.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{A simple quantum algorithm to efficiently prepare
+  sparse states}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2310.19309},
+  \href{http://arxiv.org/abs/2310.19309}{\tt arXiv:2310.19309}.
+%Type = Book
+\bibitem[{Ramkarthik and Solanki(2021)}]{ramkarthik2021numerical}
+\bibinfo{author}{Ramkarthik, M.}, \bibinfo{author}{Solanki, P.D.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Numerical recipes in quantum information theory and
+  quantum computing: an adventure in FORTRAN 90}.
+\newblock \bibinfo{publisher}{CRC Press}.
+%Type = Article
+\bibitem[{Roffe(2019)}]{roffe2019quantum}
+\bibinfo{author}{Roffe, J.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Quantum error correction: an introductory guide}.
+\newblock \bibinfo{journal}{Contemporary Physics} \bibinfo{volume}{60},
+  \bibinfo{pages}{226--245}.
+%Type = Inproceedings
+\bibitem[{Ryu et~al.(2021)Ryu, Jung, Lee, Gwon and Kevin~Rhee}]{VQSVD}
+\bibinfo{author}{Ryu, J.}, \bibinfo{author}{Jung, J.}, \bibinfo{author}{Lee,
+  J.}, \bibinfo{author}{Gwon, Y.}, \bibinfo{author}{Kevin~Rhee, J.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{A variational quantum algorithm for ordered svd}, in:
+  \bibinfo{booktitle}{2021 IEEE Global Communications Conference (GLOBECOM)},
+  pp. \bibinfo{pages}{01--05}.
+\newblock \DOIprefix\doi{10.1109/GLOBECOM46510.2021.9685404}.
+%Type = Inproceedings
+\bibitem[{Sawaya et~al.(2023)Sawaya, Marti-Dafcik, Ho, Tabor, Bernal~Neira,
+  Magann, Premaratne, Dubey, Matsuura, Bishop, De~Jong, Benjamin, Parekh,
+  Tubman, Klymko and Camps}]{10313872}
+\bibinfo{author}{Sawaya, N.P.}, \bibinfo{author}{Marti-Dafcik, D.},
+  \bibinfo{author}{Ho, Y.}, \bibinfo{author}{Tabor, D.P.},
+  \bibinfo{author}{Bernal~Neira, D.E.}, \bibinfo{author}{Magann, A.B.},
+  \bibinfo{author}{Premaratne, S.}, \bibinfo{author}{Dubey, P.},
+  \bibinfo{author}{Matsuura, A.}, \bibinfo{author}{Bishop, N.},
+  \bibinfo{author}{De~Jong, W.A.}, \bibinfo{author}{Benjamin, S.},
+  \bibinfo{author}{Parekh, O.D.}, \bibinfo{author}{Tubman, N.M.},
+  \bibinfo{author}{Klymko, K.}, \bibinfo{author}{Camps, D.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Hamlib: A library of hamiltonians for benchmarking
+  quantum algorithms and hardware}, in: \bibinfo{booktitle}{2023 IEEE
+  International Conference on Quantum Computing and Engineering (QCE)}, pp.
+  \bibinfo{pages}{389--390}.
+\newblock \DOIprefix\doi{10.1109/QCE57702.2023.10296}.
+%Type = Article
+\bibitem[{Seki et~al.(2025)Seki, Kikuchi, Hayata and
+  Yunoki}]{PhysRevResearch.7.023032}
+\bibinfo{author}{Seki, K.}, \bibinfo{author}{Kikuchi, Y.},
+  \bibinfo{author}{Hayata, T.}, \bibinfo{author}{Yunoki, S.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Simulating floquet scrambling circuits on trapped-ion
+  quantum computers}.
+\newblock \bibinfo{journal}{Phys. Rev. Res.} \bibinfo{volume}{7},
+  \bibinfo{pages}{023032}.
+\newblock \URLprefix
+  \url{https://link.aps.org/doi/10.1103/PhysRevResearch.7.023032},
+  \DOIprefix\doi{10.1103/PhysRevResearch.7.023032}.
+%Type = Article
+\bibitem[{Shalf(2020)}]{shalf2020future}
+\bibinfo{author}{Shalf, J.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{The future of computing beyond moore’s law}.
+\newblock \bibinfo{journal}{Philosophical Transactions of the Royal Society A}
+  \bibinfo{volume}{378}, \bibinfo{pages}{20190061}.
+%Type = Article
+\bibitem[{Shirakawa et~al.(2024)Shirakawa, Ueda and
+  Yunoki}]{PhysRevResearch.6.043008}
+\bibinfo{author}{Shirakawa, T.}, \bibinfo{author}{Ueda, H.},
+  \bibinfo{author}{Yunoki, S.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Automatic quantum circuit encoding of a given
+  arbitrary quantum state}.
+\newblock \bibinfo{journal}{Phys. Rev. Res.} \bibinfo{volume}{6},
+  \bibinfo{pages}{043008}.
+\newblock \URLprefix
+  \url{https://link.aps.org/doi/10.1103/PhysRevResearch.6.043008},
+  \DOIprefix\doi{10.1103/PhysRevResearch.6.043008}.
+%Type = Article
+\bibitem[{Shor(1995)}]{shor1995scheme}
+\bibinfo{author}{Shor, P.W.}, \bibinfo{year}{1995}.
+\newblock \bibinfo{title}{Scheme for reducing decoherence in quantum computer
+  memory}.
+\newblock \bibinfo{journal}{Physical review A} \bibinfo{volume}{52},
+  \bibinfo{pages}{R2493}.
+%Type = Article
+\bibitem[{Shor(1999)}]{doi:10.1137/S0036144598347011}
+\bibinfo{author}{Shor, P.W.}, \bibinfo{year}{1999}.
+\newblock \bibinfo{title}{Polynomial-time algorithms for prime factorization
+  and discrete logarithms on a quantum computer}.
+\newblock \bibinfo{journal}{SIAM Review} \bibinfo{volume}{41},
+  \bibinfo{pages}{303--332}.
+\newblock \URLprefix \url{https://doi.org/10.1137/S0036144598347011},
+  \DOIprefix\doi{10.1137/S0036144598347011},
+  \href{http://arxiv.org/abs/https://doi.org/10.1137/S0036144598347011}{\tt
+  arXiv:https://doi.org/10.1137/S0036144598347011}.
+%Type = Misc
+\bibitem[{Stetina and
+  Wiebe(2025)}]{stetina2025firstquantizedquantumsimulationnonrelativistic}
+\bibinfo{author}{Stetina, T.}, \bibinfo{author}{Wiebe, N.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{First-quantized quantum simulation of
+  non-relativistic qed with emergent topologically protected coulomb
+  interactions}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2508.19343},
+  \href{http://arxiv.org/abs/2508.19343}{\tt arXiv:2508.19343}.
+%Type = Article
+\bibitem[{Sun and Galperin(2025)}]{sun2025control}
+\bibinfo{author}{Sun, H.}, \bibinfo{author}{Galperin, M.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Control of open quantum systems: The nonequilibrium
+  green’s function perspective}.
+\newblock \bibinfo{journal}{APL Quantum} \bibinfo{volume}{2}.
+%Type = Misc
+\bibitem[{team and
+  collaborators(2020)}]{quantum_ai_team_and_collaborators_2020_4023103}
+\bibinfo{author}{team, Q.A.}, \bibinfo{author}{collaborators},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{qsim}.
+\newblock \URLprefix \url{https://doi.org/10.5281/zenodo.4023103},
+  \DOIprefix\doi{10.5281/zenodo.4023103}.
+%Type = Article
+\bibitem[{Tilly et~al.(2022)Tilly, Chen, Cao, Picozzi, Setia, Li, Grant,
+  Wossnig, Rungger, Booth et~al.}]{tilly2022variational}
+\bibinfo{author}{Tilly, J.}, \bibinfo{author}{Chen, H.}, \bibinfo{author}{Cao,
+  S.}, \bibinfo{author}{Picozzi, D.}, \bibinfo{author}{Setia, K.},
+  \bibinfo{author}{Li, Y.}, \bibinfo{author}{Grant, E.},
+  \bibinfo{author}{Wossnig, L.}, \bibinfo{author}{Rungger, I.},
+  \bibinfo{author}{Booth, G.H.}, et~al., \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{The variational quantum eigensolver: a review of
+  methods and best practices}.
+\newblock \bibinfo{journal}{Physics Reports} \bibinfo{volume}{986},
+  \bibinfo{pages}{1--128}.
+%Type = Inproceedings
+\bibitem[{Viamontes et~al.(2004)Viamontes, Markov and
+  Hayes}]{viamontes2004high}
+\bibinfo{author}{Viamontes, G.F.}, \bibinfo{author}{Markov, I.L.},
+  \bibinfo{author}{Hayes, J.P.}, \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{High-performance quidd-based simulation of quantum
+  circuits}, in: \bibinfo{booktitle}{Proceedings Design, Automation and Test in
+  Europe Conference and Exhibition}, \bibinfo{organization}{IEEE}. pp.
+  \bibinfo{pages}{1354--1355}.
+%Type = Misc
+\bibitem[{Wecker and Svore(2014)}]{1402.4467}
+\bibinfo{author}{Wecker, D.}, \bibinfo{author}{Svore, K.M.},
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{{LIQU}i|>: {A} {S}oftware {D}esign {A}rchitecture and
+  {D}omain-{S}pecific {L}anguage for {Q}uantum {C}omputing}.
+\newblock \URLprefix \url{arXiv:1402.4467v1},
+  \href{http://arxiv.org/abs/1402.4467}{\tt arXiv:1402.4467}.
+%Type = Inproceedings
+\bibitem[{Wille et~al.(2018)Wille, Fowler and Naveh}]{wille2018computer}
+\bibinfo{author}{Wille, R.}, \bibinfo{author}{Fowler, A.},
+  \bibinfo{author}{Naveh, Y.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Computer-aided design for quantum computation}, in:
+  \bibinfo{booktitle}{2018 IEEE/ACM International Conference on Computer-Aided
+  Design (ICCAD)}, \bibinfo{organization}{IEEE}. pp. \bibinfo{pages}{1--6}.
+%Type = Article
+\bibitem[{Williams-Young et~al.(2023)Williams-Young, Asadchev, Popovici, Clark,
+  Waldrop, Windus, Valeev and de~Jong}]{williams2023distributed}
+\bibinfo{author}{Williams-Young, D.B.}, \bibinfo{author}{Asadchev, A.},
+  \bibinfo{author}{Popovici, D.T.}, \bibinfo{author}{Clark, D.},
+  \bibinfo{author}{Waldrop, J.}, \bibinfo{author}{Windus, T.L.},
+  \bibinfo{author}{Valeev, E.F.}, \bibinfo{author}{de~Jong, W.A.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Distributed memory, gpu accelerated fock construction
+  for hybrid, gaussian basis density functional theory}.
+\newblock \bibinfo{journal}{The Journal of Chemical Physics}
+  \bibinfo{volume}{158}.
+%Type = Article
+\bibitem[{Wintersperger et~al.(2023)Wintersperger, Dommert, Ehmer, Hoursanov,
+  Klepsch, Mauerer, Reuber, Strohm, Yin and Luber}]{wintersperger2023neutral}
+\bibinfo{author}{Wintersperger, K.}, \bibinfo{author}{Dommert, F.},
+  \bibinfo{author}{Ehmer, T.}, \bibinfo{author}{Hoursanov, A.},
+  \bibinfo{author}{Klepsch, J.}, \bibinfo{author}{Mauerer, W.},
+  \bibinfo{author}{Reuber, G.}, \bibinfo{author}{Strohm, T.},
+  \bibinfo{author}{Yin, M.}, \bibinfo{author}{Luber, S.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Neutral atom quantum computing hardware: performance
+  and end-user perspective}.
+\newblock \bibinfo{journal}{EPJ Quantum Technology} \bibinfo{volume}{10},
+  \bibinfo{pages}{32}.
+%Type = Inproceedings
+\bibitem[{Xu et~al.(2024)Xu, Cao, Miao, Acar and Jia}]{xu2024atlas}
+\bibinfo{author}{Xu, M.}, \bibinfo{author}{Cao, S.}, \bibinfo{author}{Miao,
+  X.}, \bibinfo{author}{Acar, U.A.}, \bibinfo{author}{Jia, Z.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Atlas: Hierarchical partitioning for quantum circuit
+  simulation on gpus}, in: \bibinfo{booktitle}{SC24: International Conference
+  for High Performance Computing, Networking, Storage and Analysis},
+  \bibinfo{organization}{IEEE}. pp. \bibinfo{pages}{1--17}.
+\newblock \DOIprefix\doi{https://doi.org/10.1109/SC41406.2024.00087}.
+%Type = Inproceedings
+\bibitem[{Zhang et~al.(2021)Zhang, Song, Wang, Rong and Zhai}]{zhang2021hyquas}
+\bibinfo{author}{Zhang, C.}, \bibinfo{author}{Song, Z.}, \bibinfo{author}{Wang,
+  H.}, \bibinfo{author}{Rong, K.}, \bibinfo{author}{Zhai, J.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Hyquas: hybrid partitioner based quantum circuit
+  simulation system on gpu}, in: \bibinfo{booktitle}{Proceedings of the 35th
+  ACM International Conference on Supercomputing}, pp.
+  \bibinfo{pages}{443--454}.
+\newblock \DOIprefix\doi{https://doi.org/10.1145/3447818.3460357}.
+%Type = Inproceedings
+\bibitem[{Zhang et~al.(2024)Zhang, Saligane, Kim, Blaauw, Tzimpragos and
+  Sylvester}]{zhang2024quantum}
+\bibinfo{author}{Zhang, Q.}, \bibinfo{author}{Saligane, M.},
+  \bibinfo{author}{Kim, H.S.}, \bibinfo{author}{Blaauw, D.},
+  \bibinfo{author}{Tzimpragos, G.}, \bibinfo{author}{Sylvester, D.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Quantum circuit simulation with fast tensor decision
+  diagram}, in: \bibinfo{booktitle}{2024 25th International Symposium on
+  Quality Electronic Design (ISQED)}, \bibinfo{organization}{IEEE}. pp.
+  \bibinfo{pages}{1--8}.
+%Type = Article
+\bibitem[{Zheng et~al.(2004)Zheng, Ying and Ding}]{zheng2004numerical}
+\bibinfo{author}{Zheng, W.}, \bibinfo{author}{Ying, L.A.},
+  \bibinfo{author}{Ding, P.}, \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{Numerical solutions of the schr{\"o}dinger equation
+  for the ground lithium by the finite element method}.
+\newblock \bibinfo{journal}{Applied mathematics and computation}
+  \bibinfo{volume}{153}, \bibinfo{pages}{685--695}.
+%Type = Article
+\bibitem[{Zou and Lo(2025)}]{zou2025algebraic}
+\bibinfo{author}{Zou, X.}, \bibinfo{author}{Lo, H.K.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Algebraic topology principles behind topological
+  quantum error correction}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:2505.06082} .
+%Type = Article
+\bibitem[{Zoufal et~al.(2019)Zoufal, Lucchi and Woerner}]{zoufal2019quantum}
+\bibinfo{author}{Zoufal, C.}, \bibinfo{author}{Lucchi, A.},
+  \bibinfo{author}{Woerner, S.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Quantum generative adversarial networks for learning
+  and loading random distributions}.
+\newblock \bibinfo{journal}{npj Quantum Information} \bibinfo{volume}{5},
+  \bibinfo{pages}{103}.
+
+\end{thebibliography}

@@ -1,0 +1,747 @@
+%% 
+%% Copyright 2019-2020 Elsevier Ltd
+%% 
+%% This file is part of the 'CAS Bundle'.
+%% --------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'CAS Bundle' is
+%% given in the file `manifest.txt'.
+%% 
+%% Template article for cas-sc documentclass for 
+%% double column output.
+
+%\documentclass[a4paper,fleqn,longmktitle]{cas-sc}
+\documentclass[a4paper,fleqn]{cas-sc}
+
+\usepackage[numbers]{natbib}
+%\usepackage[authoryear]{natbib}
+%\usepackage[authoryear,longnamesfirst]{natbib}
+\usepackage{hyperref, amsmath, amssymb, braket}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+}
+
+%%%Author definitions
+\def\tsc#1{\csdef{#1}{\textsc{\lowercase{#1}}\xspace}}
+\tsc{WGM}
+\tsc{QE}
+\tsc{EP}
+\tsc{PMS}
+\tsc{BEC}
+\tsc{DE}
+%%%
+
+% Uncomment and use as if needed
+%\newtheorem{theorem}{Theorem}
+%\newtheorem{lemma}[theorem]{Lemma}
+%\newdefinition{rmk}{Remark}
+%\newproof{pf}{Proof}
+%\newproof{pot}{Proof of Theorem \ref{thm}}
+
+
+\newcommand{\bmz}{\mbox{\boldmath $z$\unboldmath}}
+\newcommand{\bmr}{\mbox{\boldmath $r$\unboldmath}}
+\newcommand{\bmb}{\mbox{\boldmath $b$\unboldmath}}
+\newcommand{\bms}{\mbox{\boldmath $s$\unboldmath}}
+\newcommand{\bmg}{\mbox{\boldmath $g$\unboldmath}}
+\newcommand{\bmq}{\mbox{\boldmath $q$\unboldmath}}
+\newcommand{\bmU}{\mbox{\boldmath $U$\unboldmath}}
+\newcommand{\bmu}{\mbox{\boldmath $u$\unboldmath}}
+\newcommand{\bmv}{\mbox{\boldmath $v$\unboldmath}}
+\newcommand{\bmw}{\mbox{\boldmath $w$\unboldmath}}
+\newcommand{\bmm}{\mbox{\boldmath $m$\unboldmath}}
+\newcommand{\bmi}{\mbox{\boldmath $i$\unboldmath}}
+\newcommand{\bmj}{\mbox{\boldmath $j$\unboldmath}}
+\newcommand{\bmk}{\mbox{\boldmath $k$\unboldmath}}
+\newcommand{\bmx}{\mbox{\boldmath $x$\unboldmath}}
+\newcommand{\bmX}{\mbox{\boldmath $X$\unboldmath}}
+\newcommand{\bmH}{\mbox{\boldmath $H$\unboldmath}}
+\newcommand{\bmy}{\mbox{\boldmath $y$\unboldmath}}
+\newcommand{\bmn}{\mbox{\boldmath $n$\unboldmath}}
+\newcommand{\bmf}{\mbox{\boldmath $f$\unboldmath}}
+\newcommand{\bmF}{\mbox{\boldmath $F$\unboldmath}}
+\newcommand{\bmS}{\mbox{\boldmath $S$\unboldmath}}
+\newcommand{\bmG}{\mbox{\boldmath $G$\unboldmath}}
+\newcommand{\bmV}{\mbox{\boldmath $V$\unboldmath}}
+\newcommand{\bmI}{\mbox{\boldmath $I$\unboldmath}}
+\newcommand{\bmD}{\mbox{\boldmath $D$\unboldmath}}
+\newcommand{\bmnu}{\mbox{\boldmath $\nu$\unboldmath}}
+\newcommand{\bmalpha}{\mbox{\boldmath $\alpha$\unboldmath}}
+\newcommand{\bmpsi}{\mbox{\boldmath $\psi$\unboldmath}}
+\newcommand{\bmzero}{\mbox{\boldmath $0$\unboldmath}}
+\newcommand{\bmone}{\mbox{\boldmath $1$\unboldmath}}
+\newcommand{\bmseven}{\mbox{\boldmath $7$\unboldmath}}
+
+
+\begin{document}
+
+\let\WriteBookmarks\relax
+\def\floatpagepagefraction{1}
+\def\textpagefraction{.001}
+
+
+% Short title
+%\shorttitle{Leveraging social media news}
+
+% Short author
+%\shortauthors{CV Radhakrishnan et~al.}
+
+% Main title of the paper
+\title [mode = title]{Review article: Numerical Methods for Engineering Quantum Computers}                      
+% Title footnote mark
+% eg: \tnotemark[1]
+%\tnotemark[1,2]
+
+% Title footnote 1.
+% eg: \tnotetext[1]{Title footnote text}
+% \tnotetext[<tnote number>]{<tnote text>} 
+%\tnotetext[1]{This document is the results of the research project funded by the National Science Foundation.}
+%\tnotetext[2]{The second title footnote which is a longer text matter to fill through the whole text width and overflow into another line in the footnotes area of the first page.}
+
+
+% First author
+
+% Options: Use if required
+% eg: \author[1,3]{Author Name}[type=editor,
+%       style=chinese,
+%       auid=000,
+%       bioid=1,
+%       prefix=Sir,
+%       orcid=0000-0000-0000-0000,
+%       facebook=<facebook id>,
+%       twitter=<twitter id>,
+%       linkedin=<linkedin id>,
+%       gplus=<gplus id>]
+\author[1]{Shu Liu}[orcid = https://orcid.org/0000-0003-1009-7726]
+%\fnmark[1] % Footnote of the first author
+\ead{sliu11@fsu.edu} % Email id of the first author
+%\ead[url]{www.cvr.cc, cvr@sayahna.org} % URL of the first author
+%\credit{Conceptualization of this study, Methodology, Software} % Credit authorship
+% Address/affiliation
+\affiliation[1]{organization={Department of Mathematics, Florida State University},
+    %addressline={}, 
+    city={Tallahassee},
+    % citysep={}, % Uncomment if no comma needed between city and postcode
+    postcode={32306 }, 
+    state={Florida},
+    country={USA}}
+
+% Second author
+\author[2]{Antigoni Georgiadou}[]
+\ead{georgiadoua@ornl.gov}
+
+% Third author
+\author[2]{Spancer Dong}[]
+%\fnmark[2]
+\ead{dongx@ornl.org}
+%\ead[URL]{www.sayahna.org}
+%\credit{Data curation, Writing - Original draft preparation}
+% Address/affiliation
+\affiliation[2]{organization={Oak Ridge National Laboratory},
+    % addressline={}, 
+    city={Oak Ridge},
+    % citysep={}, % Uncomment if no comma needed between city and postcode
+    postcode={37830}, 
+    state={Tennessee},
+    country={USA}}
+
+% Fourth author
+\author[1]{Eric Kubischta}[orcid = https://orcid.org/0000-0001-5451-0290]
+%\cormark[2]
+%\fnmark[1,3]
+\ead{ekubischta@fsu.edu}
+%\ead[URL]{www.stmdocs.in}
+
+% Fifth author
+\author[1]{Daniel Melton}
+\ead{dnm21b@fsu.edu}
+
+% Sixth author
+\author[3]{Stefanie Guenther}[orcid = https://orcid.org/0000-0002-6116-3722]
+\ead{guenther5@llnl.gov}
+\affiliation[3]{organization={Lawrence Livermore National Laboratory},
+city={Livermore},
+postcode={94550},
+state={California},
+country={USA}}
+
+% Seventh autthor
+\author[4]{Shi Jin}[orcid = https://orcid.org/0009-0006-2337-201X]
+\ead{shijin-m@sjtu.edu.cn}
+\affiliation[4]{organization={Shanghai Jiao Tong University},
+city={Shanghai},
+postcode={200240},
+country={China}}
+
+% Eighth author
+\author[5]{Lin Lin}[orcid = https://orcid.org/0000-0001-6860-9566]
+\ead{linlin@math.berkeley.edu}
+\affiliation[5]{organization={Department of Mathematics,
+University of California},
+city={Berkeley},
+postcode={94720},
+state={California},
+country={USA}}
+
+% Nineth author
+\author[2]{Philip Lotshaw}[orcid = https://orcid.org/0000-0002-7594-2735]
+\ead{lotshawpc@ornl.gov}
+
+% Tenth author
+\author[3]{Anders Petersson}[orcid = https://orcid.org/0000-0003-0522-7872]
+\ead{petersson1@llnl.gov}
+
+% Eleventh author
+\author[1]{Mark Sussman}[orcid = https://orcid.org/0000-0001-8238-4295]
+\ead{msussman@fsu.edu}
+% Corresponding author text
+\cormark[1] % Corresponding author indication
+\cortext[cor1]{Corresponding author}
+%\cortext[cor2]{Principal corresponding author}
+
+% Footnote text
+%\fntext[fn1]{This is the first author footnote. but is common to third author as well.}
+%\fntext[fn2]{Another author footnote, this is a very long footnote and it should be a really long footnote. But this footnote is not yet sufficiently long enough to make two lines of footnote text.}
+
+% For a title note without a number/mark
+%\nonumnote{This note has no numbers. In this work we demonstrate $a_b$ the formation Y\_1 of a new type of polariton on the interface between a cuprous oxide slab and a polystyrene micro-sphere placed on the slab.}
+
+% Here goes the abstract
+\begin{abstract}
+In the article by Herrmann et al, ``Quantum utility – definition and assessment of a practical quantum advantage,'' the quantum computer ``Application Readiness Level'' (ARL) is defined: (ARL1) ``concept with unknown potential,'' 
+(ARL2) ``beneficial in small idealized systems,'' (ARL3) ``utility indicated by theory or resource estimations,'' 
+(ARL4) ``simulated utility demonstration'' and (ARL5) ``utility demonstration on quantum hardware.'' Hermann et al posit that ARL3 has been reached via demonstrations of the Variational Quantum Eigenvalue (VQE) algorithm. In this review article, the latest activities from the computational ``digital twin'' perspective are reported on in which scientists are working hard to bring practitioners out of the Noisy Intermediate Scale Quantum (NISQ) era into an era of ``Quantum supremacy.'' In other words, this review article discusses digital twin activities that help to advance from ARL3 to ARL4, or even ARL5.  The three main categories in this review article are (1) Optimization, Control, Inverse
+problems, and exploratory simulation algorithms for Schrodinger's equation, (2) Quantum computer Error correction,
+and (3)  Quantum algorithms for benchmarking quantum computers (to include emulator algorithms like Qiskit).
+\end{abstract}
+
+% Use if graphical abstract is present
+% \begin{graphicalabstract}
+% \includegraphics{figs/grabs.pdf}
+% \end{graphicalabstract}
+
+% Research highlights
+%\begin{highlights}
+%\item Research highlights item 1
+%\item Research highlights item 2
+%\item Research highlights item 3
+%\end{highlights}
+
+% Keywords
+% Each keyword is seperated by \sep
+\begin{keywords}
+quadrupole exciton \sep polariton \sep \WGM \sep \BEC
+\end{keywords}
+
+\maketitle
+
+\section{Introduction}
+
+The motivation for this review article is the fact that Moore's law is no longer applicable \cite{moore2021cramming}.
+As quoted from Shalf \cite{shalf2020future}, ``Moore’s Law [1] is a techno-economic model that has enabled the IT industry to double the performance and functionality of digital electronics roughly every 2 years within a fixed cost, power and area. This expectation has led to a relatively stable ecosystem (e.g. electronic design automation tools, compilers, simulators and emulators) built around general-purpose processor technologies, such as the ×86, ARM and Power instruction set architectures. However, within a decade, the technological underpinnings for the process that Gordon Moore described will come to an end, as lithography gets down to atomic scale. At that point, it will be feasible to create lithographically produced devices with dimensions nearing atomic scale, where a dozen or fewer silicon atoms are present across critical device features, and will therefore represent a practical limit for implementing logic gates for digital computing [2]. Indeed, the ITRS (International Technology Roadmap for Semiconductors), which has tracked the historical improvements over the past 30 years, has projected no 
+improvements beyond 2021, as shown in figure 1, and 
+subsequently disbanded, having no further purpose. 
+The classical technological driver that has underpinned Moore’s Law for the past 50 years is failing [3] and is anticipated to flatten by 2025, as shown in figure 2. Evolving technology in the absence of Moore’s Law will require an investment now in computer architecture and the basic sciences (including materials science), to study candidate replacement materials and alternative device physics to foster continued technology scaling.'' 
+
+References one through three in the above quote 
+correspond to the following references respectively: 
+\cite{moore2021cramming}, \cite{mack2015multiple}, \cite{markov2014limits}.
+
+As further motivation for this review article,
+in Figure 3 of the article by Shalf \cite{shalf2020future}, a 
+roadmap is provided for possible paths forward when the 
+density of circuits on classical computers exceeds a critical 
+value.  There are three categories: (a) roadmap for the next ten years, (b) 20 years, and (c) ``Decades beyond exascale,'' 
+``New Models of Computation.'' For category (c), Shalf  \cite{shalf2020future} refers to the following
+prospective technology: (i) approximate computing, (ii) adiabatic reversible, (iii) Analog, (iv) Neuromorhic, and (v) 
+quantum \cite{richard1982feynman,richard1986feynman}.
+
+Of the ``new models of computation'' listed in 
+Shalf's article \cite{shalf2020future}, this review article will address the ``Numerical Methods for Engineering Quantum Computers'' aspects associated with the emerging ``quantum computing'' paradigm. As outlined by Gamble \cite{gamble2019quantum}, the development of reliable quantum computers will have a tranformative effect on computer technology. A perfectly working fifty qubit quantum computer can efficiently process $2^{50}$ pieces of data which is 1024 Terabytes (1 Petabyte)!
+
+%1024 petabytes $2^{60}$=1 exabyte
+That being said, right now we are in the 
+``Noisy Intermediate-Scale Quantum'' \cite{callison2022hybrid} (NISQ) era.  The purpose of this review article is to bring to the forefront the current research being done, from the 
+computational perspective, in order to move beyond the NISQ era.
+
+\section{Optimization, Control, Inverse
+problems, and exploratory simulation algorithms for Schrodinger's equation}
+
+%make a table: (chronological order)
+%dimension, steady/non-steady, DFT or no DFT, optimizaton?, inverse?,
+%control?, number of quantum particles? spin interaction?
+In 1982, Feit et al \cite{FEIT1982412} developed a spectral
+method for determining the eigenvalues and eigenfunctions of 
+the time independent Schrodinger equation:
+\begin{eqnarray}
+i\frac{\partial\psi}{\partial t}=-\frac{1}{2M}\nabla^{2}\psi+V(x,y)\psi
+\end{eqnarray}
+\begin{eqnarray}
+\psi(x,y,t)=\sum_{n,j}A_{nj}u_{nj}(x,y)e^{-i E_{n}t}
+\end{eqnarray}
+\begin{eqnarray}
+E_{n}u_{nj}=-\frac{1}{2M}\nabla^{2}u_{nj}+Vu_{nj},
+\end{eqnarray}
+where
+\begin{eqnarray}
+\nabla^{2}=\frac{\partial^{2}}{\partial x^{2}}+
+           \frac{\partial^{2}}{\partial y^{2}}.
+\end{eqnarray}
+\par\noindent
+In 2002, Bao et al \cite{BAO2002487} developed a time splitting
+spectral approximation for the time dependent Schrodinger equation
+in the ``semiclassical'' regime:
+\begin{eqnarray}
+iu_{t}^{\epsilon}=-\frac{\epsilon}{2}\Delta u^{\epsilon}+
+\frac{1}{\epsilon}V(x)u^{\epsilon} \hspace{10pt} x\in R^{d} \hspace{10pt}
+u^{\epsilon}(x,0)=u_{0}^{\epsilon}(x)
+\end{eqnarray}
+Bao et al report results in one and two space dimensions.
+\par\noindent
+In 2004, Zheng et al \cite{zheng2004numerical} developed a finite element
+method for finding the ground state of the lithium atom.  In otherwords,
+Zheng et al found the smallest eigenvalue and the associated eigenfunction
+for the time independent Schrodinger equation:
+\begin{eqnarray}
+E\psi=H\psi \label{time_independent}
+\end{eqnarray}
+where the Hamiltonian operator $H$ is defined as
+\begin{eqnarray}
+H=-\frac{1}{2}(\Delta_{1}+\Delta_{2}+\Delta_{3})-
+\frac{3}{r_{1}}-
+\frac{3}{r_{2}}-
+\frac{3}{r_{3}}+
+\frac{1}{r_{12}}+
+\frac{1}{r_{13}}+
+\frac{1}{r_{23}}
+\end{eqnarray}
+\begin{eqnarray}
+\Delta_{j}=\frac{\partial^{2}}{\partial x_{j}^{2}}+ 
+\frac{\partial^{2}}{\partial y_{j}^{2}}+ 
+\frac{\partial^{2}}{\partial z_{j}^{2}} \hspace{10pt} 1\le j\le 3
+\end{eqnarray}
+\begin{eqnarray}
+r_{jk}=|\vec{r}_{j}-\vec{r}_{k}| \hspace{10pt} r_{j}=|\vec{r}_{j}|
+\end{eqnarray}
+After converting from cartesian coordinate system to spherical 
+coordinate system, the authors were able to reduce the dimension of the
+problem from 9 to 6.
+\par\noindent
+In Grivopoulos' 2005 Phd thesis \cite{grivopoulos2005optimal}, methods
+were developed for the control of quantum systems.  We 
+highlight one such control problem discussed in the thesis. 
+The Lindblad equation \cite{manzano2020short,lidar2019lecture} 
+for open quantum systems is
+(see 3.7 in \cite{grivopoulos2005optimal}):
+\begin{eqnarray}
+	\dot{\rho}=-i[H,\rho]+
+	\sum_{n} K_{n}\rho K_{n}' -\frac{1}{2}
+	\{\sum_{n} K_{n}'K_{n},\rho\}
+\end{eqnarray}
+The Lindblad equation models the interaction of two quantum systems, 
+A and B, with respective Hilbert spaces $H_{A}$ and $H_{B}$.  The
+Hilbert space for the composite space is,
+\begin{eqnarray}
+	H_{AB}=H_{A}\otimes H_{B}
+\end{eqnarray}
+A general state vector on the composite space is,
+\begin{eqnarray}
+	\psi_{AB}=\psi_{A}\otimes\psi_{B}.
+\end{eqnarray}
+As stated in 
+\cite{grivopoulos2005optimal},
+``For the open system $A$ (interacting with its environment $B$), $\rho$ is 
+the state variable analogous to the vector $\psi$ for an 
+isolated quantum system.'' Expressions for $\rho$ are:
+\begin{eqnarray}
+	\rho={\mbox tr}_{B}\psi_{AB}\psi_{AB}'=
+	\sum_{ij}(\sum_{I}(\psi_{AB})^{\ast}_{iI}
+	(\psi_{AB})_{jI})e_{j}e_{i}'
+\end{eqnarray}
+Note that $\rho$ is self-adjoint, positive semi-definite, and
+$\mbox{tr}\rho=1$.  As an example of control of open quantum systems, \cite{grivopoulos2005optimal},
+considers a control problem for the laser cooling of atoms and 
+molecules. The Lindblad equation with Hamiltonian control is
+\begin{eqnarray}
+	\dot{\rho}=-i[H_{0}+V u(t),\rho]+L(\rho), \label{control}
+\end{eqnarray}
+where
+\begin{eqnarray}
+	L(\rho)=\sum_{ij}K_{ij}\rho K_{ij}^{\dag}-\frac{1}{2}
+	\{K_{ij}^{\dag}K_{ij},\rho\}
+\end{eqnarray}
+\cite{grivopoulos2005optimal}, for the $3\times 3$ case,
+determines the control, $u(t)$, in
+(\ref{control}), that maximizes $\rho_{11}(T)$ given $\rho(0)=\rho_{0}$.
+\par\noindent
+In the article by Han et al \cite{HAN2019108929}, a neural network 
+algorithm was devised for computing the ground state to the 
+time independent Schrodinger equation (\ref{time_independent}).
+The Hamiltonian operator corresponds to the Born-Oppenheimer 
+approximation \cite{https://doi.org/10.1002/andp.19273892002}
+with $N$ electrons and $M$ ions:
+\begin{eqnarray}
+\vec{r}=(\vec{r}_{1},\ldots,\vec{r}_{N}) \hspace{20pt}
+\vec{R}=(\vec{R}_{1},\ldots,\vec{R}_{M})
+\end{eqnarray}
+\begin{eqnarray}
+H(\vec{r},\vec{R})=
+-\frac{1}{2}\sum_{i=1}^{N}\nabla_{i}^{2}+
+\sum_{i=1}^{N}\sum_{j=i+1}^{N}\frac{1}{|\vec{r}_{i}-\vec{r}_{j}|}-
+\sum_{I=1}^{M}\sum_{i=1}^{N}\frac{Z_{I}}{|\vec{r}_{i}-\vec{R}_{I}|}+
+\sum_{I=1}^{M}\sum_{J=I+1}^{M}\frac{Z_{I}Z_{J}}{|\vec{R}_{I}-\vec{R}_{J}|}
+\end{eqnarray}
+It is assumed that the first $N_{\uparrow}$ electrons are spin-up and the remaining $N-N_{\uparrow}$ electrons are spin down\cite{foulkes2001quantum}.
+The trial wave functions are assumed in \cite{HAN2019108929} to be real valued, anti-symmetric, and have the following form:
+\begin{eqnarray}
+\psi(\vec{r},\vec{R})=S(\vec{r},\vec{R})
+ A^{\uparrow}(\vec{r}^{\uparrow})A^{\downarrow}(\vec{r}^{\downarrow})
+\end{eqnarray}
+\cite{HAN2019108929} represent $S$,$A^{\uparrow}$, $A^{\downarrow}$ using
+a deep neural network.  The weights and biases of the network are trained in order to minimize:
+\begin{eqnarray}
+E[\psi]=\frac{\psi^{\ast}(\vec{r},\vec{R})H\psi(\vec{r},\vec{R})d\vec{r}}
+    {\psi^{\ast}(\vec{r},\vec{R})\psi(\vec{r},\vec{R})d\vec{r}}.
+\end{eqnarray}
+\cite{HAN2019108929} represent the network parameters at epoch $t$ as,
+\begin{eqnarray}
+\vec{\Theta},
+\end{eqnarray}
+and the cost function in terms of $\vec{Theta}$ is given as,
+\begin{eqnarray}
+E[\psi]\equiv \Omega_{E_{ref}}(\vec{Theta}). \label{costmin}
+\end{eqnarray}
+The stochastic gradient descent method with learning
+rate $\eta$ is used to minimize (\ref{costmin}):
+\begin{eqnarray}
+\Theta_{t+1}=\Theta_{t}-\eta\nabla_{\vec{\Theta}} \Omega_{E_{ref}}(\vec{Theta})
+\end{eqnarray}
+\cite{HAN2019108929} report results within two percent error for 
+$\mbox{H}_{2}$ (two electrons), 
+$\mbox{Be}_{4}$ (four electrons), 
+$\mbox{LiH}_{4}$ (four electrons), 
+$\mbox{He}$ (two electrons), and
+$\mbox{H}_{10}$ (ten electrons).
+
+\par\noindent
+\cite{hermann2020deep} developed a similar method as \cite{HAN2019108929}
+for computing the ground state to the
+time independent Schrodinger equation (\ref{time_independent}).  Both
+\cite{hermann2020deep} and \cite{HAN2019108929} express the trial 
+wave functions using a neural network:
+\begin{eqnarray}
+\psi(\vec{r},\vec{R})\approx \psi_{\vec{\Theta}}(\vec{r})
+\end{eqnarray}
+\cite{hermann2020deep} report results within three percent error for
+$\mbox{H}_{2}$ (two electrons), 
+$\mbox{Be}_{4}$ (four electrons), 
+$\mbox{LiH}_{4}$ (four electrons), and
+$\mbox{B}$ (five electrons).
+
+
+\begin{enumerate}
+%\item Krantz et al (2019)\cite{krantz2019quantum}, ``A quantum engineer's guide to superconducting qubits.''
+%\item Lin et al (2016)\cite{lin2016approximating}, ``Approximating spectral densities of large matrices.''
+%\item Zhang et al (2017)\cite{zhang2017observation}, ``Observation of a many-body dynamical phase transition with a 53-qubit quantum simulator.''
+\item Günther et al (2021) \cite{9651392}, ``Quandary: An open-source C++ package for high-performance optimal control of open quantum systems.'' the article
+by Lidar (2019) \cite{lidar2019lecture} (``Lecture notes on the theory of open quantum systems'') gives the derivation of the model for open quantum systems.
+\item Günther and Petersson (2023) \cite{gunther2023practical}, ``A practical approach to determine minimal quantum gate durations using amplitude-bounded quantum controls.''
+\item Fei et al (2025) \cite{fei2025switching}, ``Switching time optimization for binary quantum optimal control.''
+\item Fei et al (2023) \cite{fei2023binary}, ``Binary control pulse optimization for quantum systems.''
+\item Kanai et al (2024) \cite{PhysRevLett.132.250603}, ``Single-Electron Qubits Based on Quantum Ring States on Solid Neon Surface.''
+\item Andrade et al (2022) \cite{Andrade_2022}, ``Engineering an effective three-spin Hamiltonian in trapped-ion systems for applications in quantum simulation.''
+\item He et al (2024) \cite{he2024efficientoptimalcontrolopen}, ``Efficient Optimal Control of Open Quantum Systems''
+%\item Nusseler et al (2020) \cite{PhysRevB.101.155134}, ``Efficient simulation of open quantum systems coupled to a fermionic bath.''
+%\item Selsto and Kvaal (2010)\cite{Selsto2010}, ``Absorbing boundary conditions for dynamical many-body quantum systems.''
+\item Hangleiter et al (2024) \cite{hangleiter2024robustly}, ``Robustly learning the Hamiltonian dynamics of a superconducting quantum processor.''
+%Shukrinov_2017_Supercond._Sci._Technol._30_024006.pdf
+%\item Shukrinov et al (2016)\cite{shukrinov2016modeling}, ``Modeling of LC-shunted intrinsic Josephson junctions in high-Tc superconductors.''
+\item Sun and Galperin (2025) \cite{sun2025control}, ``Control of open quantum systems: The nonequilibrium Green’s function perspective.''
+%\item He and Wu (2024)\cite{he2024zeroing}, ``Zeroing neural dynamics solving time-variant complex conjugate matrix equation''
+%\item Liao et al (2020)\cite{liao2020modified}, ``Modified gradient neural networks for solving the time-varying Sylvester equation with adaptive coefficients and elimination of matrix inversion''
+\item Lin Lin (2025) \cite{lin2025dissipative}, ``Dissipative preparation of many-body quantum states: Toward practical quantum advantage''
+\item Kodali and Motamarri (2025) \cite{PhysRevB.111.195129}, ``Finite-element methods for noncollinear magnetism and spin-orbit coupling in real-space pseudopotential density functional theory''
+\item Barrera et al (2025) \cite{barrera2025movingbornoppenheimerapproximation}, ``The Moving Born-Oppenheimer Approximation''
+\item Nieminen et al (2023) \cite{PhysRevB.107.174524}, ``Atomistic modeling of a superconductor--transition metal dichalcogenide--superconductor Josephson junction''
+\item Mucciolo et al (2025) \cite{mucciolo2025greensfunctionmethodscomputing}, ``Green's Function Methods for Computing Supercurrents in Josephson Junctions''
+\item Williams-Young et al (2023) \cite{williams2023distributed}, ``Distributed memory, GPU accelerated Fock construction for hybrid, Gaussian basis density functional theory''
+\item Dat-Thuc Nguyen and Vo Anh Khoa (2025) \cite{nguyen2025inversion}, ``An inversion approach to reconstruct the complex potential and intensity function in the Schr{\"o}dinger evolution equation''
+\item Meschede et al (2023) \cite{PhysRevA.107.062806}, ``Quantum scattering of spinless particles in Riemannian manifolds''
+\item Atanasov and Dandoloff (2007) \cite{atanasov2007curvature}, ``Curvature induced quantum potential on deformed surfaces''
+\item Ferrari and Cuoghi (2008) \cite{ferrari2008schrodinger}, ``Schr{\"o}dinger equation for a particle on a curved surface in an electric and magnetic field''
+\end{enumerate}
+
+\section{Quantum algorithms and Quantum emulators
+  for benchmarking quantum computers}
+
+\par\noindent
+\subsection{Quantum Emulators}
+
+The development of Quantum Emulators is essential for benchmarking quantum 
+computers since (i) the level of noise in Quantum Emulators can be prescribed exactly thereby enabling practitioners to quantify the effect of 
+noise on a given quantum circuit design, (ii)
+one can prescribe a given noise model\cite{PhysRevA.107.062406} and then
+compare emulator results with an actual quantum computer in order to 
+characterise the actual noise present in a quantum computer, and
+(iii) one can isolate quantum algorithmic problems from intrinsic
+quantum computer noise problems.
+
+A Quantum algorithm consists of (i) state preparation, 
+(ii) state measurement(s), and (iii) a sequence of unitary operation(s).
+We give an example of a naive implemention of these quantum operations
+when performed on a classical computer.
+\subsubsection{state preparation}
+Given $n$ qubits, there will be $N=2^{n}$ basis states.  For example
+if $n=3$, the standard basis is
+\begin{eqnarray*}
+\begin{array}{c}
+\ket{000}=\ket{0}\otimes \ket{0} \otimes \ket{0} \equiv \vec{\bmzero} \\
+\ket{001}=\ket{0}\otimes \ket{0} \otimes \ket{1} \equiv \vec{\bmone} \\
+\ldots \\
+\ket{111}=\ket{1}\otimes \ket{1} \otimes \ket{1} \equiv \vec{\bmseven} 
+\end{array}
+\end{eqnarray*}
+\begin{eqnarray*}
+\ket{0}=\left( \begin{array}{c} 1 \\ 0 \end{array} \right)
+\end{eqnarray*}
+\begin{eqnarray*}
+\ket{1}=\left( \begin{array}{c} 0 \\ 1 \end{array} \right)
+\end{eqnarray*}
+In general if one wants to prepare the state,
+\begin{eqnarray*}
+|\vec{\bmpsi}> \hspace{20pt} |\vec{\bmpsi}> \in C^{N},
+\end{eqnarray*}
+on a quantum computer, then one searches for as sparse a unitary matrix
+$U_{\psi}$ as possible such that,
+\begin{eqnarray*}
+U_{\psi}|\vec{\bmzero}>=|\vec{\bmpsi}>,
+\end{eqnarray*}
+or, it is ok to search for the following,
+\begin{eqnarray*}
+U_{\psi}|\vec{\bmzero}>=\frac{e^{i\theta}}{||\psi||}
+ \sum_{i_{1}i_{2}\ldots i_{n}} \psi_{i_{1}i_{2}\ldots i_{n}}
+ |i_{1}i_{2}\ldots i_{n}>.
+\end{eqnarray*}
+The indices $i_{k}$ take values in ${0,1}$,
+$\theta \in [0,2\pi)$, and
+\begin{eqnarray*}
+||\psi||^{2}=\sum_{i_{1}i_{2}\ldots i_{n}} |\psi_{i_{1}i_{2}\ldots i_{n}}|^{2}
+\end{eqnarray*}
+The Grover-Rudolph algorithm \cite{grover2002creating}, as described in
+\cite{ramacciotti2023simplequantumalgorithmefficiently} is as 
+follows:
+
+\verb=https://pennylane.ai/blog/2025/10/state-preparation=
+
+
+\begin{enumerate}
+\item (IBM) ``Quantum Computing with Qiskit'' (2024) \cite{javadi2024quantum}
+\item Wille et al (2018) \cite{wille2018computer}, ``Computer-aided design for quantum computation.''
+\item ``Intel Quantum Simulator: a cloud-ready high-performance
+ simulator of quantum circuits'' (2020) \cite{Guerreschi_Intel_Quantum_Simulator_2020}
+\item (Microsoft) ``LIQUid: A Software design architecture 
+ and domain specific language
+ for quantum computing'' (2014) \cite{1402.4467}
+\item ``QuESTlink—Mathematica embiggened by a hardware-optimised quantum emulator'' (2020) \cite{Jones_2020}
+\item (Matlab) ``QCLAB: A Matlab Toolbox for Quantum Computing'' 
+ (2025) \cite{keip2025qclabmatlabtoolboxquantum}
+\item ``PennyLane-Lightning MPI: A massively scalable quantum circuit simulator based on distributed computing in CPU clusters'' (2025) \cite{kang2025pennylane}
+\item (Google) ``qsim''(2020) \cite{quantum_ai_team_and_collaborators_2020_4023103}
+\item (nVidea) ``cuQuantum SDK: A High-Performance Library for Accelerating Quantum Science'' (2023) \cite{10313722}
+\item ``Numerical recipes in quantum information theory and quantum computing: an adventure in FORTRAN 90''(2021) \cite{ramkarthik2021numerical}
+\item Nguyen et al(2022) \cite{nguyen2022tensor}
+``Tensor network quantum virtual machine for simulating quantum circuits at exascale''
+\item Zhang et al (2024) \cite{zhang2024quantum}, ``Quantum circuit simulation with fast tensor decision diagram''
+\item Viamontes et al (2004) \cite{viamontes2004high}, ``High-performance QuIDD-based simulation of quantum circuits.''
+\item Ito and Yoshioka (2024) \cite{Ito2024}, ``Quantum computer simulation on HPC.''
+\item Xu et al (2024) \cite{xu2024atlas}, ``Atlas: Hierarchical partitioning for quantum circuit simulation on gpus''
+\item Zhang et al (2021) \cite{zhang2021hyquas}, ``HyQuas: hybrid partitioner based quantum circuit simulation system on GPU''
+\item Li et al (2021) \cite{li2021sv}, ``Sv-sim: scalable pgas-based state vector simulation of quantum circuits''
+\item Kolarovszki et al (2025) \cite{kolarovszki2025piquasso}, ``Piquasso: A photonic quantum computer simulation software platform''
+\item Lotshaw et al (2023) \cite{PhysRevA.107.062406}, ``Modeling noise in global Molmer-Sorensen interactions applied to quantum approximate optimization.''
+\item De Raedt et al (2007) \cite{de2019massively}, ``Massively parallel quantum computer simulator''
+\item De Raedt et al (2019) \cite{de2019massively}, ``Massively parallel quantum computer simulator, eleven years later.''
+\end{enumerate}
+
+\subsection{Quantum Algorithms}
+
+\begin{enumerate}
+%%cross entropy benchmark
+\item Sawaya et al (2023) \cite{10313872}, ``HamLib: A Library of Hamiltonians for Benchmarking Quantum Algorithms and Hardware.''
+\item Boixo et al (2018) \cite{boixo2018characterizing}, ``Characterizing quantum supremacy in near-term devices''
+\item Kitaev (1995) \cite{kitaev1995quantum}, ``Quantum measurements and the Abelian stabilizer problem'' (quantum phase estimation)
+\item Shor (1999) \cite{doi:10.1137/S0036144598347011}, ``Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer''
+\item Callison and Chancellor (2022) \cite{callison2022hybrid} ``Hybrid quantum-classical algorithms in the noisy intermediate-scale quantum era and beyond''
+\item Jin et al (2024) \cite{doi:10.1137/23M1563451}, ``Quantum Simulation for Quantum Dynamics with Artificial Boundary Conditions.''
+\item S. Jin, N. Liu, and Y. Yu (2024) \cite{jin2024quantum}, ``Quantum Circuits for the heat equation with physical boundary conditions via Schrodingerisation''
+\item 
+Cerezo et al (2021) \cite{cerezo2021variational} ``Variational quantum algorithms''
+\item
+Lotshaw et al (2021) \cite{doi:10.1098/rsta.2021.0414} ``Simulations of frustrated Ising Hamiltonians using quantum approximate optimization''
+\item Nielsen and Chuang (2010) \cite{nielsen2010quantum}
+``Quantum computation and quantum information'' (quantum Fourier Transform and
+quantum phase estimation)
+\item Ding and Lin (2023) \cite{ding2023simultaneous}
+``Simultaneous estimation of multiple eigenvalues with short-depth quantum circuit on early fault-tolerant quantum computers''
+\item Biamonte et al (2017) \cite{biamonte2017quantum}
+``Quantum machine learning''
+\item Benedetti et al (2019)\cite{Benedetti_2019}
+``Parameterized quantum circuits as machine learning models''
+\item Khait et al(2023) \cite{khait2023variational}
+''Variational quantum eigensolvers in the era of distributed quantum computers''
+\item Sawaya et al (2023) \cite{10313872},
+  ``HamLib: A Library of Hamiltonians for Benchmarking Quantum Algorithms and Hardware''
+\item Georgadou et al(2024) \cite{gopalakrishnan2024solving}
+	Hele-Shaw simulation on quantum computer.
+\item Kim et al (2023) \cite{kim2023evidence}, ``Evidence for the utility of quantum computing before fault tolerance''
+\item Zoufal et al (2019) \cite{zoufal2019quantum}, ``Quantum generative adversarial networks for learning and loading random distributions''
+\item Nghiem and Tzu-Chieh (2023) \cite{nghiem2023quantum}, ``Quantum algorithm for estimating largest eigenvalues''
+\item Cadi et al (2024) \cite{cadi2024folded}, ``Folded spectrum vqe: A quantum computing method for the calculation of molecular excited states''
+\item Tilly et al (2022) \cite{tilly2022variational}, ``The variational quantum eigensolver: a review of methods and best practices''
+\item Qing and Xie (2023) \cite{qing2023usevqecalculateground}, ``Use VQE to calculate the ground energy of hydrogen molecules on IBM Quantum''
+\item Ryu et al (2021) \cite{VQSVD}, ``A Variational Quantum Algorithm for Ordered SVD''
+\item Shirakawa et al (2024) \cite{PhysRevResearch.6.043008}, ``Automatic quantum circuit encoding of a given arbitrary quantum state''
+\item Harrow et al (2009) \cite{harrow2009quantum}, ``Quantum algorithm for linear systems of equations''
+\item Daribayev et al (2023) \cite{daribayev2023implementation}, 
+  ``Implementation of the hhl algorithm for solving the poisson equation on quantum simulators.''
+\item Bravo-Prieto et al (2023) \cite{bravo2023variational},
+  ''Variational quantum linear solver''
+\item Gilyen et al (2019) \cite{gilyen2019quantum},
+  ``Quantum singular value transformation and beyond: exponential improvements for quantum matrix arithmetics''
+\item Gundlach et al (2025) \cite{gundlach2025quantumadvantagecomputationalchemistry}, ``Quantum Advantage in Computational Chemistry?''
+\item Ko et al (2023) \cite{ko2023implementation}, ``Implementation of the density-functional theory on quantum computers with linear scaling with respect to the number of atoms''
+\item Jin et al (2025) \cite{jin2025quantum}, ``Quantum preconditioning method for linear systems problems via Schrodingerization''
+\item Itani et al (2024) \cite{itani2024quantum}, ``Quantum algorithm for lattice Boltzmann (QALB) simulation of incompressible fluids with a nonlinear collision term''
+\item Hibat-Allah et al (2024) \cite{hibat2024framework}, ``A framework for demonstrating practical quantum advantage: comparing quantum against classical generative models''
+\item Herrmann et al (2023) \cite{herrmann2023quantum}, ``Quantum utility--definition and assessment of a practical quantum advantage''
+\item Di Bartolomeo et al (2023) \cite{di2023noisy}, ``Noisy gates for simulating quantum computers.''
+\item De Luo et al (2025) \cite{luo2025quantumsimulationbubblenucleation}, ``Quantum simulation of bubble nucleation across a quantum phase transition.''
+\item Maciejewski et al (2024) \cite{maciejewski2024improvingquantumapproximateoptimization}, ``Improving Quantum Approximate Optimization by Noise-Directed Adaptive Remapping.''
+\item Seki et al (2025) \cite{PhysRevResearch.7.023032}, ``Simulating Floquet scrambling circuits on trapped-ion quantum computers''
+\item Rakyta et al (2024) \cite{rakyta2024highly}, ``Highly optimized quantum circuits synthesized via data-flow engines''
+\item Popovici et al (2025) \cite{popovici2025closenesscentralitybasedcircuitpartitioner}, ``A Closeness Centrality-based Circuit Partitioner for Quantum Simulations''
+\item Hsu et al (2024) \cite{Hsu31122024}, ``Toward cost-effective quantum circuit simulation with performance tuning techniques''
+\item Park et al (2022) \cite{10.1145/3524059.3532375}, ``SnuQS: scaling quantum circuit simulation using storage devices''
+\end{enumerate}
+
+\begin{comment}
+\verb=https://www.ibm.com/quantum/qiskit=
+mkdir qiskit
+cd qiskit
+pip3 install qiskit
+python3 -m venv venv_sussman
+source venv_sussman/bin/activate (this should be done every session)
+python3 -m pip install qiskit
+pip3 install qiskit-aer
+pip3 install matplotlib
+pip3 install qiskit-ibm-runtime
+python3 hadamard_gate.py
+\end{comment}
+
+\section{Quantum Error Correction algorithms and surface codes}
+
+\begin{enumerate}
+\item Shor (1995) \cite{shor1995scheme}, ``Scheme for reducing decoherence in quantum computer memory.''
+\item Anthony-Petersen et al (2024) \cite{anthony2024stress}, ``A stress-induced source of phonon bursts and quasiparticle poisoning.''
+\item Lotshaw et al (2024) \cite{PhysRevA.110.L030803}, ``Exactly solvable model of light-scattering errors in quantum simulations with metastable trapped-ion qubits.''
+\item Kubischta, Eric and Teixeira, Ian (2023) \cite{kubischta2023family}, ``Family of quantum codes with exotic transversal gates.''
+\item Barends et al (2014) \cite{barends2014superconducting}, ``Superconducting quantum circuits at the surface code threshold for fault tolerance.''
+\item Baum et al (2021) \cite{baum2021experimental}, ``Experimental deep reinforcement learning for error-robust gate-set design on a superconducting quantum computer.''
+\item Cheng and Guo (2025) \cite{cheng2025modeling}, ``Modeling correlated-noise in silicon spin qubit device.''
+%John Preskill is a coauthor (see also Preskill chapter 7 notes)
+\item Putterman et al (2025) \cite{Putterman_2025}, ``Hardware-efficient quantum error correction via concatenated bosonic qubits''
+\item Knill and Laflamme (1997) \cite{knill1997theory}, ``Theory of quantum error-correcting codes''
+\item Eastin and Knill (2009) \cite{eastin2009restrictions}, ``Restrictions on transversal encoded quantum gate sets''
+\item Ide et al (2025) \cite{ide2025fault}, ``Fault-tolerant logical measurements via homological measurement''
+\item Bravyi and Kitaev (2002) \cite{bravyi2002fermionic}, ``Fermionic quantum computation''
+\item Dennis et al (2002) \cite{dennis2002topological}, ``Topological quantum memory''
+\item Kitaev (2003) \cite{kitaev2003fault}, ``Fault-tolerant quantum computation by anyons''
+\item Roffe (2019) \cite{roffe2019quantum}, ``Quantum error correction: an introductory guide''
+\item Bluvstein et al (2024) \cite{bluvstein2024logical}, ``Logical quantum processor based on reconfigurable atom arrays''
+\item Marra (2022) \cite{marra2022majorana}, ``Majorana nanowires for topological quantum computation''
+\item L. Hormozi (2007) \cite{L_Hormozi_thesis}, ``Topological Quantum Compiling''
+\item Evered et al (2023) \cite{evered2023high}, ``High-fidelity parallel entangling gates on a neutral-atom quantum computer''
+\item Wintersperger et al (2023) \cite{wintersperger2023neutral}, ``Neutral atom quantum computing hardware: performance and end-user perspective''
+\item Gonthier et al (2022) \cite{gonthier2022measurements}, ``Measurements as a roadblock to near-term practical quantum advantage in chemistry: Resource analysis''
+\item Dalton et al (2024) \cite{dalton2024quantifying}, ``Quantifying the effect of gate errors on variational quantum eigensolvers for quantum chemistry''
+\item Nautrup et al (2019) \cite{nautrup2019optimizing}, ``Optimizing quantum error correction codes with reinforcement learning''
+\item Krinner et al (2022) \cite{krinner2022realizing}, ``Realizing repeated quantum error correction in a distance-three surface code''
+\item Stetina and Wiebe (2025) \cite{stetina2025firstquantizedquantumsimulationnonrelativistic}, ``First-Quantized Quantum Simulation of Non-Relativistic QED with Emergent Topologically Protected Coulomb Interactions''
+\item Zou and Hoi-Kwong (2025) \cite{zou2025algebraic}, ``Algebraic Topology Principles behind Topological Quantum Error Correction''
+\item Google Quantum (2025) \cite{google2025quantum}, ``Quantum error correction below the surface code threshold''
+\item Khan et al (2025) \cite{khan2025separate}, ``Separate and efficient characterization of state-preparation and measurement errors using single-qubit operations''
+\item Bonilla et al (2021) \cite{bonilla2021xzzx}, ``The XZZX surface code''
+\item Aasen et al (2025) \cite{aasen2025roadmapfaulttolerantquantum}, ``Roadmap to fault tolerant quantum computation using topological qubit arrays''
+\item K. Fujii (2015) \cite{fujii2015quantumcomputationtopologicalcodes}, ``Quantum Computation with Topological Codes: from qubit to topological fault-tolerance''
+\end{enumerate}
+
+\section{Bibliography}
+
+Two bibliographic style files (\verb+*.bst+) are provided ---
+{model1-num-names.bst} and {model2-names.bst} --- the first one can be
+used for the numbered scheme. This can also be used for the numbered
+with new options of {natbib.sty}. The second one is for the author year
+scheme. When  you use model2-names.bst, the citation commands will be
+like \verb+\citep+,  \verb+\citet+, \verb+\citealt+ etc. However when
+you use model1-num-names.bst, you may use only \verb+\cite+ command.
+
+\verb+thebibliography+ environment.  Each reference is a\linebreak
+\verb+\bibitem+ and each \verb+\bibitem+ is identified by a label,
+by which it can be cited in the text:
+
+\noindent In connection with cross-referencing and
+possible future hyperlinking it is not a good idea to collect
+more that one literature item in one \verb+\bibitem+.  The
+so-called Harvard or author-year style of referencing is enabled
+by the \LaTeX{} package {natbib}. With this package the
+literature can be cited as follows:
+
+\begin{enumerate}[\textbullet]
+\item Parenthetical: \verb+\citep{WB96}+ produces (Wettig \& Brown, 1996).
+\item Textual: \verb+\citet{ESG96}+ produces Elson et al. (1996).
+\item An affix and part of a reference:\break
+\verb+\citep[e.g.][Ch. 2]{Gea97}+ produces (e.g. Governato et
+al., 1997, Ch. 2).
+\end{enumerate}
+
+In the numbered scheme of citation, \verb+\cite{<label>}+ is used,
+since \verb+\citep+ or \verb+\citet+ has no relevance in the numbered
+scheme.  {natbib} package is loaded by {cas-sc} with
+\verb+numbers+ as default option.  You can change this to author-year
+or harvard scheme by adding option \verb+authoryear+ in the class
+loading command.  If you want to use more options of the {natbib}
+package, you can do so with the \verb+\biboptions+ command.  For
+details of various options of the {natbib} package, please take a
+look at the {natbib} documentation, which is part of any standard
+\LaTeX{} installation.
+
+\appendix
+\section{My Appendix}
+Appendix sections are coded under \verb+\appendix+.
+
+\verb+\printcredits+ command is used after appendix sections to list 
+author credit taxonomy contribution roles tagged using \verb+\credit+ 
+in frontmatter.
+
+\printcredits
+
+%% Loading bibliography style file
+% \bibliographystyle{model1-num-names}
+\bibliographystyle{cas-model2-names}
+
+% Loading bibliography database
+\bibliography{references}
+
+\end{document}
+
