@@ -498,9 +498,8 @@ characterise the actual noise present in a quantum computer, and
 quantum computer noise problems.
 
 A Quantum algorithm consists of (i) state preparation, 
-(ii) state measurement(s), and (iii) a sequence of unitary operation(s).
-We give an example of a naive implemention of these quantum operations
-when performed on a classical computer.
+(ii) state measurement(s), and (iii) a sequence of (basic) unitary operation(s).
+
 \subsubsection{state preparation}
 Given $n$ qubits, there will be $N=2^{n}$ basis states.  For example
 if $n=3$, the standard basis is
@@ -525,20 +524,20 @@ In general if one wants to prepare the state,
 on a quantum computer, then one searches for as sparse a unitary matrix
 $U_{\psi}$ as possible such that,
 \begin{eqnarray*}
-U_{\psi}|\vec{\bmzero}>=|\vec{\bmpsi}>,
+U_{\psi}\ket{\vec{\bmzero}}=\ket{\vec{\bmpsi}},
 \end{eqnarray*}
 or, it is ok to search for the following,
 \begin{eqnarray*}
-U_{\psi}|\vec{\bmzero}>=\frac{e^{i\theta}}{||\psi||}
+U_{\psi}\ket{\vec{\bmzero}}=\frac{e^{i\theta}}{||\psi||}
  \sum_{i_{1}i_{2}\ldots i_{n}} \psi_{i_{1}i_{2}\ldots i_{n}}
- |i_{1}i_{2}\ldots i_{n}>.
+ \ket{i_{1}i_{2}\ldots i_{n}}.
 \end{eqnarray*}
 The indices $i_{k}$ take values in ${0,1}$,
 $\theta \in [0,2\pi)$, and
 \begin{eqnarray*}
 ||\psi||^{2}=\sum_{i_{1}i_{2}\ldots i_{n}} |\psi_{i_{1}i_{2}\ldots i_{n}}|^{2}
 \end{eqnarray*}
-The Grover-Rudolph algorithm \cite{grover2002creating}, as described in
+The Grover-Rudolph algorithm \cite{grover2002creating} , as described in
 \cite{ramacciotti2023simplequantumalgorithmefficiently} is as 
 follows:
 
