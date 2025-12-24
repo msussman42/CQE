@@ -519,14 +519,14 @@ if $n=3$, the standard basis is
 \end{eqnarray*}
 In general if one wants to prepare the state,
 \begin{eqnarray*}
-|\vec{\bmpsi}> \hspace{20pt} |\vec{\bmpsi}> \in C^{N},
+\ket{\vec{\bmpsi}} \hspace{20pt} \ket{\vec{\bmpsi}} \in C^{N},
 \end{eqnarray*}
 on a quantum computer, then one searches for as sparse a unitary matrix
 $U_{\psi}$ as possible such that,
 \begin{eqnarray*}
 U_{\psi}\ket{\vec{\bmzero}}=\ket{\vec{\bmpsi}},
 \end{eqnarray*}
-or, it is ok to search for the following,
+or, equivalently,
 \begin{eqnarray*}
 U_{\psi}\ket{\vec{\bmzero}}=\frac{e^{i\theta}}{||\psi||}
  \sum_{i_{1}i_{2}\ldots i_{n}} \psi_{i_{1}i_{2}\ldots i_{n}}
@@ -537,12 +537,27 @@ $\theta \in [0,2\pi)$, and
 \begin{eqnarray*}
 ||\psi||^{2}=\sum_{i_{1}i_{2}\ldots i_{n}} |\psi_{i_{1}i_{2}\ldots i_{n}}|^{2}
 \end{eqnarray*}
-The Grover-Rudolph algorithm \cite{grover2002creating} , as described in
-\cite{ramacciotti2023simplequantumalgorithmefficiently} is as 
-follows:
+In preparing an $n$ qubit quantum state, if no ancillary qubits are to be
+used, then the circuit depth is $O(2^{n})$ where the circuit depth is the
+number of basic quantum computer operations that cannot be performed in 
+parallel.  As reported in \cite{PhysRevA.93.032318,plesch2011quantum}, 
+the lower and upper
+bounds on the number of CNOT gates required for state preparation of 
+$n$ qubits, with no additional ancillaries, is $(1/2)2^{n}$ and
+$(23/24)2^{n}$ respectively.  As reported in \cite{zhang2022quantum},
+an optimal circuit depth of $O(n)$ can be achieved if the number of
+ancilla qubits is $O(2^{n})$ 
+\cite{sun2023asymptotically},\cite{rosenthal2023querydepthupperbounds} 
+(Corollary 1.9).
 
-\verb=https://pennylane.ai/blog/2025/10/state-preparation=
-
+The results in \cite{sun2023asymptotically,rosenthal2023querydepthupperbounds,plesch2011quantum}
+describe a very important trade off.  The larger the state preparation
+circuit depth, the higher the odds that deocoherence ruins the prepared 
+state, on the other hand, the larger the number of ancillary qubits,
+the larger the quantum computer that must be built.  The quantum singular
+value decomposition of a dense matrix\cite{VQSVD} is an example in which
+the trade-off between circuit depth and number of ancillar qubits must
+be considered.
 
 \begin{enumerate}
 \item (IBM) ``Quantum Computing with Qiskit'' (2024) \cite{javadi2024quantum}

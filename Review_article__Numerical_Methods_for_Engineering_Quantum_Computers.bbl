@@ -1,4 +1,4 @@
-\begin{thebibliography}{130}
+\begin{thebibliography}{133}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -548,13 +548,6 @@
 \newblock \bibinfo{title}{Optimal control of quantum systems}.
 \newblock \bibinfo{publisher}{University of California, Santa Barbara}.
 %Type = Article
-\bibitem[{Grover and Rudolph(2002)}]{grover2002creating}
-\bibinfo{author}{Grover, L.}, \bibinfo{author}{Rudolph, T.},
-  \bibinfo{year}{2002}.
-\newblock \bibinfo{title}{Creating superpositions that correspond to
-  efficiently integrable probability distributions}.
-\newblock \bibinfo{journal}{arXiv preprint quant-ph/0208112} .
-%Type = Article
 \bibitem[{Guerreschi et~al.(2020)Guerreschi, Hogaboam, Baruffa and
   Sawaya}]{Guerreschi_Intel_Quantum_Simulator_2020}
 \bibinfo{author}{Guerreschi, G.G.}, \bibinfo{author}{Hogaboam, J.},
@@ -697,6 +690,17 @@
 \newblock \bibinfo{title}{Quantum algorithm for lattice boltzmann (qalb)
   simulation of incompressible fluids with a nonlinear collision term}.
 \newblock \bibinfo{journal}{Physics of Fluids} \bibinfo{volume}{36}.
+%Type = Article
+\bibitem[{Iten et~al.(2016)Iten, Colbeck, Kukuljan, Home and
+  Christandl}]{PhysRevA.93.032318}
+\bibinfo{author}{Iten, R.}, \bibinfo{author}{Colbeck, R.},
+  \bibinfo{author}{Kukuljan, I.}, \bibinfo{author}{Home, J.},
+  \bibinfo{author}{Christandl, M.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Quantum circuits for isometries}.
+\newblock \bibinfo{journal}{Phys. Rev. A} \bibinfo{volume}{93},
+  \bibinfo{pages}{032318}.
+\newblock \URLprefix \url{https://link.aps.org/doi/10.1103/PhysRevA.93.032318},
+  \DOIprefix\doi{10.1103/PhysRevA.93.032318}.
 %Type = Inproceedings
 \bibitem[{Ito and Yoshioka(2024)}]{Ito2024}
 \bibinfo{author}{Ito, N.}, \bibinfo{author}{Yoshioka, N.},
@@ -1092,6 +1096,14 @@
   for Computing Machinery}, \bibinfo{address}{New York, NY, USA}.
 \newblock \URLprefix \url{https://doi.org/10.1145/3524059.3532375},
   \DOIprefix\doi{10.1145/3524059.3532375}.
+%Type = Article
+\bibitem[{Plesch and Brukner(2011)}]{plesch2011quantum}
+\bibinfo{author}{Plesch, M.}, \bibinfo{author}{Brukner, {\v{C}}.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Quantum-state preparation with universal gate
+  decompositions}.
+\newblock \bibinfo{journal}{Physical Review A—Atomic, Molecular, and Optical
+  Physics} \bibinfo{volume}{83}, \bibinfo{pages}{032302}.
 %Type = Misc
 \bibitem[{Popovici et~al.(2025)Popovici, Lee, Ben, Yoshioka, Ito, Klymko, Camps
   and Butko}]{popovici2025closenesscentralitybasedcircuitpartitioner}
@@ -1205,15 +1217,6 @@
   data-flow engines}.
 \newblock \bibinfo{journal}{Journal of Computational Physics}
   \bibinfo{volume}{500}, \bibinfo{pages}{112756}.
-%Type = Misc
-\bibitem[{Ramacciotti et~al.(2023)Ramacciotti, Lefterovici and
-  Rotundo}]{ramacciotti2023simplequantumalgorithmefficiently}
-\bibinfo{author}{Ramacciotti, D.}, \bibinfo{author}{Lefterovici, A.I.},
-  \bibinfo{author}{Rotundo, A.F.}, \bibinfo{year}{2023}.
-\newblock \bibinfo{title}{A simple quantum algorithm to efficiently prepare
-  sparse states}.
-\newblock \URLprefix \url{https://arxiv.org/abs/2310.19309},
-  \href{http://arxiv.org/abs/2310.19309}{\tt arXiv:2310.19309}.
 %Type = Book
 \bibitem[{Ramkarthik and Solanki(2021)}]{ramkarthik2021numerical}
 \bibinfo{author}{Ramkarthik, M.}, \bibinfo{author}{Solanki, P.D.},
@@ -1227,6 +1230,13 @@
 \newblock \bibinfo{title}{Quantum error correction: an introductory guide}.
 \newblock \bibinfo{journal}{Contemporary Physics} \bibinfo{volume}{60},
   \bibinfo{pages}{226--245}.
+%Type = Misc
+\bibitem[{Rosenthal(2023)}]{rosenthal2023querydepthupperbounds}
+\bibinfo{author}{Rosenthal, G.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Query and depth upper bounds for quantum unitaries
+  via grover search}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2111.07992},
+  \href{http://arxiv.org/abs/2111.07992}{\tt arXiv:2111.07992}.
 %Type = Inproceedings
 \bibitem[{Ryu et~al.(2021)Ryu, Jung, Lee, Gwon and Kevin~Rhee}]{VQSVD}
 \bibinfo{author}{Ryu, J.}, \bibinfo{author}{Jung, J.}, \bibinfo{author}{Lee,
@@ -1320,6 +1330,17 @@
 \newblock \bibinfo{title}{Control of open quantum systems: The nonequilibrium
   green’s function perspective}.
 \newblock \bibinfo{journal}{APL Quantum} \bibinfo{volume}{2}.
+%Type = Article
+\bibitem[{Sun et~al.(2023)Sun, Tian, Yang, Yuan and
+  Zhang}]{sun2023asymptotically}
+\bibinfo{author}{Sun, X.}, \bibinfo{author}{Tian, G.}, \bibinfo{author}{Yang,
+  S.}, \bibinfo{author}{Yuan, P.}, \bibinfo{author}{Zhang, S.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Asymptotically optimal circuit depth for quantum
+  state preparation and general unitary synthesis}.
+\newblock \bibinfo{journal}{IEEE Transactions on Computer-Aided Design of
+  Integrated Circuits and Systems} \bibinfo{volume}{42},
+  \bibinfo{pages}{3301--3314}.
 %Type = Misc
 \bibitem[{team and
   collaborators(2020)}]{quantum_ai_team_and_collaborators_2020_4023103}
@@ -1419,6 +1440,14 @@
   diagram}, in: \bibinfo{booktitle}{2024 25th International Symposium on
   Quality Electronic Design (ISQED)}, \bibinfo{organization}{IEEE}. pp.
   \bibinfo{pages}{1--8}.
+%Type = Article
+\bibitem[{Zhang et~al.(2022)Zhang, Li and Yuan}]{zhang2022quantum}
+\bibinfo{author}{Zhang, X.M.}, \bibinfo{author}{Li, T.}, \bibinfo{author}{Yuan,
+  X.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Quantum state preparation with optimal circuit depth:
+  Implementations and applications}.
+\newblock \bibinfo{journal}{Physical Review Letters} \bibinfo{volume}{129},
+  \bibinfo{pages}{230504}.
 %Type = Article
 \bibitem[{Zheng et~al.(2004)Zheng, Ying and Ding}]{zheng2004numerical}
 \bibinfo{author}{Zheng, W.}, \bibinfo{author}{Ying, L.A.},
