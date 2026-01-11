@@ -558,6 +558,18 @@ the larger the quantum computer that must be built.  The quantum singular
 value decomposition of a dense matrix\cite{VQSVD} is an example in which
 the trade-off between circuit depth and number of ancillar qubits must
 be considered.
+%%Compare the state preparation algorithms of the various emulators.
+%%Qiskit:
+%%class qiskit.circuit.library.StatePreparation(params, num_qubits=None, inverse=False, label=None, normalize=False)
+The IBM Qiskit emulator\cite{javadi2024quantum} uses the algorithm
+described in Iten et al\cite{PhysRevA.93.032318} for state preparation.
+First it was reported in \cite{javadi2024quantum} that for the state
+preparation of $n$ qubits, a lower bound on the number of CNOT gates
+required is $2^{n}/2$ and an upper bound is 
+$(23/24)2^{n}$\cite{plesch2011quantum}.  In Appendix A5 of 
+\cite{javadi2024quantum}, optimized state preparation algorithms were described
+for the state preparation of $n=2$ and $n=3$ qubits\cite{ }; for $n\ge 4$, the
+algorithm from \cite{plesch2011quantum} is used. 
 
 \begin{enumerate}
 \item (IBM) ``Quantum Computing with Qiskit'' (2024) \cite{javadi2024quantum}
