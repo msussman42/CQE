@@ -275,8 +275,10 @@ That being said, right now we are in the
 ``Noisy Intermediate-Scale Quantum'' \cite{callison2022hybrid} (NISQ) era.  The purpose of this review article is to bring to the forefront the current research being done, from the 
 computational perspective, in order to move beyond the NISQ era.
 
-\section{Optimization, Control, Inverse
-problems, and exploratory simulation algorithms for Schrodinger's equation}
+\section{Numerical methods for computing solutions to Schrodinger's
+equation and Numerical methods for optimization and control in which
+the objective function corresponds to PDE constrained optimization with
+respect to Schrodinger's PDE equation}
 
 %make a table: (chronological order)
 %dimension, steady/non-steady, DFT or no DFT, optimizaton?, inverse?,
@@ -481,6 +483,22 @@ by Lidar (2019) \cite{lidar2019lecture} (``Lecture notes on the theory of open q
 \item Atanasov and Dandoloff (2007) \cite{atanasov2007curvature}, ``Curvature induced quantum potential on deformed surfaces''
 \item Ferrari and Cuoghi (2008) \cite{ferrari2008schrodinger}, ``Schr{\"o}dinger equation for a particle on a curved surface in an electric and magnetic field''
 \end{enumerate}
+
+\section{The Schrodinger inverse problem}
+
+I update my process for inverse problem with potential reconstructions and NLS equation.
+
+The time-dependent Schr\"odinger equation appeared in many studies of particle evolution in quantum dynamics of the systems of electrons, atoms, or molecules. The interactions of atom-photon in quantum optics and potential control to achieve a desired quantum state in quantum control problem are two significant applications in engineering. In the meantime, the inverse coefficient problem for Schr\"odinger equation arose but only a few numbers of works for reconstructing the complex-valued potentials recorded.
+
+Some of the very first publications in inverse problem for Schr\"odinger equation were to consider and propose an approach for 1D real-valued potentials. One of those research articles shows that a set of real initial data, Dirichlet boundary data, and partial Neumann data can uniquely and stably rebuild the real-valued spatial potential in one dimensional domain. Later, it was enhanced to allow potential reconstructions from less boundary data and extend to discontinuous principal coefficient. In addition, by measuring a single sub-boundary data, one can also reconstruct spatially real-valued potentials. Multiple-coefficient including two time-independent coefficients and potentials reconstructions in the Schr\"odinger evolution equation have been well studied. Particularly, electric potential and potential's support are  uniquely recovered from a single dynamical data.
+
+The magnetic Schr\"odinger equation has also been a spotlight in the field of inverse problem where two of the first publications in this direction claimed the stable dependence of the compactly supported magnetic field and the electric potential on the Dirichlet-to-Neumann map. The results were based on the uniqueness of modulo a gauge transform and the so-called optics geometric method. Afterward, this Dirichlet-to-Neumann map approach was expanded to a nonlinear quadratic case and to solve the time-dependent potential in a periodic medium of the non-magnetic inverse problem.
+
+Although there is a huge number of publications regarding to real-valued potential in the time-dependent Schr\"odinger equation for single-coefficients and multi-coefficients inversion approaches, articles for complex-valued potentials are rare. As far as we concern, the year 2019 saw one of the first mathematical publications that ones can determine the complex-valued electric potential via finitely many partial measurements on Neumann boundary within the entire time domain of the wave-function. Later, this approach was proven for the complex electromagnetic potential reconstruction in two-state magnetic Schr\"odinger system. Moreover, a physics-informed neural networks (PINNs) was designed to access the inversion of the 1D and 2D potential's parameters. This approach was based on the full Dirichlet-to-Neumann map and measurements on the whole boundary. PINNs then was extended for the entire potential reconstruction in saturable nonlinear Schr\"odinger equations. Another powerful method named Regularized-Newton-GMRES have also been developed for the complex potential in general nonlinear Schr\"odinger equation.
+
+From that, I think there will be at least 15 papers needed to be add.
+I will add more details on this, with formula, methods,...
+
 
 \section{Quantum algorithms and Quantum emulators
   for benchmarking quantum computers}
