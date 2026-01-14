@@ -384,8 +384,10 @@ if __name__ == "__main__":
 
     print("n_traj")
     print(n_traj)
+     #training data
     print("make_supervised_multi (Xtr,Ytr)")
     Xtr, Ytr = make_supervised_multi(train_scaled, window=window, horizon=horizon)
+     #validation data
     print("make_supervised_multi (Xva,Yva)")
     Xva, Yva = make_supervised_multi(val_scaled,   window=window, horizon=horizon)
     print(f"[DATA] Xtr: {Xtr.shape}, Ytr: {Ytr.shape} | Xva: {Xva.shape}, Yva: {Yva.shape}")
@@ -412,6 +414,7 @@ if __name__ == "__main__":
     )
 
     # Save everything
+    # to be analyzed by ONNX
     save_all_artifacts(
         model=model,
         history=history,
@@ -422,6 +425,8 @@ if __name__ == "__main__":
     )
 
     # Evaluate on a fresh trajectory + plots
+    # The following "test" data will be compared to the LSTM predicted data.
+    # Y_pred should correspond to Y_te for the first 80 percent of the data.
     print("\n[EVAL] Free-roll on a fresh test trajectory …")
     t_te, Y_te = make_trajectory(params, x0=1.25, v0=-0.8, T=T, dt=dt)
     init_hist = Y_te[:window, :]
