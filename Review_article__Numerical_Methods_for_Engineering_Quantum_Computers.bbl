@@ -1,4 +1,4 @@
-\begin{thebibliography}{133}
+\begin{thebibliography}{139}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -205,6 +205,13 @@
 \newblock \bibinfo{title}{The moving born-oppenheimer approximation}.
 \newblock \URLprefix \url{https://arxiv.org/abs/2502.17557},
   \href{http://arxiv.org/abs/2502.17557}{\tt arXiv:2502.17557}.
+%Type = Article
+\bibitem[{Bassi and Deckert(2008)}]{bassi2008noise}
+\bibinfo{author}{Bassi, A.}, \bibinfo{author}{Deckert, D.A.},
+  \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{Noise gates for decoherent quantum circuits}.
+\newblock \bibinfo{journal}{Physical Review A—Atomic, Molecular, and Optical
+  Physics} \bibinfo{volume}{77}, \bibinfo{pages}{032323}.
 %Type = Article
 \bibitem[{Baum et~al.(2021)Baum, Amico, Howell, Hush, Liuzzi, Mundada, Merkh,
   Carvalho and Biercuk}]{baum2021experimental}
@@ -1265,6 +1272,16 @@
   \bibinfo{pages}{389--390}.
 \newblock \DOIprefix\doi{10.1109/QCE57702.2023.10296}.
 %Type = Article
+\bibitem[{Sawaya et~al.(2016)Sawaya, Smelyanskiy, McClean and
+  Aspuru-Guzik}]{sawaya2016error}
+\bibinfo{author}{Sawaya, N.P.}, \bibinfo{author}{Smelyanskiy, M.},
+  \bibinfo{author}{McClean, J.R.}, \bibinfo{author}{Aspuru-Guzik, A.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Error sensitivity to environmental noise in quantum
+  circuits for chemical state preparation}.
+\newblock \bibinfo{journal}{Journal of chemical theory and computation}
+  \bibinfo{volume}{12}, \bibinfo{pages}{3097--3108}.
+%Type = Article
 \bibitem[{Seki et~al.(2025)Seki, Kikuchi, Hayata and
   Yunoki}]{PhysRevResearch.7.023032}
 \bibinfo{author}{Seki, K.}, \bibinfo{author}{Kikuchi, Y.},
@@ -1283,6 +1300,26 @@
 \newblock \bibinfo{title}{The future of computing beyond moore’s law}.
 \newblock \bibinfo{journal}{Philosophical Transactions of the Royal Society A}
   \bibinfo{volume}{378}, \bibinfo{pages}{20190061}.
+%Type = Article
+\bibitem[{Shende et~al.(2006)Shende, Bullock and Markov}]{1629135}
+\bibinfo{author}{Shende, V.}, \bibinfo{author}{Bullock, S.},
+  \bibinfo{author}{Markov, I.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Synthesis of quantum-logic circuits}.
+\newblock \bibinfo{journal}{IEEE Transactions on Computer-Aided Design of
+  Integrated Circuits and Systems} \bibinfo{volume}{25},
+  \bibinfo{pages}{1000--1010}.
+\newblock \DOIprefix\doi{10.1109/TCAD.2005.855930}.
+%Type = Article
+\bibitem[{Shinde et~al.(2025)Shinde, Budinski, Niemim{\"a}ki, Lahtinen, Liebelt
+  and Li}]{shinde2025utilizing}
+\bibinfo{author}{Shinde, T.}, \bibinfo{author}{Budinski, L.},
+  \bibinfo{author}{Niemim{\"a}ki, O.}, \bibinfo{author}{Lahtinen, V.},
+  \bibinfo{author}{Liebelt, H.}, \bibinfo{author}{Li, R.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Utilizing classical programming principles in the
+  intel quantum sdk: implementation of quantum lattice boltzmann method}.
+\newblock \bibinfo{journal}{ACM Transactions on Quantum Computing}
+  \bibinfo{volume}{6}, \bibinfo{pages}{1--18}.
 %Type = Article
 \bibitem[{Shirakawa et~al.(2024)Shirakawa, Ueda and
   Yunoki}]{PhysRevResearch.6.043008}
@@ -1457,6 +1494,15 @@
 \newblock \bibinfo{journal}{Applied mathematics and computation}
   \bibinfo{volume}{153}, \bibinfo{pages}{685--695}.
 %Type = Article
+\bibitem[{{\v{Z}}nidari{\v{c}} et~al.(2008){\v{Z}}nidari{\v{c}}, Giraud and
+  Georgeot}]{vznidarivc2008optimal}
+\bibinfo{author}{{\v{Z}}nidari{\v{c}}, M.}, \bibinfo{author}{Giraud, O.},
+  \bibinfo{author}{Georgeot, B.}, \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{Optimal number of controlled-not gates to generate a
+  three-qubit state}.
+\newblock \bibinfo{journal}{Physical Review A—Atomic, Molecular, and Optical
+  Physics} \bibinfo{volume}{77}, \bibinfo{pages}{032320}.
+%Type = Article
 \bibitem[{Zou and Lo(2025)}]{zou2025algebraic}
 \bibinfo{author}{Zou, X.}, \bibinfo{author}{Lo, H.K.}, \bibinfo{year}{2025}.
 \newblock \bibinfo{title}{Algebraic topology principles behind topological
@@ -1470,5 +1516,16 @@
   and loading random distributions}.
 \newblock \bibinfo{journal}{npj Quantum Information} \bibinfo{volume}{5},
   \bibinfo{pages}{103}.
+%Type = Article
+\bibitem[{Zylberman and Debbasch(2024)}]{PhysRevA.109.042401}
+\bibinfo{author}{Zylberman, J.}, \bibinfo{author}{Debbasch, F.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Efficient quantum state preparation with walsh
+  series}.
+\newblock \bibinfo{journal}{Phys. Rev. A} \bibinfo{volume}{109},
+  \bibinfo{pages}{042401}.
+\newblock \URLprefix
+  \url{https://link.aps.org/doi/10.1103/PhysRevA.109.042401},
+  \DOIprefix\doi{10.1103/PhysRevA.109.042401}.
 
 \end{thebibliography}
