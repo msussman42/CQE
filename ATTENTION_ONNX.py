@@ -228,21 +228,22 @@ class MultiHeadAttentionBlock(layers.Layer):
         self.dropout1 = layers.Dropout(rate)
         self.dropout2 = layers.Dropout(rate)
 
-    def call(self, inputs, training):
+    def call(self, inputs):
         # Self-attention: query, key, and value are all the same input
-        attn_output = self.att(inputs, inputs, inputs)
-        attn_output = self.dropout1(attn_output, training=training)
+        attn_output = self.att(inputs, inputs)
+        attn_output = self.dropout1(attn_output)
         # Add & Norm
         out1 = self.layernorm1(inputs + attn_output)
 
         # Feed Forward
         ffn_output = self.ffn(out1)
-        ffn_output = self.dropout2(ffn_output, training=training)
+        ffn_output = self.dropout2(ffn_output)
         # Add & Norm
         return self.layernorm2(out1 + ffn_output)
 
 
 
+#https://keras.io/examples/nlp/text_classification_with_transformer/
 def build_attention_fused(window, out_dim, units=96, dropout=0.10, num_dense=64):
 
     """Standard fused ATTENTION layer (single ONNX ATTENTION node)."""
@@ -252,7 +253,7 @@ def build_attention_fused(window, out_dim, units=96, dropout=0.10, num_dense=64)
     embed_dim = 32  # Output dimension of the attention block
     num_heads = 2   # Number of attention heads
     ff_dim = num_dense     # Hidden layer size in feed forward network
-    inputs = keras.Input(shape=input_shape)
+    inputs = layers.Input(shape=input_shape)
     # Add a custom MultiHeadAttention block
     x = MultiHeadAttentionBlock(embed_dim, num_heads, ff_dim)(inputs)
     x = layers.GlobalAveragePooling1D()(x) # Pooling layer
