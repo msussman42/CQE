@@ -73,10 +73,6 @@ Open https://netron.app
 → drag in  artifacts/model.onnx  (detailed graph)
 → or  artifacts/my_model.keras   (compact graph)
 
-───────────────────────────────────────────────────────────────
-NOTES:
-- Set USE_DECOMPOSED = False for a compact single ATTENTION node.
-───────────────────────────────────────────────────────────────
 Summary of commands (for Linux terminal / prompt)
 # 1. Create & activate environment
 python3 -m venv venv_sussman
@@ -113,8 +109,6 @@ from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.utils import plot_model
 import joblib
-
-USE_DECOMPOSED = False 
 
 # Optional deps (skip ONNX if not present/compatible)
 try:
@@ -250,16 +244,17 @@ def build_attention_fused(window, out_dim, units=96, dropout=0.10, num_dense=64)
 
 # Define input shape: (batch_size, sequence_length, feature_dimension)
     input_shape=(window,2)
-    embed_dim = 32  # Output dimension of the attention block
+    embed_dim = 2*window  # Output dimension of the attention block
     num_heads = 2   # Number of attention heads
     ff_dim = num_dense     # Hidden layer size in feed forward network
-    inputs = layers.Input(shape=input_shape)
+    inputs = layers.Input(name="input_layer",shape=input_shape)
     # Add a custom MultiHeadAttention block
-    x = MultiHeadAttentionBlock(embed_dim, num_heads, ff_dim)(inputs)
+    x = MultiHeadAttentionBlock(embed_dim, num_heads, embed_dim)(inputs)
     x = layers.GlobalAveragePooling1D()(x) # Pooling layer
-    outputs = layers.Dense(out_dim, activation="sigmoid")(x) # Output layer
+    x = layers.Dense(num_dense, activation="sigmoid",name="dense")(x) 
+    outputs = layers.Dense(out_dim, activation="sigmoid",name="dense_1")(x) 
     # Build the model using the Functional API
-    model = keras.Model(inputs=inputs, outputs=outputs)
+    model = keras.Model(inputs=inputs, outputs=outputs,name="sequential_decomposed")
 
     model.compile(optimizer=keras.optimizers.Adam(1e-3), loss="mse")
     return model
@@ -331,8 +326,7 @@ def save_all_artifacts(model, history, scaler, params, Xtr, Ytr, cfg):
                   omega0=float(params.omega0),
                   zeta=float(params.zeta),
                   Xtr_shape=tuple(Xtr.shape),
-                  Ytr_shape=tuple(Ytr.shape),
-                  use_decomposed=USE_DECOMPOSED)
+                  Ytr_shape=tuple(Ytr.shape))
     with open(out / "config.json", "w") as f:
         json.dump(config, f, indent=2)
 
@@ -383,7 +377,7 @@ if __name__ == "__main__":
     UNITS, DROPOUT, NUM_DENSE = 6, 0.10, 4
 
     print(f"[CFG] T={T}, dt={dt}, window={window}, horizon={horizon}, "
-          f"n_traj={n_traj}, epochs={EPOCHS}, units={UNITS}, decomposed={USE_DECOMPOSED}")
+          f"n_traj={n_traj}, epochs={EPOCHS}, units={UNITS}")
 
     # Data
     all_t, all_Y, params = generate_dataset(n_traj=n_traj, T=T, dt=dt, seed=123)
