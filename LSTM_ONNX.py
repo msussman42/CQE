@@ -115,9 +115,6 @@ from tensorflow.keras import layers
 from tensorflow.keras.utils import plot_model
 import joblib
 
-# ------------ Toggle: decomposed vs fused LSTM ------------
-USE_DECOMPOSED = True   # True => expanded gate-level graph; False => single fused LSTM
-
 # Optional deps (skip ONNX if not present/compatible)
 try:
     import tf2onnx
@@ -218,17 +215,6 @@ def make_supervised_multi(trajs, window=50, horizon=1):
 # -----------------------------
 # 3) Models
 # -----------------------------
-def build_lstm_fused(window, out_dim, units=96, dropout=0.10, num_dense=64):
-    """Standard fused LSTM layer (single ONNX LSTM node)."""
-    model = keras.Sequential([
-        layers.Input(name="input_layer", shape=(window, 2)),
-        layers.LSTM(units, name="lstm"),
-        layers.Dropout(dropout, name="dropout"),
-        layers.Dense(num_dense, activation="relu", name="dense"),
-        layers.Dense(out_dim, name="dense_1")
-    ], name="sequential")
-    model.compile(optimizer=keras.optimizers.Adam(1e-3), loss="mse")
-    return model
 
 def build_lstm_decomposed(window, out_dim, units=96, dropout=0.10, num_dense=64):
     """
@@ -313,8 +299,7 @@ def save_all_artifacts(model, history, scaler, params, Xtr, Ytr, cfg):
                   omega0=float(params.omega0),
                   zeta=float(params.zeta),
                   Xtr_shape=tuple(Xtr.shape),
-                  Ytr_shape=tuple(Ytr.shape),
-                  use_decomposed=USE_DECOMPOSED)
+                  Ytr_shape=tuple(Ytr.shape))
     with open(out / "config.json", "w") as f:
         json.dump(config, f, indent=2)
 
@@ -365,7 +350,7 @@ if __name__ == "__main__":
     UNITS, DROPOUT, NUM_DENSE = 6, 0.10, 4
 
     print(f"[CFG] T={T}, dt={dt}, window={window}, horizon={horizon}, "
-          f"n_traj={n_traj}, epochs={EPOCHS}, units={UNITS}, decomposed={USE_DECOMPOSED}")
+          f"n_traj={n_traj}, epochs={EPOCHS}, units={UNITS}")
 
     # Data
     all_t, all_Y, params = generate_dataset(n_traj=n_traj, T=T, dt=dt, seed=123)
@@ -393,10 +378,7 @@ if __name__ == "__main__":
     print(f"[DATA] Xtr: {Xtr.shape}, Ytr: {Ytr.shape} | Xva: {Xva.shape}, Yva: {Yva.shape}")
 
     # Model + train
-    if USE_DECOMPOSED:
-        model = build_lstm_decomposed(window=window, out_dim=2*horizon, units=UNITS, dropout=DROPOUT,num_dense=NUM_DENSE)
-    else:
-        model = build_lstm_fused(window=window, out_dim=2*horizon, units=UNITS, dropout=DROPOUT,num_dense=NUM_DENSE)
+    model = build_lstm_decomposed(window=window, out_dim=2*horizon, units=UNITS, dropout=DROPOUT,num_dense=NUM_DENSE)
 
     model.summary()
     cbs = [

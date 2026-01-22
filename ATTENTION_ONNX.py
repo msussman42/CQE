@@ -207,52 +207,86 @@ def make_supervised_multi(trajs, window=50, horizon=1):
         i_traj=i_traj+1
     return np.array(X, np.float32), np.array(Y, np.float32)
 
-# -----------------------------
-# 3) Models
-# -----------------------------
-class MultiHeadAttentionBlock(layers.Layer):
-    def __init__(self, embed_dim, num_heads, ff_dim, rate=0.1):
-        super(MultiHeadAttentionBlock, self).__init__()
-        self.att = layers.MultiHeadAttention(num_heads=num_heads, key_dim=embed_dim)
-        self.ffn = keras.Sequential(
-            [layers.Dense(ff_dim, activation="relu"), layers.Dense(embed_dim),]
-        )
-        self.layernorm1 = layers.LayerNormalization(epsilon=1e-6)
-        self.layernorm2 = layers.LayerNormalization(epsilon=1e-6)
-        self.dropout1 = layers.Dropout(rate)
-        self.dropout2 = layers.Dropout(rate)
-
-    def call(self, inputs):
-        # Self-attention: query, key, and value are all the same input
-        attn_output = self.att(inputs, inputs)
-        attn_output = self.dropout1(attn_output)
-        # Add & Norm
-        out1 = self.layernorm1(inputs + attn_output)
-
-        # Feed Forward
-        ffn_output = self.ffn(out1)
-        ffn_output = self.dropout2(ffn_output)
-        # Add & Norm
-        return self.layernorm2(out1 + ffn_output)
-
-
 
 #https://keras.io/examples/nlp/text_classification_with_transformer/
-def build_attention_fused(window, out_dim, units=96, dropout=0.10, num_dense=64):
+def build_attention_decomposed(window, out_dim, units=96, dropout=0.10, num_dense=64):
 
-    """Standard fused ATTENTION layer (single ONNX ATTENTION node)."""
+    num_components=2
 
-# Define input shape: (batch_size, sequence_length, feature_dimension)
-    input_shape=(window,2)
-    embed_dim = 2*window  # Output dimension of the attention block
-    num_heads = 2   # Number of attention heads
+    input_shape=(window,num_components)
+
+    embed_dim = num_components*window  
+    num_heads = 1   # Number of attention heads
     ff_dim = num_dense     # Hidden layer size in feed forward network
+    dropout_rate=dropout
+
+    #The tf.keras.layers.Input layer itself doesn't have a default batch 
+    #size; rather, the batch dimension (the first dimension) is typically 
+    #set to None, meaning it can be variable, allowing your model to handle 
+    #any batch size during training/prediction. However, when using methods 
+    #like model.fit() or model.predict(), Keras uses a default batch size of 
+    #32 if you don't specify one in the method call or the batch_input_shape 
+    #argument of the Input layer. 
+    #in this code: BATCH=256 (see model.fit call)
+
     inputs = layers.Input(name="input_layer",shape=input_shape)
-    # Add a custom MultiHeadAttention block
-    x = MultiHeadAttentionBlock(embed_dim, num_heads, embed_dim)(inputs)
-    x = layers.GlobalAveragePooling1D()(x) # Pooling layer
-    x = layers.Dense(num_dense, activation="sigmoid",name="dense")(x) 
-    outputs = layers.Dense(out_dim, activation="sigmoid",name="dense_1")(x) 
+
+    #print("inputs.shape is")
+    #print(inputs.shape)
+
+    mask=None
+
+    #query,value,key (all equal to inputs)
+    attention_out=layers.MultiHeadAttention(num_heads=num_heads,key_dim=embed_dim)(query=inputs,value=inputs,key=inputs,attention_mask=mask)
+
+    #print("attention_out.shape is")
+    #print(attention_out.shape)
+
+    attention_out=layers.Dropout(dropout_rate)(attention_out)
+
+    #print("attention_out.shape is(after dropout)")
+    #print(attention_out.shape)
+
+    #add and norm
+    attention_out2=layers.LayerNormalization(epsilon=1e-6)(inputs+attention_out)
+
+    #print("attention_out2.shape is")
+    #print(attention_out2.shape)
+
+
+    #Feed Forward
+    ffn_output_a=layers.Dense(ff_dim,activation="relu",name="dense_1")(attention_out2)
+
+    #print("ffn_output_a.shape is")
+    #print(ffn_output_a.shape)
+
+    ffn_output_b=layers.Dense(num_components,name="dense_2")(ffn_output_a)
+
+    #print("ffn_output_b.shape is")
+    #print(ffn_output_b.shape)
+
+    ffn_output_b=layers.Dropout(dropout_rate)(ffn_output_b) 
+
+    #print("ffn_output_b.shape is(after dropout)")
+    #print(ffn_output_b.shape)
+
+    attention_out3=layers.LayerNormalization(epsilon=1e-6)(attention_out2+ffn_output_b)
+
+    #print("attention_out3.shape is")
+    #print(attention_out3.shape)
+
+    pooled_output = layers.GlobalAveragePooling1D()(attention_out3) # Pooling layer
+
+    #print("pooled_output.shape is")
+    #print(pooled_output.shape)
+
+    outputs = layers.Dense(num_components, activation="sigmoid",name="dense_3")(pooled_output) 
+
+    #print("outputs.shape is")
+    #print(outputs.shape)
+
+    #exit()
+
     # Build the model using the Functional API
     model = keras.Model(inputs=inputs, outputs=outputs,name="sequential_decomposed")
 
@@ -404,7 +438,7 @@ if __name__ == "__main__":
     Xva, Yva = make_supervised_multi(val_scaled,   window=window, horizon=horizon)
     print(f"[DATA] Xtr: {Xtr.shape}, Ytr: {Ytr.shape} | Xva: {Xva.shape}, Yva: {Yva.shape}")
 
-    model = build_attention_fused(window=window, out_dim=2*horizon, units=UNITS, dropout=DROPOUT,num_dense=NUM_DENSE)
+    model = build_attention_decomposed(window=window, out_dim=2*horizon, units=UNITS, dropout=DROPOUT,num_dense=NUM_DENSE)
 
     model.summary()
     cbs = [
