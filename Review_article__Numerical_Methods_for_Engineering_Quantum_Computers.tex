@@ -82,6 +82,8 @@
 \newcommand{\bmzero}{\mbox{\boldmath $0$\unboldmath}}
 \newcommand{\bmone}{\mbox{\boldmath $1$\unboldmath}}
 \newcommand{\bmseven}{\mbox{\boldmath $7$\unboldmath}}
+\newcommand{\bmui}{\mbox{\boldmath $u_{i}$\unboldmath}}
+\newcommand{\bmuj}{\mbox{\boldmath $u_{j}$\unboldmath}}
 
 
 \begin{document}
@@ -420,14 +422,14 @@ E[\psi]=\frac{\psi^{\ast}(\vec{r},\vec{R})H\psi(\vec{r},\vec{R})d\vec{r}}
 \begin{eqnarray}
 \vec{\Theta},
 \end{eqnarray}
-and the cost function in terms of $\vec{Theta}$ is given as,
+and the cost function in terms of $\vec{\Theta}$ is given as,
 \begin{eqnarray}
-E[\psi]\equiv \Omega_{E_{ref}}(\vec{Theta}). \label{costmin}
+E[\psi]\equiv \Omega_{E_{ref}}(\vec{\Theta}). \label{costmin}
 \end{eqnarray}
 The stochastic gradient descent method with learning
 rate $\eta$ is used to minimize (\ref{costmin}):
 \begin{eqnarray}
-\Theta_{t+1}=\Theta_{t}-\eta\nabla_{\vec{\Theta}} \Omega_{E_{ref}}(\vec{Theta})
+\Theta_{t+1}=\Theta_{t}-\eta\nabla_{\vec{\Theta}} \Omega_{E_{ref}}(\vec{\Theta})
 \end{eqnarray}
 \cite{HAN2019108929} report results within two percent error for 
 $\mbox{H}_{2}$ (two electrons), 
@@ -515,10 +517,14 @@ characterise the actual noise present in a quantum computer, and
 (iii) one can isolate quantum algorithmic problems from intrinsic
 quantum computer noise problems.
 
-A Quantum algorithm consists of (i) state preparation, 
-(ii) state measurement(s), and (iii) a sequence of (basic) unitary operation(s).
+A Quantum algorithm consists of (i) state preparation and measurement 
+and (ii) a sequence of (basic) unitary operation(s).
 
-\subsubsection{state preparation}
+\subsubsection{state preparation and measurement}
+
+\par\noindent
+\textbf{1. State Preparation.}
+\par\noindent
 Given $n$ qubits, there will be $N=2^{n}$ basis states.  For example
 if $n=3$, the standard basis is
 \begin{eqnarray*}
@@ -557,7 +563,7 @@ $\theta \in [0,2\pi)$, and
 \end{eqnarray*}
 In preparing an $n$ qubit quantum state, if no ancillary qubits are to be
 used, then the circuit depth is $O(2^{n})$ where the circuit depth is the
-number of basic quantum computer operations that cannot be performed in 
+number of ``basic'' quantum computer operations that cannot be performed in 
 parallel.  As reported in \cite{PhysRevA.93.032318,plesch2011quantum}, 
 the lower and upper
 bounds on the number of CNOT gates required for state preparation of 
@@ -567,7 +573,7 @@ an optimal circuit depth of $O(n)$ can be achieved if the number of
 ancilla qubits is $O(2^{n})$ 
 \cite{sun2023asymptotically},\cite{rosenthal2023querydepthupperbounds} 
 (Corollary 1.9).
-
+\par\noindent
 The results in \cite{sun2023asymptotically,rosenthal2023querydepthupperbounds,plesch2011quantum}
 describe a very important trade off.  The larger the state preparation
 circuit depth, the higher the odds that deocoherence ruins the prepared 
@@ -576,6 +582,102 @@ the larger the quantum computer that must be built.  The quantum singular
 value decomposition of a dense matrix\cite{VQSVD} is an example in which
 the trade-off between circuit depth and number of ancillar qubits must
 be considered.
+\par\noindent
+\textbf{2. Measurement.}
+\par\noindent
+On a $n$ qubit system, if one wants to make a measurement of the
+state $\ket{\psi}$,
+\begin{eqnarray}
+\ket{\psi}=\sum_{i=0}^{2^{n}-1} \alpha_{i}\ket{\bmi}, \label{statestandard}
+\end{eqnarray}
+with respect to the standard basis then one can proceed as follows:
+\begin{enumerate}
+\item Define a complete set of
+  projection operators $P_{j}$, $j=0,\ldots,J-1$; e.g.,
+  \begin{eqnarray}
+  P_{j}=\ket{\bmj}\bra{\bmj} \hspace{20pt} J=2^{n}. \label{def_proj}
+  \end{eqnarray}
+  It is required that,
+  \begin{eqnarray*}
+  \sum_{j=0}^{J-1} P_{j}=\mbox{I}.
+  \end{eqnarray*}
+\item The probability of getting an outcome $j$ on measuring the
+  observable $P_{j}$  is given by,
+  \begin{eqnarray*}
+  p(j)=\bra{\psi}P_{j}\ket{\psi},
+  \end{eqnarray*}
+  and the normalized state after the measurement is given by,
+  \begin{eqnarray}
+  \ket{\psi'}=\frac{P_{j}\ket{\psi}}{\sqrt{\bra{\psi}P_{j}\ket{\psi}}}.
+     \label{aftermeas}
+  \end{eqnarray}
+\end{enumerate}
+In order to make a measurement in an arbitrary basis\cite{AWSmeasure}, then
+one can proceed as follows:
+\begin{enumerate}
+\item create a unitary matrix $U$ with the arbitrary basis vectors,
+  \begin{eqnarray*}
+  \ket{\bmu_{0}},\ldots,\ket{\bmu_{2^{n}-1}},
+  \end{eqnarray*}
+  as columns.
+\item Apply $U^{\dag}$:
+  \begin{eqnarray*}
+  \ket{\tilde{\psi}}=U^{\dag}\ket{\psi}.
+  \end{eqnarray*}
+  The coefficients with respect to the new basis are now the
+  coefficients of $\ket{\tilde{\psi}}$ with respect to the standard basis:
+  \begin{eqnarray*}
+  \ket{\tilde\psi}=\sum_{i=0}^{2^{n}-1} \beta_{i}\ket{\bmi} \hspace{20pt}
+     \ket{\psi}=\sum_{i=0}^{2^{n}-1} \beta_{i}\ket{\bmui}
+  \end{eqnarray*}
+\item Measure $\ket{\tilde\psi}$ using the same steps as if one was
+   making a measurement with respect to the standard basis, except that
+   one must multiply the measured state (\ref{aftermeas}) by $U$:
+   \begin{eqnarray}
+   \ket{\psi'}=\frac{U P_{j}\ket{\tilde{\psi}}}{\sqrt{\bra{\tilde{\psi}}P_{j}\ket{\tilde{\psi}}}}.
+   \end{eqnarray}
+
+\end{enumerate}
+\par\noindent
+Another way to think about making a measurement in an arbitrary 
+basis is to first define the projectors,
+\begin{eqnarray}
+P_{j}\equiv \ket{\bmuj}\bra{\bmuj} \hspace{20pt} j=0,\ldots, 2^{n}-1.
+ \label{projector}
+\end{eqnarray}
+Then, one measures $\ket{\psi}$ with respect to the projectors in
+(\ref{projector}) which is equivalent to measuring $\ket{\tilde{\psi}}$
+with respect to the standard basis and then multiplying the result by
+$U$.  
+\par\noindent
+One can define an ``Observable'' as follows,
+\begin{eqnarray}
+A=\lambda_{0}P_{0}+\lambda_{1}P_{1}+\ldots+\lambda_{2^{n}-1}P_{2^{n}-1}
+\end{eqnarray}
+where the eigenvalues of A are $\lambda_{j}$ and the corresponding
+eigenvectors of A are $\ket{\bmuj}$.  As quoted from \cite{AWSmeasure},
+``when we measure an observable $A$ in a state $\ket{\psi}$, each 
+measurement yields exactly one of the eigenvalues $\lambda_{j}$.  The 
+probability of obtaining $\lambda_{j}$ is,
+\begin{eqnarray}
+p(j)=\bra{\psi}P_{j}\ket{\psi}.
+\end{eqnarray}
+Upon measurement, the state ``collapses'' to a new state
+\begin{eqnarray}
+\frac{P_{j}\ket{\psi}}{\sqrt{\bra{\psi}P_{j}\ket{\psi}}}.
+\end{eqnarray}
+The denominator is the normalization factor to account for the
+unit normal requirement of a quantum state.''
+\par\noindent
+A very fundamental benchmark test is to repeatedly (a) prepare a given state, 
+and (b) measure the state with respect to an observable $A$.  In what follows, 
+many quantum emulators are compared and contrasted with respect to
+their (i) state preparation algorithm, (ii) noise modeling, 
+(iii) parallel capability, (iv) vectorizable capability, and 
+(v) ability to test quantum error correction algorithms for a given
+noise level.
+ 
+\par\noindent 
 %%Compare the state preparation algorithms of the various emulators.
 %%Qiskit:
 %%class qiskit.circuit.library.StatePreparation(params, num_qubits=None, inverse=False, label=None, normalize=False)
@@ -629,6 +731,7 @@ available on the Intel Quantum Simulator
 \item Lotshaw et al (2023) \cite{PhysRevA.107.062406}, ``Modeling noise in global Molmer-Sorensen interactions applied to quantum approximate optimization.''
 \item De Raedt et al (2007) \cite{de2019massively}, ``Massively parallel quantum computer simulator''
 \item De Raedt et al (2019) \cite{de2019massively}, ``Massively parallel quantum computer simulator, eleven years later.''
+\item Amazon Braket
 \end{enumerate}
 
 \subsection{Quantum Algorithms}
