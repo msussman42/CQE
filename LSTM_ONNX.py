@@ -339,15 +339,41 @@ def save_all_artifacts(model, history, scaler, params, Xtr, Ytr, cfg):
 if __name__ == "__main__":
     tf.random.set_seed(42); np.random.seed(42)
 
+#number of equations in the system is 2,
+#the input layer shape is (None,window,2) None=>Batch size is initialized 
+#later (model.fit).
+#lstm_unrolled shape=(None, UNITS) number of 
+#parameters lstm_unrolled=4*(UNITS*2+UNITS*UNITS+UNITS)
+#UNITS=number neurons in the LSTM layer.
+#f_t=sigma(Wf x_t + Uf h_{t-1} +bf)
+#i_t=sigma(Wi x_t + Ui h_{t-1} +bi)
+#o_t=sigma(Wo x_t + Uo h_{t-1} +bo)
+#\tilde{c}_t=sigma(Wc x_t + Uc h_{t-1} +bc)
+#4*(UNITS*2+UNITS*UNITS+UNITS)
+#referring to the wikipedia LSTM website for "LSTM with a forget gas:
+#d=2
+#h=UNITS
+#dense=(None,NUM_DENSE) 
+#number of parameters(dense)=UNITS*NUM_DENSE (weight)+NUM_DENSE (bias)
+#dense_1=(None,2) number parameters(dense_1)=NUM_DENSE * 2 + 2  weight matrix is
+#NUM_DENSE x 2  bias matrix is 2 x 1
+#loss function="mse"="mean square error"
+#loss=sum_k=1^{num_windows*num_traj} sum_i=1^{window} sum_j=1^2 
+#   ||x^{expect}_{i,j,k}-x^{net}(x_{i-1,j,k},theta)||^2
+#The smaller the size of "window," the more vectorizable the code is,
+#but less accurate!
+#The larger window size is less vectorizable, but more accurate.
     # Config
     #T, dt = 20.0, 0.01
-    T, dt = 0.08, 0.01
+    T, dt = 1.0, 0.01
+    #T, dt = 0.08, 0.01
     #window, horizon = 50, 1
     window, horizon = 4, 1
     #n_traj, EPOCHS, BATCH = 24, 10, 256
-    n_traj, EPOCHS, BATCH = 4, 2, 256
-    #UNITS, DROPOUT, NUM_DENSE = 96, 0.10, 64
-    UNITS, DROPOUT, NUM_DENSE = 6, 0.10, 4
+    n_traj, EPOCHS, BATCH = 24, 100, 256
+    #n_traj, EPOCHS, BATCH = 4, 2, 256
+    UNITS, DROPOUT, NUM_DENSE = 96, 0.10, 64
+    #UNITS, DROPOUT, NUM_DENSE = 6, 0.10, 4
 
     print(f"[CFG] T={T}, dt={dt}, window={window}, horizon={horizon}, "
           f"n_traj={n_traj}, epochs={EPOCHS}, units={UNITS}")
