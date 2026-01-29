@@ -703,6 +703,50 @@ available on the Intel Quantum Simulator
 \cite{Guerreschi_Intel_Quantum_Simulator_2020}: \cite{bassi2008noise},
 \cite{sawaya2016error}.
 
+\subsubsection{Quantum Emulators for testing quantum error correction codes}
+
+Shor\cite{shor1995scheme} demonstrates that quantum computation, 
+though highly susceptible to decoherence, can
+be made robust through explicit quantum error correction without 
+destroying superposition or
+entanglement. Assuming independent decoherence across qubits, 
+the paper presents a
+concrete nine-qubit encoding that maps each logical qubit into 
+three entangled triplets, allowing
+perfect recovery of the original quantum state provided 
+at most one qubit per block decoheres.
+Quantitatively, if each physical qubit decoheres with 
+probability $p$, the probability that a
+nine-qubit block fails scales as $O(p^{2})$, with decoding 
+success approximately $1-36 p^{2}$ for
+small $p$, representing a quadratic suppression of errors 
+relative to naive storage. For $k$ logical
+qubits, the probability of successful recovery behaves 
+as $(1-36p^{2})^{k}$, yielding improved
+storage fidelity whenever $p<1/36$. The scheme 
+also enables a watchdog effect, in which
+periodic error detection and correction at intervals much 
+shorter than the decoherence time can,
+in principle, preserve quantum information 
+indefinitely, limited only by imperfections in the
+correcting operations. Although the encoding incurs a 
+ninefold qubit overhead and introduces
+additional gate errors, this work provides the first 
+constructive computational demonstration that
+quantum error rates can be reduced algorithmically, laying 
+foundational groundwork for
+fault-tolerant quantum computation.
+
+The following article discusses a more modern error correction 
+code\cite{kubischta2023family}, which finds the optimal quantum
+error correction code, given the constraints proved by
+Eastin and Knill\cite{eastin2009restrictions}.
+
+The following quantum emulators have the capability for benchmarking 
+quantum error correction codes: NVIDIA CUDA-Q and CuQuantum,
+Stim (by Quantum Lib), qecsim, 
+Microsoft Azure Quantum Development Kit (QDK),
+Qiskit Aer, and QCDL (Quantum Circuits)
 
 \begin{enumerate}
 \item (IBM) ``Quantum Computing with Qiskit'' (2024) \cite{javadi2024quantum}
@@ -815,7 +859,9 @@ python3 hadamard_gate.py
 \item Shor (1995) \cite{shor1995scheme}, ``Scheme for reducing decoherence in quantum computer memory.''
 \item Anthony-Petersen et al (2024) \cite{anthony2024stress}, ``A stress-induced source of phonon bursts and quasiparticle poisoning.''
 \item Lotshaw et al (2024) \cite{PhysRevA.110.L030803}, ``Exactly solvable model of light-scattering errors in quantum simulations with metastable trapped-ion qubits.''
-\item Kubischta, Eric and Teixeira, Ian (2023) \cite{kubischta2023family}, ``Family of quantum codes with exotic transversal gates.''
+\item Kubischta, Eric and Teixeira, Ian (2023) 
+\cite{kubischta2023family}, 
+``Family of quantum codes with exotic transversal gates.''
 \item Barends et al (2014) \cite{barends2014superconducting}, ``Superconducting quantum circuits at the surface code threshold for fault tolerance.''
 \item Baum et al (2021) \cite{baum2021experimental}, ``Experimental deep reinforcement learning for error-robust gate-set design on a superconducting quantum computer.''
 \item Cheng and Guo (2025) \cite{cheng2025modeling}, ``Modeling correlated-noise in silicon spin qubit device.''

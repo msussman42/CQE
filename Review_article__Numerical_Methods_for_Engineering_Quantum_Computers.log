@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  25 JAN 2026 16:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.1)  29 JAN 2026 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -856,22 +856,22 @@ al/texlive/2024/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}{/usr/local/texlive
 mf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./thumbnails/cas-email.jpeg>
 ] [2] [3]
 [4] [5] [6] [7] [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 859--862
+Underfull \hbox (badness 10000) in paragraph at lines 905--908
 [][][]\T1/cmtt/m/n/10 thebibliography []\T1/stix/m/n/10 en-vi-ron-ment. Each re
 f-er-ence is a
  []
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: \textbullet  on input line 870.
+             The label is: \textbullet  on input line 916.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 873--876
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 919--922
 []\T1/stix/m/n/10 An af-fix and part of a ref-er-ence:
  []
 
 (./Review_article__Numerical_Methods_for_Engineering_Quantum_Computers.bbl
-[10]
+[11]
 Underfull \hbox (badness 2142) in paragraph at lines 307--319
 []\T1/stix/m/n/8 Born, M., Op-pen-heimer, R., 1927.  Zur quan-ten-the-o-rie der
  molekeln.  An-nalen der Physik 389, 457--484.  URL: [][]$\T1/cmtt/m/n/8 https 
@@ -885,7 +885,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 307--319
  / 10 . 1002 / andp . 19273892002$[][]\T1/stix/m/n/8 ,
  []
 
-[11]
+
 Underfull \hbox (badness 1571) in paragraph at lines 573--583
 []\T1/stix/m/n/8 Gundlach, H., Sharkey, K., Lynch, J., Ha-zoglou, V., Hsu, K.C.
 , Dukatz, C., Crane, E., Wal-czyk, K., Bodziak, M., Galatsanos-
@@ -923,7 +923,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1355--1363
 /n/8 https : / / aws . amazon . com / blogs / quantum-[]computing /
  []
 
-) [15]
+[15]) [16]
 (./Review_article__Numerical_Methods_for_Engineering_Quantum_Computers.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -934,13 +934,13 @@ ering_Quantum_Computers.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17246 strings out of 474116
- 265086 string characters out of 5743681
+ 17248 strings out of 474116
+ 265112 string characters out of 5743683
  1962187 words of memory out of 5000000
  39005 multiletter control sequences out of 15000+600000
  663152 words of font info for 173 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,16n,93p,1820b,810s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,16n,93p,1820b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.
 pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bol
 dItalic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix/STIXGen
@@ -957,10 +957,10 @@ m-bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix/stix-mat
 hrm.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix/stix-mathsf
 .pfb>
 Output written on Review_article__Numerical_Methods_for_Engineering_Quantum_Com
-puters.pdf (15 pages, 393330 bytes).
+puters.pdf (16 pages, 397665 bytes).
 PDF statistics:
- 820 PDF objects out of 1000 (max. 8388607)
- 765 compressed objects within 8 object streams
- 320 named destinations out of 1000 (max. 500000)
+ 828 PDF objects out of 1000 (max. 8388607)
+ 772 compressed objects within 8 object streams
+ 322 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
