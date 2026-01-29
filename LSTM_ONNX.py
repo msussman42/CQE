@@ -208,6 +208,13 @@ def make_supervised_multi(trajs, window=50, horizon=1):
         print(number_windows)
         for i in range(number_windows):
             X.append(Ytraj[i:i+window, :])
+            #numpy.ravel(a, order='C')[source]
+            #Return a contiguous flattened array.
+            #A 1-D array, containing the elements of the input, 
+            #is returned. A copy is made only if needed.
+            #As of NumPy 1.10, the returned array will have the 
+            #same type as the input array. (for example, a 
+            #masked array will be returned for a masked array input)
             Y.append(Ytraj[i+window:i+window+horizon, :].ravel())
         i_traj=i_traj+1
     return np.array(X, np.float32), np.array(Y, np.float32)
@@ -216,6 +223,7 @@ def make_supervised_multi(trajs, window=50, horizon=1):
 # 3) Models
 # -----------------------------
 
+#out_dim=2*horizon for the ODE problem.
 def build_lstm_decomposed(window, out_dim, units=96, dropout=0.10, num_dense=64):
     """
     Decomposed LSTM via RNN(LSTMCell, unroll=True). Exports as primitive ops,
@@ -358,8 +366,8 @@ if __name__ == "__main__":
 #dense_1=(None,2) number parameters(dense_1)=NUM_DENSE * 2 + 2  weight matrix is
 #NUM_DENSE x 2  bias matrix is 2 x 1
 #loss function="mse"="mean square error"
-#loss=sum_k=1^{num_windows*num_traj} sum_i=1^{window} sum_j=1^2 
-#   ||x^{expect}_{i,j,k}-x^{net}(x_{i-1,j,k},theta)||^2
+#loss=sum_k=1^{num_windows*num_traj} sum_j=1^2 
+#   ||x^{expect}_{j,k}-x^{net}(x_{j,k},theta)||^2
 #The smaller the size of "window," the more vectorizable the code is,
 #but less accurate!
 #The larger window size is less vectorizable, but more accurate.
