@@ -223,9 +223,8 @@ country={USA}}
 \begin{abstract}
 In the article by Herrmann et al, ``Quantum utility – definition and assessment of a practical quantum advantage,'' the quantum computer ``Application Readiness Level'' (ARL) is defined: (ARL1) ``concept with unknown potential,'' 
 (ARL2) ``beneficial in small idealized systems,'' (ARL3) ``utility indicated by theory or resource estimations,'' 
-(ARL4) ``simulated utility demonstration'' and (ARL5) ``utility demonstration on quantum hardware.'' Hermann et al posit that ARL3 has been reached via demonstrations of the Variational Quantum Eigenvalue (VQE) algorithm. In this review article, the latest activities from the computational ``digital twin'' perspective are reported on in which scientists are working hard to bring practitioners out of the Noisy Intermediate Scale Quantum (NISQ) era into an era of ``Quantum supremacy.'' In other words, this review article discusses digital twin activities that help to advance from ARL3 to ARL4, or even ARL5.  The three main categories in this review article are (1) Optimization, Control, Inverse
-problems, and exploratory simulation algorithms for Schrodinger's equation, (2) Quantum computer Error correction,
-and (3)  Quantum algorithms for benchmarking quantum computers (to include emulator algorithms like Qiskit).
+(ARL4) ``simulated utility demonstration'' and (ARL5) ``utility demonstration on quantum hardware.'' Hermann et al posit that ARL3 has been reached via demonstrations of the Variational Quantum Eigenvalue (VQE) algorithm. In this review article, the latest activities from the computational ``digital twin'' perspective are reported on in which scientists are working hard to bring practitioners out of the Noisy Intermediate Scale Quantum (NISQ) era into an era of ``Quantum supremacy.'' In other words, this review article discusses digital twin activities that help to advance from ARL3 to ARL4, or even ARL5.  The main categories in this review article are (1) Optimization, Control, Inverse
+problems, surface codes, and exploratory simulation algorithms for Schrodinger's equation, and (2) Quantum algorithms for benchmarking quantum computers to include emulator algorithms like Qiskit and the Intel Quantum Simulator.  The discussion on emulators will include noise models, state preparation, scalability on high performance computers, and available quantum error correction codes.
 \end{abstract}
 
 % Use if graphical abstract is present
@@ -518,7 +517,8 @@ characterise the actual noise present in a quantum computer, and
 quantum computer noise problems.
 
 A Quantum algorithm consists of (i) state preparation and measurement 
-and (ii) a sequence of (basic) unitary operation(s).
+and (ii) a sequence of (basic) unitary operation(s), and (iii) a quantum
+error correction code.
 
 \subsubsection{state preparation and measurement}
 
@@ -703,6 +703,27 @@ available on the Intel Quantum Simulator
 \cite{Guerreschi_Intel_Quantum_Simulator_2020}: \cite{bassi2008noise},
 \cite{sawaya2016error}.
 
+\subsubsection{Quantum Emulators for converting arbitrary unitary operations
+into basic quantum gates available on quantum computers.}
+
+In the Pennylane quantum emulator, the following article\cite{KAK_pennylane}
+discusses how a given unitary matrix is converted, via the
+global Cartan 
+decomposition\cite{wierichs2025recursivecartandecompositionsunitary},  
+into basic quantum 
+gates.  The circuit depth for the Cartan decomposition has been found to
+be $\frac{21}{16}4^{n}$ for $n$ qubits\cite{Mansky_2023}.
+
+In \cite{KAK_pennylane}, the following other important 
+articles\cite{1629135,krol2024quantumshannoncircuitconstruction,K_kc__2022,Da_l__2008}
+are cited for carrying out arbitrary unitary operations.
+
+The Qiskit quantum emulator\cite{IBM_platform} 
+references the following article for
+synthesizing general, linear, reversible circuits\cite{patel2003efficientsynthesislinearreversible}.
+
+
+
 \subsubsection{Quantum Emulators for testing quantum error correction codes}
 
 Shor\cite{shor1995scheme} demonstrates that quantum computation, 
@@ -742,23 +763,32 @@ code\cite{kubischta2023family}, which finds the optimal quantum
 error correction code, given the constraints proved by
 Eastin and Knill\cite{eastin2009restrictions}.
 
-The following quantum emulators have the capability for benchmarking 
-quantum error correction codes: NVIDIA CUDA-Q and CuQuantum,
-Stim (by Quantum Lib), qecsim, 
-Microsoft Azure Quantum Development Kit (QDK),
-Qiskit Aer, and QCDL (Quantum Circuits)
+%The following quantum emulators have the capability for benchmarking 
+%quantum error correction codes: NVIDIA CUDA-Q and CuQuantum,
+%Stim (by Quantum Lib), qecsim, 
+%Microsoft Azure Quantum Development Kit (QDK),
+%Qiskit Aer, and QCDL (Quantum Circuits).
+
+The Qiskit quantum emulator documentation\cite{IBM_platform_ECC} gives an
+example for reducing the probability of a physical qubit undergoing an
+erroneous bit flip by replacing the physical qubit with a ``3-qubit'' 
+logical qubit plus two additional ancilla qubits.  The IBM sample code will
+not correct all errors; the IBM code
+only successfully corrects the logical quibit if only one of its'
+three physical qubits undergoes an inadvertant $IIX$, $IXI$, or $XII$
+command.
 
 \begin{enumerate}
 \item (IBM) ``Quantum Computing with Qiskit'' (2024) \cite{javadi2024quantum}
 \item Wille et al (2018) \cite{wille2018computer}, ``Computer-aided design for quantum computation.''
 \item ``Intel Quantum Simulator: a cloud-ready high-performance
  simulator of quantum circuits'' (2020) \cite{Guerreschi_Intel_Quantum_Simulator_2020}
-\item (Microsoft) ``LIQUid: A Software design architecture 
- and domain specific language
- for quantum computing'' (2014) \cite{1402.4467}
-\item ``QuESTlink—Mathematica embiggened by a hardware-optimised quantum emulator'' (2020) \cite{Jones_2020}
-\item (Matlab) ``QCLAB: A Matlab Toolbox for Quantum Computing'' 
- (2025) \cite{keip2025qclabmatlabtoolboxquantum}
+%\item (Microsoft) ``LIQUid: A Software design architecture 
+% and domain specific language
+% for quantum computing'' (2014) \cite{1402.4467}
+%\item ``QuESTlink—Mathematica embiggened by a hardware-optimised quantum emulator'' (2020) \cite{Jones_2020}
+%\item (Matlab) ``QCLAB: A Matlab Toolbox for Quantum Computing'' 
+% (2025) \cite{keip2025qclabmatlabtoolboxquantum}
 \item ``PennyLane-Lightning MPI: A massively scalable quantum circuit simulator based on distributed computing in CPU clusters'' (2025) \cite{kang2025pennylane}
 \item (Google) ``qsim''(2020) \cite{quantum_ai_team_and_collaborators_2020_4023103}
 \item (nVidea) ``cuQuantum SDK: A High-Performance Library for Accelerating Quantum Science'' (2023) \cite{10313722}

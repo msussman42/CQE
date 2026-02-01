@@ -6,56 +6,58 @@ Database file #1: references.bib
 Warning--entry type for "quantum_ai_team_and_collaborators_2020_4023103" isn't style-file defined
 --line 4008 of file references.bib
 Warning--entry type for "AWSmeasure" isn't style-file defined
---line 4734 of file references.bib
-I was expecting a `,' or a `}'---line 4739 of file references.bib
- :   urldate = {2026-01-25} 
- :                          % Date accessed
-I'm skipping whatever remains of this entry
+--line 4735 of file references.bib
+Warning--entry type for "KAK_pennylane" isn't style-file defined
+--line 4744 of file references.bib
+Warning--entry type for "IBM_platform" isn't style-file defined
+--line 4753 of file references.bib
+Warning--entry type for "IBM_platform_ECC" isn't style-file defined
+--line 4762 of file references.bib
 Warning--to sort, need author or key in google2025quantum
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty author in google2025quantum
 Warning--empty pages in Ito2024
 Warning--empty journal in moore2021cramming
 Warning--empty pages in 10.1145/3524059.3532375
-You've used 140 entries,
+You've used 146 entries,
             2990 wiz_defined-function locations,
-            1574 strings with 43920 characters,
-and the built_in function-call counts, 120035 in all, are:
-= -- 8093
-> -- 7494
-< -- 63
-+ -- 2872
-- -- 2706
-* -- 14953
-:= -- 17841
-add.period$ -- 438
-call.type$ -- 140
-change.case$ -- 1590
-chr.to.int$ -- 138
-cite$ -- 147
-duplicate$ -- 7938
-empty$ -- 7141
-format.name$ -- 3143
-if$ -- 21533
-int.to.chr$ -- 3
+            1608 strings with 45292 characters,
+and the built_in function-call counts, 123467 in all, are:
+= -- 8353
+> -- 7658
+< -- 65
++ -- 2938
+- -- 2763
+* -- 15321
+:= -- 18379
+add.period$ -- 458
+call.type$ -- 146
+change.case$ -- 1639
+chr.to.int$ -- 143
+cite$ -- 153
+duplicate$ -- 8195
+empty$ -- 7364
+format.name$ -- 3210
+if$ -- 22154
+int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 1800
-newline$ -- 733
-num.names$ -- 556
-pop$ -- 2904
+missing$ -- 1847
+newline$ -- 765
+num.names$ -- 580
+pop$ -- 3003
 preamble$ -- 1
-purify$ -- 1452
+purify$ -- 1495
 quote$ -- 0
-skip$ -- 2058
+skip$ -- 2138
 stack$ -- 0
-substring$ -- 3528
-swap$ -- 6892
+substring$ -- 3596
+swap$ -- 7062
 text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1251
+type$ -- 1305
 warning$ -- 5
-while$ -- 564
+while$ -- 582
 width$ -- 0
-write$ -- 2044
-(There was 1 error message)
+write$ -- 2131
+(There were 10 warnings)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{140}
+\begin{thebibliography}{146}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -386,6 +386,16 @@
 \newblock \bibinfo{journal}{Applied Sciences} \bibinfo{volume}{13},
   \bibinfo{pages}{11491}.
 %Type = Article
+\bibitem[{Dağlı et~al.(2008)Dağlı, D’Alessandro and Smith}]{Da_l__2008}
+\bibinfo{author}{Dağlı, M.}, \bibinfo{author}{D’Alessandro, D.},
+  \bibinfo{author}{Smith, J.D.H.}, \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{A general framework for recursive decompositions of
+  unitary quantum evolutions}.
+\newblock \bibinfo{journal}{Journal of Physics A: Mathematical and Theoretical}
+  \bibinfo{volume}{41}, \bibinfo{pages}{155302}.
+\newblock \URLprefix \url{http://dx.doi.org/10.1088/1751-8113/41/15/155302},
+  \DOIprefix\doi{10.1088/1751-8113/41/15/155302}.
+%Type = Article
 \bibitem[{De~Raedt et~al.(2019)De~Raedt, Jin, Willsch, Willsch, Yoshioka, Ito,
   Yuan and Michielsen}]{de2019massively}
 \bibinfo{author}{De~Raedt, H.}, \bibinfo{author}{Jin, F.},
@@ -755,16 +765,6 @@
   boundary conditions via schrodingerisation}.
 \newblock \bibinfo{journal}{arXiv preprint arXiv:2407.15895} .
 %Type = Article
-\bibitem[{Jones and Benjamin(2020)}]{Jones_2020}
-\bibinfo{author}{Jones, T.}, \bibinfo{author}{Benjamin, S.},
-  \bibinfo{year}{2020}.
-\newblock \bibinfo{title}{Questlink—mathematica embiggened by a
-  hardware-optimised quantum emulator*}.
-\newblock \bibinfo{journal}{Quantum Science and Technology}
-  \bibinfo{volume}{5}, \bibinfo{pages}{034012}.
-\newblock \URLprefix \url{http://dx.doi.org/10.1088/2058-9565/ab8506},
-  \DOIprefix\doi{10.1088/2058-9565/ab8506}.
-%Type = Article
 \bibitem[{Kanai et~al.(2024)Kanai, Jin and Guo}]{PhysRevLett.132.250603}
 \bibinfo{author}{Kanai, T.}, \bibinfo{author}{Jin, D.}, \bibinfo{author}{Guo,
   W.}, \bibinfo{year}{2024}.
@@ -781,14 +781,6 @@
 \newblock \bibinfo{title}{Pennylane-lightning mpi: A massively scalable quantum
   circuit simulator based on distributed computing in cpu clusters}.
 \newblock \bibinfo{journal}{arXiv preprint arXiv:2508.13615} .
-%Type = Misc
-\bibitem[{Keip et~al.(2025)Keip, Camps and
-  Beeumen}]{keip2025qclabmatlabtoolboxquantum}
-\bibinfo{author}{Keip, S.}, \bibinfo{author}{Camps, D.},
-  \bibinfo{author}{Beeumen, R.V.}, \bibinfo{year}{2025}.
-\newblock \bibinfo{title}{Qclab: A matlab toolbox for quantum computing}.
-\newblock \URLprefix \url{https://arxiv.org/abs/2503.03016},
-  \href{http://arxiv.org/abs/2503.03016}{\tt arXiv:2503.03016}.
 %Type = Article
 \bibitem[{Khait et~al.(2023)Khait, Tham, Segal and
   Brodutch}]{khait2023variational}
@@ -883,6 +875,14 @@
   distance-three surface code}.
 \newblock \bibinfo{journal}{Nature} \bibinfo{volume}{605},
   \bibinfo{pages}{669--674}.
+%Type = Misc
+\bibitem[{Krol and Al-Ars(2024)}]{krol2024quantumshannoncircuitconstruction}
+\bibinfo{author}{Krol, A.M.}, \bibinfo{author}{Al-Ars, Z.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Beyond quantum shannon: Circuit construction for
+  general n-qubit gates based on block zxz-decomposition}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2403.13692},
+  \href{http://arxiv.org/abs/2403.13692}{\tt arXiv:2403.13692}.
 %Type = Article
 \bibitem[{Kubischta and Teixeira(2023)}]{kubischta2023family}
 \bibinfo{author}{Kubischta, E.}, \bibinfo{author}{Teixeira, I.},
@@ -891,6 +891,18 @@
   gates}.
 \newblock \bibinfo{journal}{Physical Review Letters} \bibinfo{volume}{131},
   \bibinfo{pages}{240601}.
+%Type = Article
+\bibitem[{Kökcü et~al.(2022)Kökcü, Steckmann, Wang, Freericks, Dumitrescu
+  and Kemper}]{K_kc__2022}
+\bibinfo{author}{Kökcü, E.}, \bibinfo{author}{Steckmann, T.},
+  \bibinfo{author}{Wang, Y.}, \bibinfo{author}{Freericks, J.},
+  \bibinfo{author}{Dumitrescu, E.F.}, \bibinfo{author}{Kemper, A.F.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Fixed depth hamiltonian simulation via cartan
+  decomposition}.
+\newblock \bibinfo{journal}{Physical Review Letters} \bibinfo{volume}{129}.
+\newblock \URLprefix \url{http://dx.doi.org/10.1103/PhysRevLett.129.070501},
+  \DOIprefix\doi{10.1103/physrevlett.129.070501}.
 %Type = Inproceedings
 \bibitem[{Li et~al.(2021)Li, Fang, Granade, Prawiroatmodjo, Heim, Roetteler and
   Krishnamoorthy}]{li2021sv}
@@ -989,6 +1001,17 @@
 \newblock \bibinfo{title}{The multiple lives of moore's law}.
 \newblock \bibinfo{journal}{IEEE Spectrum} \bibinfo{volume}{52},
   \bibinfo{pages}{31--31}.
+%Type = Article
+\bibitem[{Mansky et~al.(2023)Mansky, Castillo, Puigvert and
+  Linnhoff-Popien}]{Mansky_2023}
+\bibinfo{author}{Mansky, M.B.}, \bibinfo{author}{Castillo, S.L.},
+  \bibinfo{author}{Puigvert, V.R.}, \bibinfo{author}{Linnhoff-Popien, C.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Near-optimal quantum circuit construction via cartan
+  decomposition}.
+\newblock \bibinfo{journal}{Physical Review A} \bibinfo{volume}{108}.
+\newblock \URLprefix \url{http://dx.doi.org/10.1103/PhysRevA.108.052607},
+  \DOIprefix\doi{10.1103/physreva.108.052607}.
 %Type = Article
 \bibitem[{Manzano(2020)}]{manzano2020short}
 \bibinfo{author}{Manzano, D.}, \bibinfo{year}{2020}.
@@ -1103,6 +1126,26 @@
   for Computing Machinery}, \bibinfo{address}{New York, NY, USA}.
 \newblock \URLprefix \url{https://doi.org/10.1145/3524059.3532375},
   \DOIprefix\doi{10.1145/3524059.3532375}.
+%Type = Misc
+\bibitem[{Patel et~al.(2003)Patel, Markov and
+  Hayes}]{patel2003efficientsynthesislinearreversible}
+\bibinfo{author}{Patel, K.N.}, \bibinfo{author}{Markov, I.L.},
+  \bibinfo{author}{Hayes, J.P.}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{Efficient synthesis of linear reversible circuits}.
+\newblock \URLprefix \url{https://arxiv.org/abs/quant-ph/0302002},
+  \href{http://arxiv.org/abs/quant-ph/0302002}{\tt arXiv:quant-ph/0302002}.
+%Type = Misc
+\bibitem[{Platform(2025a)}]{IBM_platform}
+\bibinfo{author}{Platform, I.Q.}, \bibinfo{year}{2025}a.
+\newblock \bibinfo{title}{Circuit synthesis}.
+\newblock \URLprefix
+  \url{https://quantum.cloud.ibm.com/docs/en/api/qiskit/synthesis}.
+%Type = Misc
+\bibitem[{Platform(2025b)}]{IBM_platform_ECC}
+\bibinfo{author}{Platform, I.Q.}, \bibinfo{year}{2025}b.
+\newblock \bibinfo{title}{Repetition codes}.
+\newblock \URLprefix
+  \url{https://quantum.cloud.ibm.com/docs/en/tutorials/repetition-codes}.
 %Type = Article
 \bibitem[{Plesch and Brukner(2011)}]{plesch2011quantum}
 \bibinfo{author}{Plesch, M.}, \bibinfo{author}{Brukner, {\v{C}}.},
@@ -1416,13 +1459,21 @@
   Europe Conference and Exhibition}, \bibinfo{organization}{IEEE}. pp.
   \bibinfo{pages}{1354--1355}.
 %Type = Misc
-\bibitem[{Wecker and Svore(2014)}]{1402.4467}
-\bibinfo{author}{Wecker, D.}, \bibinfo{author}{Svore, K.M.},
-  \bibinfo{year}{2014}.
-\newblock \bibinfo{title}{{LIQU}i|>: {A} {S}oftware {D}esign {A}rchitecture and
-  {D}omain-{S}pecific {L}anguage for {Q}uantum {C}omputing}.
-\newblock \URLprefix \url{arXiv:1402.4467v1},
-  \href{http://arxiv.org/abs/1402.4467}{\tt arXiv:1402.4467}.
+\bibitem[{Wierichs(2025)}]{KAK_pennylane}
+\bibinfo{author}{Wierichs, D.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Unitary synthesis with recursive kak decompositions}.
+\newblock \URLprefix
+  \url{https://pennylane.ai/qml/demos/tutorial_unitary_synthesis_kak}.
+%Type = Misc
+\bibitem[{Wierichs et~al.(2025)Wierichs, West, Forestano, Cerezo and
+  Killoran}]{wierichs2025recursivecartandecompositionsunitary}
+\bibinfo{author}{Wierichs, D.}, \bibinfo{author}{West, M.},
+  \bibinfo{author}{Forestano, R.T.}, \bibinfo{author}{Cerezo, M.},
+  \bibinfo{author}{Killoran, N.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Recursive cartan decompositions for unitary
+  synthesis}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2503.19014},
+  \href{http://arxiv.org/abs/2503.19014}{\tt arXiv:2503.19014}.
 %Type = Inproceedings
 \bibitem[{Wille et~al.(2018)Wille, Fowler and Naveh}]{wille2018computer}
 \bibinfo{author}{Wille, R.}, \bibinfo{author}{Fowler, A.},
