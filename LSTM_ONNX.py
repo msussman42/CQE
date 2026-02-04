@@ -148,6 +148,39 @@ class ODEParams:
     omega0: float = 2.0 * np.pi * 1.0
     zeta:   float = 0.05
 
+# x(0)=x0
+# v(0)=v0
+# omega0=2 pi
+# zeta=1/20
+#
+# dx/dt=v
+# dv/dt=-2 zeta omega0 v(t) - omega0^2 x(t)
+#
+# algorithm to generate the data:
+# 0<= t <= TSTOP  e.g. dy/dt=-y(t)  solution is y(t)=e^{-t}
+# t0,...,tN  
+# t0=0.0
+# t1=dt
+# t2=2 * dt
+#  ....
+# TSTOP=N * dt
+#
+# TSTOP, DT, N * DT = TSTOP
+# x0,x1,x2,x3, ..., xN
+# v0,v1,v2,v3, ..., vN
+#
+# training data:
+# a) the number of trajectories are "n_traj"
+# b) 0.8 * n_traj is the number of trajectories to train the network.
+# c) 0.2 * n_traj is the number of trajectories to test the network.
+# total amount of data to train the network is:
+# 0.8*n_traj*N*(2)  the 2 is because we have x and v.
+#
+# 1. train the network
+# 2. the network make a prediction for xN+1, xN+2, ....,xN+P,vN+1,vN+2,...
+#    vN+P
+#    compare: error=sqrt( (1/P)*sum_{i=N+1}^{N+P} (x_{i}-x_{i}^{exact})^{2}+
+#     (v_{i}-v_{i}^{exact})^{2})
 def osc_ode(t, y, p: ODEParams):
     x, v = y
     dxdt = v
