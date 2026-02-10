@@ -501,10 +501,10 @@ From that, I think there will be at least 15 papers needed to be add.
 I will add more details on this, with formula, methods,...
 
 
-\section{Quantum algorithms and Quantum emulators
+\section{Quantum emulators, large scale Quantum emulators, and 
+  Quantum algorithms
   for benchmarking quantum computers}
 
-\par\noindent
 \subsection{Quantum Emulators}
 
 The development of Quantum Emulators is essential for benchmarking quantum 
@@ -777,6 +777,57 @@ not correct all errors; the IBM code
 only successfully corrects the logical quibit if only one of its'
 three physical qubits undergoes an inadvertant $IIX$, $IXI$, or $XII$
 command.
+
+\subsection{Large scale Quantum Emulators}
+
+For an $n$ qubit system, the required storage is (assuming double precision)
+is $S=(2)(8)2^{n}$ bytes.  For example, if $n=40$, then 
+$S \approx 18$ terabytes (TB).  If data was stored on a 16 TB harddrive,
+then the time it takes to execute a single quantum gate on any given
+qubit would take about 20 hours.  If the data was stored in RAM, then
+the time would be only a few minutes in order to execute a one-qubit quantum
+gate.   If $n=50$, then it would be fastest to implement quantum algorithms
+on many comptuter nodes.  The popular emulators that exploit large 
+scale computer systems are 
+``Atlas''\cite{xu2024atlas},
+``cuQuantum''\cite{10313722}, 
+``PennyLane-Lightning MPI''\cite{kang2025pennylane}, and
+``Massively Parallel Quantum computer simulator''\cite{de2019massively}.
+
+In the ``Atlas''\cite{xu2024atlas} architectural model, there are $2^{G}$
+nodes, each node contains $2^{R}$ GPU cards, and each GPU card stores
+$2^{L}$ (complex)amplitudes.  So if there are $n=L+R+G$ qubits, then the state
+can be written as,
+\begin{eqnarray*}
+\ket{\psi}=\sum_{i=0}^{2^{n}-1}\alpha_{i}\ket{i}.
+\end{eqnarray*}
+If we expand $i$ in its binary digits, then,
+$\ket{i}\equiv\ket{b_{0}b_{1}\ldots b_{L-1}b_{L}b_{L+1}\ldots b_{L+R+G-1}}$.
+The convention here is that the binary expansion is from least significant
+to most significant binary digit.
+The binary representation of the GPU card id containing the amplitude of
+$\ket{i}$ is then $b_{L}b_{L+1}\ldots b_{L+R+G-1}$.  The card id's
+are labeled $0,\ldots, 2^{R+G}-1$.
+
+\subsubsection{State Preparation Benchmark}
+
+In this test, we compare the cost for each of the following four
+high performance emulators, 
+``Atlas''\cite{xu2024atlas},
+``cuQuantum''\cite{10313722}, 
+``PennyLane-Lightning MPI''\cite{kang2025pennylane}, and
+``Massively Parallel Quantum computer simulator''\cite{de2019massively} to
+do random state preparation on $n$ qubits.  In order to do a fair test,
+first we generate the appropriate quantum circuit from 
+``QISKIT''\cite{javadi2024quantum} and then write the circuit to a data file.
+It is expected that the depth of the circuit will be proportional to 
+$2^{n}$.  Then we import the circuit into each of the high performance
+emulators, and then analyze the results.
+
+\subsubsection{Singular Value Decomposition Benchmark}
+
+\subsection{Quantum Algorithms}
+
 
 \begin{enumerate}
 \item (IBM) ``Quantum Computing with Qiskit'' (2024) \cite{javadi2024quantum}
