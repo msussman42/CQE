@@ -1,3 +1,8 @@
+#auxiliary.py losses.py pqcs.py go into src directory
+#python3 -m venv venv_torch
+#source venv_torch/bin/activate  (bash shell command)
+#pip install -r pl_list.txt
+
 import sys; sys.path.append('src')
 import argparse, configparser
 
@@ -41,7 +46,7 @@ def qml_qsvd(num_qubits, num_layers, shots, maxiter, mat_seed, x_seed):
  #           m[i,j] = mat_rng.uniform(low=-1.0, high=1.0) / 10
  #           m[j,i] = m[i,j]
  #   fill_diagonal(m, 1.0)
-    m = np.loadtxt("/Users/x3e/Desktop/python_test/QC/matrix_16_2.txt",dtype=float)
+    m = np.loadtxt("/export/m38/sussman/pytorch_environment/matrix_16_2.txt",dtype=float)
     m_psi = m.reshape(dim*dim)
     m_psi = m_psi / linalg.norm(m_psi)
 
@@ -58,7 +63,8 @@ def qml_qsvd(num_qubits, num_layers, shots, maxiter, mat_seed, x_seed):
     Construct PQC representing U
     '''
     num_pqc_params = num_layers * num_pqc_qubits
-    device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+    #device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+    device=torch.device("cpu")
     '''
     Construct initial guess
     '''
