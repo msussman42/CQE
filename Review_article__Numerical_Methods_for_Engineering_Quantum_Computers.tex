@@ -507,8 +507,35 @@ I will add more details on this, with formula, methods,...
 
 \subsection{Quantum Emulators}
 
+
+\begin{table}[H]
+\footnotesize
+\center
+\begin{tabular}{ | l | c | c | c | c | c | c |c|}
+\hline
+\hline
+                   & GPU? & Multicore   & Distributed & Number of  &Noise  & Decompose & Local,          \\ 
+                   &      & CPU?        & memory?     & Qubits?    &Model? & to basic  & Global,         \\ 
+                   &      &             &             &            &       & gates?    & Regional(DRAM   \\
+Authors.           &      &             &             &            &       &           & Offloading)     \\  \hline
+M. Xu et al        &      &             &             &            &       &           &           	\\ 
+\cite{xu2024atlas}                   & & & & & & & \\ \hline
+Javadi-Abhari      &      &             &             &            &       &           &           	\\ 
+et al\cite{javadi2024quantum}        & & & & & & & \\
+(Qiskit)                             & & & & & & & \\ \hline
+Aleksandrowicz                       & & & & & & & \\
+et al\cite{aleksandrowicz2019qiskit} & & & & & & & \\
+(Qiskit)                             & & & & & & & \\ \hline
+\end{tabular}
+\caption{Chronological listing of articles describing quantum emulators
+togethor with their notable features. }
+\label{tab:tablesummary}
+\end{table}
+
+
 The development of Quantum Emulators is essential for benchmarking quantum 
-computers since (i) the level of noise in Quantum Emulators can be prescribed exactly thereby enabling practitioners to quantify the effect of 
+computers since (i) the level of noise in Quantum Emulators can be 
+prescribed exactly thereby enabling practitioners to quantify the effect of 
 noise on a given quantum circuit design, (ii)
 one can prescribe a given noise model\cite{PhysRevA.107.062406} and then
 compare emulator results with an actual quantum computer in order to 
