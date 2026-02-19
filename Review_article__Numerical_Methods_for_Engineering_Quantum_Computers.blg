@@ -19,45 +19,45 @@ Warning--empty author in google2025quantum
 Warning--empty pages in Ito2024
 Warning--empty journal in moore2021cramming
 Warning--empty pages in 10.1145/3524059.3532375
-You've used 146 entries,
+You've used 147 entries,
             2990 wiz_defined-function locations,
-            1608 strings with 45292 characters,
-and the built_in function-call counts, 123467 in all, are:
-= -- 8353
-> -- 7658
+            1611 strings with 45612 characters,
+and the built_in function-call counts, 124493 in all, are:
+= -- 8409
+> -- 7748
 < -- 65
-+ -- 2938
-- -- 2763
-* -- 15321
-:= -- 18379
-add.period$ -- 458
-call.type$ -- 146
-change.case$ -- 1639
-chr.to.int$ -- 143
-cite$ -- 153
-duplicate$ -- 8195
-empty$ -- 7364
-format.name$ -- 3210
-if$ -- 22154
++ -- 2972
+- -- 2796
+* -- 15458
+:= -- 18540
+add.period$ -- 461
+call.type$ -- 147
+change.case$ -- 1654
+chr.to.int$ -- 144
+cite$ -- 154
+duplicate$ -- 8257
+empty$ -- 7412
+format.name$ -- 3246
+if$ -- 22328
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 1847
-newline$ -- 765
-num.names$ -- 580
-pop$ -- 3003
+missing$ -- 1863
+newline$ -- 770
+num.names$ -- 584
+pop$ -- 3029
 preamble$ -- 1
-purify$ -- 1495
+purify$ -- 1509
 quote$ -- 0
-skip$ -- 2138
+skip$ -- 2153
 stack$ -- 0
-substring$ -- 3596
-swap$ -- 7062
+substring$ -- 3607
+swap$ -- 7120
 text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1305
+type$ -- 1314
 warning$ -- 5
-while$ -- 582
+while$ -- 585
 width$ -- 0
-write$ -- 2131
+write$ -- 2144
 (There were 10 warnings)

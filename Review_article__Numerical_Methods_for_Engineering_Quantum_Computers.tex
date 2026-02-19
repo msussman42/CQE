@@ -1,3 +1,4 @@
+%% :setl noai nocin nosi inde=
 %% 
 %% Copyright 2019-2020 Elsevier Ltd
 %% 
@@ -205,6 +206,16 @@ country={USA}}
 \ead{petersson1@llnl.gov}
 
 % Eleventh author
+
+\author[1]{Dat-Thuc Nguyen}[orcid =  https://orcid.org/0000-0002-7345-8894]
+\ead{tdn23@fsu.edu}
+
+% twelth author
+
+\author[1]{Ziad Muslimani}[orcid =  https://orcid.org/0000-0002-5846-1219]
+\ead{zmuslimani@fsu.edu}
+
+% thirteenth author
 \author[1]{Mark Sussman}[orcid = https://orcid.org/0000-0001-8238-4295]
 \ead{msussman@fsu.edu}
 % Corresponding author text
@@ -511,21 +522,20 @@ I will add more details on this, with formula, methods,...
 \begin{table}[H]
 \footnotesize
 \center
-\begin{tabular}{ | l | c | c | c | c | c | c |c|}
+\begin{tabular}{ | l | l | c | c | c | c | c | c | c | c | c |}
 \hline
 \hline
-                   & GPU? & Multicore   & Distributed & Number of  &Noise  & Decompose & Local,          \\ 
-                   &      & CPU?        & memory?     & Qubits?    &Model? & to basic  & Global,         \\ 
-                   &      &             &             &            &       & gates?    & Regional(DRAM   \\
-Authors.           &      &             &             &            &       &           & Offloading)     \\  \hline
-M. Xu et al        &      &             &             &            &       &           &           	\\ 
-\cite{xu2024atlas}                   & & & & & & & \\ \hline
-Javadi-Abhari      &      &             &             &            &       &           &           	\\ 
-et al\cite{javadi2024quantum}        & & & & & & & \\
-(Qiskit)                             & & & & & & & \\ \hline
-Aleksandrowicz                       & & & & & & & \\
-et al\cite{aleksandrowicz2019qiskit} & & & & & & & \\
-(Qiskit)                             & & & & & & & \\ \hline
+Authors            & Emulator & GPU? & Multi- & Distri- & Local,     &Number  &Noise  & Decompose & Support & Optimized \\ 
+		   & Name     &      & core   & buted   & Global,    &of      &Model? & to basic  & logical & Qubit     \\ 
+		   &          &      & CPU?   & memory? & Regional   &Qubits? &       & gates?    & qubits? & Arithmetic\\
+                   &          &      &        &         & (DRAM      &        &       &           &         &       \\  
+                   &          &      &        &         & Offloading)&        &       &           &         &       \\  \hline
+M. Xu et al        & Atlas    &      &        &         &            &        &       &           &         &       \\ 
+\cite{xu2024atlas} (2024) & & & & & & & & & \\ \hline
+Javadi-Abhari      & Qiskit   &      &        &         &            &        &       &           &         & 	\\ 
+et al\cite{javadi2024quantum} (2024),       & & & & & & & & & &\\
+Aleksandrowicz                              & & & & & & & & & &\\
+et al\cite{aleksandrowicz2019qiskit} (2019) & & & & & & & & & &\\ \hline
 \end{tabular}
 \caption{Chronological listing of articles describing quantum emulators
 togethor with their notable features. }
