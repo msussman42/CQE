@@ -406,10 +406,13 @@ if __name__ == "__main__":
 #The larger window size is less vectorizable, but more accurate.
     # Config
     #T, dt = 20.0, 0.01
-    T, dt = 1.0, 0.01
+    T, dt = 1.0, 0.01  #t0=0 t1=0.01 t2=0.02 .... t100=1
     #T, dt = 0.08, 0.01
     #window, horizon = 50, 1
-    window, horizon = 4, 1
+    window, horizon = 50, 1  #window1=t0 ...t49  window2=t1...t50 ...
+    #window51=t50 ... t99
+    # total number of windows: n_traj * (51)  51=number of windows for each
+    # trajectory.
     #n_traj, EPOCHS, BATCH = 24, 10, 256
     n_traj, EPOCHS, BATCH = 24, 100, 256
     #n_traj, EPOCHS, BATCH = 4, 2, 256
@@ -419,8 +422,19 @@ if __name__ == "__main__":
     print(f"[CFG] T={T}, dt={dt}, window={window}, horizon={horizon}, "
           f"n_traj={n_traj}, epochs={EPOCHS}, units={UNITS}")
 
+    # in the poster:
+    # T=1.0
+    # dt=0.01
+    # window=50
+    # number of windows=(T/dt - window)
+    # n_traj=24
+    # total number of windows=n_traj * numbr of windows
+    # training windows=0.8 * total numbr of windows
     # Data
     all_t, all_Y, params = generate_dataset(n_traj=n_traj, T=T, dt=dt, seed=123)
+    # total number of windows=n_traj * ((T/dt)-window)
+    # total number of training windows=0.8 * total_number_of_windows.
+    # total number of test windows=0.2 * total_number_of_windows.
     n_train = int(0.8 * len(all_Y))
     print("len(all_Y)")
     print(len(all_Y))
