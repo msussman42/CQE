@@ -416,7 +416,8 @@ if __name__ == "__main__":
     #n_traj, EPOCHS, BATCH = 24, 10, 256
     n_traj, EPOCHS, BATCH = 24, 100, 256
     #n_traj, EPOCHS, BATCH = 4, 2, 256
-    UNITS, DROPOUT, NUM_DENSE = 96, 0.10, 64
+    #UNITS, DROPOUT, NUM_DENSE = 96, 0.10, 64
+    UNITS, DROPOUT, NUM_DENSE = 128, 0.10, 96
     #UNITS, DROPOUT, NUM_DENSE = 6, 0.10, 4
 
     print(f"[CFG] T={T}, dt={dt}, window={window}, horizon={horizon}, "

@@ -402,13 +402,13 @@ if __name__ == "__main__":
 
     # Config
     #T, dt = 20.0, 0.01
-    T, dt = 0.08, 0.01
+    T, dt = 1.0, 0.01
     #window, horizon = 50, 1
-    window, horizon = 4, 1
+    window, horizon = 50, 1
     #n_traj, EPOCHS, BATCH = 24, 10, 256
-    n_traj, EPOCHS, BATCH = 4, 2, 256
+    n_traj, EPOCHS, BATCH = 24, 100, 256
     #UNITS, DROPOUT, NUM_DENSE = 96, 0.10, 64
-    UNITS, DROPOUT, NUM_DENSE = 6, 0.10, 4
+    UNITS, DROPOUT, NUM_DENSE = 128, 0.10, 96
 
     print(f"[CFG] T={T}, dt={dt}, window={window}, horizon={horizon}, "
           f"n_traj={n_traj}, epochs={EPOCHS}, units={UNITS}")
