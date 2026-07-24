@@ -1,4 +1,4 @@
-\begin{thebibliography}{147}
+\begin{thebibliography}{149}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -876,6 +876,16 @@
 \newblock \bibinfo{journal}{Quantum} \bibinfo{volume}{9},
   \bibinfo{pages}{1708}.
 %Type = Article
+\bibitem[{Krantz et~al.(2019)Krantz, Kjaergaard, Yan, Orlando, Gustavsson and
+  Oliver}]{krantz2019quantum}
+\bibinfo{author}{Krantz, P.}, \bibinfo{author}{Kjaergaard, M.},
+  \bibinfo{author}{Yan, F.}, \bibinfo{author}{Orlando, T.P.},
+  \bibinfo{author}{Gustavsson, S.}, \bibinfo{author}{Oliver, W.D.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{A quantum engineer's guide to superconducting
+  qubits}.
+\newblock \bibinfo{journal}{Applied physics reviews} \bibinfo{volume}{6}.
+%Type = Article
 \bibitem[{Krinner et~al.(2022)Krinner, Lacroix, Remm, Di~Paolo, Genois, Leroux,
   Hellings, Lazar, Swiadek, Herrmann et~al.}]{krinner2022realizing}
 \bibinfo{author}{Krinner, S.}, \bibinfo{author}{Lacroix, N.},
@@ -1538,6 +1548,18 @@
   ACM International Conference on Supercomputing}, pp.
   \bibinfo{pages}{443--454}.
 \newblock \DOIprefix\doi{https://doi.org/10.1145/3447818.3460357}.
+%Type = Article
+\bibitem[{Zhang et~al.(2017)Zhang, Pagano, Hess, Kyprianidis, Becker, Kaplan,
+  Gorshkov, Gong and Monroe}]{zhang2017observation}
+\bibinfo{author}{Zhang, J.}, \bibinfo{author}{Pagano, G.},
+  \bibinfo{author}{Hess, P.W.}, \bibinfo{author}{Kyprianidis, A.},
+  \bibinfo{author}{Becker, P.}, \bibinfo{author}{Kaplan, H.},
+  \bibinfo{author}{Gorshkov, A.V.}, \bibinfo{author}{Gong, Z.X.},
+  \bibinfo{author}{Monroe, C.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Observation of a many-body dynamical phase transition
+  with a 53-qubit quantum simulator}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{551},
+  \bibinfo{pages}{601--604}.
 %Type = Inproceedings
 \bibitem[{Zhang et~al.(2024)Zhang, Saligane, Kim, Blaauw, Tzimpragos and
   Sylvester}]{zhang2024quantum}

@@ -25,6 +25,9 @@
 %\usepackage[authoryear]{natbib}
 %\usepackage[authoryear,longnamesfirst]{natbib}
 \usepackage{hyperref, amsmath, amssymb, braket}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{math}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -290,12 +293,10 @@ That being said, right now we are in the
 ``Noisy Intermediate-Scale Quantum'' \cite{callison2022hybrid} (NISQ) era.  The purpose of this review article is to bring to the forefront the current research being done, from the 
 computational perspective, in order to move beyond the NISQ era.
 
-\section{Numerical methods for computing solutions to Schrodinger's
-equation and Lindblad Master equation and Numerical methods for 
-optimization and control in which
-the objective function corresponds to PDE constrained optimization with
-respect to Schrodinger's PDE equation or ODE constrained optimization as
-pertains to the Lindblad Master Equation}
+\section{Numerical Methods for simulating Quantum Systems}
+
+\subsection{Numerical method for eigenvalue and eigenvector 
+decomposition of the Hamiltonian}
 
 %make a table: (chronological order)
 %dimension, steady/non-steady, DFT or no DFT, optimizaton?, inverse?,
@@ -317,7 +318,9 @@ where
 \nabla^{2}=\frac{\partial^{2}}{\partial x^{2}}+
            \frac{\partial^{2}}{\partial y^{2}}.
 \end{eqnarray}
-\par\noindent
+
+\subsection{Numerical method for time dependent Schrodinger equation}
+
 In 2002, Bao et al \cite{BAO2002487} developed a time splitting
 spectral approximation for the time dependent Schrodinger equation
 in the ``semiclassical'' regime:
@@ -327,7 +330,10 @@ iu_{t}^{\epsilon}=-\frac{\epsilon}{2}\Delta u^{\epsilon}+
 u^{\epsilon}(x,0)=u_{0}^{\epsilon}(x)
 \end{eqnarray}
 Bao et al report results in one and two space dimensions.
-\par\noindent
+
+\subsection{Numerical method for determining ground state
+of the Hamiltonian}
+
 In 2004, Zheng et al \cite{zheng2004numerical} developed a finite element
 method for finding the ground state of the lithium atom.  In otherwords,
 Zheng et al found the smallest eigenvalue and the associated eigenfunction
@@ -356,7 +362,10 @@ r_{jk}=|\vec{r}_{j}-\vec{r}_{k}| \hspace{10pt} r_{j}=|\vec{r}_{j}|
 After converting from cartesian coordinate system to spherical 
 coordinate system, the authors were able to reduce the dimension of the
 problem from 9 to 6.
-\par\noindent
+
+\subsection{Optimization and Control of Quantum system modeled
+by Lindblad equation }
+
 In Grivopoulos' 2005 Phd thesis \cite{grivopoulos2005optimal}, methods
 were developed for the control of quantum systems.  We 
 highlight one such control problem discussed in the thesis. 
@@ -403,7 +412,71 @@ where
 \cite{grivopoulos2005optimal}, for the $3\times 3$ case,
 determines the control, $u(t)$, in
 (\ref{control}), that maximizes $\rho_{11}(T)$ given $\rho(0)=\rho_{0}$.
-\par\noindent
+
+\subsection{Hamiltonian for Transmon (superconducting) qubit }
+
+In the work by Krantz et al\cite{krantz2019quantum}, they derived the 
+corresponding Hamiltonian for a ``Josephson qubit circuit, where the 
+nonlinear inductance $L_{j}$ is shunted by a capacitance $C_{s}$.''
+Please see Figure \ref{transmon_circuit}.  So, given the 
+Schrodinger equation,
+\begin{eqnarray}
+i\hbar \frac{\partial}{\partial t} \ket{\Psi(t)} = \hat{H} \ket{\Psi(t)},
+\end{eqnarray}
+if $\hat{H}$ is time independent, then
+\begin{eqnarray}
+\ket{\Psi(t)}=e^{-i\hat{H}t/\hbar}\ket{\Psi(0)}.
+\end{eqnarray}
+In equation (16) of \cite{krantz2019quantum}, they have,
+\begin{eqnarray}
+H=4 E_{C} n^{2}-E_{J}\cos(\phi),
+\end{eqnarray}
+where $E_{C}=e^{2}/(2C_{\Sigma})$, $C_{\Sigma}=C_{s}+C_{J}$ is the total
+capitance, ``including both shunt capacitance $C_{s}$ and the 
+self-capacitance of the junction $C_{j}$, and $E_{J}=I_{c}\Phi_{0}/2\pi$
+is the Josephson energy, with $I_{c}$ being the critical current of 
+the junction.'' $\phi$ is the ``gauge invariant phase'' (superconducting
+phase on the ``island'') and $n$ is the ``excess number of Cooper-pairs on
+the island.'' \cite{krantz2019quantum} also derived the 
+Hamiltonian corresponding to split transmon quibits.
+
+\begin{figure}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw (1,1) -- (5,1);
+  \draw (1,5) -- (5,5);
+  \draw (5,1) -- (5,2.5);
+  \draw (5,3.5) -- (5,5);
+  \draw (4.5,3.5) -- (5.5,3.5);
+  \draw (4.5,2.5) -- (5.5,2.5);   
+  \node at (5.0,3.0) {$C_{S}$};
+  \draw (1,1) -- (1,2.5);
+  \draw (1,3.5) -- (1,5);
+  \draw[draw=red] (0.5,2.5) -- (1.5,2.5);
+  \draw[draw=red] (0.5,3.5) -- (1.5,3.5);
+  \draw[draw=red] (0.5,2.5) -- (0.5,3.5);
+  \draw[draw=red](1.5,2.5) -- (1.5,3.5);
+  \draw[draw=red] (0.5,2.5) -- (1.5,3.5);
+  \draw[draw=red] (1.5,2.5) -- (0.5,3.5);
+  \node at (0.0,2.75) {$C_{J}$};
+  \node at (0.0,3.25) {$L_{J}$};
+  \draw (3,1) -- (3,0.5);
+  \draw (2.5,0.5) -- (3.5,0.5);
+  \draw (2.75,0.25) -- (3.25,0.25);
+  \draw (2.85,0) -- (3.15,0);
+\end{tikzpicture}
+\caption{Illustration of Josephson qubit circuit\cite{krantz2019quantum}.
+  $L_{J}$ is the ``nonlinear inductance'' and is ``shunted'' by a 
+  capacitance, $C_{s}$. $L_{J}$, $C_{J}$, and the red hatched
+  box is a 
+  substitute for a single inductor $L$ in order that the separation
+  between the ground state $\ket{0}$, first excited state, $\ket{1}$,
+  second excited state, $\ket{2}$, etc. are not evenly spaced. 
+  \label{transmon_circuit} }
+\end{figure}
+
+\subsection{Neural network algorithm for determing ground state
+of quantum system; the Born-Oppenheimer Hamiltonian}
+
 In the article by Han et al \cite{HAN2019108929}, a neural network 
 algorithm was devised for computing the ground state to the 
 time independent Schrodinger equation (\ref{time_independent}).
@@ -453,7 +526,9 @@ $\mbox{LiH}_{4}$ (four electrons),
 $\mbox{He}$ (two electrons), and
 $\mbox{H}_{10}$ (ten electrons).
 
-\par\noindent
+\subsection{Neural network algorithm for determing ground state
+of quantum system; the Born-Oppenheimer Hamiltonian}
+
 \cite{hermann2020deep} developed a similar method as \cite{HAN2019108929}
 for computing the ground state to the
 time independent Schrodinger equation (\ref{time_independent}).  Both
@@ -470,7 +545,6 @@ $\mbox{B}$ (five electrons).
 
 
 \begin{enumerate}
-%\item Krantz et al (2019)\cite{krantz2019quantum}, ``A quantum engineer's guide to superconducting qubits.''
 %\item Lin et al (2016)\cite{lin2016approximating}, ``Approximating spectral densities of large matrices.''
 \item Günther et al (2021) \cite{9651392}, ``Quandary: An open-source C++ package for high-performance optimal control of open quantum systems.'' the article
 by Lidar (2019) \cite{lidar2019lecture} (``Lecture notes on the theory of open quantum systems'') gives the derivation of the model for open quantum systems.

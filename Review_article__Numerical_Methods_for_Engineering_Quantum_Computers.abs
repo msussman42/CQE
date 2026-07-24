@@ -1,4 +1,21 @@
-In the article by Herrmann et al, ``Quantum utility – definition and assessment of a practical quantum advantage,'' the quantum computer ``Application Readiness Level'' (ARL) is defined: (ARL1) ``concept with unknown potential,''
-(ARL2) ``beneficial in small idealized systems,'' (ARL3) ``utility indicated by theory or resource estimations,''
-(ARL4) ``simulated utility demonstration'' and (ARL5) ``utility demonstration on quantum hardware.'' Hermann et al posit that ARL3 has been reached via demonstrations of the Variational Quantum Eigenvalue (VQE) algorithm. In this review article, the latest activities from the computational ``digital twin'' perspective are reported on in which scientists are working hard to bring practitioners out of the Noisy Intermediate Scale Quantum (NISQ) era into an era of ``Quantum supremacy.'' In other words, this review article discusses digital twin activities that help to advance from ARL3 to ARL4, or even ARL5.  The main categories in this review article are (1) Optimization, Control, Inverse
-problems, surface codes, and exploratory simulation algorithms for Schrodinger's equation, and (2) Quantum algorithms for benchmarking quantum computers to include emulator algorithms like Qiskit and the Intel Quantum Simulator.  The discussion on emulators will include noise models, state preparation, scalability on high performance computers, and available quantum error correction codes.
+In the article by Herrmann et al, ``Quantum utility –
+definition and assessment of a practical quantum advantage,''
+the quantum computer ``Application Readiness Level''
+(ARL) is defined: (ARL1) ``concept with unknown potential,''
+(ARL2) ``beneficial in small idealized systems,'' (ARL3)
+``utility indicated by theory or resource estimations,''
+(ARL4) ``simulated utility demonstration'' and
+(ARL5) ``utility demonstration on quantum hardware.''
+Hermann et al posit that ARL3 has been reached due to
+accomplishments reported for the
+Variational Quantum Eigenvalue (VQE) algorithm.
+This review article discusses digital twin
+activities that help to advance from ARL3 to ARL4, or even ARL5.
+The main categories in this review article are
+(1) Optimization, Control, Inverse
+problems, and exploratory simulation algorithms for Schrodinger's equation
+and Lindblad Master Equation (aka GKSL master equation), and
+(2) Quantum algorithms for benchmarking quantum computers to include
+emulator algorithms like Qiskit and the Intel Quantum Simulator.  The
+discussion on emulators will include noise models, state preparation, and
+scalability on high performance computers.
