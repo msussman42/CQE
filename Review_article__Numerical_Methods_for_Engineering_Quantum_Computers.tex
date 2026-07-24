@@ -191,13 +191,10 @@ the quantum computer ``Application Readiness Level''
 ``utility indicated by theory or resource estimations,'' 
 (ARL4) ``simulated utility demonstration'' and 
 (ARL5) ``utility demonstration on quantum hardware.'' 
-Hermann et al posit that ARL3 has been reached via demonstrations 
-of the Variational Quantum Eigenvalue (VQE) algorithm. 
-In this review article, the latest activities from the computational 
-``digital twin'' perspective are reported on in which scientists 
-are working hard to bring practitioners out of the Noisy Intermediate 
-Scale Quantum (NISQ) era into an era of ``Quantum supremacy.'' 
-In other words, this review article discusses digital twin 
+Hermann et al posit that ARL3 has been reached due to 
+accomplishments reported for the
+Variational Quantum Eigenvalue (VQE) algorithm. 
+This review article discusses digital twin 
 activities that help to advance from ARL3 to ARL4, or even ARL5.  
 The main categories in this review article are 
 (1) Optimization, Control, Inverse
@@ -232,27 +229,62 @@ quadrupole exciton \sep polariton \sep \WGM \sep \BEC
 \section{Introduction}
 
 The motivation for this review article is the fact that Moore's law is no longer applicable \cite{moore2021cramming}.
-As quoted from Shalf \cite{shalf2020future}, ``Moore’s Law [1] is a techno-economic model that has enabled the IT industry to double the performance and functionality of digital electronics roughly every 2 years within a fixed cost, power and area. This expectation has led to a relatively stable ecosystem (e.g. electronic design automation tools, compilers, simulators and emulators) built around general-purpose processor technologies, such as the ×86, ARM and Power instruction set architectures. However, within a decade, the technological underpinnings for the process that Gordon Moore described will come to an end, as lithography gets down to atomic scale. At that point, it will be feasible to create lithographically produced devices with dimensions nearing atomic scale, where a dozen or fewer silicon atoms are present across critical device features, and will therefore represent a practical limit for implementing logic gates for digital computing [2]. Indeed, the ITRS (International Technology Roadmap for Semiconductors), which has tracked the historical improvements over the past 30 years, has projected no 
+As quoted from Shalf \cite{shalf2020future}, 
+\begin{description}
+\item[] ``Moore’s Law [1] is a 
+techno-economic model that has enabled the IT industry to double the 
+performance and functionality of digital electronics roughly 
+every 2 years within a fixed cost, power and area. This expectation 
+has led to a relatively stable ecosystem (e.g. electronic design 
+automation tools, compilers, simulators and emulators) built around 
+general-purpose processor technologies, such as the ×86, ARM and 
+Power instruction set architectures. However, within a decade, the 
+technological underpinnings for the process that Gordon Moore 
+described will come to an end, as lithography gets down to atomic 
+scale. At that point, it will be feasible to create lithographically 
+produced devices with dimensions nearing atomic scale, where a dozen or 
+fewer silicon atoms are present across critical device features, and 
+will therefore represent a practical limit for implementing logic 
+gates for digital computing [2]. Indeed, the ITRS (International Technology Roadmap for Semiconductors), which has tracked the historical improvements over the past 30 years, has projected no 
 improvements beyond 2021, as shown in figure 1, and 
 subsequently disbanded, having no further purpose. 
-The classical technological driver that has underpinned Moore’s Law for the past 50 years is failing [3] and is anticipated to flatten by 2025, as shown in figure 2. Evolving technology in the absence of Moore’s Law will require an investment now in computer architecture and the basic sciences (including materials science), to study candidate replacement materials and alternative device physics to foster continued technology scaling.'' 
+The classical technological driver that has underpinned Moore’s Law 
+for the past 50 years is failing [3] and is anticipated to 
+flatten by 2025, as shown in figure 2. Evolving technology in the 
+absence of Moore’s Law will require an investment now in computer 
+architecture and the basic sciences (including materials science), 
+to study candidate replacement materials and alternative device 
+physics to foster continued technology scaling.'' 
+\end{description}
 
 References one through three in the above quote 
 correspond to the following references respectively: 
 \cite{moore2021cramming}, \cite{mack2015multiple}, \cite{markov2014limits}.
-
+\par\noindent
 As further motivation for this review article,
 in Figure 3 of the article by Shalf \cite{shalf2020future}, a 
 roadmap is provided for possible paths forward when the 
 density of circuits on classical computers exceeds a critical 
-value.  There are three categories: (a) roadmap for the next ten years, (b) 20 years, and (c) ``Decades beyond exascale,'' 
-``New Models of Computation.'' For category (c), Shalf  \cite{shalf2020future} refers to the following
+value.  There are three categories: 
+(a) roadmap for the next ten years, 
+(b) 20 years, and 
+(c) ``Decades beyond exascale,'' ``New Models of Computation.'' 
+\par\noindent
+For category (c), above, Shalf  \cite{shalf2020future} refers to the following
 prospective technology: (i) approximate computing, (ii) adiabatic reversible, (iii) Analog, (iv) Neuromorhic, and (v) 
 quantum \cite{richard1982feynman,richard1986feynman}.
-
+\par\noindent
 Of the ``new models of computation'' listed in 
-Shalf's article \cite{shalf2020future}, this review article will address the ``Numerical Methods for Engineering Quantum Computers'' aspects associated with the emerging ``quantum computing'' paradigm. As outlined by Gamble \cite{gamble2019quantum}, the development of reliable quantum computers will have a tranformative effect on computer technology. A perfectly working fifty qubit quantum computer can efficiently process $2^{50}$ pieces of data which is 1024 Terabytes (1 Petabyte)!
+Shalf's article \cite{shalf2020future}, this review article will 
+address the ``Numerical Methods for Engineering Quantum Computers'' 
+aspects associated with the emerging ``quantum computing'' paradigm. 
+As outlined by Gamble \cite{gamble2019quantum}, the development of 
+reliable quantum computers will have a tranformative effect on 
+computer technology. A perfectly working fifty qubit quantum computer 
+can efficiently process $2^{50}$ pieces of data which is 1024 
+Terabytes (1 Petabyte)!
 
+\par\noindent
 %1024 petabytes $2^{60}$=1 exabyte
 That being said, right now we are in the 
 ``Noisy Intermediate-Scale Quantum'' \cite{callison2022hybrid} (NISQ) era.  The purpose of this review article is to bring to the forefront the current research being done, from the 
